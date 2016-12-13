@@ -1,0 +1,24 @@
+/* small window */
+@media screen and (min-width: 480px) {
+  .main section {
+    margin: 20px 2.5%;
+    width: 28.3333%;
+  }
+
+}
+
+/* desktop */
+@media screen and (min-width: 660px) {
+  .main section {
+    margin: 20px 2.5%;
+    width: 20%;
+  }
+
+  .main {
+    margin: inherit 10%;
+  }
+
+  .main section:nth-child(5n) {
+    clear: left;
+  }
+}

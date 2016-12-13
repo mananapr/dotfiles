@@ -1,0 +1,89 @@
+!------------------------------------------------------------------------------
+! c o l o r -  s e t t i n g s
+
+*background: #222222
+*foreground: #777777
+
+! Default
+! 0: black
+*color0:  #222222
+*color8:  #222222
+! 1: red
+*color1:  #9f6767
+*color9:  #9f6767
+! 2: green
+*color2:  #92ac68
+*color10: #92ac68
+! 3: yellow
+*color3:  #d0d293
+*color11: #d0d293
+! 4: blue
+*color4:  #9aacc3
+*color12: #9aacc3
+! 5: magenta
+*color5:  #bb77a4
+*color13: #bb77a4
+! 6: cyan
+*color6:  #77bbb5
+*color14: #77bbb5
+! 7: white
+*color7:  #777777
+*color15: #777777
+
+!------------------------------------------------------------------------------
+! u r x v t
+
+URxvt*geometry:         112x22  
+URxvt*font:            xft:Cantarell:size=10
+URxvt*urlLauncher:         firefox  
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:   false
+URxvt*scrollColor:        #000000
+URxvt*letterSpace: -4
+! special
+URxvt*.foreground:   #a7a7a7
+URxvt*.background:   #1e1e1e
+URxvt*.cursorColor:  #a7a7a7
+URxvt.cursorBlink: 1
+
+! black
+URxvt*color0:       #1e1e1e
+URxvt*color8:       #5f5a60
+
+! red
+URxvt*color1:       #cf6a4c
+URxvt*color9:       #cf6a4c
+
+! green
+URxvt*color2:       #8f9d6a
+URxvt*color10:      #8f9d6a
+
+! yellow
+URxvt*color3:       #f9ee98
+URxvt*color11:      #f9ee98
+
+! blue
+URxvt*color4:       #7587a6
+URxvt*color12:      #7587a6
+
+! magenta
+URxvt*color5:       #9b859d
+URxvt*color13:      #9b859d
+
+! cyan
+URxvt*color6:       #afc4db
+URxvt*color14:      #afc4db
+
+! white
+URxvt*color7:       #a7a7a7
+URxvt*color15:      #ffffff
+
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #fdf6e3, #002b36, #fdf6e3
+rofi.color-normal: #fdf6e3, #002b36, #fdf6e3, #586e75, #eee8d5
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3

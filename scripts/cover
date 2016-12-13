@@ -1,0 +1,39 @@
+#!/bin/bash
+# Hide terminal cursor
+tput civis
+
+# Clear terminal output
+clear
+
+MPC="mpc"
+MUSIC_DIR="/home/manan/Music"
+FILENAME=""
+
+width=350
+height=305
+
+
+while :; do
+    CURRENT_FILE=$($MPC current -f "%file%")
+    CURRENT_DIR=$(dirname "$CURRENT_FILE")
+
+
+    FILENAME=$(find $MUSIC_DIR/"$CURRENT_DIR" -name "*[Ff]ront*[png|jpg|bmp]")
+    if [[ -z $FILENAME ]]; then
+        FILENAME=$(find $MUSIC_DIR/"$CURRENT_DIR" -name "*[Cc]over*[png|jpg|bmp]")
+        if [[ -z $FILENAME ]]; then
+            FILENAME=$(find $MUSIC_DIR/"$CURRENT_DIR" -name "*[Ff]older*[png|jpg|bmp]")
+        fi
+    fi
+
+
+    if [[ -z $FILENAME ]]; then
+        FILENAME="/path/to/default/fallback/image.png"
+    fi
+
+    w3m_command="0;1;0;0;$width;$height;;;;;""$FILENAME""\n4;\n3;"
+    echo -e $w3m_command | /usr/lib/w3m/w3mimgdisplay
+
+    $MPC idle player update
+    clear
+done
