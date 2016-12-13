@@ -153,6 +153,10 @@ assign [class="Firefox"] $workspace2
 assign [class="mpv"] $workspace6
 
 #Floating Windows
+for_window [class="Pavucontrol"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="System-config-printer.py"] floating enable
+for_window [class="Thunar"] floating enable
 
 # Cylce wallpapers
 bindsym $mod+w exec "sh ~/scripts/wal -i ~/Pictures/Washed-2"
@@ -200,6 +204,7 @@ client.focused_inactive $bg           $bg          $fg          $bg   $bg
 client.urgent           $bg           $bg          $fg          $bg   $bg
 
 for_window [class="^.*"] border pixel 4
+
 #i3-gaps
 gaps inner 10
 gaps outer 5
