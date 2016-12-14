@@ -1,5 +1,5 @@
 # dotfiles
-Dotfiles for my Arch + i3wm
+Dotfiles for my Arch + i3wm setup.
 
 My setup uses [wal](https://github.com/dylanaraps/wal) to generate Colour Schemes.
 ![alt text](screenshots/main.png "Overview")
