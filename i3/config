@@ -210,3 +210,9 @@ gaps inner 10
 gaps outer 5
 smart_gaps on
 smart_borders on
+bindsym $mod+y gaps inner current minus 6
+bindsym $mod+u gaps inner current plus 6
+bindsym $mod+Shift+y gaps outer current minus 6
+bindsym $mod+Shift+u gaps outer current plus 6
+workspace $workspace2 gaps inner 0
+workspace $workspace2 gaps outer 0
