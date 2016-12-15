@@ -1,35 +1,25 @@
+#MPD
 mpd_host = "127.0.0.1"
 mpd_port = "6600"
 mpd_music_dir = "~/Music"
+
+#VISULAIZER
 visualizer_fifo_path = "/tmp/mpd.fifo"
 visualizer_output_name = "fifo"
 visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum" (spectrum/wave)
 visualizer_look = "●┃"
-playlist_disable_highlight_delay = 1
-jump_to_now_playing_song_at_start = "yes"
-playlist_display_mode = "classic"
-song_list_format = "$3 %a $R $8 %t $6 %l"
-#song_list_format = "%a %t %l"
-alternative_ui_separator_color        = "blue"
+
+#PLAYLIST
+playlist_disable_highlight_delay      = 1
+playlist_display_mode                 = "classic"
 playlist_separate_albums              = "no"
-colors_enabled                        = "yes"
-visualizer_color                      = "green"
-empty_tag_color                       = "blue"
-header_window_color                   = "white"
-display_volume_level                  = "yes"
-state_line_color                      = "cyan"
-state_flags_color                     = "cyan"
-main_window_color                     = "green"
-main_window_highlight_color           = "blue"
-color1                                = "white"
-color2                                = "blue"
+jump_to_now_playing_song_at_start = "yes"
+song_list_format = "$3 %a $R $8 %t $6 %l"
+
+#COLORS
 progressbar_color                     = "black"
 statusbar_color                       = "cyan"
 active_column_color                   = "red"
-window_border_color                   = "red"
-active_window_border                  = "red"
 progressbar_look                      = "─╼─"
-#progressbar_look                      = "━━━"
-clock_display_seconds                 = "yes"
