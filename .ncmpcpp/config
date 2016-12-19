@@ -1,22 +1,23 @@
 #MPD
-mpd_host = "127.0.0.1"
-mpd_port = "6600"
-mpd_music_dir = "~/Music"
+mpd_host                              = "127.0.0.1"
+mpd_port                              = "6600"
+mpd_music_dir                         = "~/Music"
 
 #VISULAIZER
-visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_output_name = "fifo"
-visualizer_sync_interval = "30"
-visualizer_in_stereo = "yes"
-visualizer_type = "spectrum" (spectrum/wave)
-visualizer_look = "●┃"
+visualizer_fifo_path                  = "/tmp/mpd.fifo"
+visualizer_output_name                = "fifo"
+visualizer_sync_interval              = "30"
+visualizer_in_stereo                  = "yes"
+visualizer_type                       = "spectrum" (spectrum/wave)
+visualizer_look                       = "●┃"
 
 #PLAYLIST
 playlist_disable_highlight_delay      = 1
 playlist_display_mode                 = "classic"
 playlist_separate_albums              = "no"
-jump_to_now_playing_song_at_start = "yes"
-song_list_format = "$3 %a $R $8 %t $6 %l"
+jump_to_now_playing_song_at_start     = "yes"
+song_list_format                      = "$3 %a $R $8 %t $6 %l"
+follow_now_playing_lyrics             = "yes"
 
 #COLORS
 progressbar_color                     = "black"
