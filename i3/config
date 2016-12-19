@@ -43,7 +43,7 @@ bindsym $mod+d exec rofi -show drun -padding 20 -opacity 95 -font "Monaco 12"
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+shift+d exec lock 
+bindsym $mod+shift+d exec lock &
 
 #custom start
 exec --no-startup-id redshift &
@@ -59,7 +59,7 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 
-# Pulse Audio 
+# Pulse Audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
@@ -159,7 +159,7 @@ for_window [class="System-config-printer.py"] floating enable
 for_window [class="Thunar"] floating enable
 
 # Cylce wallpapers
-bindsym $mod+w exec "sh ~/scripts/wal -i ~/Pictures/Washed-2"
+bindsym $mod+w exec "sh ~/scripts/wal -t -i ~/Pictures/Washed-2"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -200,7 +200,7 @@ set_from_resource $bg i3wm.color2 #f0f0f0
 #                       border              background         text                 indicator     child-border
 client.focused          $bg           $bg          $fg          $fg   $fg
 client.unfocused        $bg           $bg          $fg          $bg   $bg
-client.focused_inactive $bg           $bg          $fg          $bg   $bg 
+client.focused_inactive $bg           $bg          $fg          $bg   $bg
 client.urgent           $bg           $bg          $fg          $bg   $bg
 
 for_window [class="^.*"] border pixel 4
