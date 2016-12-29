@@ -24,3 +24,8 @@ progressbar_color                     = "black"
 statusbar_color                       = "cyan"
 active_column_color                   = "red"
 progressbar_look                      = "─╼─"
+
+#UI
+header_visibility                     = "no"
+titles_visibility                     = "no"
+statusbar_visibility                  = "no"
