@@ -50,7 +50,7 @@ exec --no-startup-id redshift &
 exec --no-startup-id tint2 &
 exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
-exec --no-startup-id nitrogen --restore &
+exec sh ~/scripts/wal -t -i ~/Pictures/Washed-2/s1GaNjh.jpg
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc &
 exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
 exec --no-startup-id mpd &
