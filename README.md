@@ -12,3 +12,6 @@ My Music Setup which uses a [custom script](https://www.reddit.com/r/unixporn/co
 
 My Vim Setup with Goyo Plugin enabled.
 ![alt text](screenshots/vim.png "Vim")
+
+GTK theme generated with [wpgtk](https://github.com/deviantfero/wpgtk).
+![alt text](screenshots/thunar.png "Thunar")
