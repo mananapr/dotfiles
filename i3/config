@@ -47,10 +47,11 @@ bindsym $mod+shift+d exec lock &
 
 #custom start
 exec --no-startup-id redshift &
+exec --no-startup-id unclutter --ignore-scrolling &
 exec --no-startup-id tint2 &
 exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
-exec sh ~/scripts/wal -i ~/Pictures/Washed-2/B4joUd.jpg
+exec --no-startup-id sh ~/scripts/wal -i ~/Pictures/Washed-2/B4joUd.jpg
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc &
 exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
 exec --no-startup-id mpd &
