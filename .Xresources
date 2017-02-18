@@ -6,7 +6,8 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-URxvt*font:            xft:Monaco:size=9
+URxvt*font:     xft:Monaco:size=9
+URxvt.letterSpace: -1
 
 URxvt.cursorBlink: 1
 
