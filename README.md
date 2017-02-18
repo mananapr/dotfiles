@@ -3,7 +3,7 @@ Dotfiles for my Arch Linux setup.
 
 [Full Screenshot Album](http://imgur.com/a/aigQp)
 
-![alt text](main.png "Neofetch")
+![Neofetch](main.png "Neofetch")
 
 ## Setup
 My setup uses [wal](https://github.com/dylanaraps/wal) to generate Colour Schemes.
