@@ -16,7 +16,11 @@
 # If not running interactively, don't do anything
 sh ~/scripts/wal -r
 
+PATH="$PATH:$HOME/scripts"
+
 source "$HOME/.cache/wal/colors.sh"
+
+export EDITOR="vim"
 
 case $- in
     *i*) ;;
