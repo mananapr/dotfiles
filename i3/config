@@ -159,6 +159,7 @@ for_window [class="Thunar"] floating enable
 for_window [class="Mirage"] floating enable
 for_window [class="Wpg"] floating enable
 for_window [class="Lxappearance"] floating enable
+for_window [class="Catfish"] floating enable
 
 # Cylce wallpapers
 bindsym $mod+w exec "sh ~/scripts/wal -i ~/Pictures/Washed-2"
