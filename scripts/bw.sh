@@ -1,2 +1,2 @@
-sh ~/scripts/wal -i ~/Pictures/downloaded.jpg
+sh ~/scripts/wal -i ~/scripts/bw.jpg
 feh --randomize --bg-fill ~/Pictures/BW/*
