@@ -14,9 +14,9 @@
 #. /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh /powerline/bindings/bash/powerline.sh
 
 # If not running interactively, don't do anything
-sh ~/scripts/wal -r
+sh ~/Scripts/wal -r
 
-PATH="$PATH:$HOME/scripts"
+PATH="$PATH:$HOME/Scripts"
 
 source "$HOME/.cache/wal/colors.sh"
 
