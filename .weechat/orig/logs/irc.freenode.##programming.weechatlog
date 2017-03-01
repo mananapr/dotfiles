@@ -1,0 +1,1329 @@
+2016-08-27 14:18:41	-->	starship_trooper (~manan@122.177.66.42) has joined ##programming
+2016-08-27 14:18:41	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-08-27 14:18:41	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-08-27 14:18:41	--	Channel ##programming: 660 nicks (1 op, 0 voices, 659 normals)
+2016-08-27 14:18:43	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-08-27 14:18:53	ackpacket	RustyShackleford, lol, sounds like a great way to lose money
+2016-08-27 14:19:01	-->	ibouvousaime (~ibouvousa@41.83.28.153) has joined ##programming
+2016-08-27 14:19:04	RustyShackleford	even the idea of betting 10 bucks a hand gives me a heart attack
+2016-08-27 14:19:38	ackpacket	Yeah still freaks me out when my friend leaves our table to play higher stakes hold'em.  He was in the world series.
+2016-08-27 14:19:53	<--	snow_ (~snow@124.207.80.66) has quit
+2016-08-27 14:19:58	RustyShackleford	so how do you get away with the character part of it? Your bets are a dead giveaway
+2016-08-27 14:20:09	<--	Joanna345 (~Joanna345@ip174-67-230-16.oc.oc.cox.net) has quit (Ping timeout: 276 seconds)
+2016-08-27 14:20:12	<--	wei2912 (~wei2912@unaffiliated/wei2912) has quit (Remote host closed the connection)
+2016-08-27 14:20:13	RustyShackleford	you need a team
+2016-08-27 14:20:57	ackpacket	RustyShackleford, Listen.  Each person is tracked individually, at least roughly.  Each table's count is tracked, quite easily.  Casinos are good with stats.
+2016-08-27 14:21:11	ackpacket	If you do something that doesn't make sense, you'll be noticed.
+2016-08-27 14:21:38	ackpacket	Sure, they won't connect you to lowbetting a bad count.  Instead, you'll just show yourself to be that guy that always shows up at a table when the count is good.
+2016-08-27 14:21:54	ackpacket	Then everyone at that table is burned
+2016-08-27 14:22:00	ackpacket	So how big is your team?
+2016-08-27 14:22:15	RustyShackleford	how big should it be? I'm still recruiting
+2016-08-27 14:22:59	-->	Dasir (~Dasir@efx189.neoplus.adsl.tpnet.pl) has joined ##programming
+2016-08-27 14:23:04	ackpacket	RustyShackleford, If you're going to go to vegas, fly just a bit further to california and interview at a better company -- Your odds are better ;)
+2016-08-27 14:24:22	velco	^^
+2016-08-27 14:24:25	-->	g00se (~srnty@24.5.135.216) has joined ##programming
+2016-08-27 14:24:42	RustyShackleford	listen I'm not ACTUALLY trying to get rich by gambling
+2016-08-27 14:25:26	RustyShackleford	is there a better casino game? I believe blackjack is the one with the smallest house edge
+2016-08-27 14:25:51	ackpacket	Generally for engineers like us, games of skill are better than ones of chance.  Come over to the poker side of things :-P
+2016-08-27 14:26:22	ackpacket	Saturday nights are especially profitable, lots of people walk in after a few drinks thinking poker is like the movies.
+2016-08-27 14:27:28	Zuu	I'm like _really_ good at poker
+2016-08-27 14:27:38	RustyShackleford	where's the skill in poker?
+2016-08-27 14:27:51	Zuu	i always end up with much less than i came with.
+2016-08-27 14:27:58	RustyShackleford	there's so much betting in one hand of hold em
+2016-08-27 14:28:07	ackpacket	RustyShackleford, Making decisions with partial information is a highly valued skill
+2016-08-27 14:28:11	RustyShackleford	and you have 7 cards to use for strategy
+2016-08-27 14:28:35	velco	team bridge is where the skill is
+2016-08-27 14:28:40	<--	kwladyka (~kwladyka@jedenzero4-jeden4piec.echostar.pl) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-08-27 14:29:10	ackpacket	RustyShackleford, The skill is in reading other players, looking at their history, their actions, their predispositions and putting them on a hand
+2016-08-27 14:29:43	ackpacket	RustyShackleford, It's said that tier 1 players play the cards in front of them, tier 2 players play the cards in front of the other player, and tier 3 play the cards the other player *thinks* are in front of their opponent
+2016-08-27 14:30:31	RustyShackleford	how do I learn this strategy?
+2016-08-27 14:30:41	Zuu	And tier 4 players dont have cards, and retian all their money :>
+2016-08-27 14:30:55	ackpacket	RustyShackleford, Practice, observation, reading
+2016-08-27 14:31:02	-->	k3rn31 (~k3rn31@109.202.103.170) has joined ##programming
+2016-08-27 14:31:06	ackpacket	RustyShackleford, Shame you missed the online poker craze =\
+2016-08-27 14:31:14	RustyShackleford	the all in bet pisses me off
+2016-08-27 14:31:24	ackpacket	Why's that
+2016-08-27 14:31:25	<--	ibouvousaime (~ibouvousa@41.83.28.153) has quit (Quit: Konversation terminated!)
+2016-08-27 14:31:26	Zuu	i went from tier 1 to tier 4 so fast :P
+2016-08-27 14:31:29	RustyShackleford	there's a guy I've played some friendly games with. What an asshole
+2016-08-27 14:31:35	-->	ibouvousaime (~ibouvousa@41.83.28.153) has joined ##programming
+2016-08-27 14:31:49	RustyShackleford	uses the all in bet all the time, 90% of the time he has to be bluffing
+2016-08-27 14:32:04	ackpacket	Someone who is over-frequently shoving, is making negative expected value actions.  You should **LOVE** that.
+2016-08-27 14:32:30	RustyShackleford	well thing about this guy is that he's great at scheming. I've learned to avoid making any bets with him
+2016-08-27 14:32:56	-->	BearishMushroom (~BearishMu@90-231-174-194-no159.tbcn.telia.com) has joined ##programming
+2016-08-27 14:33:01	ackpacket	Any pocket pair or strongly connected hole cards are great to call his all-in
+2016-08-27 14:33:06	<--	Tempesta (Tempesta@unaffiliated/tempesta) has quit (Ping timeout: 265 seconds)
+2016-08-27 14:33:10	ackpacket	Ace-Rag is enough for someone like him
+2016-08-27 14:33:15	RustyShackleford	besides that, in a friendly game all in just makes everyone fold. I try to raise conservatively and get more money in the pot
+2016-08-27 14:33:41	RustyShackleford	is there a book you read?
+2016-08-27 14:33:47	ackpacket	He continues to do it because it's profitable.  It's profitable because you're leaving value on the table.
+2016-08-27 14:33:54	ackpacket	Stop it, and so will he :-P
+2016-08-27 14:34:24	ackpacket	Does he do it from all positions?
+2016-08-27 14:35:04	Zuu	RustyShackleford, there's an easi solution, just go all-in too!
+2016-08-27 14:35:22	Zuu	makes the game shorter, and you get to go home! :P
+2016-08-27 14:35:53	RustyShackleford	ackpacket, couldn't tell you
+2016-08-27 14:37:15	<--	kohlborn (kohlborn@cpe-76-168-111-14.socal.res.rr.com) has left ##programming
+2016-08-27 14:46:13	<--	sabat (~sabat@c-73-164-233-14.hsd1.wa.comcast.net) has quit (Quit: leaving)
+2016-08-27 14:46:33	<--	jamie23 (~jamie23@cpc75378-sotn16-2-0-cust1077.15-1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2016-08-27 14:48:09	<--	duncannz (~duncannz@118-93-8-213.dsl.dyn.ihug.co.nz) has quit (Remote host closed the connection)
+2016-08-27 14:50:57	-->	_Rick (~textual@149.18.12.134) has joined ##programming
+2016-08-27 14:51:22	-->	`Eddie (~dedword@unaffiliated/eddie/x-2286721) has joined ##programming
+2016-08-27 14:51:49	-->	duggiefresh (~duggiefre@97-126-34-89.tukw.qwest.net) has joined ##programming
+2016-08-27 14:52:11	-->	ESKM0 (~ESKM0@a89-152-167-164.cpe.netcabo.pt) has joined ##programming
+2016-08-27 14:52:15	<--	steeze (~steeze@71-211-182-231.hlrn.qwest.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-08-27 14:52:59	-->	steeze (~steeze@71-211-182-231.hlrn.qwest.net) has joined ##programming
+2016-08-27 14:52:59	<--	steeze (~steeze@71-211-182-231.hlrn.qwest.net) has quit (Client Quit)
+2016-08-27 14:55:15	-->	ivegotasthma (~ivegotast@unaffiliated/ivegotasthma) has joined ##programming
+2016-08-27 14:56:11	<--	miliarch (~miliarch@unaffiliated/miliarch) has quit (Read error: Connection reset by peer)
+2016-08-27 14:56:30	<--	duggiefresh (~duggiefre@97-126-34-89.tukw.qwest.net) has quit (Ping timeout: 250 seconds)
+2016-08-27 14:57:56	-->	Alucards (~Thunderbi@APoitiers-651-1-4-115.w86-201.abo.wanadoo.fr) has joined ##programming
+2016-08-27 14:58:50	<--	ogradyd (~Thunderbi@HSI-KBW-109-193-043-181.hsi7.kabel-badenwuerttemberg.de) has quit (Quit: ogradyd)
+2016-08-27 15:00:10	<--	ibouvousaime (~ibouvousa@41.83.28.153) has quit (Ping timeout: 265 seconds)
+2016-08-27 15:03:52	dennisvennink	What is a finite-state machine without accepting states called?
+2016-08-27 15:04:59	-->	ibouvousaime (~ibouvousa@41.83.3.25) has joined ##programming
+2016-08-27 15:05:18	<--	zerodroool (~zerodrooo@host-2-101-201-137.as13285.net) has quit (Ping timeout: 244 seconds)
+2016-08-27 15:05:24	<--	weQgeschickt (~weQgeschi@unaffiliated/weqgeschickt) has quit
+2016-08-27 15:06:54	dennisvennink	A semiautomaton, never mind.
+2016-08-27 15:07:44	-->	RuralHack (~naturehac@unaffiliated/ruralhack) has joined ##programming
+2016-08-27 15:08:28	RuralHack	English is Human Software
+2016-08-27 15:08:41	RuralHack	can you go there?
+2016-08-27 15:09:32	-->	adamg (~akg@38.102.153.98) has joined ##programming
+2016-08-27 15:09:38	-->	Suigetsu (~akash@116.202.105.12) has joined ##programming
+2016-08-27 15:09:46	-->	zerodroool (~zerodrooo@host-2-101-201-137.as13285.net) has joined ##programming
+2016-08-27 15:10:55	<--	IntoxicatedHippo (~Intoxicat@106-69-228-217.dyn.iinet.net.au) has quit (Quit: ZNC 1.6.3 - http://znc.in)
+2016-08-27 15:11:45	-->	IntoxicatedHippo (~Intoxicat@106-69-228-217.dyn.iinet.net.au) has joined ##programming
+2016-08-27 15:13:22	-->	AnonRecluse13 (~AnonReclu@91.210.190.121) has joined ##programming
+2016-08-27 15:14:12	<--	breitenj (~breitenj@rho.voidptr.de) has quit (Ping timeout: 250 seconds)
+2016-08-27 15:15:31	-->	breitenj (~breitenj@2001:1608:19:e3::17) has joined ##programming
+2016-08-27 15:17:27	starship_trooper	 /part
+2016-08-27 15:17:33	<--	starship_trooper (~manan@122.177.66.42) has left ##programming ("WeeChat 1.5")
+2016-08-27 19:01:15	-->	starship_trooper (~manan@122.177.66.42) has joined ##programming
+2016-08-27 19:01:15	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-08-27 19:01:15	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-08-27 19:01:15	--	Channel ##programming: 688 nicks (1 op, 0 voices, 687 normals)
+2016-08-27 19:01:17	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-08-27 19:01:39	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:01:51	ph88	IamTrying, but in C you spend more time tracking down bugs and fixing them
+2016-08-27 19:01:56	IamTrying	MisterSyntax: Right. its now time for VR tech, those who are making them educated on VR will stay in job, else it will be challenging for them to keep there job. i can see Facebook and Google, Microsoft is pushing this VR far. So that PC programmers can take a break and mobile programmers get jobs.
+2016-08-27 19:02:04	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:02:22	ph88	IamTrying, http://www.monkeysnatchbanana.com/2016/02/22/learning-from-ada/
+2016-08-27 19:02:32	IamTrying	Super gord, on which article you have found it? So Javascript is leaving our planet which is great.
+2016-08-27 19:02:34	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:02:56	IamTrying	ph88: C is always fun even it takes months to compile 10 line.
+2016-08-27 19:03:43	rindolf	IamTrying: it never took me over an hour to compile 10 lines of C Code.
+2016-08-27 19:03:48	-->	shovel_boss (~shovel_bo@unaffiliated/shovel-boss/x-4881665) has joined ##programming
+2016-08-27 19:03:51	-->	breitenj (~breitenj@rho.voidptr.de) has joined ##programming
+2016-08-27 19:03:54	-->	LoneHermit (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:04:06	XOCK_STREAM	hi
+2016-08-27 19:04:24	<--	LoneHermit (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:04:28	XOCK_STREAM	can anyone lead me to place to learn how to remove lines after dash?
+2016-08-27 19:04:47	XOCK_STREAM	oh fuck
+2016-08-27 19:04:49	-->	LoneHermit (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:05:19	<--	LoneHermit (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:05:38	moongazer	IamTrying: http://pypl.github.io/PYPL.html According to this, JS is increasing
+2016-08-27 19:05:44	-->	LoneHermit (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:05:59	-->	ayush1 (~ayush@unaffiliated/ayush1) has joined ##programming
+2016-08-27 19:06:07	ph88	IamTrying, it's not fun to me, i have a segfault and i don't know how to debug it with gdb
+2016-08-27 19:06:14	<--	LoneHermit (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:06:40	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:07:10	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:07:30	CuriousErnestBro	what's a good pdf hosting site?
+2016-08-27 19:07:35	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:07:40	rindolf	CuriousErnestBro: dropbox?
+2016-08-27 19:07:47	rindolf	CuriousErnestBro: github pages?
+2016-08-27 19:07:59	rindolf	XOCK_STREAM: using which language?
+2016-08-27 19:08:02	CuriousErnestBro	isn't gh-pages for websites?
+2016-08-27 19:08:03	XOCK_STREAM	nevermind
+2016-08-27 19:08:05	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:08:06	XOCK_STREAM	i think im solving it
+2016-08-27 19:08:11	CuriousErnestBro	I'll use dropbox
+2016-08-27 19:08:12	rindolf	CuriousErnestBro: it is.
+2016-08-27 19:08:28	 *	CuriousErnestBro has his site already hosted there
+2016-08-27 19:08:28	XOCK_STREAM	google drive
+2016-08-27 19:08:30	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:08:38	XOCK_STREAM	mega.nz
+2016-08-27 19:08:39	<--	WayToDoor (~milk.bott@modemcable123.216-178-173.mc.videotron.ca) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2016-08-27 19:09:00	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:09:16	<--	allegorical (~allegoric@2607:fea8:33e0:3ff:c017:b45b:a8b4:d232) has left ##programming ("Leaving")
+2016-08-27 19:09:24	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:09:33	<--	FaulMcCartney (billypeppe@c-24-2-173-227.hsd1.ct.comcast.net) has quit (Ping timeout: 250 seconds)
+2016-08-27 19:09:54	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:10:19	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:10:28	<--	cyan__ (~cyan@217.170.162.68) has quit (Remote host closed the connection)
+2016-08-27 19:10:32	<--	breitenj (~breitenj@rho.voidptr.de) has quit (Ping timeout: 240 seconds)
+2016-08-27 19:10:49	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:10:56	-->	SHC_ (~quassel@117.204.42.35) has joined ##programming
+2016-08-27 19:11:13	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:11:21	<--	ESKM0 (~ESKM0@a89-152-167-164.cpe.netcabo.pt) has quit (Ping timeout: 276 seconds)
+2016-08-27 19:11:23	-->	towbes (~darnDisco@unaffiliated/towbes) has joined ##programming
+2016-08-27 19:11:43	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:12:08	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:12:38	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:13:02	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:13:32	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:13:38	<--	symm- (~symm-@188.25.208.90) has quit (Ping timeout: 260 seconds)
+2016-08-27 19:13:58	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:14:28	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:14:33	<--	SHC (~quassel@117.204.42.35) has quit (Ping timeout: 240 seconds)
+2016-08-27 19:14:53	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:15:23	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:15:35	-->	breitenj (~breitenj@rho.voidptr.de) has joined ##programming
+2016-08-27 19:15:39	<--	therue (~therue@1-162-43-103.dynamic.hinet.net) has quit (Quit: therue)
+2016-08-27 19:15:48	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:16:18	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:16:43	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:17:13	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:17:38	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:18:06	-->	uicau (~uicau@LFbn-1-4844-83.w92-171.abo.wanadoo.fr) has joined ##programming
+2016-08-27 19:18:08	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:18:32	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:18:45	<--	vash (~vash@unaffiliated/vash) has quit (Read error: Connection reset by peer)
+2016-08-27 19:18:55	<--	uicau (~uicau@LFbn-1-4844-83.w92-171.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2016-08-27 19:19:02	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:19:28	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:19:51	-->	vash (~vash@unaffiliated/vash) has joined ##programming
+2016-08-27 19:20:01	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:20:17	<--	millerti (~millerti@cpe-66-24-91-119.stny.res.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-08-27 19:20:23	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:20:24	-->	Heim (~Heim@LFbn-1-4844-83.w92-171.abo.wanadoo.fr) has joined ##programming
+2016-08-27 19:20:27	ayush1	what is happenning
+2016-08-27 19:20:35	<--	Heim (~Heim@LFbn-1-4844-83.w92-171.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2016-08-27 19:20:37	ayush1	too many joins and quits
+2016-08-27 19:20:41	<--	breitenj (~breitenj@rho.voidptr.de) has quit (Ping timeout: 258 seconds)
+2016-08-27 19:20:53	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:20:58	GeDaMo	My client edits those out, maybe there's a netsplit happening?
+2016-08-27 19:21:18	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:21:31	pyon	GeDaMo: Doesn't seem to be the case.
+2016-08-27 19:21:48	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:21:52	pyon	More like a specific user (LoneHerm_, to be specific) is having connection issues.
+2016-08-27 19:21:56	GeDaMo	Ah
+2016-08-27 19:22:11	-->	LoneHermit (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:22:23	<--	RudyValencia (rudy@unaffiliated/rudyvalencia) has quit (Ping timeout: 276 seconds)
+2016-08-27 19:22:36	-->	SHC (~quassel@117.204.42.35) has joined ##programming
+2016-08-27 19:22:42	<--	LoneHermit (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:23:07	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:23:33	<--	kang00 (~androirc@128.185.130.148) has quit (Ping timeout: 240 seconds)
+2016-08-27 19:23:37	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:23:37	moongazer	pyon: Yes
+2016-08-27 19:24:03	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:24:33	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:24:58	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:25:09	-->	JustinHitla (~JustinHit@unaffiliated/justinhitla) has joined ##programming
+2016-08-27 19:25:16	-->	Suigetsu (~Suigetsu@116.202.25.153) has joined ##programming
+2016-08-27 19:25:28	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:25:39	JustinHitla	everyone can you imagine rindolf could've become Electrical Engineer ?
+2016-08-27 19:26:03	<--	SHC_ (~quassel@117.204.42.35) has quit (Ping timeout: 240 seconds)
+2016-08-27 19:26:27	<--	gord (~bobdigi@94.100.7.224) has quit (Ping timeout: 250 seconds)
+2016-08-27 19:26:31	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:27:01	XOCK_STREAM	How is that relate to here JustinHitla you are idiot
+2016-08-27 19:27:03	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:27:04	-->	breitenj (~breitenj@rho.voidptr.de) has joined ##programming
+2016-08-27 19:27:07	pyon	JustinHitla: Why not?
+2016-08-27 19:27:40	JustinHitla	pyon: who in their sane mind would use upper case for a name ?
+2016-08-27 19:27:41	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:28:06	CuriousErnestBro	okay I need to learn C++ with the purpose of acing a similar exam: https://www.dropbox.com/s/amafib5lhi1crtx/exam-2013-2014-corrected.pdf?dl=0
+2016-08-27 19:28:11	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:28:12	pyon	JustinHitla: A person's name?
+2016-08-27 19:28:23	CuriousErnestBro	how would I go about doing that?
+2016-08-27 19:28:35	JustinHitla	CuriousErnestBro: you read C++ books
+2016-08-27 19:28:36	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:28:43	pyon	JustinHitla: In any case, I don't see how any of this has anything to do with the ability to become an electrical engineer.
+2016-08-27 19:28:45	rindolf	CuriousErnestBro: it takes years to learn C++.
+2016-08-27 19:28:47	XOCK_STREAM	CuriousErnestBro, do you know any programing language?
+2016-08-27 19:28:57	CuriousErnestBro	I know basic C++
+2016-08-27 19:28:59	XOCK_STREAM	rindolf, it takes year to master c++! Not to learn
+2016-08-27 19:29:06	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:29:09	CuriousErnestBro	I know some python3 and a little R
+2016-08-27 19:29:21	JustinHitla	CuriousErnestBro: stick with python
+2016-08-27 19:29:22	XOCK_STREAM	ask your question and keep trying
+2016-08-27 19:29:28	<--	Atrumx (~Atrumx@unaffiliated/fivedeltasix) has quit (Ping timeout: 244 seconds)
+2016-08-27 19:29:29	rindolf	CuriousErnestBro: http://abstrusegoose.com/strips/ars_longa_vita_brevis.png
+2016-08-27 19:29:32	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:29:34	XOCK_STREAM	JustinHitla, he want to learn c++ you are an idiot!
+2016-08-27 19:29:37	rindolf	XOCK_STREAM: yes.
+2016-08-27 19:29:57	JustinHitla	XOCK_STREAM: are you a teenager ?
+2016-08-27 19:30:02	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:30:14	CuriousErnestBro	yeah I think I will get an F if I code in python on a C++ exam
+2016-08-27 19:30:16	XOCK_STREAM	JustinHitla, I don't want to talk with you.
+2016-08-27 19:30:24	JustinHitla	XOCK_STREAM: I think mom calling you, cookies are ready, go drink your milk
+2016-08-27 19:30:26	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:30:33	XOCK_STREAM	JustinHitla, please stop trolling.
+2016-08-27 19:30:33	rindolf	CuriousErnestBro: who is the exam for?
+2016-08-27 19:30:54	CuriousErnestBro	rindolf, for me? this is previous  years exam for the same course
+2016-08-27 19:30:56	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:31:00	-->	XOCKET (~me@bzq-79-177-82-230.red.bezeqint.net) has joined ##programming
+2016-08-27 19:31:07	rindolf	CuriousErnestBro: which course?
+2016-08-27 19:31:13	XOCKET	this is troll channel
+2016-08-27 19:31:17	XOCKET	it become second ##c sadly
+2016-08-27 19:31:18	rindolf	CuriousErnestBro: do they teach the stuff on the exam?
+2016-08-27 19:31:21	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:31:39	XOCKET	_W_, wake up
+2016-08-27 19:31:42	CuriousErnestBro	rindolf, it's called "programming", my major is econometrics&operations research
+2016-08-27 19:31:51	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:32:03	XOCKET	you should grab a book and start learning
+2016-08-27 19:32:06	rindolf	CuriousErnestBro: a course called "programming"?
+2016-08-27 19:32:08	Rounin	Hmmm CuriousErnestBro... If the exam isn't really in C++, it should be fine to know the basics
+2016-08-27 19:32:17	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:32:17	<--	breitenj (~breitenj@rho.voidptr.de) has quit (Ping timeout: 265 seconds)
+2016-08-27 19:32:19	Rounin	You can write Python in almost any language
+2016-08-27 19:32:22	<--	jan64 (~jan64@agaf76.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 265 seconds)
+2016-08-27 19:32:31	CuriousErnestBro	Rounin, here's the exam https://www.dropbox.com/s/amafib5lhi1crtx/exam-2013-2014-corrected.pdf?dl=0
+2016-08-27 19:32:36	rindolf	CuriousErnestBro: is it a university course?
+2016-08-27 19:32:39	CuriousErnestBro	yes
+2016-08-27 19:32:44	Rounin	Just use references for anything that isn't a value type, remember to new and delete everything, and practice C++ a bit
+2016-08-27 19:32:47	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:32:52	CuriousErnestBro	please check the link to see the exam
+2016-08-27 19:32:56	XOCKET	i gave up
+2016-08-27 19:33:05	XOCKET	JustinHitla, good luck with trolling
+2016-08-27 19:33:12	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:33:13	rindolf	CuriousErnestBro: then the university is expected to teach you all that.
+2016-08-27 19:33:16	-->	jan64 (~jan64@agaf76.neoplus.adsl.tpnet.pl) has joined ##programming
+2016-08-27 19:33:19	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2016-08-27 19:33:42	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:33:44	CuriousErnestBro	rindolf, yes, but I want to ace the class as I already know some C++, and as A's are good
+2016-08-27 19:34:04	rindolf	CuriousErnestBro: then start learning C++ better.
+2016-08-27 19:34:32	XOCKET	Look up at C++ primer 5th edition book
+2016-08-27 19:34:53	rindolf	CuriousErnestBro: maybe see https://github.com/shlomif/Freenode-programming-channel-FAQ/blob/master/FAQ.mdwn#i-feel-like-programming-something-but-i-dont-know-what-can-you-suggest-some-good-ideas-for-programs
+2016-08-27 19:34:54	JustinHitla	CuriousErnestBro: contribute code to some C++ open source project, like #minetest, they need programmers
+2016-08-27 19:34:55	CuriousErnestBro	XOCKET, I have the book as pdf, it's really hard even in chapter 1
+2016-08-27 19:35:09	XOCKET	Ask your question
+2016-08-27 19:35:11	<--	XOCK_STREAM (~me@bzq-79-177-82-230.red.bezeqint.net) has quit (Ping timeout: 265 seconds)
+2016-08-27 19:35:16	pyon	Reading the questions in his exam, I don't even think he needs to know C++ to answer these. :-|
+2016-08-27 19:35:37	JustinHitla	pyon: like "what new() command does" ?
+2016-08-27 19:35:49	XOCKET	O_o
+2016-08-27 19:35:59	icedev	XOCKET: to 'master'? do you mean compile by 'master'?
+2016-08-27 19:36:11	CuriousErnestBro	it's a 7 week course pyon
+2016-08-27 19:36:12	pyon	JustinHitla: “new” isn't a “command”, it's an “operator”, and it dynamically allocates memory and constructs an object on it.
+2016-08-27 19:36:13	--	Mode ##programming [+o _W_] by ChanServ
+2016-08-27 19:36:18	XOCKET	icedev, read again wht I've wrote.
+2016-08-27 19:36:22	--	Mode ##programming [+qo *!*@bzq-79-177-82-230.red.bezeqint.net _W_] by _W_
+2016-08-27 19:36:23	XOCKET	s/wht/what/
+2016-08-27 19:36:35	--	Mode ##programming [-o _W_] by _W_
+2016-08-27 19:36:40	icedev	yeah 'not to learn' but i dont know your definition of master
+2016-08-27 19:36:41	<--	XOCKET (~me@bzq-79-177-82-230.red.bezeqint.net) has left ##programming
+2016-08-27 19:36:52	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:37:22	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:37:48	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:37:49	JustinHitla	test
+2016-08-27 19:37:52	pyon	CuriousErnestBro: Anyway, if you want help with a specific question, tell us where exactly you got stuck.
+2016-08-27 19:37:55	icedev	well somewhere they wrote it takes at least 2 years hehe.
+2016-08-27 19:38:18	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:38:41	CuriousErnestBro	pyon, okay so the C++ primer book is good?
+2016-08-27 19:38:42	-->	LoneHerm_ (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:38:50	pyon	CuriousErnestBro: I have no idea. I haven't read it.
+2016-08-27 19:39:11	-->	breitenj (~breitenj@rho.voidptr.de) has joined ##programming
+2016-08-27 19:39:12	<--	LoneHerm_ (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:39:17	CuriousErnestBro	okay
+2016-08-27 19:39:19	<--	haell (~thecha@unaffiliated/thecha) has quit (Ping timeout: 260 seconds)
+2016-08-27 19:39:23	 *	CuriousErnestBro goes back to the book
+2016-08-27 19:39:25	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-08-27 19:39:37	-->	LoneHermit (~lonehermi@199.231.245.197) has joined ##programming
+2016-08-27 19:39:48	--	Mode ##programming [+o _W_] by ChanServ
+2016-08-27 19:39:52	--	Mode ##programming [+b-o *!*@199.231.245.197$##fix_your_connection _W_] by _W_
+2016-08-27 19:40:00	pyon	CuriousErnestBro: Thsee book recommendations are primarily aimed at people who actually need to learn C++, not people who want to get A's in these silly exams.
+2016-08-27 19:40:03	<--	reveredge (~reveredge@111.119.209.242) has quit (Ping timeout: 240 seconds)
+2016-08-27 19:40:07	<--	LoneHermit (~lonehermi@199.231.245.197) has quit (Remote host closed the connection)
+2016-08-27 19:40:12	-->	hey2 (~hey2@c-71-193-232-55.hsd1.or.comcast.net) has joined ##programming
+2016-08-27 19:40:21	icedev	after the years i did C++ i still don't know if theres some 'accurate/meaningful' 'measurement' on how good you are in C++
+2016-08-27 19:40:33	pyon	CuriousErnestBro: I'm going to be perfectly honest: There's basically no correlation between getting an A in this kind of exam, and actually knowing C++.
+2016-08-27 19:40:51	-->	reveredge (~reveredge@111.119.209.242) has joined ##programming
+2016-08-27 19:40:59	Rounin	icedev: Perhaps we could measure it as how little of it you manage to use :P
+2016-08-27 19:41:01	-->	mircx1 (~user@unaffiliated/mircx1) has joined ##programming
+2016-08-27 19:41:22	pyon	CuriousErnestBro: Now, if you actually want to learn C++, that's great, by all means do it. But it's going to take... ummm... a rather long while.
+2016-08-27 19:41:28	<--	reveredge (~reveredge@111.119.209.242) has quit (Remote host closed the connection)
+2016-08-27 19:41:38	<--	mircx1 (~user@unaffiliated/mircx1) has left ##programming
+2016-08-27 19:41:40	icedev	Rounin: i'm just saying: what is better? a guy who knows patterns or a guy who completes projects?
+2016-08-27 19:41:57	GeDaMo	http://www.cppgm.org/about.html "C++ Grandmaster Certification"
+2016-08-27 19:42:29	-->	jose11 (jose11@unaffiliated/jose11) has joined ##programming
+2016-08-27 19:42:30	-->	harha_ (harha_@y55.ip4.netikka.fi) has joined ##programming
+2016-08-27 19:42:34	--	irc: disconnected from server
+2016-08-30 23:19:07	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-08-30 23:19:07	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-08-30 23:19:07	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-08-30 23:19:07	--	Channel ##programming: 730 nicks (1 op, 0 voices, 729 normals)
+2016-08-30 23:19:09	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-08-30 23:20:03	<--	irco (~irco@HSI-KBW-134-3-111-4.hsi14.kabel-badenwuerttemberg.de) has quit (Ping timeout: 265 seconds)
+2016-08-30 23:20:08	<--	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has quit (Ping timeout: 244 seconds)
+2016-08-30 23:20:21	-->	wootehfoot (~wootehfoo@cust-95-80-56-77.csbnet.se) has joined ##programming
+2016-08-30 23:20:29	-->	Groscheri (~Dyonisos@unaffiliated/dyonisos) has joined ##programming
+2016-08-30 23:20:35	rindolf	ibouvousaime: hi, sup?
+2016-08-30 23:20:55	<--	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has quit (Ping timeout: 240 seconds)
+2016-08-30 23:21:10	moongazer	Somebody look at my question please
+2016-08-30 23:21:13	-->	Betal (~Betal@unaffiliated/betal) has joined ##programming
+2016-08-30 23:21:24	ibouvousaime	hi rindolf
+2016-08-30 23:21:34	ibouvousaime	I m doing some java coding today
+2016-08-30 23:21:36	ibouvousaime	and you ?
+2016-08-30 23:21:55	rindolf	ibouvousaime: are you language hopping?
+2016-08-30 23:22:05	-->	Kixxy (~Kixxy@unaffiliated/kixxy) has joined ##programming
+2016-08-30 23:22:10	ibouvousaime	lool I keep switching a lot lool
+2016-08-30 23:22:10	rindolf	ibouvousaime: I started a TypeScript yesterday.
+2016-08-30 23:22:20	<--	michauds (~michauds@199.91.185.156) has quit (Ping timeout: 260 seconds)
+2016-08-30 23:22:22	rindolf	ibouvousaime: I started a TypeScript *project* yesterday.
+2016-08-30 23:22:24	-->	asig (~asig3@51.70.219.87.dynamic.jazztel.es) has joined ##programming
+2016-08-30 23:22:37	ibouvousaime	ohh  cool :)
+2016-08-30 23:22:39	rindolf	ibouvousaime: for the fc-solve online solver.
+2016-08-30 23:22:39	-->	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has joined ##programming
+2016-08-30 23:22:49	<--	g00se_ (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 276 seconds)
+2016-08-30 23:22:50	-->	nanoz (~nanoz@117.221.121.12) has joined ##programming
+2016-08-30 23:22:50	<--	nanoz (~nanoz@117.221.121.12) has quit (Changing host)
+2016-08-30 23:22:50	-->	nanoz (~nanoz@unaffiliated/nanoz) has joined ##programming
+2016-08-30 23:22:51	ibouvousaime	rindolf: ohh what is that ? lol
+2016-08-30 23:23:11	rindolf	ibouvousaime: Freecell Solver.
+2016-08-30 23:23:57	ibouvousaime	ohh I see btw rindolf what advantages does it bring more to js actually?
+2016-08-30 23:24:01	-->	Krisostoomus (~Krisostoo@unaffiliated/kristjan85) has joined ##programming
+2016-08-30 23:24:03	ibouvousaime	I mean typescript
+2016-08-30 23:24:23	ibouvousaime	I mean advantages
+2016-08-30 23:24:24	rindolf	ibouvousaime: you can read about them in the wikipedia or on its site.
+2016-08-30 23:24:25	Krisostoomus	hi, i don't mean
+2016-08-30 23:24:36	Krisostoomus	rindolf, hi
+2016-08-30 23:24:40	rindolf	Krisostoomus: you don't mean what?
+2016-08-30 23:24:44	rindolf	Krisostoomus: hi.
+2016-08-30 23:24:48	-->	lowryder (~djlowry@12.160.193.58) has joined ##programming
+2016-08-30 23:24:49	Krisostoomus	the opposite....
+2016-08-30 23:25:01	rindolf	Krisostoomus: I don't understand.
+2016-08-30 23:25:06	-->	_Rick (~textual@149.18.12.134) has joined ##programming
+2016-08-30 23:25:06	ibouvousaime	rindolf: ohh sorry lemme see that
+2016-08-30 23:25:12	Krisostoomus	i am being rude
+2016-08-30 23:25:27	-->	llinguini (~llinguini@mobile-130-126-255-245.near.illinois.edu) has joined ##programming
+2016-08-30 23:25:33	rindolf	Krisostoomus: well, then please stop being rude.
+2016-08-30 23:25:54	Krisostoomus	okey, if you wish
+2016-08-30 23:26:00	-->	alex1a (~alex1a@bl19-111-218.dsl.telepac.pt) has joined ##programming
+2016-08-30 23:26:19	kadoban	Anyone else doing Software Foundations (coq)? I just started a few days ago, it's quite fun.
+2016-08-30 23:26:20	<--	cyborg-one (~cyborg-on@62.16.23.122) has quit (Ping timeout: 250 seconds)
+2016-08-30 23:26:29	manuel_	kadoban: i did a fair amount of it
+2016-08-30 23:26:38	manuel_	i forgot all about it i guess
+2016-08-30 23:26:49	manuel_	it's definitely good fun, it's like a video game
+2016-08-30 23:26:52	-->	g00se_ (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-08-30 23:26:56	kadoban	Hehe. Yeah I'm sure I won't remember a ton unless I actually use it, but it's so cool.
+2016-08-30 23:26:59	Krisostoomus	rindolf are you using KDE ?
+2016-08-30 23:27:00	-->	Xiti (~Xiti-@unaffiliated/xiti) has joined ##programming
+2016-08-30 23:27:03	rindolf	coq is like a video game?
+2016-08-30 23:27:14	rindolf	Krisostoomus: do you mean the Plasma 5 desktop?
+2016-08-30 23:27:15	manuel_	a bit yeah
+2016-08-30 23:27:24	kadoban	It kinda feels like one for some reason. Like a puzzle game.
+2016-08-30 23:27:32	<--	`Eddie (~dedword@unaffiliated/eddie/x-2286721) has quit (Quit: the mac is asleep)
+2016-08-30 23:27:52	Krisostoomus	rindolf.. just kde or grome ... i am installing also linux...opensuse to my new computer
+2016-08-30 23:27:55	-->	TheGreekOwl (~GreekOwl@2a02:587:4827:2b00:28ab:aacb:c294:98ca) has joined ##programming
+2016-08-30 23:28:00	<--	moongazer (75cb7848@gateway/web/freenode/ip.117.203.120.72) has quit (Ping timeout: 264 seconds)
+2016-08-30 23:28:14	rindolf	Krisostoomus: well, the KDE desktop is called Plasma now.
+2016-08-30 23:28:31	rindolf	Krisostoomus: and Plasma or GNOME Are not the only options.
+2016-08-30 23:28:50	rindolf	Krisostoomus: I personally dislike GNOME 3.
+2016-08-30 23:28:54	ibouvousaime	me too I dislike it
+2016-08-30 23:29:13	snyp	kadoban: did first 3 chapters
+2016-08-30 23:29:23	Krisostoomus	i have used fluxbox...in 2004
+2016-08-30 23:29:25	rindolf	Krisostoomus: I'm using Xfce now.
+2016-08-30 23:29:26	-->	doomlord (~textual@host81-147-72-23.range81-147.btcentralplus.com) has joined ##programming
+2016-08-30 23:29:39	Krisostoomus	because it's fast?
+2016-08-30 23:29:47	ibouvousaime	lxqt is pretty good if youd like something like kde but not fancy Krisostoomus
+2016-08-30 23:29:50	kadoban	snyp: I'm on the 3rd now
+2016-08-30 23:29:55	snyp	kadoban: ah. cool.
+2016-08-30 23:30:18	deniska	rindolf: you are forgetting about CDE which was recently opensourced
+2016-08-30 23:30:18	kadoban	I skipped one thing so far, but I've done the rest.
+2016-08-30 23:30:19	manuel_	i think i did up to small step operational semantics
+2016-08-30 23:30:37	nitrix	Myrl-saki: Can you make pyon appear?
+2016-08-30 23:30:41	rindolf	Krisostoomus: that too, but it's also very functional and bug-free.
+2016-08-30 23:30:43	snyp	kadoban: i see. i couldn't do the peano multiplication one. >.>
+2016-08-30 23:30:46	kadoban	Couldn't figure out how to normalize a binary number, but it was optional and "5 stars" anyway, so I'll come back to it.
+2016-08-30 23:30:48	ibouvousaime	lxqt + kwin would be even better :V
+2016-08-30 23:30:58	rindolf	deniska: open source or not - I hated CDE back in the day.
+2016-08-30 23:30:59	<--	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2016-08-30 23:31:01	-->	nwkj86 (~nwkj86@137.154.198.146.dyn.plus.net) has joined ##programming
+2016-08-30 23:31:03	<--	Ulydev (~Ulydev@AAubervilliers-551-1-138-61.w86-212.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2016-08-30 23:31:07	kadoban	snyp: It took me forever to prove multiplication commutitative xD
+2016-08-30 23:31:28	snyp	kadoban: haha. i see.
+2016-08-30 23:32:03	manuel_	if there's one thing i took away from it was that it is still totally impractical for practical applications
+2016-08-30 23:32:19	rindolf	deniska: where do you see that I attempted or intended to give a comprehensive list of desktop envs for Linux/etc.?
+2016-08-30 23:32:46	Myrl-saki	nitrix: im asl3ep rn
+2016-08-30 23:32:55	-->	Ulydev (~Ulydev@pha75-12-82-245-84-86.fbx.proxad.net) has joined ##programming
+2016-08-30 23:33:01	Myrl-saki	pyon: imouto. nitrix nii chan looking for you vut im asleep
+2016-08-30 23:33:13	rindolf	Myrl-saki: wow! IRCing while sleeping.
+2016-08-30 23:33:22	<--	killa (~snarsher@csrl-1.et.byu.edu) has quit (Quit: Leaving)
+2016-08-30 23:33:38	kadoban	manuel_: From what I understand, the stuff at least early on in the book is really just for learning. Pretty much all of this can be automated with different tools already in coq.
+2016-08-30 23:33:44	kadoban	But I dunno yet, I guess I'll see.
+2016-08-30 23:33:49	<--	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has quit (Ping timeout: 276 seconds)
+2016-08-30 23:33:53	kadoban	If I get that far xD
+2016-08-30 23:34:02	snyp	i kind of gave up doing sf. maybe i will pick it up again if i go to grad school. >.>
+2016-08-30 23:34:49	-->	tacod (~tacod@unaffiliated/tacod) has joined ##programming
+2016-08-30 23:35:02	manuel_	yeah it's definitely very "academia"
+2016-08-30 23:35:28	-->	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has joined ##programming
+2016-08-30 23:35:29	-->	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has joined ##programming
+2016-08-30 23:35:41	manuel_	http://symbolaris.com/info/KeYmaera.html
+2016-08-30 23:36:00	<--	vivid (~vivid@unaffiliated/vivid) has quit (Quit: Leaving)
+2016-08-30 23:36:05	Freaky_G-	..
+2016-08-30 23:36:09	manuel_	this was something that seems a bit more relevant to my day job, but i never got far enough to get it to do something useful on real world stuff
+2016-08-30 23:36:29	<--	doomlord (~textual@host81-147-72-23.range81-147.btcentralplus.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2016-08-30 23:36:55	rindolf	manuel_: I recall your nickname from long ago, but you seem to have stopped talking for a long while.
+2016-08-30 23:36:59	-->	gareppa (~gareppa@151.28.155.186) has joined ##programming
+2016-08-30 23:37:01	manuel_	indeed
+2016-08-30 23:37:09	manuel_	forgot about irc for a while
+2016-08-30 23:37:16	manuel_	not the worst thing :)
+2016-08-30 23:37:36	<--	insidious (~hex@104.194.206.10) has quit (Ping timeout: 240 seconds)
+2016-08-30 23:38:05	snyp	i watched leslie lamport's talk on TLA+. seems like there's quite an abundance of proof systems. didn't even know about proof assistants 2 years ago.
+2016-08-30 23:38:11	rindolf	manuel_: ah.
+2016-08-30 23:38:47	-->	Eternal-student (~stephenst@84.92.64.212) has joined ##programming
+2016-08-30 23:38:52	<--	gareppa (~gareppa@151.28.155.186) has quit (Remote host closed the connection)
+2016-08-30 23:38:53	-->	doomlord (~textual@host81-147-72-23.range81-147.btcentralplus.com) has joined ##programming
+2016-08-30 23:39:08	-->	michauds (~michauds@199.91.185.156) has joined ##programming
+2016-08-30 23:39:15	-->	Manikandan_ (~Manikanda@103.16.71.98) has joined ##programming
+2016-08-30 23:40:37	-->	swoc (~swoc@462a-6d68-8733-48f0-6301-87c8-07d0-2001.dyn.estpak.ee) has joined ##programming
+2016-08-30 23:41:44	-->	thevishy (~thevishy@122.167.187.104) has joined ##programming
+2016-08-30 23:43:06	<--	Manikandan (~Manikanda@103.16.71.98) has quit (Ping timeout: 258 seconds)
+2016-08-30 23:43:06	-->	Pap0ose (~pap00se@2a01:258:f000:6:216:3eff:fef2:7a42) has joined ##programming
+2016-08-30 23:44:13	<--	BadboyKAS (~pap00se@2a01:258:f000:6:216:3eff:fef2:7a42) has quit (Ping timeout: 255 seconds)
+2016-08-30 23:44:41	-->	17WAAI69O (~androirc@91.253.91.224) has joined ##programming
+2016-08-30 23:46:10	--	irc: disconnected from server
+2016-08-30 23:46:29	-->	manan (~manan@103.27.164.7) has joined ##programming
+2016-08-30 23:46:29	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-08-30 23:46:29	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-08-30 23:46:29	--	Channel ##programming: 741 nicks (1 op, 0 voices, 740 normals)
+2016-08-30 23:46:30	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-08-30 23:47:00	-->	vivid (~vivid@unaffiliated/vivid) has joined ##programming
+2016-08-30 23:47:11	<--	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2016-08-30 23:47:44	<--	miklcct (quasselcor@server.miklcct.csproject.org) has quit (Read error: Connection reset by peer)
+2016-08-30 23:48:21	-->	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has joined ##programming
+2016-08-30 23:48:30	<--	teapot41 (~teapot@unaffiliated/teapot41) has quit (Quit: Leaving.)
+2016-08-30 23:48:55	<--	Krisostoomus (~Krisostoo@unaffiliated/kristjan85) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2016-08-30 23:49:32	-->	Joanna345 (~Joanna345@ip174-67-230-16.oc.oc.cox.net) has joined ##programming
+2016-08-30 23:49:38	-->	Joanna2 (~Joanna345@ip174-67-230-16.oc.oc.cox.net) has joined ##programming
+2016-08-30 23:49:54	<--	starship_trooper (~manan@103.27.164.7) has quit (Ping timeout: 265 seconds)
+2016-08-30 23:50:02	-->	govg (~govg@unaffiliated/govg) has joined ##programming
+2016-08-30 23:50:19	-->	SheepDog (~Mutter@204.191.249.114) has joined ##programming
+2016-08-30 23:50:52	-->	miklcct (quasselcor@server.miklcct.csproject.org) has joined ##programming
+2016-08-30 23:51:29	<--	g00se_ (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2016-08-30 23:51:50	<--	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has quit (Ping timeout: 265 seconds)
+2016-08-30 23:52:58	G3nka1	what is the difference between Annotated data set and raw data set ?
+2016-08-30 23:53:07	manuel_	in what cntext?
+2016-08-30 23:53:12	<--	SheepDog (~Mutter@204.191.249.114) has quit (Client Quit)
+2016-08-30 23:53:36	<--	achlys (~achlys@dslb-088-078-208-019.088.078.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2016-08-30 23:53:48	G3nka1	in general
+2016-08-30 23:53:50	G3nka1	manuel_,
+2016-08-30 23:53:58	manuel_	it probably means a dataset that has been processed / additional features have been added or computed
+2016-08-30 23:53:59	-->	chachasmooth (~chachasmo@unaffiliated/chachasmooth) has joined ##programming
+2016-08-30 23:54:31	<--	ogradyd (~Thunderbi@HSI-KBW-109-193-043-181.hsi7.kabel-badenwuerttemberg.de) has quit (Quit: ogradyd)
+2016-08-30 23:54:47	<--	bocaneri (~bocaneri@about/linux/staff/sauvin) has quit (Remote host closed the connection)
+2016-08-30 23:54:48	G3nka1	may be an aggregate ?
+2016-08-30 23:55:10	manuel_	i guess, i don't think there is a "standard" meaning
+2016-08-30 23:55:12	hey2	Hey all; CompSci question. What is the most efficient way to calculate large primes in a computer program?
+2016-08-30 23:55:26	kadoban	hey2: You mean pick a random large prime?
+2016-08-30 23:55:31	-->	fugue (~toccata@192.189.201.97) has joined ##programming
+2016-08-30 23:55:59	<--	ibouvousaime (~ibouvousa@41.83.31.4) has quit (Read error: Connection reset by peer)
+2016-08-30 23:56:23	rindolf	hey2: do you want to find a certain prime in a range?
+2016-08-30 23:56:44	-->	nopcodex90 (~nopcodex9@50.243.39.33) has joined ##programming
+2016-08-30 23:56:53	-->	g00se_ (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-08-30 23:56:53	nopcodex90	where are my C# devs at?
+2016-08-30 23:57:00	rindolf	hey2: s/a certain/any/
+2016-08-30 23:57:00	nopcodex90	need clarification
+2016-08-30 23:57:02	nopcodex90	on TAP
+2016-08-30 23:57:11	<--	redab (~redab@109-124-138-30.customer.t3.se) has quit (Quit: Lost terminal)
+2016-08-30 23:57:21	-->	home (~home@unaffiliated/home) has joined ##programming
+2016-08-30 23:57:26	<--	Joanna345 (~Joanna345@ip174-67-230-16.oc.oc.cox.net) has quit (Ping timeout: 244 seconds)
+2016-08-30 23:57:28	rindolf	nopcodex90: /msg alis help
+2016-08-30 23:57:42	rindolf	nopcodex90: and you can try askign here.
+2016-08-30 23:57:52	rindolf	nopcodex90: or maybe use stackoverflow.com
+2016-08-30 23:57:56	nopcodex90	gotcha
+2016-08-30 23:57:57	<--	Joanna2 (~Joanna345@ip174-67-230-16.oc.oc.cox.net) has quit (Ping timeout: 244 seconds)
+2016-08-30 23:58:05	nopcodex90	When creating a Task based function
+2016-08-30 23:58:25	nopcodex90	do you still have to do Task.Run(()=> TaskFunctionYouCreated()); to get it to run off the UI?
+2016-08-30 23:58:42	nopcodex90	or does simply having it return a Task, will that offload it from the main thread?
+2016-08-30 23:58:58	<--	lastmanstanding (~arjoonn@111.92.48.78) has quit (Quit: leaving)
+2016-08-30 23:59:05	<--	17WAAI69O (~androirc@91.253.91.224) has quit (Ping timeout: 265 seconds)
+2016-08-30 23:59:16	<--	home (~home@unaffiliated/home) has quit (Remote host closed the connection)
+2016-08-30 23:59:41	-->	Alucards (~Thunderbi@APoitiers-652-1-498-181.w86-199.abo.wanadoo.fr) has joined ##programming
+2016-08-31 00:00:27	-->	karliss (~karliss@46.109.6.161) has joined ##programming
+2016-08-31 00:00:41	-->	vassagus (~vassagus@186.4.2.162) has joined ##programming
+2016-08-31 00:00:46	tmerr	hello
+2016-08-31 00:00:51	nopcodex90	olla
+2016-08-31 00:01:04	<--	fugue (~toccata@192.189.201.97) has quit (Ping timeout: 244 seconds)
+2016-08-31 00:04:00	<--	manan (~manan@103.27.164.7) has left ##programming ("WeeChat 1.5")
+2016-09-04 11:44:56	-->	starship_trooper (~manan@122.177.66.42) has joined ##programming
+2016-09-04 11:44:56	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-04 11:44:56	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-04 11:44:56	--	Channel ##programming: 675 nicks (0 ops, 5 voices, 670 normals)
+2016-09-04 11:44:58	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-04 11:45:03	-->	Guest55921 (~mio@125.212.220.154) has joined ##programming
+2016-09-04 11:45:09	-->	Azaan (~Ettore-Ma@rrcs-72-43-123-102.nyc.biz.rr.com) has joined ##programming
+2016-09-04 11:45:39	-->	ljc (~who@c122-106-91-210.randw3.nsw.optusnet.com.au) has joined ##programming
+2016-09-04 11:46:23	-->	aidenatt (~textual@CPE-1-123-7-88.sfl9.fli.bigpond.net.au) has joined ##programming
+2016-09-04 11:46:24	-->	youser (~youser@107-201-180-72.lightspeed.wepbfl.sbcglobal.net) has joined ##programming
+2016-09-04 11:46:40	<--	ioanm (~ioanm@unaffiliated/ioanm) has quit (Quit: ZNC 1.6.3+deb1 - http://znc.in)
+2016-09-04 11:46:49	adamg	protip: private sector sucks too
+2016-09-04 11:47:08	mrbr00ks	yeah I know
+2016-09-04 11:47:11	-->	ioanm (~ioanm@unaffiliated/ioanm) has joined ##programming
+2016-09-04 11:47:34	mrbr00ks	I've been a lot of places... I am doing DOD work primarily to learn a lot about geospatial and intelligence community practices
+2016-09-04 11:47:43	mrbr00ks	what I have found is complete chaos
+2016-09-04 11:47:45	-->	Tims_Tech (~Tims_Tech@unaffiliated/tims-tech/x-7957857) has joined ##programming
+2016-09-04 11:48:05	mrbr00ks	any one of the three letter agencies has many many departments that cannot agree and refuse to work together interally
+2016-09-04 11:48:18	mrbr00ks	this is true of the NRO, the NGA the CIA and the DEA
+2016-09-04 11:48:45	adamg	i was gonna ask what teiid was a tyop for but TIL it's just a terribly named thing
+2016-09-04 11:48:51	mrbr00ks	it is
+2016-09-04 11:48:53	mrbr00ks	horribly
+2016-09-04 11:49:12	mrbr00ks	I found high performance patient monitoring in healthcare more rewarding. I'll probably get back into it
+2016-09-04 11:49:26	<--	therue (~therue@1-162-47-146.dynamic.hinet.net) has quit (Quit: therue)
+2016-09-04 11:49:32	mrbr00ks	but right now I'm high up, I have an assistant and an intern and things are comfortable :)
+2016-09-04 11:49:52	adamg	were you there for the last "government shutdown"?
+2016-09-04 11:49:59	<--	mogita (~mogita@114.252.11.243) has quit (Ping timeout: 240 seconds)
+2016-09-04 11:50:00	mrbr00ks	no
+2016-09-04 11:50:14	adamg	might get less cushy when those happen :)
+2016-09-04 11:50:43	mrbr00ks	but I might get paid anyway, I do a lot of R&D that's not funded by contracts
+2016-09-04 11:51:08	adamg	eh, contracts are probably safer funding-wise. They're... contracts after all.
+2016-09-04 11:51:12	mrbr00ks	but I get interns and lose them and get a different one often
+2016-09-04 11:51:14	mrbr00ks	no
+2016-09-04 11:51:21	mrbr00ks	they are pretty volatile
+2016-09-04 11:51:23	adamg	(I was public-sector when NC ran out of money, 2007 or 8 or something. Got furlough, extra days off. Fine for me, no depdendents)
+2016-09-04 11:51:41	mrbr00ks	there are different kinds - some of the them are every 3 months. You can get cut off anytime
+2016-09-04 11:52:02	mrbr00ks	and every year at the most, the govt puts the contracts up for rebid
+2016-09-04 11:52:12	adamg	ah, yeah, contracts are safe for the duration of the contract i guess.
+2016-09-04 11:52:31	<--	variable (~root@freebsd/developer/variable) has quit (Quit: /dev/null is full)
+2016-09-04 11:52:38	mrbr00ks	yeah, luckily i'm a salaried employee and responsible for overall direction, not tied to any one contract
+2016-09-04 11:52:40	<--	sssilver (~sssilver@mantimesip37.m.subnet.rcn.com) has quit (Read error: No route to host)
+2016-09-04 11:52:48	mrbr00ks	i do proposal work, architecture, get things going and move on
+2016-09-04 11:52:53	<--	alyptik (~alyptik@2605:e000:1117:c19a:32c1:ed55:123d:a996) has quit (Quit: WeeChat 1.5)
+2016-09-04 11:53:01	-->	constant (~root@freebsd/developer/variable) has joined ##programming
+2016-09-04 11:53:14	<--	djberko (~Dell@c-98-224-226-45.hsd1.mi.comcast.net) has quit (Ping timeout: 250 seconds)
+2016-09-04 11:53:16	-->	sssilver (~sssilver@mantimesip37.m.subnet.rcn.com) has joined ##programming
+2016-09-04 11:53:19	mrbr00ks	i'm pretty good at it, even if i do get math problems wrong :D
+2016-09-04 11:53:19	<--	constant (~root@freebsd/developer/variable) has quit (Client Quit)
+2016-09-04 11:53:56	-->	constant (~root@freebsd/developer/variable) has joined ##programming
+2016-09-04 11:54:07	<--	constant (~root@freebsd/developer/variable) has quit (Client Quit)
+2016-09-04 11:54:11	adamg	aaah, software architecture. it'll be nice to work on something with one of those again someday.
+2016-09-04 11:54:22	PlanckWalk	Heh
+2016-09-04 11:54:33	-->	constant (~root@freebsd/developer/variable) has joined ##programming
+2016-09-04 11:54:55	<--	constant (~root@freebsd/developer/variable) has quit (Client Quit)
+2016-09-04 11:55:01	mrbr00ks	in my defense, I am not one of those guys that writes some pie in the sky documents and flies off
+2016-09-04 11:55:17	mrbr00ks	I get down and dirty and build proof of concepts and really have fun in the code and frameworks
+2016-09-04 11:55:19	--	irc: disconnected from server
+2016-09-05 13:53:35	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-05 13:53:35	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-05 13:53:35	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-05 13:53:35	--	Channel ##programming: 686 nicks (1 op, 5 voices, 680 normals)
+2016-09-05 13:53:38	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-05 13:53:56	RNA	liste, the problem is I get the URL as  "echo $row['link'];" and I don't know how to put that into a variable to put it in the embed-url
+2016-09-05 13:54:26	liste	<?= $row['link'] ?>
+2016-09-05 13:54:26	<--	AndChat-366225 (~grzesiek@apn-31-0-38-208.dynamic.gprs.plus.pl) has quit (Read error: Connection reset by peer)
+2016-09-05 13:54:46	-->	sh4z (lml@unaffiliated/sh4z) has joined ##programming
+2016-09-05 13:54:49	RNA	liste, ah, lol. let me try it
+2016-09-05 13:54:51	-->	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has joined ##programming
+2016-09-05 13:54:52	liste	or $url = $row['link'] and then <?= $url ?>
+2016-09-05 13:55:01	rindolf	RNA: please escape it to avoid cross-site-scripting
+2016-09-05 13:55:05	-->	netheranthem (~netherant@178-82-129-87.dynamic.hispeed.ch) has joined ##programming
+2016-09-05 13:55:30	RNA	rindolf, I'm noob. what do you mean with escaping it?
+2016-09-05 13:55:30	-->	Bernzel (~Benzel@c83-255-193-182.bredband.comhem.se) has joined ##programming
+2016-09-05 13:56:17	rindolf	RNA: see https://duckduckgo.com/?q=php+xss&ia=web
+2016-09-05 13:56:18	<--	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has quit (Max SendQ exceeded)
+2016-09-05 13:56:40	--	irc: disconnected from server
+2016-09-05 16:11:34	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-05 16:11:34	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-05 16:11:34	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-05 16:11:34	--	Channel ##programming: 692 nicks (1 op, 5 voices, 686 normals)
+2016-09-05 16:11:35	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-05 16:11:51	<--	Cmaj6 (~Cmaj6@541B255C.cm-5-4a.dynamic.ziggo.nl) has quit (Quit: Leaving)
+2016-09-05 16:13:10	<--	Ikoru (~Ikoru@host86-147-4-174.range86-147.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2016-09-05 16:13:34	-->	Ikoru (~Ikoru@host86-147-4-174.range86-147.btcentralplus.com) has joined ##programming
+2016-09-05 16:15:29	-->	tacod (~tacod@unaffiliated/tacod) has joined ##programming
+2016-09-05 16:15:29	adsc	should just be "java -jar /path/to/bla.jar"
+2016-09-05 16:15:47	<--	anonymuse (~anonymuse@213.86.221.35) has quit (Remote host closed the connection)
+2016-09-05 16:16:19	adsc	could even make an alias for that I guess
+2016-09-05 16:16:20	-->	anonymuse (~anonymuse@213.86.221.35) has joined ##programming
+2016-09-05 16:16:29	adsc	although I'd go with the bash script, too
+2016-09-05 16:16:37	starship_trooper	should i start learning algorithms or data structures first
+2016-09-05 16:16:38	starship_trooper	?
+2016-09-05 16:16:49	adsc	they are usually quite interdependent
+2016-09-05 16:17:06	<--	PCLine__ (~PCLine_@98.29.181.95) has quit (Ping timeout: 244 seconds)
+2016-09-05 16:17:10	adsc	which is why most universities have a course called "algorithms and data structures"
+2016-09-05 16:17:38	starship_trooper	adsc: so which one should i start with? I have 2 books. One is about algos and the oher is about data structurs
+2016-09-05 16:17:39	-->	plusone (~plusone@176.24.13.133) has joined ##programming
+2016-09-05 16:17:48	Henke37	flip a coin
+2016-09-05 16:17:57	<--	php (~php@unaffiliated/php) has quit (Disconnected by services)
+2016-09-05 16:17:58	adsc	i'd learn data structures first, probably
+2016-09-05 16:18:20	-->	php_ (~php@149.202.250.22) has joined ##programming
+2016-09-05 16:18:28	starship_trooper	adsc: Can i start with algos first. They look more interesting
+2016-09-05 16:18:31	theShirbiny	#!/bin/bash not !#/bin/bash
+2016-09-05 16:19:03	adsc	absolutely not, if you start with algos first, you'll awaken c'odetulhu
+2016-09-05 16:19:04	<--	duncannz (~duncannz@118-93-8-213.dsl.dyn.ihug.co.nz) has quit (Ping timeout: 260 seconds)
+2016-09-05 16:19:37	bango	data structures starship +1
+2016-09-05 16:20:08	liste	starship_trooper: what books? they're probably both a bit about both (:
+2016-09-05 16:20:19	adsc	just start with algos first and if they talk about data structures you don't know yet, look them up in the other book
+2016-09-05 16:20:26	bango	yes shir, i say it crunchbang but sometimes twiddle the 2 fingers differently typing it :)
+2016-09-05 16:20:31	-->	ig0rbit (~Kaptajn@87-58-220-109-dynamic.dk.customer.tdc.net) has joined ##programming
+2016-09-05 16:21:21	bango	coasty heres a nice little template http://pastebin.com/MQcusR8C
+2016-09-05 16:21:26	bango	coasty2 rather
+2016-09-05 16:21:50	adsc	bango: crunchbang? that is clearly a Gartenzaunausrufezeichen
+2016-09-05 16:22:04	coasty2	bango: I figured it out
+2016-09-05 16:22:23	bango	haha no, just from the crunchbang distro, #!
+2016-09-05 16:22:27	<--	OERIAS (~OERIAS@47.137.238.95) has quit (Ping timeout: 244 seconds)
+2016-09-05 16:22:32	starship_trooper	adsc: ok. Thanks
+2016-09-05 16:22:35	bango	that and sudo bang bang (sudo !!)
+2016-09-05 16:23:04	<--	starship_trooper (~manan@103.27.164.7) has left ##programming ("WeeChat 1.5")
+2016-09-07 13:39:38	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-07 13:39:38	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-07 13:39:38	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-07 13:39:38	--	Channel ##programming: 665 nicks (1 op, 4 voices, 660 normals)
+2016-09-07 13:39:40	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-07 13:39:45	starship_trooper	anyone uses arch here?
+2016-09-07 13:39:54	Brando753	garitgarit4: actually the company would not answer any of my tickets
+2016-09-07 13:39:58	Brando753	I lost access to the server
+2016-09-07 13:40:04	Brando753	could not ssh in, asked for help no reply
+2016-09-07 13:40:08	PlanckWalk	vqrs: You can do that, but it will fetch a whole cache line from RAM
+2016-09-07 13:40:08	garitgarit4	vqrs: but you can not accept or send from cpu less than word size (32,64 bit)
+2016-09-07 13:40:13	Brando753	after a while I canceled the subscription went to another company
+2016-09-07 13:40:19	Brando753	and it IS STILL RUNNING
+2016-09-07 13:40:20	Brando753	unreal
+2016-09-07 13:40:22	<--	sssilver (~sssilver@cpe-70-112-245-224.austin.res.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-09-07 13:40:23	Brando753	:P
+2016-09-07 13:40:34	PlanckWalk	Then just take 1 byte of that to put in ah
+2016-09-07 13:40:34	vqrs	PlanckWalk, isn't that an implementation detail?
+2016-09-07 13:40:35	garitgarit4	vqrs: also even mov works with a word size,isnt it?
+2016-09-07 13:40:54	PlanckWalk	Sure!  I thought we were talking about implementations though.
+2016-09-07 13:41:11	vqrs	garitgarit4, how do you mean?
+2016-09-07 13:41:20	garitgarit4	so that mov will move 32 bits from one place to another
+2016-09-07 13:41:40	vqrs	you're saying the rest is just discarded?
+2016-09-07 13:41:48	garitgarit4	even cpu commands are word-oriented
+2016-09-07 13:42:02	PlanckWalk	Word oriented?  Not really.
+2016-09-07 13:42:05	garitgarit4	no, i mean whole word is processed
+2016-09-07 13:42:26	garitgarit4	PlanckWalk: does the mov assembler command moves 8 orn 32 bits?
+2016-09-07 13:42:27	-->	lsk (~lsk@enucs/member/lsk) has joined ##programming
+2016-09-07 13:42:33	tmerr	on x86?
+2016-09-07 13:42:42	garitgarit4	yes
+2016-09-07 13:42:44	PlanckWalk	garitgarit4: There are a great many mov commands
+2016-09-07 13:42:47	-->	Eibx (~Eibx@81.7.146.236) has joined ##programming
+2016-09-07 13:42:49	vqrs	garitgarit4, I thought it depended on the argument's size
+2016-09-07 13:43:02	tmerr	mov can use different sizes
+2016-09-07 13:43:30	-->	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has joined ##programming
+2016-09-07 13:43:38	-->	DarkCthulhu (DarkCthulh@nat/google/x-nivrvsbrdlakzjhg) has joined ##programming
+2016-09-07 13:43:42	starship_trooper	anyone uses arch here?
+2016-09-07 13:44:03	tmerr	i think if it's ambiguous from the registers you pass in, you need to explicitly say movq to specify 64-bits, or mov.. uh.. i forget the other suffixes
+2016-09-07 13:44:05	<--	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has quit (Max SendQ exceeded)
+2016-09-07 13:44:24	vqrs	tmerr, sure
+2016-09-07 13:44:27	Brando753	starship_trooper: eww, try debian
+2016-09-07 13:44:40	starship_trooper	Brando753: why?
+2016-09-07 13:44:41	-->	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has joined ##programming
+2016-09-07 13:44:47	garitgarit4	but most registers are word size, not 8 bits
+2016-09-07 13:44:51	Brando753	starship_trooper: why not?
+2016-09-07 13:44:52	pulse	i don't use arch but i do use starch
+2016-09-07 13:45:13	starship_trooper	Brando753: I find pacman way more better than aptitude
+2016-09-07 13:45:14	tmerr	nice rhyme
+2016-09-07 13:45:16	<--	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has quit (Max SendQ exceeded)
+2016-09-07 13:45:18	-->	Krisostoomus (~Krisostoo@unaffiliated/kristjan85) has joined ##programming
+2016-09-07 13:45:39	tmerr	i use arch on my laptop sometimes, or i did until wifi broke and i was too lazy to fix it
+2016-09-07 13:45:55	-->	DrNo (~IRSSI@112.58.7.51.dyn.plus.net) has joined ##programming
+2016-09-07 13:45:56	pplumber	The equivalent would be to have many disorders which aren't mistakable in factors.
+2016-09-07 13:46:10	PlanckWalk	mov can move 8 to 256 bits, depending
+2016-09-07 13:46:16	Brando753	starship_trooper: its great up until everything borks
+2016-09-07 13:46:29	pulse	starship_trooper, #archlinux
+2016-09-07 13:46:46	<--	MolluskEmpire (~quassel@c-71-229-246-2.hsd1.co.comcast.net) has quit (Ping timeout: 276 seconds)
+2016-09-07 13:46:52	starship_trooper	pulse: oh sorry :p
+2016-09-07 13:46:57	<--	starship_trooper (~manan@103.27.164.7) has left ##programming ("WeeChat 1.5")
+2016-09-07 22:01:56	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-07 22:01:56	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-07 22:01:56	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-07 22:01:56	--	Channel ##programming: 704 nicks (1 op, 4 voices, 699 normals)
+2016-09-07 22:01:58	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-07 22:02:09	<--	newbie52 (~RedOrange@c-73-30-227-113.hsd1.pa.comcast.net) has quit (Read error: Connection reset by peer)
+2016-09-07 22:02:17	Xgc	adsc: So you never consider cost?
+2016-09-07 22:02:19	-->	newbie52 (~RedOrange@c-73-30-227-113.hsd1.pa.comcast.net) has joined ##programming
+2016-09-07 22:02:24	adsc	Xgc: very rarely
+2016-09-07 22:02:39	-->	sir_galahad_ad (~aaron@cpe-74-65-136-129.maine.res.rr.com) has joined ##programming
+2016-09-07 22:02:43	gaffa	Morality is not a factor in capitalistic dynamics, so there's nothing really to discuss. It's a game and those who are best at it win. We have taxes to make up for that.
+2016-09-07 22:02:53	-->	zwiep` (~zwiep@d54c03c0d.access.telenet.be) has joined ##programming
+2016-09-07 22:03:18	berndl	How do you win at capitalism?
+2016-09-07 22:03:21	<--	Rodya_ (~Rodya_@2601:46:4001:e0b4:4928:15e1:657c:dc76) has quit (Ping timeout: 250 seconds)
+2016-09-07 22:03:21	<--	mindands2 (~mindandsk@50.232.5.123) has quit (Ping timeout: 255 seconds)
+2016-09-07 22:03:34	TehWan	If you make a lot of money, you pay a lot of taxes. If you break even or lose money, you don't pay taxes.
+2016-09-07 22:03:38	gaffa	In the big picture the one corporation that win all the money, will also loose because they're useless if you're the only one having them.
+2016-09-07 22:03:50	<--	reveredge_ (~reveredge@111.119.209.212) has quit (Ping timeout: 244 seconds)
+2016-09-07 22:04:28	velco	you make a lot of money, may a deal with the government and pay no or little taxes
+2016-09-07 22:04:38	velco	s/may/make/
+2016-09-07 22:04:44	adsc	see, that's the question...should a business that merely breaks even exist at all? They are using infrastructure and generating friction for nothing
+2016-09-07 22:04:48	Xgc	adsc: That's fine.  So you're only part-time greedy.  The vast majority of people (and companies) have more concerns.
+2016-09-07 22:04:58	TehWan	All the money spent on salaries is not taxed to the company because it will be taxed to the workers. All the money spent on services is not taxed on the company because it causes another company to spend money on their workers to provide the services. All the money spend on goods is not taxed because... you get the picture.
+2016-09-07 22:05:17	<--	deadprez_ (~deadprez@modemcable122.216-70-69.static.videotron.ca) has quit (Remote host closed the connection)
+2016-09-07 22:05:45	adsc	Xgc: I would say I'm not greedy at all, I just only have a limited budget, which is why I sometimes have to go with a less costly option
+2016-09-07 22:05:47	TehWan	All the money left after expenses is taxed to the company because they make a profit and need to pay their fair share to the government.
+2016-09-07 22:06:26	velco	when I buy a computer, I pay VAT and have already paid income tax
+2016-09-07 22:06:32	gaffa	adsc; ..and you're human, you die for real if you don't have anything to eat. A company doesn't ;)
+2016-09-07 22:06:39	-->	midusks (~midusks@unaffiliated/midusks) has joined ##programming
+2016-09-07 22:06:46	velco	when a company buys a computer, its cost it deduced
+2016-09-07 22:06:57	velco	and it doesn't pay VAT
+2016-09-07 22:06:58	TehWan	So when a company like Apple (though I don't know the specifics of that particular company) does not pay taxes, it does not mean they didn't contribute to the economy.
+2016-09-07 22:06:58	Xgc	adsc: Well, that's not true.  Companies do die if they can't feed themselves properly.
+2016-09-07 22:07:17	adsc	Xgc: you highlighted the wrong person
+2016-09-07 22:07:31	gaffa	Xgc; that's just stupid a company was never alive.
+2016-09-07 22:07:37	Xgc	gaffa: and so do the people who then lose jobs.
+2016-09-07 22:07:39	gde33	in the future we will have robot owned companies
+2016-09-07 22:07:41	-->	OnBrokenWings (~OnBrokenW@46.39.50.180) has joined ##programming
+2016-09-07 22:07:51	adsc	that will be fun
+2016-09-07 22:07:52	Xgc	gaffa: Die in the sense that they no longer exist.
+2016-09-07 22:07:59	TehWan	velco, it does usually pay VAT, but it gets it back because it counts as part of the expenses
+2016-09-07 22:08:03	adsc	i'm already honing my shadow run skills :)
+2016-09-07 22:08:08	gde33	bitcoin bilionaire bots
+2016-09-07 22:08:15	pyon	TehWan: there's still something fundamentally wrong about normal people paying, say, 15-20% of their income in taxes, when apple pays less than 1% of its income
+2016-09-07 22:08:21	gaffa	Xgc; and will the company feel sadness and alone when it die?
+2016-09-07 22:08:30	adsc	less than 1%?
+2016-09-07 22:08:30	pyon	TehWan: or was it less than 2%? still, same difference
+2016-09-07 22:08:39	Xgc	gaffa: The people who lost their jobs will.
+2016-09-07 22:08:39	adsc	it was 0.015%
+2016-09-07 22:08:54	pyon	adsc: whoa, that's just... ridiculous
+2016-09-07 22:08:59	adsc	yeah, it is
+2016-09-07 22:09:02	TehWan	pyon: not income, profit... the rest of the money has been expensed on salaries, acquisitions, services, infrastructure, etc.
+2016-09-07 22:09:11	pyon	TehWan: oh, right, profit
+2016-09-07 22:09:39	-->	pappu (~pappu___@unaffiliated/pappu) has joined ##programming
+2016-09-07 22:09:54	pyon	TehWan: that too, why are most expenses tax-deducible for companies but not for normal people?
+2016-09-07 22:10:00	<--	zacts (~zacts@dragora/developer/zacts) has quit (Quit: WeeChat 1.4)
+2016-09-07 22:10:05	gde33	because they can
+2016-09-07 22:10:13	pyon	deductible*
+2016-09-07 22:10:29	-->	Walkerdine (~Walkerdin@198.111.39.224) has joined ##programming
+2016-09-07 22:10:32	velco	TehWan: I know, I just short circuited VAT credit
+2016-09-07 22:10:34	-->	playerone (~need4spd@c-50-156-58-0.hsd1.ca.comcast.net) has joined ##programming
+2016-09-07 22:10:50	playerone	Why is it when you can convert a concept into a question, you're more likely to remember it?
+2016-09-07 22:10:55	TehWan	pyon: because they drive the economy -- salaries paid will have income tax perceived on it, services paid will drive another business to have workers which will have income tax perceived, same things for goods
+2016-09-07 22:11:12	--	elusiveother is now known as ghostdavic
+2016-09-07 22:11:25	TehWan	the only money left untouched by taxes is profit
+2016-09-07 22:11:28	pyon	TehWan: normal people drive the economy, without normal people, there would be no companies
+2016-09-07 22:11:34	<--	jesuslovesyouthi (~shine@2601:602:c205:ac40:3851:6151:6463:7351) has quit (Quit: Konversation terminated!)
+2016-09-07 22:11:35	--	ghostdavic is now known as elusiveother
+2016-09-07 22:11:43	gde33	the little people dont drive the economy? That explains it, I always had this idea it wasn't about people.
+2016-09-07 22:11:43	TehWan	pyon, true, but the money paying the normal people comes from the companies
+2016-09-07 22:11:47	gaffa	Xgc; So if I'm to bend my mind and say wow you're right, then what did you prove?
+2016-09-07 22:11:52	Xgc	It's not an easy problem with easy solutions.
+2016-09-07 22:11:53	adsc	yet the normal people usually don't profit much from those companies they run
+2016-09-07 22:12:02	pyon	TehWan: wait, really? companies create money out of nothing?
+2016-09-07 22:12:13	TehWan	pyon, the government does!
+2016-09-07 22:12:15	adsc	no, banks do that
+2016-09-07 22:12:18	pyon	TehWan: i always thought it was central banks that issued money
+2016-09-07 22:12:22	TehWan	I stand corrected
+2016-09-07 22:12:36	gde33	pyon: ur being had
+2016-09-07 22:13:22	-->	lightheaded (~lighthead@d82e-8edd-9009-78e1-9780-87d9-07d0-2001.dyn.estpak.ee) has joined ##programming
+2016-09-07 22:13:26	cyan__	it's good that food grows every year, not just once.
+2016-09-07 22:13:53	-->	RabidRabbit (~HypnoticM@179.155.74.176) has joined ##programming
+2016-09-07 22:13:54	adsc	and also decays
+2016-09-07 22:14:07	gaffa	Xgc; I don't know what the problem is?
+2016-09-07 22:14:11	-->	renlo (~renlo@142-254-34-162.dsl.dynamic.sonic.net) has joined ##programming
+2016-09-07 22:14:29	TehWan	Except Twinkies -- they can last for decades
+2016-09-07 22:15:42	-->	twizsted (~twizsted@15.06.01a8.ip4.static.sl-reverse.com) has joined ##programming
+2016-09-07 22:15:42	<--	bytefire (~ultimate_@unaffiliated/bytefire) has quit (Quit: leaving)
+2016-09-07 22:15:42	adsc	what the problem is, gaffa? the problem is that the wealth gap is every increasing
+2016-09-07 22:15:53	adsc	in fact, the wealth gap is now worse than it was during the time we had kings
+2016-09-07 22:24:31	--	irc: disconnected from server
+2016-09-07 22:24:49	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-07 22:24:49	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-07 22:24:49	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-07 22:24:50	--	Channel ##programming: 706 nicks (2 ops, 4 voices, 700 normals)
+2016-09-07 22:24:50	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-07 22:24:53	<--	tdy (~tdy@unaffiliated/tdy) has quit (Quit: tdy)
+2016-09-07 22:25:01	gaffa	pyon; My girlfriend's Wifi :). Just because I'm a bum, I still have a life! :D
+2016-09-07 22:25:02	pyon	TehWan: was it a comfortable life style, though?
+2016-09-07 22:25:09	pyon	gaffa: lol
+2016-09-07 22:25:16	gde33	I was thinking, do a software to efficently plan backjard fruit and vegitable gardens for people. Have a gardener who also keeps an eye on stuff for you, remotely if nesasary.
+2016-09-07 22:25:32	--	Mode ##programming [+q $a:gaffa] by _W_
+2016-09-07 22:25:35	Rounin	Hmm... Yeah, I look at the property prices in other cities sometimes... Then I wonder what I'm doing here
+2016-09-07 22:25:37	TehWan	pyon: yes very
+2016-09-07 22:25:39	--	Mode ##programming [+q $a:suckmy] by _W_
+2016-09-07 22:25:42	Rounin	I mean, I could almost retire now, at 33
+2016-09-07 22:25:52	--	irc: disconnected from server
+2016-09-12 17:30:33	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-12 17:30:33	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-12 17:30:33	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-12 17:30:34	--	Channel ##programming: 701 nicks (1 op, 5 voices, 695 normals)
+2016-09-12 17:30:34	-->	tectonic (~tectonic@cpe-74-72-210-61.nyc.res.rr.com) has joined ##programming
+2016-09-12 17:30:35	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-12 17:31:03	ioanm	exio4, sometimes best UI is a CLI!
+2016-09-12 17:31:16	fmbb	exio4, So what does this software do?
+2016-09-12 17:31:20	+exio4	ioanm: this is not for me :P
+2016-09-12 17:32:21	starship_trooper	hey guys I made a program in C to calculate someone's age. Is the logic correct -> http://pastebin.com/1SgnRwrH
+2016-09-12 17:33:39	ioanm	starship_trooper, yes, but there is only 1 problem
+2016-09-12 17:33:56	starship_trooper	ioanm: what problem?
+2016-09-12 17:34:00	ioanm	what if you want to calculate the age of a person that died in the 16th century?
+2016-09-12 17:34:02	fmbb	starship_trooper, So a technique you should learn is testing. Feed in a list of inputs to the program and have it automatically check the outputs against a pre-constructed list you made yourself.
+2016-09-12 17:34:11	+exio4	fmbb: music database, has manual and automatic modes, automatic picks songs at random from certain genre, and manual, well, makes you do it. there is also a "external" mode which streams by itself from an url, and there are ads, which will be aztomatocally added to a playlist
+2016-09-12 17:34:48	fmbb	exio4, For FM radio?
+2016-09-12 17:34:57	+exio4	yes
+2016-09-12 17:35:07	<--	Sly (~Sly@unaffiliated/sly) has quit (Read error: Connection reset by peer)
+2016-09-12 17:35:12	-->	piou (~piou@unaffiliated/piou) has joined ##programming
+2016-09-12 17:35:25	starship_trooper	ioanm: any way to take input in dd/mm/yyyy format and do the same?
+2016-09-12 17:35:28	fmbb	fmbb, Is it for a radio station, to choose what to broadcast?
+2016-09-12 17:35:29	+exio4	i am saying about 20% of the program though
+2016-09-12 17:35:30	-->	Sly (~Sly@unaffiliated/sly) has joined ##programming
+2016-09-12 17:35:33	-->	pluszak (~jakubka@Wikipedia/Plushy) has joined ##programming
+2016-09-12 17:35:46	+exio4	mic etc are handled with a mixer
+2016-09-12 17:35:53	+exio4	fmbb: yes
+2016-09-12 17:36:34	fmbb	exio4, I see. Basiclaly its radio spotify?
+2016-09-12 17:37:13	+exio4	kinda :P
+2016-09-12 17:37:23	-->	Anderson (~ande@unaffiliated/anderson) has joined ##programming
+2016-09-12 17:37:24	fmbb	starship_trooper, Look at the docs for 'strptime'
+2016-09-12 17:37:48	ioanm	starship_trooper, okay, let's forget anything before 1970
+2016-09-12 17:38:14	ioanm	now use scanf("%i/%i/%i", &day, &month, &year);
+2016-09-12 17:38:24	ioanm	to read the birthday
+2016-09-12 17:38:50	ioanm	and there are functions to get the current date
+2016-09-12 17:38:57	ioanm	and then it's subtracting time :)
+2016-09-12 17:39:10	<--	NateRiver (~IceChat9@softbank126093098229.bbtec.net) has quit (Quit: Some folks are wise, and some otherwise.)
+2016-09-12 17:39:32	starship_trooper	ioanm: gotcha
+2016-09-12 17:40:51	-->	kevinfagan (~kevinfaga@89.101.91.98) has joined ##programming
+2016-09-12 17:41:30	-->	Sappy_ (~Sappy@185.65.162.54) has joined ##programming
+2016-09-12 17:41:50	-->	raunico3 (~raunicola@5-15-152-141.residential.rdsnet.ro) has joined ##programming
+2016-09-12 17:42:40	<--	starship_trooper (~manan@103.27.164.7) has left ##programming ("WeeChat 1.5")
+2016-09-14 21:07:04	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-14 21:07:04	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-14 21:07:04	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-14 21:07:05	--	Channel ##programming: 650 nicks (1 op, 4 voices, 645 normals)
+2016-09-14 21:07:07	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-14 21:07:14	-->	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has joined ##programming
+2016-09-14 21:07:55	<--	liste` (58558929@gateway/web/freenode/ip.88.85.137.41) has quit (Quit: Page closed)
+2016-09-14 21:09:22	<--	Drobatch (~Drobatch@176.99.216.90) has quit (Remote host closed the connection)
+2016-09-14 21:09:27	-->	whallz (~whallz@unaffiliated/whallz) has joined ##programming
+2016-09-14 21:09:49	-->	xtrntr (~Thunderbi@ool-4a5af33d.dyn.optonline.net) has joined ##programming
+2016-09-14 21:11:03	-->	Drobatch (~Drobatch@176.99.216.90) has joined ##programming
+2016-09-14 21:11:36	Gnut	liste`: I think I understand. Does this still hold even if the dependency is only used in a minute fraction of the class
+2016-09-14 21:11:59	Gnut	for instance, this dependency is only being used in 1 method
+2016-09-14 21:12:15	<--	Ouchy`w (~Ouchy@142.0.92.2) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:12:16	<--	Guest647 (~mio@5a.42.caa1.ip4.static.sl-reverse.com) has quit (Quit: Konversation terminated!)
+2016-09-14 21:12:26	<--	Drobatch (~Drobatch@176.99.216.90) has quit (Remote host closed the connection)
+2016-09-14 21:12:49	-->	Drobatch (~Drobatch@176.99.216.90) has joined ##programming
+2016-09-14 21:13:59	<--	xtrntr (~Thunderbi@ool-4a5af33d.dyn.optonline.net) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:14:48	<--	mizu_no_oto_work (~textual@204.148.29.50) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-09-14 21:15:03	-->	Starduster (~SD@5ED11658.cm-7-2a.dynamic.ziggo.nl) has joined ##programming
+2016-09-14 21:15:05	-->	Chloe (~Chloe@unaffiliated/chloe) has joined ##programming
+2016-09-14 21:15:14	<--	Starduster (~SD@5ED11658.cm-7-2a.dynamic.ziggo.nl) has quit (Changing host)
+2016-09-14 21:15:14	-->	Starduster (~SD@unaffiliated/starduster) has joined ##programming
+2016-09-14 21:15:35	<--	Drobatch (~Drobatch@176.99.216.90) has quit (Remote host closed the connection)
+2016-09-14 21:16:10	pyon	So, guys, regardless of language, what's a web framework that (0) isn't too complex, (1) isn't a mess?
+2016-09-14 21:16:11	<--	cyphase (~cyphase@unaffiliated/cyphase) has quit (Ping timeout: 248 seconds)
+2016-09-14 21:16:13	-->	mizu_no_oto_work (~textual@204.148.29.50) has joined ##programming
+2016-09-14 21:16:15	-->	marchelzo (~marchelzo@unaffiliated/marchelzo) has joined ##programming
+2016-09-14 21:16:29	pyon	Preferably one that comes with a good store for using databases.
+2016-09-14 21:16:38	<--	steeze (~steeze@63.76.231.82) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-09-14 21:16:58	+exio4	doesn't that contradict (0)?
+2016-09-14 21:17:00	pyon	By using databases, I mean using databases seriously, like building aggregate and nested queries.
+2016-09-14 21:17:00	-->	pppingme (~pppingme@unaffiliated/pppingme) has joined ##programming
+2016-09-14 21:17:19	pyon	exio4: How's that contradict (0)?
+2016-09-14 21:17:25	pyon	Isn't it possible to use databases in an orderly fashion?}
+2016-09-14 21:18:20	-->	steeze (~steeze@63.76.231.82) has joined ##programming
+2016-09-14 21:18:23	-->	plusone (~plusone@176.24.26.166) has joined ##programming
+2016-09-14 21:18:45	+exio4	I mean, if the web framework was simple, it wouldn't try to do "more" than it is supposed to do, right? and leave easily hooks for databases, etc
+2016-09-14 21:18:48	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 276 seconds)
+2016-09-14 21:19:29	pyon	exio4: Mmm, right. I guess I'm asking for a web framework *and* a database client library.
+2016-09-14 21:20:05	pyon	What really annoys me is that most database clients seem to be fundamentally incapable of understanding relational databases.
+2016-09-14 21:21:16	adsc	admin_001: nothing much, the contents of the temp folder are just temporary files
+2016-09-14 21:21:22	-->	cyphase (~cyphase@unaffiliated/cyphase) has joined ##programming
+2016-09-14 21:22:09	-->	test1600 (~test1600@unaffiliated/test1600) has joined ##programming
+2016-09-14 21:23:06	pyon	Argh, never mind. I'll see how much can be done with a dumb ORM.
+2016-09-14 21:23:08	<--	mizu_no_oto_work (~textual@204.148.29.50) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-09-14 21:23:10	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-09-14 21:23:19	-->	excet (~excet@5ED1EC18.cm-7-2d.dynamic.ziggo.nl) has joined ##programming
+2016-09-14 21:23:45	-->	Ouchy (~Ouchy@142.0.92.2) has joined ##programming
+2016-09-14 21:23:45	<--	Ouchy (~Ouchy@142.0.92.2) has quit (Changing host)
+2016-09-14 21:23:45	-->	Ouchy (~Ouchy@unaffiliated/ouchy) has joined ##programming
+2016-09-14 21:23:59	<--	excet (~excet@5ED1EC18.cm-7-2d.dynamic.ziggo.nl) has quit (Client Quit)
+2016-09-14 21:25:17	-->	excet (~excet@5ED1EC18.cm-7-2d.dynamic.ziggo.nl) has joined ##programming
+2016-09-14 21:26:04	-->	SibTiger (~Nicholas@199-96-206-87.fidnet.com) has joined ##programming
+2016-09-14 21:26:29	-->	SpaceDanceCJ (~Sasha@178.121.172.41) has joined ##programming
+2016-09-14 21:26:31	berndl	I wish there was an ORM smart enough to not overload my DB server with queries.
+2016-09-14 21:26:52	<--	Coldblackice (~anonz@unaffiliated/coldblackice) has quit
+2016-09-14 21:26:54	pyon	The problem is with object-orientation itself.
+2016-09-14 21:26:58	pyon	Object graphs are directed.
+2016-09-14 21:27:46	-->	DrBenway (~DrBenway@190.18.153.73) has joined ##programming
+2016-09-14 21:27:57	pyon	And that constrains what queries can be expressed efficiently.
+2016-09-14 21:28:04	berndl	Yes.
+2016-09-14 21:29:15	pyon	With SQL, your query is just a logical program. How relations are implemented at the physical level is the DBMS's business. And the DBMS takes advantage of that to optimize your queries without you having to lift a finger.
+2016-09-14 21:29:21	pyon	Errr, logic* program
+2016-09-14 21:29:28	<--	merijn (~merijn@wcw-staff-145-18-165-236.wireless.uva.nl) has quit (Ping timeout: 265 seconds)
+2016-09-14 21:29:32	<--	delicado (~delicado@112.198.77.242) has quit (Read error: Connection reset by peer)
+2016-09-14 21:29:58	pyon	But the problem is that object-oriented languages don't do SQL. If you want to do SQL, you have to embed raw SQL strings. Which is, well, awfuly.
+2016-09-14 21:29:59	pyon	awful*
+2016-09-14 21:30:04	<--	lsk (~lsk@enucs/member/lsk) has quit (Read error: Connection reset by peer)
+2016-09-14 21:30:15	berndl	Indeed.
+2016-09-14 21:30:20	-->	moffz0r (~moffz0r@14-201-5-120.static.tpgi.com.au) has joined ##programming
+2016-09-14 21:30:21	pyon	And apparently, Haskell doesn't do SQL either, at least not without Template Haskell.
+2016-09-14 21:30:26	pyon	And Template Haskell is no less awful than raw SQL strings.
+2016-09-14 21:30:29	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 21:30:55	berndl	Is it? I thought it can produced SQL that type checks somehow?
+2016-09-14 21:31:01	pyon	Nah.
+2016-09-14 21:31:21	pyon	And, even if it did, Template Haskell is ugly on its own right.
+2016-09-14 21:31:27	berndl	What about esqueleto?
+2016-09-14 21:31:33	<--	Coldblackice (~anonz@unaffiliated/coldblackice) has quit (Max SendQ exceeded)
+2016-09-14 21:31:35	mathu	part of one of my intern projects was going to be how to batch a DAG of SQL queries and memoize intermediate results
+2016-09-14 21:31:35	pyon	Template Haskell.
+2016-09-14 21:31:40	pyon	opaleye? Template Haskell too.
+2016-09-14 21:31:42	-->	zrts (~zarathush@unaffiliated/tolstoi) has joined ##programming
+2016-09-14 21:32:11	pyon	Goddammit, I can't believe it's 2016 and we *still* don't have languages that interact decently with relational databases.
+2016-09-14 21:32:17	+exio4	pyon: HaskellDB? :P
+2016-09-14 21:32:22	pyon	The relational model was invented in the fricking 1970's.
+2016-09-14 21:32:35	berndl	Yeah, what's up with that?
+2016-09-14 21:32:58	mathu	we had a graph of computations that had to be done, each one dependent on some others (and finally on some primitives)
+2016-09-14 21:33:05	<--	andrewSC (~andrewSC@unaffiliated/andrewsc) has quit (Ping timeout: 240 seconds)
+2016-09-14 21:33:18	pyon	exio4: Isn't that, like dynamically typed?
+2016-09-14 21:33:24	-->	Ouchy`w (~Ouchy@142.0.92.2) has joined ##programming
+2016-09-14 21:33:39	+exio4	pyon: no?
+2016-09-14 21:33:44	-->	Leovale (~Leovale@104.247.242.34) has joined ##programming
+2016-09-14 21:33:46	mathu	the naive approach Worked and there was a lot of rearchitecting outside my scope that would have had to be done to deploy my project ever, so since there was only a little bit of time left before I left that company, i just decided not to do it B)
+2016-09-14 21:33:51	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 21:34:25	+exio4	pyon: well, the actual connection "is", in a way.. you need to parse the SQL data you get, and it might not be what you expected (code duplication there...)
+2016-09-14 21:34:35	<--	Th3_Prince (~b3nszy@209.87.206.254) has quit (Remote host closed the connection)
+2016-09-14 21:35:03	mathu	but yeah, i'm glad for ORMs in most cases, but in some cases you need the raw SQL and ORMs that won't expose that ability to you make me sad
+2016-09-14 21:35:13	pyon	exio4: Oh, it uses Template Haskell too.
+2016-09-14 21:35:27	+exio4	pyon: hm, no?
+2016-09-14 21:35:42	<--	DrBenway (~DrBenway@190.18.153.73) has quit (Ping timeout: 276 seconds)
+2016-09-14 21:35:43	+exio4	pyon: it is only used for boilerplate, but it doesn't rely on it like esqueleto or so
+2016-09-14 21:36:12	<--	Ouchy (~Ouchy@unaffiliated/ouchy) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:36:22	+exio4	and it is an external library, not haskelldb itself which uses th
+2016-09-14 21:36:42	<--	Vuks (~Vuks@unaffiliated/vuks69) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:37:04	pyon	Ah.
+2016-09-14 21:37:30	+exio4	you basically define the database structure in types and then.. well, do magic with 'em :P
+2016-09-14 21:37:35	<--	kolko (~kolko@46.48.58.17) has quit (Read error: Connection reset by peer)
+2016-09-14 21:37:41	pyon	exio4: So, you define a datatype (with a single constructor) for each table?
+2016-09-14 21:37:43	-->	delicado (~delicado@112.198.77.242) has joined ##programming
+2016-09-14 21:37:44	+exio4	the thing is, that is quite annoying, so TH can be used to make it look a bit more "acceptable"
+2016-09-14 21:37:52	+exio4	pyon: more like vinyl records iirc
+2016-09-14 21:37:57	pyon	Ah.
+2016-09-14 21:38:08	+exio4	haven't used it in a year or so
+2016-09-14 21:38:14	starship_trooper	rindolf: sup man
+2016-09-14 21:38:18	pyon	Wow, I can't believe what I'm reading: https://ocharles.org.uk/blog/posts/2012-12-15-24-days-of-hackage-haskelldb.html
+2016-09-14 21:38:20	starship_trooper	rindolf: long time
+2016-09-14 21:38:43	pyon	This is wrong on so many levels. Manually defining lots of singleton types.
+2016-09-14 21:38:44	+exio4	pyon: is that a good thing or a bad thing? :P
+2016-09-14 21:38:47	<--	Sadale (~Sadale@unaffiliated/sadale) has quit (Quit: Ĝis revido)
+2016-09-14 21:38:48	pyon	exio4: Bad.
+2016-09-14 21:39:18	-->	mizu_no_oto_work (~textual@204.148.29.50) has joined ##programming
+2016-09-14 21:39:19	+exio4	pyon: that's where you throw PHP, I mean, TH
+2016-09-14 21:39:24	-->	kolko (~kolko@2a02:17d0:66:1500:389e:a372:6d0:cca7) has joined ##programming
+2016-09-14 21:39:26	-->	DrBenway (~DrBenway@190.18.153.73) has joined ##programming
+2016-09-14 21:39:50	+exio4	I need a few more hours
+2016-09-14 21:40:16	+exio4	body, you can stay awake
+2016-09-14 21:40:45	pyon	OCaml has macaque... but, again, it's more macro hackery (camlp4).
+2016-09-14 21:41:11	rindolf	starship_trooper: hi, I'm fine.
+2016-09-14 21:41:25	pyon	I hate to say this, but, between macro hackery and dynamic typing, I think I prefer the latter.
+2016-09-14 21:41:33	jkbbwr	Best pull request all day. +19 −830
+2016-09-14 21:41:35	rindolf	starship_trooper: I went to buy ice lollies today.
+2016-09-14 21:41:39	-->	xpk (~xpk@unaffiliated/xpk) has joined ##programming
+2016-09-14 21:41:39	-->	redstarcomrade (~redstarco@cpe-104-175-255-182.socal.res.rr.com) has joined ##programming
+2016-09-14 21:41:57	starship_trooper	rindolf: nice
+2016-09-14 21:41:59	rindolf	starship_trooper: and someone is going to put one of my factoids in his .sig
+2016-09-14 21:42:01	+exio4	ice lolis?
+2016-09-14 21:42:11	+exio4	didn't know you could buy them frozen.
+2016-09-14 21:42:36	rindolf	exio4: aka "popsicles".
+2016-09-14 21:42:47	+exio4	just joking ;)
+2016-09-14 21:43:12	rindolf	exio4: ah, OK.
+2016-09-14 21:43:37	starship_trooper	rindolf: do you know how to use git?
+2016-09-14 21:43:52	rindolf	starship_trooper: to an extent.
+2016-09-14 21:44:02	<--	jass93 (~ifillj@rrcs-24-39-217-250.nys.biz.rr.com) has quit (Ping timeout: 265 seconds)
+2016-09-14 21:44:06	starship_trooper	rindolf: i am learning now
+2016-09-14 21:44:12	-->	pmercado (~pmercado@186-104-150-55.baf.movistar.cl) has joined ##programming
+2016-09-14 21:44:17	rindolf	jkbbwr: heh, nice.
+2016-09-14 21:44:26	rindolf	jkbbwr: is it a sane pull-req?
+2016-09-14 21:44:56	jkbbwr	rindolf: yea
+2016-09-14 21:45:00	rindolf	starship_trooper: what are you learning it from?
+2016-09-14 21:45:07	rindolf	jkbbwr: ah, that's great.
+2016-09-14 21:45:20	-->	Yithar (~Yithar@206.196.185.110) has joined ##programming
+2016-09-14 21:45:40	<--	adsc (1f180acd@gateway/web/freenode/ip.31.24.10.205) has quit (Quit: Page closed)
+2016-09-14 21:45:46	rindolf	jkbbwr: I've recently done a series of refactoring commits to Freecell Solver that also removed some lines.
+2016-09-14 21:45:55	rindolf	jkbbwr: but it wasn't so dramatic.
+2016-09-14 21:48:05	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:48:29	<--	fragment (~fragment@host-92-24-117-20.ppp.as43234.net) has quit (Quit: Lost terminal)
+2016-09-14 21:49:26	starship_trooper	rindolf: wht do you mean?
+2016-09-14 21:49:41	-->	DrGonzo (~DrBenway@190.18.153.73) has joined ##programming
+2016-09-14 21:49:51	-->	rosh (~user@unaffiliated/roansh) has joined ##programming
+2016-09-14 21:50:03	rindolf	starship_trooper: I mean - which books/tutorials/etc. are you using to learn git?
+2016-09-14 21:50:22	starship_trooper	rindolf: we are having a workshop in college
+2016-09-14 21:50:30	<--	lightheaded (~lighthead@202.177.250.195.sta.estpak.ee) has quit (Remote host closed the connection)
+2016-09-14 21:51:45	-->	weatherhead (~somebody@vpn-public.physics.ox.ac.uk) has joined ##programming
+2016-09-14 21:51:55	<--	DrBenway (~DrBenway@190.18.153.73) has quit (Ping timeout: 260 seconds)
+2016-09-14 21:52:40	rindolf	starship_trooper: ah.
+2016-09-14 21:52:40	-->	jathan (~jathan@132.248.174.116) has joined ##programming
+2016-09-14 21:52:54	-->	piou (~piou@unaffiliated/piou) has joined ##programming
+2016-09-14 21:53:09	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-09-14 21:54:17	<--	interop_madness (~interop_m@unaffiliated/interop-madness/x-8858653) has quit (Quit: Leaving)
+2016-09-14 21:54:35	<--	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has quit (Read error: Connection reset by peer)
+2016-09-14 21:56:08	postcert	http://learngitbranching.js.org/ is great once you get the basics down starship_trooper. A little interactive game with hypothetical situations to fix/complete.
+2016-09-14 21:56:43	<--	TheGreekOwl (~GreekOwl@2a02:587:4800:ed00:1c45:da89:ddad:589b) has quit (Ping timeout: 248 seconds)
+2016-09-14 21:56:44	rindolf	Ooooh... js.org!
+2016-09-14 21:56:52	starship_trooper	postcert: thanks! I'll take a look at ir
+2016-09-14 21:57:00	<--	lastmanstanding (~arjoonn@111.92.51.158) has quit (Quit: leaving)
+2016-09-14 21:57:10	rindolf	starship_trooper: the book Pro Git is also nice.
+2016-09-14 21:57:44	-->	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has joined ##programming
+2016-09-14 21:57:49	starship_trooper	rindolf
+2016-09-14 21:57:49	<--	Bendr (~Bendr@unaffiliated/innocent99) has quit (Ping timeout: 250 seconds)
+2016-09-14 21:57:55	starship_trooper	rindolf:thanks
+2016-09-14 21:58:26	rindolf	starship_trooper: you're welcome .
+2016-09-14 21:58:37	postcert	I find ProGit to be awesome for looking up specific commands, but it doesn't have enough pictures :(
+2016-09-14 21:59:09	rindolf	starship_trooper: I've recently worked on refactoring and optimising Freecell solver.
+2016-09-14 21:59:13	postcert	Which is my favorite part about learn_git_branching, you get the to see the tree react to your changes in real time. Really helper cement the thinking part
+2016-09-14 21:59:21	-->	Walkerdine (~Walkerdin@198.111.39.224) has joined ##programming
+2016-09-14 21:59:35	rindolf	starship_trooper: and was also volunteered to maintain the mageia linux's kernel packages.
+2016-09-14 21:59:38	-->	joebobjoe (~joebobjoe@104-136-17-125.res.bhn.net) has joined ##programming
+2016-09-14 21:59:57	<--	AndyBotwin (~Gustavo@unaffiliated/andybotwin) has quit (Ping timeout: 244 seconds)
+2016-09-14 21:59:59	starship_trooper	rindolf: congrats
+2016-09-14 22:00:05	rindolf	starship_trooper: building a kernel package here is time consuming.
+2016-09-14 22:00:18	-->	ElectricFlux (~androirc@2601:244:4503:f8e:d19a:c2d5:9861:c13) has joined ##programming
+2016-09-14 22:00:23	-->	prawnzy (~prawnzy@c-73-137-237-142.hsd1.ga.comcast.net) has joined ##programming
+2016-09-14 22:02:37	+nitrix	pyon: https://ocharles.org.uk/blog/posts/2012-12-15-24-days-of-hackage-haskelldb.html
+2016-09-14 22:02:40	+nitrix	pyon: Reading it.
+2016-09-14 22:03:15	ElectricFlux	I can't seem to stick to a project. I need an idea for something that's more complex than a learning exercise but still easy enough to finish on my own
+2016-09-14 22:03:32	<--	rosh (~user@unaffiliated/roansh) has quit (Ping timeout: 250 seconds)
+2016-09-14 22:03:35	+nitrix	I agree with you, it's really ugly. He created classes and instances of singleton types for things that could've easily been a sum type and a function pattern matching each.
+2016-09-14 22:03:48	ElectricFlux	I should probably mention that I use C and C++
+2016-09-14 22:04:07	+nitrix	The runtime cost of `data` doesn't justify moving it all to the type level.
+2016-09-14 22:04:27	Rounin	Hmmm well, are you learning something from the unfinished projects, though?
+2016-09-14 22:04:42	<--	prawnzy (~prawnzy@c-73-137-237-142.hsd1.ga.comcast.net) has quit (Ping timeout: 248 seconds)
+2016-09-14 22:04:43	Walkerdine	ElectricFlux: write a ray tracer
+2016-09-14 22:04:45	Rounin	Perhaps it's better to do many unfinished projects than none at all
+2016-09-14 22:05:12	-->	LZXC (~quassel@bzq-79-178-148-94.red.bezeqint.net) has joined ##programming
+2016-09-14 22:05:43	+nitrix	ElectricFlux: I've been working on the same silly game for a long time now. While it's nowhere near completion, I can subdivide the problem into smaller problems, not feeling like I'm doing the same thing everyday.
+2016-09-14 22:05:56	+nitrix	And it remains fun.
+2016-09-14 22:05:56	<--	cyborg-one (~cyborg-on@212-178-16-90.broadband.tenet.odessa.ua) has quit (Quit: cyborg-one)
+2016-09-14 22:06:02	+exio4	nitrix: uh, it's not about runtime cost
+2016-09-14 22:06:14	+exio4	nitrix: it's about representing the database structure in the type system
+2016-09-14 22:06:20	+exio4	nitrix: without dependent types.
+2016-09-14 22:06:52	-->	nibble_zero (~chatzilla@37.244.231.105) has joined ##programming
+2016-09-14 22:06:56	+exio4	nitrix: even so, all the singleton types don't even exist in runtime! they are mostly used to dispatch things on a type-level fashion
+2016-09-14 22:06:56	ElectricFlux	That's true. I worry though that I'm often tackling things that I don't have the experience to solve
+2016-09-14 22:07:05	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 260 seconds)
+2016-09-14 22:07:14	+exio4	nitrix: so the closest would be a big-ass GADTs... with phantom types for each constructor
+2016-09-14 22:07:33	-->	guest124 (b53ef60c@gateway/web/freenode/ip.181.62.246.12) has joined ##programming
+2016-09-14 22:07:46	<--	mogita (~mogita@123.123.111.152) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2016-09-14 22:09:05	-->	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has joined ##programming
+2016-09-14 22:10:10	-->	jasondockers___ (~jasondock@173.227.191.106) has joined ##programming
+2016-09-14 22:10:11	<--	jasondockers__ (~jasondock@173.227.191.106) has quit (Read error: Connection reset by peer)
+2016-09-14 22:10:27	-->	lightheaded (~lighthead@41-28-196-88.dyn.estpak.ee) has joined ##programming
+2016-09-14 22:10:37	<--	jasondockers___ (~jasondock@173.227.191.106) has quit (Changing host)
+2016-09-14 22:10:37	-->	jasondockers___ (~jasondock@unaffiliated/jasondockers) has joined ##programming
+2016-09-14 22:11:20	<--	guest124 (b53ef60c@gateway/web/freenode/ip.181.62.246.12) has left ##programming
+2016-09-14 22:12:09	<--	Rounin (~david@ti0169a400-0661.bb.online.no) has quit (Remote host closed the connection)
+2016-09-14 22:13:10	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-09-14 22:14:01	-->	Oxpp (~Oxpp@prz29-1-78-205-58-16.fbx.proxad.net) has joined ##programming
+2016-09-14 22:14:08	-->	Gah (~androirc@2601:244:4503:f8e:d19a:c2d5:9861:c13) has joined ##programming
+2016-09-14 22:14:09	<--	Oxpp (~Oxpp@prz29-1-78-205-58-16.fbx.proxad.net) has quit (Max SendQ exceeded)
+2016-09-14 22:14:29	<--	steeze (~steeze@63.76.231.82) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2016-09-14 22:14:39	-->	mpao (~mpao@prz29-1-78-205-58-16.fbx.proxad.net) has joined ##programming
+2016-09-14 22:14:45	marchelzo	is it desirable to have your programming language's file i/o implementation perform C stdio-style line-ending handling?
+2016-09-14 22:14:48	<--	mpao (~mpao@prz29-1-78-205-58-16.fbx.proxad.net) has quit (Max SendQ exceeded)
+2016-09-14 22:15:00	<--	shovel_boss (~shovel_bo@unaffiliated/shovel-boss/x-4881665) has quit (Read error: Connection reset by peer)
+2016-09-14 22:15:14	<--	ElectricFlux (~androirc@2601:244:4503:f8e:d19a:c2d5:9861:c13) has quit (Ping timeout: 250 seconds)
+2016-09-14 22:15:21	<--	bytefire (~fitwat_us@unaffiliated/bytefire) has quit (Quit: leaving)
+2016-09-14 22:15:27	Gah	I got disconnected if anyone said anything to me
+2016-09-14 22:15:35	<--	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2016-09-14 22:15:38	jkbbwr	:( randomly deadlocking zmq code
+2016-09-14 22:15:39	jkbbwr	ew
+2016-09-14 22:16:07	-->	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has joined ##programming
+2016-09-14 22:16:45	<--	c0ven (~IceChat9@CPE0018e7c853a0-CM00fc8daebef0.cpe.net.cable.rogers.com) has quit (Quit: Strange women lying in ponds distributing swords is no basis for a system of government!)
+2016-09-14 22:16:56	-->	steeze (~steeze@63.76.231.82) has joined ##programming
+2016-09-14 22:18:07	<--	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has quit (Read error: Connection reset by peer)
+2016-09-14 22:18:14	<--	Gah (~androirc@2601:244:4503:f8e:d19a:c2d5:9861:c13) has quit (Client Quit)
+2016-09-14 22:18:15	<--	adroit_machine (~adroit_ma@unaffiliated/adroit-machine/x-2281387) has quit (Read error: Connection reset by peer)
+2016-09-14 22:18:20	-->	Bendr (~Bendr@unaffiliated/innocent99) has joined ##programming
+2016-09-14 22:18:39	rindolf	marchelzo: in which respect?
+2016-09-14 22:18:45	<--	berndl (~user@212.91.235.2) has quit (Ping timeout: 265 seconds)
+2016-09-14 22:18:58	marchelzo	rindolf: like how stdio distinguishes between "binary mode" and "text mode" streams
+2016-09-14 22:19:23	rindolf	marchelzo: ah, that.
+2016-09-14 22:19:25	<--	steeze (~steeze@63.76.231.82) has quit (Client Quit)
+2016-09-14 22:19:45	-->	adroit_machine (~adroit_ma@unaffiliated/adroit-machine/x-2281387) has joined ##programming
+2016-09-14 22:19:45	marchelzo	afaik, if you open a file on Windows, and use fgetc(), and the next few bytes are \r \n 'a', it would return \n and then 'a'
+2016-09-14 22:19:52	marchelzo	as if the carriage return weren't there
+2016-09-14 22:20:08	-->	Axy (~Mia@unaffiliated/mia) has joined ##programming
+2016-09-14 22:20:17	marchelzo	in text mode
+2016-09-14 22:20:33	-->	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has joined ##programming
+2016-09-14 22:20:51	-->	steeze (~steeze@63.76.231.82) has joined ##programming
+2016-09-14 22:21:03	<--	synthroid (~synthroid@gateway/vpn/privateinternetaccess/synthroid) has quit (Remote host closed the connection)
+2016-09-14 22:21:49	-->	guest124 (b53ef60c@gateway/web/freenode/ip.181.62.246.12) has joined ##programming
+2016-09-14 22:22:24	 *	rindolf is away from keyboard
+2016-09-14 22:23:28	-->	nanoz (~nanoz@unaffiliated/nanoz) has joined ##programming
+2016-09-14 22:24:12	<--	Jesin (~Jesin@pool-108-28-56-201.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2016-09-14 22:24:35	-->	eric_lagergren (~eric_lage@c-73-225-199-152.hsd1.wa.comcast.net) has joined ##programming
+2016-09-14 22:26:48	-->	SwiftMatt (~Objective@162.242.94.133) has joined ##programming
+2016-09-14 22:27:03	<--	cyan__ (~cyan@217.170.162.68) has quit (Ping timeout: 276 seconds)
+2016-09-14 22:27:08	<--	redstarcomrade (~redstarco@cpe-104-175-255-182.socal.res.rr.com) has quit (Quit: Leaving)
+2016-09-14 22:27:21	<--	naxo (~drnaxo@Lan-a01-0510-1049.uninet-ide.com.mx) has quit (Ping timeout: 244 seconds)
+2016-09-14 22:27:42	-->	andrewSC (~andrewSC@unaffiliated/andrewsc) has joined ##programming
+2016-09-14 22:28:05	-->	ElectricFlux (~ryan@2601:244:4503:f8e:9a9f:a236:954b:6a2e) has joined ##programming
+2016-09-14 22:28:07	-->	`Eddie (~dedword@unaffiliated/eddie/x-2286721) has joined ##programming
+2016-09-14 22:28:08	deniska	marchelzo: differentiating between text mode and binary mode is helpful
+2016-09-14 22:28:19	marchelzo	deniska: why?
+2016-09-14 22:29:06	-->	naxo (~drnaxo@Lan-a01-0510-1049.uninet-ide.com.mx) has joined ##programming
+2016-09-14 22:29:23	<--	King_Hual (~failed@unaffiliated/king-hual/x-1207580) has quit (Read error: Connection reset by peer)
+2016-09-14 22:29:25	Zuu	There should never have been a text mode
+2016-09-14 22:29:32	Zuu	its the worst
+2016-09-14 22:30:09	Zuu	made to fail, and it has
+2016-09-14 22:30:10	deniska	marchelzo: for the sugar-sake. Ofcourse text mode should have a way to be configured encoding-wise and line-ending-wise
+2016-09-14 22:30:22	-->	notadeveloper_ (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has joined ##programming
+2016-09-14 22:30:22	<--	DevAntoine (~DevAntoin@46.29.126.206) has quit (Quit: Leaving)
+2016-09-14 22:30:23	-->	GandalfTheWizard (~Emma@112.10.170.31) has joined ##programming
+2016-09-14 22:30:26	marchelzo	ok
+2016-09-14 22:30:43	Zuu	any programmer using text mode, is failing :P
+2016-09-14 22:31:09	-->	Rashad (~chatzilla@46.185.206.187) has joined ##programming
+2016-09-14 22:31:16	-->	kggr (~korggrodn@46.216.32.51) has joined ##programming
+2016-09-14 22:31:38	deniska	marchelzo: well, the alternative is requiring to encode/decode every string manually which gets old pretty fast
+2016-09-14 22:31:40	-->	wootehfoot (~wootehfoo@cust-95-80-56-77.csbnet.se) has joined ##programming
+2016-09-14 22:31:48	Rashad	Hello everyone!
+2016-09-14 22:32:03	<--	moffz0r (~moffz0r@14-201-5-120.static.tpgi.com.au) has quit (Ping timeout: 240 seconds)
+2016-09-14 22:32:06	marchelzo	deniska: right
+2016-09-14 22:33:01	marchelzo	deniska: so let's say the user calls nextLine() on a stream expecting a utf-8 string, but the next line is not valid utf-8?
+2016-09-14 22:33:42	Rashad	It's the final day of Eid here.
+2016-09-14 22:33:49	<--	notadeveloper (~letsmakej@2602:306:bd2a:a160:59c4:815b:67cb:ddf4) has quit (Ping timeout: 265 seconds)
+2016-09-14 23:05:47	--	irc: disconnected from server
+2016-09-14 23:06:07	-->	starship_trooper (~manan@103.27.164.7) has joined ##programming
+2016-09-14 23:06:07	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-14 23:06:07	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-14 23:06:07	--	Channel ##programming: 671 nicks (1 op, 4 voices, 666 normals)
+2016-09-14 23:06:08	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-14 23:06:23	rindolf	soulisson: return?
+2016-09-14 23:07:00	rindolf	soulisson: I normally call such functions "get_something()" or "calc_something()"
+2016-09-14 23:07:08	<--	tbsf (~tbsf@8.37.102.31) has quit (Remote host closed the connection)
+2016-09-14 23:07:25	+nitrix	soulisson: French speakers still say "return", as that's the terminology used in the field.
+2016-09-14 23:07:34	-->	marchelzo (~marchelzo@unaffiliated/marchelzo) has joined ##programming
+2016-09-14 23:07:43	-->	tbsf (~tbsf@8.37.102.31) has joined ##programming
+2016-09-14 23:07:50	+nitrix	Or "retourne".
+2016-09-14 23:08:03	soulisson	 if I had to do some pseudo code in my native language, I would have to choose between to options "retourner" or "retourne", the first one is the bare infinitive, the second one is the second form
+2016-09-14 23:08:42	<--	xpk (~xpk@unaffiliated/xpk) has quit (Remote host closed the connection)
+2016-09-14 23:08:43	<--	plusone (~plusone@176.24.26.166) has quit (Ping timeout: 248 seconds)
+2016-09-14 23:08:49	-->	another_time (c36e54b6@gateway/web/freenode/ip.195.110.84.182) has joined ##programming
+2016-09-14 23:08:50	soulisson	*second person
+2016-09-14 23:08:52	another_time	test
+2016-09-14 23:09:01	+nitrix	soulisson: "retourner une valeure" describing the action of return_ing_ a value, "retourne" is more akind to "it returns a value".
+2016-09-14 23:09:09	rindolf	another_time: toast!
+2016-09-14 23:09:12	another_time	hey guys, what is the command to checkout a new branch from a specific remote one?  in Git ? Sorry to be such a noob
+2016-09-14 23:09:16	another_time	hey rindolf
+2016-09-14 23:09:25	another_time	look im spelling you rname correctly ^_^
+2016-09-14 23:09:38	rindolf	another_time: hi.
+2016-09-14 23:09:43	another_time	hi.
+2016-09-14 23:09:44	-->	xtrntr (~Thunderbi@207.251.103.46) has joined ##programming
+2016-09-14 23:09:46	<--	lgr_ (~lgr@host86-128-238-229.range86-128.btcentralplus.com) has quit (Ping timeout: 248 seconds)
+2016-09-14 23:09:58	another_time	ahem... guys
+2016-09-14 23:09:58	rindolf	another_time: git checkout origin/remote_branch shoulld work i think.
+2016-09-14 23:10:10	soulisson	nitrix, ok, I'm going to try to look at it in books
+2016-09-14 23:10:12	another_time	where od i specify the new branch name for it tho
+2016-09-14 23:10:15	+nitrix	another_time: git checkout -b name origin/name
+2016-09-14 23:10:19	rindolf	another_time: "git help checkout" to be sure.
+2016-09-14 23:10:31	rindolf	nitrix++
+2016-09-14 23:10:37	another_time	what happens if i dont specify a remote branch? which one does it use?
+2016-09-14 23:11:04	rindolf	another_time: the current commit i think.
+2016-09-14 23:11:05	+nitrix	another_time: It'll use the closest similar one known on the origin, provided it knows it exists from a previous fetch.
+2016-09-14 23:11:26	another_time	hmm it says command not found
+2016-09-14 23:11:26	rindolf	another_time: which is not necessarily the headpoint of a branch.
+2016-09-14 23:11:28	another_time	...
+2016-09-14 23:11:49	-->	urodna (~urodna@unaffiliated/urodna) has joined ##programming
+2016-09-14 23:11:52	another_time	command not found
+2016-09-14 23:12:09	rindolf	another_time: what does?
+2016-09-14 23:12:20	another_time	nitrix command
+2016-09-14 23:12:28	+nitrix	another_time: What?
+2016-09-14 23:13:00	another_time	hmmm
+2016-09-14 23:13:02	rindolf	another_time: can you provide a screenshot?
+2016-09-14 23:13:19	another_time	cmon brain work
+2016-09-14 23:13:30	-->	LordKalma (~LordKalma@unaffiliated/lordkalma) has joined ##programming
+2016-09-14 23:15:01	--	irc: disconnected from server
+2016-09-14 23:15:27	-->	manan (~manan@103.27.164.7) has joined ##programming
+2016-09-14 23:15:27	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-14 23:15:27	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-14 23:15:27	--	Channel ##programming: 673 nicks (1 op, 4 voices, 668 normals)
+2016-09-14 23:15:28	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-14 23:15:36	another_time	that command isnt working
+2016-09-14 23:15:36	soulisson	nitrix, seems the majority of french people chose "retourner"
+2016-09-14 23:15:50	another_time	ill try without refercning the remote repo
+2016-09-14 23:15:52	-->	UberLambda (~UberLambd@94.36.12.242) has joined ##programming
+2016-09-14 23:15:58	+nitrix	soulisson: "retourner" -> "returning". "retourne" -> "returns".
+2016-09-14 23:16:07	+nitrix	soulisson: They're used in different contexts.
+2016-09-14 23:16:26	<--	Rashad (~chatzilla@46.185.206.187) has quit (Ping timeout: 244 seconds)
+2016-09-14 23:16:48	UberLambda	what would a simple function to hash 3 32-bit signed integers to a single 32-bit unsigned integer be?
+2016-09-14 23:16:49	rindolf	another_time: but it should not say "command not found"
+2016-09-14 23:16:56	<--	wootehfoot (~wootehfoo@cust-95-80-56-77.csbnet.se) has quit (Ping timeout: 244 seconds)
+2016-09-14 23:17:15	+nitrix	UberLambda: Does it needs to be portable?
+2016-09-14 23:17:18	rindolf	UberLambda: there's the old Perl 5 hash function.
+2016-09-14 23:17:19	soulisson	 nitrix, in french infinitive can also be used to express a command, an instruction like in a recipe, but this is not very important
+2016-09-14 23:17:28	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 244 seconds)
+2016-09-14 23:17:41	UberLambda	nitrix: what do you mean by portable?
+2016-09-14 23:17:43	RightReasonRhym_	soulisson, just like in English (without the "to".)
+2016-09-14 23:17:44	-->	shovel_boss (~shovel_bo@unaffiliated/shovel-boss/x-4881665) has joined ##programming
+2016-09-14 23:17:53	UberLambda	nitrix: the hash are just local if that's what you mean
+2016-09-14 23:17:54	RightReasonRhym_	(This is called the imperative mood.)
+2016-09-14 23:18:00	UberLambda	nitrix: no need to use them on another computer
+2016-09-14 23:18:05	UberLambda	rindolf: I'll check it out :D
+2016-09-14 23:18:12	soulisson	RightReasonRhym_, ah ok, good to know, thanks
+2016-09-14 23:18:18	+nitrix	soulisson: You rarely begin a sentence with a verb in French, unless it's to express a command.
+2016-09-14 23:18:27	+nitrix	soulisson: You shouldn't have to worry about this.
+2016-09-14 23:18:29	<--	starship_trooper (~manan@103.27.164.7) has quit (Ping timeout: 244 seconds)
+2016-09-14 23:18:45	-->	Xionaba (Xionaba@h83-209-205-255.cust.se.alltele.net) has joined ##programming
+2016-09-14 23:18:56	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 23:18:56	soulisson	nitrix, ok, thanks for your help
+2016-09-14 23:19:11	-->	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has joined ##programming
+2016-09-14 23:20:00	<--	Coldblackice (~anonz@unaffiliated/coldblackice) has quit (Client Quit)
+2016-09-14 23:20:09	+nitrix	UberLambda: What properties do you want your hashing function to exhibit? A good distribution? Chaotic?
+2016-09-14 23:20:16	<--	P0lt3rg31st (~SOME_USER@195.22.0.25) has quit (Quit: Lost terminal)
+2016-09-14 23:20:24	rindolf	UberLambda: see https://github.com/shlomif/fc-solve/blob/master/fc-solve/source/check_and_add_state.c#L237
+2016-09-14 23:20:52	UberLambda	rindolf: will do, thanks!
+2016-09-14 23:20:54	+nitrix	UberLambda: Are the three signed ints going to have an equal distribution with their entire space used?
+2016-09-14 23:21:11	UberLambda	nitrix: the numbers are three coordinates for chunks in a to-be game
+2016-09-14 23:21:12	<--	delicado (~delicado@112.198.77.242) has quit
+2016-09-14 23:21:28	UberLambda	nitrix: basically, chunks well be loaded only when they are near each other
+2016-09-14 23:21:43	-->	korg (~korggrodn@mail.ramtex.by) has joined ##programming
+2016-09-14 23:21:45	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 23:21:58	UberLambda	nitrix: so potentially the hash would need to work well with values that are similiar but there is no need for it to work for completely different values
+2016-09-14 23:22:01	+nitrix	UberLambda: Then hashing could have terrible performances.
+2016-09-14 23:22:10	UberLambda	nitrix: what would you suggest?
+2016-09-14 23:22:31	+nitrix	UberLambda: You probably want nearby (X,Y,Z) coordinates to hash to nearby (C) unsigned final value, no?
+2016-09-14 23:22:47	UberLambda	nitrix: I assume so, yeah
+2016-09-14 23:22:54	<--	Bendr (~Bendr@unaffiliated/innocent99) has quit (Read error: Connection reset by peer)
+2016-09-14 23:23:10	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-09-14 23:23:55	+nitrix	You actually cannot get nice deterministic properties this way unless your coordinates are primes.
+2016-09-14 23:24:15	+nitrix	Have you tried a different approach? Octrees?
+2016-09-14 23:24:23	another_time	rindolf
+2016-09-14 23:24:25	UberLambda	I store octrees internally
+2016-09-14 23:24:27	another_time	yet again you save the day
+2016-09-14 23:24:30	another_time	also thank you nitrix
+2016-09-14 23:24:33	another_time	I was so tired
+2016-09-14 23:24:40	UberLambda	one per chunk, to be able to run dual contouring on them
+2016-09-14 23:24:41	another_time	I didnt realise I had for some unexplained reason
+2016-09-14 23:25:05	UberLambda	but I'd need the terrain to stay chunked for mesh precaching purposes
+2016-09-14 23:25:12	<--	kggr (~korggrodn@46.216.32.51) has quit (Ping timeout: 244 seconds)
+2016-09-14 23:25:13	another_time	My username repeated in my command at the start, so it took ages for me to spot the stupid error hence Command not found
+2016-09-14 23:25:19	another_time	there goes 25 mins lol
+2016-09-14 23:25:27	another_time	have a great evening all
+2016-09-14 23:25:38	UberLambda	nitrix: basically I only need this hash to check if a chunk is already loaded or not
+2016-09-14 23:25:46	-->	tmerr (~tmerr@pool-72-73-88-29.ptldme.east.myfairpoint.net) has joined ##programming
+2016-09-14 23:26:01	UberLambda	nitrix: and to retrieve chunk data of a loaded chunk when needed by its position
+2016-09-14 23:26:29	UberLambda	I was thinking of a simple "chunk position -> chunk data" map for this
+2016-09-14 23:26:48	-->	loreX (~loreX@ip9135551e.speed.planet.nl) has joined ##programming
+2016-09-14 23:26:53	UberLambda	but running, say, MD5 on the chunk position seems terribily wasteful
+2016-09-14 23:27:05	grill__	when a company asks for 5+ years of experience for a low-level position, what are they actually looking for
+2016-09-14 23:30:54	--	irc: disconnected from server
+2016-09-14 23:34:02	-->	manan (~manan@103.27.164.7) has joined ##programming
+2016-09-14 23:34:02	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-09-14 23:34:02	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-09-14 23:34:02	--	Channel ##programming: 672 nicks (1 op, 4 voices, 667 normals)
+2016-09-14 23:34:03	<--	Axy (~Mia@unaffiliated/mia) has quit (Read error: Connection reset by peer)
+2016-09-14 23:34:10	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-09-14 23:35:11	<--	another_time (c36e54b6@gateway/web/freenode/ip.195.110.84.182) has quit (Ping timeout: 240 seconds)
+2016-09-14 23:36:29	<--	Coldblackice (~anonz@unaffiliated/coldblackice) has quit
+2016-09-14 23:37:01	+nitrix	Mhhhh, well something to consider, you're keeping at a maximum a given number of chunks loaded.
+2016-09-14 23:37:23	+nitrix	It's doesn't have to scale up/down like a vector would offer (which the stupid quadratic cost).
+2016-09-14 23:37:33	<--	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2016-09-14 23:38:31	UberLambda	there's that, yeah
+2016-09-14 23:38:32	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 23:38:41	<--	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2016-09-14 23:38:42	-->	Mia (~Mia@92.45.178.64) has joined ##programming
+2016-09-14 23:38:42	<--	Mia (~Mia@92.45.178.64) has quit (Changing host)
+2016-09-14 23:38:42	-->	Mia (~Mia@unaffiliated/mia) has joined ##programming
+2016-09-14 23:38:51	UberLambda	oh well thanks nitrix + rindolf, gtg now
+2016-09-14 23:38:52	UberLambda	cya
+2016-09-14 23:39:01	-->	Bendr (~Bendr@41.105.48.10) has joined ##programming
+2016-09-14 23:39:01	<--	Bendr (~Bendr@41.105.48.10) has quit (Changing host)
+2016-09-14 23:39:01	-->	Bendr (~Bendr@unaffiliated/innocent99) has joined ##programming
+2016-09-14 23:39:06	+nitrix	I wasn't super helpful, just trying to brainstorm :P
+2016-09-14 23:39:15	-->	whathappens (~whathappe@107-195-64-10.lightspeed.irvnca.sbcglobal.net) has joined ##programming
+2016-09-14 23:39:17	rindolf	UberLambda: bye
+2016-09-14 23:39:21	UberLambda	anything is better than silence :D
+2016-09-14 23:39:23	UberLambda	bye
+2016-09-14 23:39:27	<--	UberLambda (~UberLambd@94.36.12.242) has quit (Quit: GTG)
+2016-09-14 23:39:35	-->	Rashad (~chatzilla@79.173.208.79) has joined ##programming
+2016-09-14 23:39:43	-->	Jidoor (50df51a9@gateway/web/freenode/ip.80.223.81.169) has joined ##programming
+2016-09-14 23:39:45	<--	Coldblackice (~anonz@unaffiliated/coldblackice) has quit (Client Quit)
+2016-09-14 23:39:54	rindolf	Silence is golden. Anything is platinum. ;-)
+2016-09-14 23:42:43	<--	enet (~enet@87.229.213.94) has quit (Remote host closed the connection)
+2016-09-14 23:42:52	<--	Kake_Fisk (~Kake_Fisk@185.145.38.231) has quit (Ping timeout: 265 seconds)
+2016-09-14 23:42:53	-->	LZXC_ (~quassel@bzq-79-178-148-94.red.bezeqint.net) has joined ##programming
+2016-09-14 23:43:11	-->	g00se (~srnty@c-24-5-135-216.hsd1.ca.comcast.net) has joined ##programming
+2016-09-14 23:43:19	-->	Coldblackice (~anonz@unaffiliated/coldblackice) has joined ##programming
+2016-09-14 23:44:16	<--	manan (~manan@103.27.164.7) has left ##programming ("WeeChat 1.5")
+2016-07-25 21:14:16	-->	starship_trooper (~manan@182.69.219.254) has joined ##programming
+2016-07-25 21:14:16	--	Topic for ##programming is "Community Chat & Programming/Computer Science Discussion | If you have a question, don't ask to ask, just ask! | Paste > 2 lines to a pastebin such as http://ideone.com | Channel rules: http://tinyurl.com/2lb-programming | Colour codes filtered again because idiets."
+2016-07-25 21:14:16	--	Topic set by unreal_ on Thu, 02 Jun 2016 10:53:27
+2016-07-25 21:14:16	--	Channel ##programming: 659 nicks (1 op, 3 voices, 655 normals)
+2016-07-25 21:14:18	--	Channel created on Sun, 04 Feb 2007 05:23:51
+2016-07-25 21:14:26	PlanckWalk	At least rofl has mostly died
+2016-07-25 21:14:40	<--	starship_trooper (~manan@182.69.219.254) has left ##programming

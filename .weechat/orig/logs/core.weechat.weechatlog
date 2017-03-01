@@ -1,0 +1,113 @@
+2016-08-27 12:36:01		Plugins loaded: alias, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-27 12:36:16	=!=	irc: unable to add temporary server "irc.freenode.net" because the addition of temporary servers with command /connect is currently disabled
+2016-08-27 12:36:16	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2016-08-27 12:36:22	=!=	Error: unknown command "/quitt" (type /help for help)
+2016-08-27 12:36:26		fifo: pipe closed
+2016-08-27 14:15:46		Plugins loaded: alias, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-27 14:16:00	=!=	irc: unable to add temporary server "irc.freenode.net" because the addition of temporary servers with command /connect is currently disabled
+2016-08-27 14:16:00	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2016-08-27 14:16:20	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2016-08-27 14:16:25		irc: server irc.freenode.net added
+2016-08-27 14:16:32	=!=	irc: unable to add temporary server "freenode" because the addition of temporary servers with command /connect is currently disabled
+2016-08-27 14:16:32	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2016-08-27 14:16:41	=!=	irc: server "irc.freenode.net" already exists, can't add it!
+2016-08-27 14:16:42	=!=	irc: unable to add temporary server "freenode" because the addition of temporary servers with command /connect is currently disabled
+2016-08-27 14:16:42	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2016-08-27 14:17:07		[irc]  /server  list|listfull [<server>]
+2016-08-27 14:17:07		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2016-08-27 14:17:07		                copy|rename <server> <new_name>
+2016-08-27 14:17:07		                reorder <server> [<server>...]
+2016-08-27 14:17:07		                del|keep <server>
+2016-08-27 14:17:07		                deloutq|jump|raw
+2016-08-27 14:17:07		list, add or remove IRC servers
+2016-08-27 14:17:07		    list: list servers (without argument, this list is displayed)
+2016-08-27 14:17:07		listfull: list servers with detailed info for each server
+2016-08-27 14:17:07		     add: add a new server
+2016-08-27 14:17:07		  server: server name, for internal and display use
+2016-08-27 14:17:07		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2016-08-27 14:17:07		    temp: add a temporary server (not saved)
+2016-08-27 14:17:07		  option: set option for server (for boolean option, value can be omitted)
+2016-08-27 14:17:07		nooption: set boolean option to 'off' (for example: -nossl)
+2016-08-27 14:17:07		    copy: duplicate a server
+2016-08-27 14:17:07		  rename: rename a server
+2016-08-27 14:17:07		 reorder: reorder list of servers
+2016-08-27 14:17:07		    keep: keep server in config file (for temporary servers only)
+2016-08-27 14:17:07		     del: delete a server
+2016-08-27 14:17:07		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2016-08-27 14:17:07		    jump: jump to server buffer
+2016-08-27 14:17:07		     raw: open buffer with raw IRC data
+2016-08-27 14:17:07		Examples:
+2016-08-27 14:17:07		  /server listfull
+2016-08-27 14:17:07		  /server add freenode chat.freenode.net
+2016-08-27 14:17:07		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2016-08-27 14:17:07		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2016-08-27 14:17:07		  /server copy freenode freenode-test
+2016-08-27 14:17:07		  /server rename freenode-test freenode2
+2016-08-27 14:17:07		  /server reorder freenode2 freenode
+2016-08-27 14:17:07		  /server del freenode
+2016-08-27 14:17:07		  /server deloutq
+2016-08-27 14:17:25		irc: server freenode added
+2016-08-27 15:28:45		fifo: pipe closed
+2016-08-27 18:59:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-27 19:42:34		fifo: pipe closed
+2016-08-27 22:30:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-27 22:37:28		fifo: pipe closed
+2016-08-27 22:37:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-27 22:38:45		fifo: pipe closed
+2016-08-28 09:39:47		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-28 09:40:23	=!=	irc: command "msg" must be executed on connected irc server
+2016-08-28 10:02:57		fifo: pipe closed
+2016-08-28 23:45:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-29 00:20:32	=!=	Error: unknown command "/discpnect" (type /help for help)
+2016-08-29 00:20:40		fifo: pipe closed
+2016-08-29 13:16:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-29 13:27:30		fifo: pipe closed
+2016-08-29 16:48:41		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-29 17:43:43		fifo: pipe closed
+2016-08-29 18:31:42		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-29 18:38:13		fifo: pipe closed
+2016-08-29 18:41:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-29 18:41:53		fifo: pipe closed
+2016-08-30 22:23:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-31 00:04:11		fifo: pipe closed
+2016-08-31 15:07:14		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-08-31 21:59:59		fifo: pipe closed
+2016-09-04 11:43:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-04 11:55:19		fifo: pipe closed
+2016-09-04 12:38:45		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-04 12:38:51		fifo: pipe closed
+2016-09-05 13:48:31		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-05 13:48:42	=!=	irc: unable to add temporary server "irc.rizon.net" because the addition of temporary servers with command /connect is currently disabled
+2016-09-05 13:48:42	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2016-09-05 13:48:57		irc: server rizon added
+2016-09-05 13:56:40		fifo: pipe closed
+2016-09-05 16:10:04		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-05 16:23:13		fifo: pipe closed
+2016-09-05 21:20:38		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-05 23:34:25		fifo: pipe closed
+2016-09-06 22:38:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-06 22:41:36		fifo: pipe closed
+2016-09-07 13:39:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-07 14:17:02		fifo: removing old fifo pipe "/home/manan/.weechat/weechat_fifo_1383"
+2016-09-07 14:17:03		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-07 14:21:20		fifo: pipe closed
+2016-09-07 14:26:37		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-07 14:35:41		fifo: pipe closed
+2016-09-07 22:01:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-07 22:25:52		fifo: pipe closed
+2016-09-07 22:38:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-07 22:38:38		fifo: pipe closed
+2016-09-12 10:19:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-12 11:18:01	=!=	Error: unknown command "/disconenct" (type /help for help)
+2016-09-12 11:18:10		fifo: pipe closed
+2016-09-12 13:07:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-12 13:07:22		fifo: pipe closed
+2016-09-12 17:29:44		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-12 17:42:52		fifo: pipe closed
+2016-09-14 21:06:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-09-14 23:44:27		fifo: pipe closed
+2016-07-25 21:07:12		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, perl, python, relay, ruby, script, trigger, xfer
+2016-07-25 21:07:45		fifo: pipe closed
+2016-07-25 21:07:51		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2016-07-25 21:10:04		fifo: pipe closed
+2016-07-25 21:10:05		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer

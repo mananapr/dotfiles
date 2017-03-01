@@ -1,0 +1,123 @@
+2016-09-05 13:49:05	--	irc: connecting to server irc.rizon.net/6667...
+2016-09-05 13:49:05	--	irc: connected to irc.rizon.net/6667 (54.229.0.87)
+2016-09-05 13:49:06	--	* :Please wait while we process your connection.
+2016-09-05 13:49:06	--	irc.x2x.cc: *** Looking up your hostname...
+2016-09-05 13:49:06	--	irc.x2x.cc: *** Checking Ident
+2016-09-05 13:49:06	--	irc.x2x.cc: *** Couldn't look up your hostname
+2016-09-05 13:49:07	--	irc.x2x.cc: *** No Ident response
+2016-09-05 13:49:07	--	irc.x2x.cc: *** Your host is masked (12E4EEB5.B3BAB199.83AE5413.IP)
+2016-09-05 13:49:07	--	Welcome to the Rizon Internet Relay Chat Network manan
+2016-09-05 13:49:07	--	Your host is irc.x2x.cc, running version hybrid-7.2.3+plexus-3.1.0(20151028_0-547)
+2016-09-05 13:49:07	--	This server was created Mar 19 2016 at 18:41:17
+2016-09-05 13:49:07	--	irc.x2x.cc hybrid-7.2.3+plexus-3.1.0(20151028_0-547) CDFGNRSUWXabcdfgijklnopqrsuwxyz BIMNORSabcehiklmnopqstvz Iabehkloqv
+2016-09-05 13:49:07	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 TOPICLEN=390 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ NETWORK=Rizon MAXLIST=beI:250 TARGMAX=ACCEPT:,KICK:1,LIST:1,NAMES:1,NOTICE:4,PRIVMSG:4,WHOIS:1 CHANTYPES=# :are supported by this server
+2016-09-05 13:49:07	--	CHANLIMIT=#:75 CHANNELLEN=50 CHANMODES=beI,k,l,BCMNORScimnpstz NAMESX UHNAMES AWAYLEN=160 FNC KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2016-09-05 13:49:07	--	39CAAVL0M :your unique ID
+2016-09-05 13:49:07	--	There are 46 users and 18271 invisible on 15 servers
+2016-09-05 13:49:07	--	62 :IRC Operators online
+2016-09-05 13:49:07	--	3 :unknown connection(s)
+2016-09-05 13:49:07	--	19522 :channels formed
+2016-09-05 13:49:07	--	I have 18317 clients and 15 servers
+2016-09-05 13:49:07	--	18317 23197 :Current local users 18317, max 23197
+2016-09-05 13:49:07	--	18317 23197 :Current global users 18317, max 23197
+2016-09-05 13:49:07	--	- irc.x2x.cc Message of the Day -
+2016-09-05 13:49:07	--	-          oo                            
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2016-09-05 13:49:07	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2016-09-05 13:49:07	--	- 88       88  .Y8P    88.  .88 88    88 
+2016-09-05 13:49:07	--	- dP       dP d888888P `88888P' dP    dP
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- Rizon Chat Network -- http://rizon.net
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- Rules:
+2016-09-05 13:49:07	--	- o No spamming or flooding
+2016-09-05 13:49:07	--	- o No clones or malicious bots
+2016-09-05 13:49:07	--	- o No takeovers
+2016-09-05 13:49:07	--	- o No distribution of child pornography
+2016-09-05 13:49:07	--	- o Clients must respond to VERSION requests
+2016-09-05 13:49:07	--	- o Rizon staff may disconnect clients for any or no reason
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- First steps:
+2016-09-05 13:49:07	--	- o To register your nick: /msg NickServ HELP
+2016-09-05 13:49:07	--	- o To register your channel: /msg ChanServ HELP
+2016-09-05 13:49:07	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2016-09-05 13:49:07	--	- o For other help with Rizon: /join #help
+2016-09-05 13:49:07	--	-
+2016-09-05 13:49:07	--	- Usage of this network is a privilege, not a right. Rizon is a
+2016-09-05 13:49:07	--	- transit provider, therefore no person or entity involved with
+2016-09-05 13:49:07	--	- *.rizon.net or irc.x2x.cc takes any responsibility for
+2016-09-05 13:49:07	--	- users' actions. Absolutely no warranty is expressed or implied.
+2016-09-05 13:49:07	--	End of /MOTD command.
+2016-09-05 13:49:07	--	User mode [+ix] by manan
+2016-09-05 13:49:07	--	Global (service@rizon.net): [Logon News - May 21 2011] First time on Rizon? Be sure to read the FAQ! http://s.rizon.net/FAQ
+2016-09-05 13:49:07	--	Global (service@rizon.net): [Logon News - Dec 16 2013] Own a large/active channel or plan to get one going? Please read http://s.rizon.net/authline
+2016-09-05 13:49:07	--	Global (service@rizon.net): [Random News - Nov 29 2013] Want to make your vhost shiny by adding colors to it? Try your luck in #VIzon
+2016-09-05 13:49:16	--	You are now known as starship_trooper
+2016-09-05 13:49:30	--	CTCP requested by py-ctcp: VERSION
+2016-09-05 13:49:30	--	CTCP reply to py-ctcp: VERSION WeeChat 1.5 (May 11 2016)
+2016-09-05 13:49:49	--	#bakabt: You need to identify to a registered nick to join that channel. Check /msg nickserv help register
+2016-09-05 13:50:50	--	irc: disconnected from server
+2016-09-12 10:19:58	--	irc: connecting to server irc.rizon.net/6667...
+2016-09-12 10:19:59	--	irc: connected to irc.rizon.net/6667 (54.229.0.87)
+2016-09-12 10:19:59	--	* :Please wait while we process your connection.
+2016-09-12 10:19:59	--	irc.x2x.cc: *** Looking up your hostname...
+2016-09-12 10:19:59	--	irc.x2x.cc: *** Checking Ident
+2016-09-12 10:19:59	--	irc.x2x.cc: *** Couldn't look up your hostname
+2016-09-12 10:20:00	--	irc.x2x.cc: *** No Ident response
+2016-09-12 10:20:00	--	irc.x2x.cc: *** Your host is masked (12E4EEB5.B3BAB199.83AE5413.IP)
+2016-09-12 10:20:00	--	Welcome to the Rizon Internet Relay Chat Network manan
+2016-09-12 10:20:00	--	Your host is irc.x2x.cc, running version hybrid-7.2.3+plexus-3.1.0(20151028_0-547)
+2016-09-12 10:20:00	--	This server was created Mar 19 2016 at 18:41:17
+2016-09-12 10:20:00	--	irc.x2x.cc hybrid-7.2.3+plexus-3.1.0(20151028_0-547) CDFGNRSUWXabcdfgijklnopqrsuwxyz BIMNORSabcehiklmnopqstvz Iabehkloqv
+2016-09-12 10:20:00	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 TOPICLEN=390 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ NETWORK=Rizon MAXLIST=beI:250 TARGMAX=ACCEPT:,KICK:1,LIST:1,NAMES:1,NOTICE:4,PRIVMSG:4,WHOIS:1 CHANTYPES=# :are supported by this server
+2016-09-12 10:20:00	--	CHANLIMIT=#:75 CHANNELLEN=50 CHANMODES=beI,k,l,BCMNORScimnpstz NAMESX UHNAMES AWAYLEN=160 FNC KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2016-09-12 10:20:00	--	39CAAWTUN :your unique ID
+2016-09-12 10:20:00	--	There are 48 users and 18791 invisible on 15 servers
+2016-09-12 10:20:01	--	64 :IRC Operators online
+2016-09-12 10:20:01	--	3 :unknown connection(s)
+2016-09-12 10:20:01	--	19465 :channels formed
+2016-09-12 10:20:01	--	I have 18839 clients and 15 servers
+2016-09-12 10:20:01	--	18839 23197 :Current local users 18839, max 23197
+2016-09-12 10:20:01	--	18839 23197 :Current global users 18839, max 23197
+2016-09-12 10:20:01	--	- irc.x2x.cc Message of the Day -
+2016-09-12 10:20:01	--	-          oo                            
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2016-09-12 10:20:01	--	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2016-09-12 10:20:01	--	- 88       88  .Y8P    88.  .88 88    88 
+2016-09-12 10:20:01	--	- dP       dP d888888P `88888P' dP    dP
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- Rizon Chat Network -- http://rizon.net
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- Rules:
+2016-09-12 10:20:01	--	- o No spamming or flooding
+2016-09-12 10:20:01	--	- o No clones or malicious bots
+2016-09-12 10:20:01	--	- o No takeovers
+2016-09-12 10:20:01	--	- o No distribution of child pornography
+2016-09-12 10:20:01	--	- o Clients must respond to VERSION requests
+2016-09-12 10:20:01	--	- o Rizon staff may disconnect clients for any or no reason
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- First steps:
+2016-09-12 10:20:01	--	- o To register your nick: /msg NickServ HELP
+2016-09-12 10:20:01	--	- o To register your channel: /msg ChanServ HELP
+2016-09-12 10:20:01	--	- o To get a vHost: /msg HostServ HELP REQUEST
+2016-09-12 10:20:01	--	- o For other help with Rizon: /join #help
+2016-09-12 10:20:01	--	-
+2016-09-12 10:20:01	--	- Usage of this network is a privilege, not a right. Rizon is a
+2016-09-12 10:20:01	--	- transit provider, therefore no person or entity involved with
+2016-09-12 10:20:01	--	- *.rizon.net or irc.x2x.cc takes any responsibility for
+2016-09-12 10:20:01	--	- users' actions. Absolutely no warranty is expressed or implied.
+2016-09-12 10:20:01	--	End of /MOTD command.
+2016-09-12 10:20:01	--	User mode [+ix] by manan
+2016-09-12 10:20:01	--	Global (service@rizon.net): [Logon News - May 21 2011] First time on Rizon? Be sure to read the FAQ! http://s.rizon.net/FAQ
+2016-09-12 10:20:01	--	Global (service@rizon.net): [Logon News - Dec 16 2013] Own a large/active channel or plan to get one going? Please read http://s.rizon.net/authline
+2016-09-12 10:20:01	--	Global (service@rizon.net): [Random News - Nov 29 2013] Want to make your vhost shiny by adding colors to it? Try your luck in #VIzon
+2016-09-12 10:20:01	--	CTCP requested by py-ctcp: VERSION
+2016-09-12 10:20:01	--	CTCP reply to py-ctcp: VERSION WeeChat 1.5 (May 11 2016)
+2016-09-12 10:20:08	--	You are now known as starship_trooper
+2016-09-12 10:22:08	--	irc: disconnected from server
