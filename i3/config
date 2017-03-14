@@ -163,6 +163,7 @@ for_window [class="Catfish"] floating enable
 
 # Cylce wallpapers
 bindsym $mod+w exec "sh ~/Scripts/wal -i ~/Pictures/Washed-2"
+bindsym $mod+Shift+a exec "sh ~/Scripts/wal -i ~/Pictures/Anime"
 bindsym $mod+Shift+w exec "sh ~/Scripts/bw.sh"
 
 # reload the configuration file
