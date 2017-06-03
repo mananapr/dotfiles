@@ -43,7 +43,7 @@ bindsym $mod+d exec rofi -show drun -padding 20 -font "Monaco 12"
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+shift+d exec lock &
+bindsym $mod+shift+d exec --no-startup-id lock &
 
 #custom start
 exec --no-startup-id redshift &
@@ -64,8 +64,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # change focus
 bindsym $mod+j focus left
@@ -213,8 +213,8 @@ for_window [class="^.*"] border pixel 4
 #i3-gaps
 gaps inner 10
 gaps outer 5
-smart_gaps on
-smart_borders on
+#smart_gaps on
+#smart_borders on
 bindsym $mod+y gaps inner current minus 6
 bindsym $mod+u gaps inner current plus 6
 bindsym $mod+Shift+y gaps outer current minus 6
