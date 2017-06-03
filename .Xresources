@@ -6,7 +6,12 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-URxvt*font:     xft:Monaco:size=9
+URxvt*font:     xft:Monaco:size=7
+URxvt*boldFont:     xft:Monaco:bold:size=7
+
+!URxvt*font: -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-* 
+!URxvt*boldFont: -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-*
+
 URxvt.letterSpace: -1
 
 URxvt.cursorBlink: 1
@@ -27,41 +32,40 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 ! Colors {{{
 
 ! special
-*foreground:   #f0f0f0
-*background:   #232c33
-*cursorColor:  #f0f0f0
+*.foreground:   #464b50
+*.background:   #ffffff
+*.cursorColor:  #464b50
 
 ! black
-! Second black is grey
-*color0:       #232c33
-*color8:       #70838c
+*.color0:       #1e1e1e
+*.color8:       #5f5a60
 
 ! red
-*color1:       #99736e
-*color9:       #99736e
+*.color1:       #cf6a4c
+*.color9:       #cf6a4c
 
 ! green
-*color2:       #78a090
-*color10:      #78a090
+*.color2:       #8f9d6a
+*.color10:      #8f9d6a
 
 ! yellow
-*color3:       #bfb7a1
-*color11:      #bfb7a1
+*.color3:       #f9ee98
+*.color11:      #f9ee98
 
 ! blue
-*color4:       #7c9fa6
-*color12:      #7c9fa6
+*.color4:       #7587a6
+*.color12:      #7587a6
 
 ! magenta
-*color5:       #BF9C86
-*color13:      #BF9C86
+*.color5:       #9b859d
+*.color13:      #9b859d
 
 ! cyan
-*color6:       #99BFBA
-*color14:      #99BFBA
+*.color6:       #afc4db
+*.color14:      #afc4db
 
 ! white
-*color7:       #f0f0f0
-*color15:      #f0f0f0
+*.color7:       #a7a7a7
+*.color15:      #ffffff
 
 ! }}}
