@@ -1,29 +1,18 @@
-#
 # ~/.bashrc
-#
-
 # If not running interactively, don't do anything
-#[[ $- != *i* ]] && return
-#
-#alias ls='ls --color=auto'
-#PS1='[\u@\h \W]\$ '
-#
-#powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#. /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh /powerline/bindings/bash/powerline.sh
+wal -r
 
-# If not running interactively, don't do anything
-sh ~/Scripts/wal -r
-
-PATH="$PATH:$HOME/Scripts"
+eval $(thefuck --alias)
 
 source "$HOME/.cache/wal/colors.sh"
-
 export EDITOR="vim"
 
 alias 'neofetcha'='clear && neofetch --source 'Pictures/Anime/Neofetch/Yui.png' --crop_mode fill'
 alias 'neofetchb'='clear && neofetch --source 'Pictures/Anime/Neofetch/Mugi.png' --crop_mode fill'
+alias 'neofetchc'='clear && neofetch --source 'Pictures/Anime/Neofetch/Azusa.jpg' --crop_mode fill'
+
+alias 'decrypt'='encfs ~/.config/.dbs_encfs ~/.config/dbs'
+alias 'encrypt'='fusermount -u ~/.config/dbs'
 
 case $- in
     *i*) ;;
