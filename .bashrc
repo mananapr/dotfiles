@@ -2,10 +2,9 @@
 # If not running interactively, don't do anything
 wal -r
 
-eval $(thefuck --alias)
-
 source "$HOME/.cache/wal/colors.sh"
 export EDITOR="vim"
+PATH="$PATH:$HOME/Scripts"
 
 alias 'neofetcha'='clear && neofetch --source 'Pictures/Anime/Neofetch/Yui.png' --crop_mode fill'
 alias 'neofetchb'='clear && neofetch --source 'Pictures/Anime/Neofetch/Mugi.png' --crop_mode fill'

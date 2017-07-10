@@ -116,12 +116,12 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1:"
-set $workspace2 "2:"
-set $workspace3 "3:"
-set $workspace4 "4:"
-set $workspace5 "5:"
-set $workspace6 "6:"
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -162,9 +162,9 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Catfish"] floating enable
 
 # Cylce wallpapers
-bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2"
-bindsym $mod+Shift+a exec --no-startup-id "wal -i ~/Pictures/Anime"
-bindsym $mod+Shift+w exec --no-startup-id "wal -i ~/Pictures/BW"
+bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 && sh ~/Scripts/wal-set && sh ~/Scripts/bar"
+bindsym $mod+Shift+a exec --no-startup-id "wal -i ~/Pictures/Anime && ~/Scripts/wal-set && sh ~/Scripts/bar"
+bindsym $mod+Shift+w exec --no-startup-id "wal -i ~/Pictures/BW && ~/Scripts/wal-set && sh ~/Scripts/bar"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
