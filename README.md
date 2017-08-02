@@ -1,7 +1,7 @@
 # Manan's Dotfiles
 Dotfiles for my Arch Linux setup.
 
-[Full Screenshot Album](http://imgur.com/a/ItLPG)
+[Full Screenshot Album](https://imgur.com/a/ZnjWW)
 
 ![Neofetch](main.png "Neofetch")
 
