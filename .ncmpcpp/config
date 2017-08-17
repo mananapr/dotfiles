@@ -1,7 +1,7 @@
 #MPD
-mpd_host                              = "127.0.0.1"
-mpd_port                              = "6600"
-mpd_music_dir                         = "~/Music"
+mpd_host            = "127.0.0.1"
+mpd_port            = "6600"
+mpd_music_dir       = "~/Music"
 
 #VISULAIZER
 visualizer_fifo_path                  = "/tmp/mpd.fifo"
@@ -11,21 +11,21 @@ visualizer_in_stereo                  = "yes"
 visualizer_type                       = "spectrum" (spectrum/wave)
 visualizer_look                       = "●┃"
 
-#PLAYLIST
-playlist_disable_highlight_delay      = 1
-playlist_display_mode                 = "classic"
-playlist_separate_albums              = "no"
-jump_to_now_playing_song_at_start     = "yes"
-song_list_format                      = "$3 %a $R $8 %t $6 %l"
-follow_now_playing_lyrics             = "yes"
+# PLAYLIST
+playlist_disable_highlight_delay = 1
+song_columns_list_format = "(40)[blue]{a} (25)[blue]{t|f}"
+song_list_format = "$3{%a}$R$2{%t}"
+playlist_display_mode = "classic"
+centered_cursor = "yes"
+follow_now_playing_lyrics = "yes"
+now_playing_prefix = "$5> "
 
-#COLORS
-progressbar_color                     = "black"
-statusbar_color                       = "cyan"
-active_column_color                   = "red"
-progressbar_look                      = "─╼─"
+# BARS
+progressbar_color = "black"
+progressbar_elapsed_color = "blue"
+progressbar_look = "__"
 
-#UI
-header_visibility                     = "no"
-titles_visibility                     = "no"
-statusbar_visibility                  = "no"
+# UI
+header_visibility = "no"
+titles_visibility = "no"
+statusbar_visibility = "no"
