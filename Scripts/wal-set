@@ -10,19 +10,24 @@ reload_dunst() {
             -bf "$color15" \
             -cf "$color15" \
             -nf "$color15" \
-            -fn "${DUNST_FONT:-Monaco 7}" \
-            -geometry "${DUNST_SIZES:-300x30-20+40}" &
+            -fn "${DUNST_FONT:-Monaco 8}" \
+            -geometry "${DUNST_SIZES:-300x30-20+30}" &
 }
 
 set_bar() {
     pkill bar
-    ./bar 2>/dev/null &
+    sh ~/Scripts/bar 2>/dev/null &
+}
+
+set_sublime() {
+    ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme.sh > ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme
 }
 
 main() {
     reload_dunst &
+    set_sublime &
     # pgrep i3 && i3-msg reload &
-    set_bar &
+#    set_bar &
     # set_scss &
 }
 
