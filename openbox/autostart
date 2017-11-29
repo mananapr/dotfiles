@@ -1,0 +1,9 @@
+compton -b --backend glx --vsync opengl-swc &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+wal -i "$(< "${HOME}/.cache/wal/wal")" &
+dunst &
+wal-set &
+xfce4-power-manager &
+mpd &
+pasystray --always-notify &
+tint2 -c ~/.config/tint2/tint2rc-openbox &
