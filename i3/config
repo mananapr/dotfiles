@@ -46,26 +46,33 @@ bindsym $mod+d exec rofi -show drun -padding 20 -font "Monaco 12"
 bindsym $mod+shift+d exec --no-startup-id lock &
 
 #custom start
-exec --no-startup-id redshift &
+#exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json'"
+#exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/manan/.config/i3/workspace-2.json'"
+#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json'"
 exec --no-startup-id tint2 &
-exec --no-startup-id pasystray -a &
+#exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
-exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" &
+exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc &
-exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
+#exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
 exec --no-startup-id mpd &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Pulse Audio
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id vol up
+bindsym XF86AudioLowerVolume exec --no-startup-id vol down
+bindsym XF86AudioMute exec --no-startup-id vol mute
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1
+#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1
+bindsym XF86MonBrightnessUp exec --no-startup-id bri inc
+bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
 
 # change focus
 bindsym $mod+j focus left
@@ -162,9 +169,9 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Catfish"] floating enable
 
 # Cylce wallpapers
-bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 && sh ~/Scripts/wal-set && sh ~/Scripts/bar"
-bindsym $mod+Shift+a exec --no-startup-id "wal -i ~/Pictures/Anime && ~/Scripts/wal-set && sh ~/Scripts/bar"
-bindsym $mod+Shift+w exec --no-startup-id "wal -i ~/Pictures/BW && ~/Scripts/wal-set && sh ~/Scripts/bar"
+bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 && sh ~/Scripts/wal-set"
+bindsym $mod+Shift+a exec --no-startup-id "wal -i ~/Pictures/Anime && ~/Scripts/wal-set"
+bindsym $mod+Shift+w exec --no-startup-id "wal -i ~/Pictures/BW && wal-set"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -207,6 +214,7 @@ client.focused          $bg           $bg          $fg          $fg   $fg
 client.unfocused        $bg           $bg          $fg          $bg   $bg
 client.focused_inactive $bg           $bg          $fg          $bg   $bg
 client.urgent           $bg           $bg          $fg          $bg   $bg
+client.background $bg
 
 for_window [class="^.*"] border pixel 4
 

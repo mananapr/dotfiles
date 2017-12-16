@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    "inc") xbacklight -inc 1 ;;
+    "dec") xbacklight -dec 1 ;;
+    *) printf "%s\\n" "Usage: ./bri inc, ./bri dec"; exit ;;
+esac
+
+current_bri=$(xbacklight | cut -b 1,2)
+notify-send -t 1 -r 112 "Brightness: ${current_bri/$'\n'*}"

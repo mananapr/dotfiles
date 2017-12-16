@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    "up")   pactl set-sink-volume 0 +5% ;;
+    "down") pactl set-sink-volume 0 -5% ;;
+    "mute") pactl set-sink-mute 0 toggle ;;
+    *) printf "%s\\n" "Usage: ./vol up, ./vol down"; exit ;;
+esac
+
+flag="$(amixer sget Master)"
+
+if [[ $flag =~ .*off.* ]]; then
+    current_vol="[MUTED] $(amixer sget Master | grep -o -E "[[:digit:]]+%")"
+else
+    current_vol="$(amixer sget Master | grep -o -E "[[:digit:]]+%")"
+fi
+
+notify-send -t 1 -r 112 "Volume: ${current_vol/$'\n'*}"
