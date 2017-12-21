@@ -1,0 +1,1186 @@
+@-moz-document domain(youtube.com) {
+    
+/* GENERAL */
+    html {
+        overflow-x: hidden;
+        height: 100% !important;
+    }
+    * {
+        font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+    }
+    a,
+    a:hover,
+    .title,
+    .title:hover {
+        text-decoration: none !important;
+    }
+    .title:hover,
+    .yt-uix-sessionlink.yt-uix-tile-link.yt-ui-ellipsis.yt-ui-ellipsis-2.spf-link:hover {
+        color: #44BBFF !important;
+    }
+    .yt-uix-sessionlink.yt-ui-ellipsis.yt-ui-ellipsis-2.spf-link:hover,
+    .feed-item-container .yt-uix-sessionlink.yt-uix-tile-link.spf-link.yt-ui-ellipsis.yt-ui-ellipsis-2:hover {
+        color: #112233 !important;
+    }
+    #page-container {
+        margin-top: 2px !important;
+    }
+    #page {
+        margin-left: 45px !important;
+    }
+    /** HEADER **/
+        #masthead-positioner {
+            height: 100% !important;
+            width: 10px !important;
+            margin-left: -2px !important;
+        }
+        #yt-masthead-container {
+            background: #232a31 !important;
+            border-bottom: 0px solid #e8e8e8;
+            height: 100% !important;
+            width: 17px !important;
+            margin-left: -18px !important;
+        }
+        /*** LOGO ***/   
+            #yt-masthead #logo-container .logo {
+                background-image: url("http://i.imgur.com/n02Oi7Z.png") !important;
+                background-repeat: no-repeat !important;
+                background-position: 66% 50% !important;
+                background-size: 15px auto !important;
+                width: 76px !important;
+                height: 56px;  
+                position: absolute !important;
+                background-color: #ff6766 !important;
+                top: -22px !important;
+                left: -29px !important;
+            }
+            #yt-masthead #logo-container.doodle img {
+                padding: 0px 0px 0px 76px !important;
+            }
+            #yt-masthead #logo-container span.content-region {
+                display: none !important;
+            }
+            #yt-masthead #logo-container.doodle img {
+                background: none;
+                width: 0px !important;
+                padding: 0px 0px 0px 260px;
+            }  
+        /*** SEARCH ***/
+            #masthead-search {
+                padding-bottom: 30px !important;
+            }
+            #yt-masthead-content {                
+                position: absolute !important;
+                left: 40px !important;
+                top: 227px !important;
+                width: 20px !important;
+                height: 50px !important;
+                transition: all .5s ease-in-out !important;
+            }
+            #yt-masthead-content:hover {
+                width: 450px !important;
+                transition: all .5s ease-in-out !important;
+            }
+            #masthead-search .search-btn-component {
+                height: 41px !important;
+                float: left !important;
+                background: transparent !important;
+                border: none !important;
+                height: 0px !important;
+                width: 0px !important;
+                padding: 11px !important;
+                margin-left: -2.5px !important;
+                margin-top: 8px !important;
+                box-shadow: none !important;
+                margin-right: 10px !important;
+                opacity: 0;
+            }
+            #yt-masthead-content {
+                background-color: #232a31 !important;
+                background-image: url("http://i.imgur.com/n0mhXCg.png") !important;
+                background-position: center left !important;
+                background-repeat: no-repeat !important;
+                background-size: 17px auto !important;
+                margin-top: -3px !important;
+            }
+            #masthead-search-terms {
+                background: #232a31 !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 41px !important;
+            }
+            #masthead-search-terms input {
+                color: #FFF !important;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                font-size: 13pt !important;
+                font-weight: bold !important;
+                margin-bottom: 20px !important;
+            }
+        /*** MENU ***/
+            #appbar-guide-button {
+                position: absolute !important;
+                margin-top: 58px !important;
+                margin-left: -1px !important;  
+            }
+            #appbar-guide-menu {
+                position: fixed !important;
+                left: 59px !important;
+                margin-top: 0px !important;
+                max-height: 100% !important;
+                box-shadow: none !important;
+                border: 1px solid #EBEBEB !important;
+                border-width: 0px 1px 1px 0px !important;
+                overflow-y: hidden !important;
+                z-index: 9 !important;
+            }    
+            #what_to_watch-guide-item {
+                background: no-repeat url("http://i.4cdn.org/w/1475656572491.png") center 60% !important;  
+                background-size: auto 200px !important;
+                margin-left: -22px !important;            
+                margin-top: -14px !important;
+                margin-bottom: 20px !important;
+                padding: 14px !important;
+                width: 109% !important;
+            }
+            .guide-item.yt-uix-sessionlink.yt-valign.spf-link.guide-item-selected[title="Home"] {
+                opacity: 0;
+            }
+            .guide-item.yt-uix-sessionlink.yt-valign.spf-link.guide-item-selected {
+                background: transparent !important;
+                color: #444 !important;
+                font-weight: bold !important;
+                text-shadow: none !important;
+            }
+            #what_to_watch-guide-item a,
+            guide-item.yt-uix-sessionlink.yt-valign.spf-link.guide-item-selected span {
+                color: transparent !important;
+            }
+            .guide-user-links.yt-uix-tdl.yt-box .thumb {
+                display: none !important;
+            }
+            #appbar-guide-menu .guide-section-separator {
+                visibility: hidden;
+            }
+            .guide-item .guide-count {
+                color: #FF6766 !important;
+                font-size: 9pt !important;
+                font-weight: bold !important;
+            }
+            .guide-item.yt-uix-sessionlink.yt-valign.spf-link:hover {
+                background: transparent !important;
+                color: #232a31 !important;
+                font-weight: bold !important;
+            }
+            li.guide-section h3 a {
+                border-bottom: 2px solid #ebebeb !important;
+                color: #232a31 !important;
+                font-family: "Bebas Neue" !important;
+                font-size: 16pt !important;              
+                font-weight: bold !important;
+                padding: 10px 0px !important;
+            }
+            li.guide-section h3 a:hover {
+                text-decoration: none !important;
+            }
+            .yt-uix-button-icon-hover-action-menu {
+                background: no-repeat url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-128.png") center !important;
+                background-size: cover !important;
+                margin-top: 10px !important;
+            }
+        /*** USER ***/
+            #yt-masthead-user {
+                position: absolute !important;
+                margin-top: 100px !important;
+                margin-left: 10px !important;
+            }
+            #upload-btn {
+                background-color: transparent !important;
+                background: url('http://i.imgur.com/naGokm2.png') !important;
+                background-size: 35px auto !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                border: none !important;
+                box-shadow: none !important;
+                color: transparent !important;
+                opacity: .5 !important;
+                margin-right: 15px;
+                margin-left: -4px !important;
+                filter: brightness(0) invert(1) !important;
+            }
+            .yt-uix-button-icon-material-upload.yt-sprite {
+                  display: none;
+            }
+            #sb-button-notify::before { 
+                display: none !important;
+            }
+            #sb-button-notify {
+                background: no-repeat url("http://i.imgur.com/omK5Bl1.png") center !important;
+                background-size: 28px auto !important;
+                opacity: .7 !important;
+                margin-left: -8.8px !important;
+                margin-top: 10px !important;
+            }   
+            .yt-uix-button-icon.yt-uix-button-icon-bell.yt-sprite {
+                display: none !important;
+            }
+            #yt-masthead-user .yt-masthead-user-icon {
+                border-radius: 0% !important;
+                margin-top: 15px !important;
+                margin-left: -7px !important;
+                border-radius: 0% !important;
+                margin-top: 16px !important;
+                margin-left: -8px !important;
+                padding-top: 40px !important;
+                background: no-repeat url("http://i.imgur.com/sjrfMCf.jpg") center top !important;
+                background-size: 25px auto !important;
+            }  
+            .yt-thumb-clip img {
+                border-radius: 1px !important;
+            }
+            .yt-masthead-picker-footer .yt-masthead-picker-button span,
+            .yt-masthead-picker-info a.yt-uix-button span {
+                font-size: 13px !important;
+                text-transform: lowercase !important;
+            }
+            .yt-masthead-picker-footer .yt-masthead-picker-button,
+            .yt-masthead-picker-info a.yt-uix-button {
+                border: 1px solid #E7E7E7 !important;
+                padding-top: 2px !important;
+            }
+            .signin-container {
+                position: absolute !important;
+                right: 3px !important;
+                top: 110px !important;
+            }
+            .yt-uix-button.yt-uix-button-size-default.yt-uix-button-primary {
+                background: no-repeat url("http://i.imgur.com/sjrfMCf.jpg") center top !important;
+                background-size: 25px auto !important;
+                background-color: transparent !important;
+                border: none !important;
+                color: transparent !important;
+            }
+            .yt-uix-clickcard-card {
+                position: fixed !important;
+                left: 70px !important;
+                margin-top: -150px !important;
+            }
+            .yt-masthead-picker-header.yt-masthead-picker-active-account,
+            .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header {
+                background: #232a31 !important;
+                color: #FFF !important;
+                font-weight: 700 !important;
+                font-size: 10pt !important;
+                text-transform: lowercase !important;
+                padding: 10px !important;
+            }
+            .yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border {
+                float: left;
+                background: #fff;
+                border: none !important;
+                box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+            }
+            .sb-card-border {
+                background: none repeat scroll 0 0 #fff;
+                border: none !important;
+                box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+                position: fixed !important;
+                left: 80px !important;
+            }
+            .sb-card-arrow,
+            .sb-card-body-arrow,
+            .yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,
+            .yt-uix-clickcard-card.yt-masthead-multilogin .yt-uix-card-body-arrow, 
+            .yt-uix-card-body-arrow.yt-uix-card-body-arrow-vertical {
+                display: none !important;
+            }
+        /** FOOTER **/
+            body #footer-container {
+                display: none !important;
+            }
+    
+/* HOME SECTION */
+    /** CARDS **/
+        .branded-page-v2-container.branded-page-base-bold-titles.branded-page-v2-container-flex-width.branded-page-v2-secondary-column-hidden .yt-card {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        .feed-item-container.browse-list-item-container.yt-section-hover-container.compact-shelf.shelf-item.branded-page-box.clearfix {
+            background: #FFF !important;
+            box-shadow: 0 1px 2px rgba(0,0,0,.1) !important;
+            border: none !important;
+            margin-top: 10px !important;     
+        }
+        .multirow-shelf .yt-uix-expander-head {
+            background: #232a31 !important;
+            color: #FFF !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            padding: 10px 10px 10px 16px !important;
+            text-align: center !important;
+            text-transform: lowercase !important;
+            width: 100% !important;
+            margin-left: -18px !important;
+            margin-right: 10px;
+            margin-top: 20px !important;
+            margin-bottom: -15px !important;
+        }
+    /** TITLE **/
+        .shelf-item .shelf-title-table {
+            background: #F5F8F9 !important;
+            padding: 20px 16px 13px 20px !important;
+            margin-left: -18px !important;
+            margin-top: -15px !important;
+            margin-bottom: 17px !important;
+        }
+        .section-list > li:nth-child(2) .shelf-title-table {
+            background: no-repeat url("http://i.imgur.com/aAJOImx.jpg") center !important;
+            background-size: cover !important;
+        }
+        .section-list > li:nth-child(2) .shelf-title-table a,
+        .section-list > li:nth-child(2) .shelf-title-table span {
+            color: #FFF !important;
+        }
+        .exp-responsive .shelf-item .branded-page-module-title .branded-page-module-title-link,
+        .exp-responsive .shelf-item .branded-page-module-title .branded-page-module-title-text {
+            font-size: 20px !important;
+        }
+      
+    /** VIDEOS **/
+        .section-list .video-time {
+            background-color: #232a31 !important;
+            font-family: "Roboto" !important;
+            font-weight: bold !important;
+            padding: 7px 10px 7px 10px !important;
+            opacity: 1 !important;
+            text-align: left !important;
+            width: 100% !important;
+            margin-bottom: -2px !important;
+            margin-right: -20px !important;
+            position: absolute !important;
+            left: -1px !important;
+        }
+        .yt-uix-button-empty .yt-uix-button-arrow {
+            display: none;
+        }
+  
+/* SEARCH SECTION */
+    /** CARDS **/
+        #results {
+            background: #FFF !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+            padding-bottom: 6px !important;
+        }
+        #results .yt-lockup-tile {
+            padding: 10px 15px;
+            background: #FFF !important;
+        } 
+    /** BANNER **/
+        #results .branded-page-v2-subnav-container {
+            background: no-repeat url("http://i.imgur.com/lLFytHx.jpg") center !important;
+            background-size: cover !important;
+            padding: 16px 16px 18px 20px !important;
+            margin-bottom: 5px !important;
+        }
+        .search-header {
+            border-bottom: none !important;
+        }
+        .num-results.first-focus {
+            font-size: 20px !important;
+            color: #FFF !important;
+            font-weight: 500 !important;
+            text-transform: lowercase !important;
+        }
+        .yt-uix-button.yt-uix-button-size-small.yt-uix-button-default.filter-button {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            margin-top: -12px !important;
+            margin-left: -18px !important;
+        }
+        .yt-uix-button-arrow {
+            filter: brightness(0) invert(1) !important;
+        }
+        .search-header .num-results, .search-header .num-results strong, .search-header .yt-uix-button-content {
+            color: #FFF !important;
+            font-size: 20px !important;
+            font-weight: 500 !important;
+        }
+        #filter-dropdown {
+            padding: 7px !important;
+        }
+        .filter-col-title,
+        .filter {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: bold !important;
+        }
+        #filter-dropdown span {
+            color: #FFF !important;
+        }
+    
+/* HISTORY SECTION */
+    /** CARDS **/
+        .branded-page-v2-subnav-container,
+        .yt-lockup.yt-lockup-tile.yt-lockup-video.clearfix {
+            background: #FFF !important;
+            border-color: #EBEBEB !important;
+        }
+        .feed-item-container.browse-list-item-container.yt-section-hover-container.search-history-item.branded-page-box{
+            background: #FFF !important;
+            border-color: #EBEBEB !important;
+        }
+    /** TITLE **/
+        .feed-header {
+            background: no-repeat url("http://i.imgur.com/6qamRuW.jpg") center !important;
+            background-size: cover !important;
+            padding: 18px 16px 13px 20px !important;
+            margin-top: -15px !important;
+        }
+        .epic-nav-item-heading.first-focus,
+        .feed-header .yt-uix-button-content {
+            border: none !important;
+            color: #FFF !important;
+            font-size: 20px !important;
+            font-weight: 500 !important;
+        }
+        .feed-header .yt-uix-button-content {
+            margin-left: -12px !important;
+        }
+        .feed-header #channel-navigation-menu > li:first-child .epic-nav-item-heading:after,
+        .feed-header #channel-navigation-menu > li:first-child span:after {
+            content: " | " !important;
+            font-weight: bold !important;
+            margin-left: 10px !important;
+        }
+        .feed-header #channel-navigation-menu > li:first-child span {
+            padding-left: 12px !important;
+            margin-right: -16px !important;
+        }
+        .yt-uix-button.spf-link.yt-uix-sessionlink.yt-uix-button-epic-nav-item.yt-uix-button-size-default:hover {
+            border-bottom: 3px solid transparent !important;
+            opacity: .7 !important;
+        }
+    /** OPTIONS **/
+        .branded-page-v2-subnav-container.branded-page-gutter-padding.history-controls-container {
+            text-align: right !important;
+            border: none !important;
+            margin-top: -38px !important;
+            background: transparent !important;
+        }
+        #watch-history-clear-button,
+        #search-history-clear-button {
+            border: none !important;
+            box-shadow: none !important;
+            color: transparent !important;
+            width: 0px !important;
+            height: 0px !important;
+            background: no-repeat url("http://i.imgur.com/2n3rpjO.png") center !important;
+            padding: 20px 0px 0px 20px !important;
+            margin-top: -30px;
+            background-size: 35px auto !important;
+            position: absolute !important;
+            right: 23px !important;
+            visibility: visible !important;
+        }
+        #watch-history-pause-button,
+        #search-history-pause-button {
+            display: none !important;
+        }
+    /** VIDEOS **/
+        #results .yt-lockup .yt-uix-button-action-menu {
+            opacity: 1 !important;
+        }
+    /** PAGINATION **/
+        .branded-page-box.search-pager.spf-link {
+            background: #232a31 !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+            width: 97.6% !important;
+            text-align: left !important;
+            
+        }
+        .branded-page-box.search-pager.spf-link .yt-uix-button.yt-uix-sessionlink.yt-uix-button-default.yt-uix-button-size-default {
+            margin-left: -4px !important;
+            border-radius: 1px !important;
+            padding: 5px 11px !important;
+            background: transparent !important;
+            border: none !important;
+            color: #FFF !important;
+            font-size: 10pt !important;
+        }
+        .yt-uix-button-default[disabled] {
+            border-radius: 1px !important;
+            background: #444 !important;
+            border: 1px solid #444 !important;
+        }
+        .yt-uix-button-default[disabled] span {
+            color: #FFF !important;
+            opacity: 1 !important;
+            font-size: 10pt !important;
+        }
+        .branded-page-box.search-pager.spf-link .yt-uix-button.yt-uix-sessionlink.yt-uix-button-default.yt-uix-button-size-default .yt-uix-button-content {
+            padding-top: 2px !important;
+            font-weight: bold !important;
+        }
+    
+/* LIKE/WATCH(LATER)/MYCHANNEL SECTION */
+    /** CARDS **/
+        #pl-header{
+            background: #232a31 !important;
+        }  
+        .pl-header-title {
+            color: #FFF !important;
+        }
+        .pl-header-details {
+            color: #FFF !important;
+            font-weight: 500 !important;
+            font-size: 10pt !important;
+        }
+        .pl-header-title-icon {
+            opacity: 1;
+            filter: brightness(0) invert(1) !important;
+        }
+        #pl-header .playlist-actions .yt-uix-button, 
+        #gh-playlist-add-video {
+            margin-right: 5px;
+            border-radius: 1px !important;
+            box-shadow: none !important;
+            background: #444 !important;
+            border: none !important;
+            color: #FFF !important;
+            font-weight: bold !important;
+            font-size: 13px !important;
+        }
+        #pl-header .playlist-actions  .yt-uix-button-icon-wrapper, 
+        #pl-header .playlist-actions  .yt-uix-button-has-icon.no-icon-markup::before {
+            margin-right: 6px;
+            filter: invert(1) !important;
+            opacity: 1 !important;
+        }
+        #pl-video-list {
+            background: #FFF !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.1) !important;
+        }
+        .pl-video .pl-video-index {
+            display: none;
+        }
+        .pl-video .pl-video-handle {
+            width: 16px;
+        }
+        .branded-page-v2-primary-col .branded-page-box, 
+        .section-list li .item-section .branded-page-box {
+            border-bottom: 1px solid #ebebeb;
+        }
+    /** BANNER **/
+        .channel-header .secondary-header-contents {
+            padding: 0px !important;
+            background-color: #fff;
+            border-bottom: none !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.1) !important;
+            width: 100% !important;
+        }
+        .secondary-header-action {
+            font-size: 10pt !important;
+            margin-left: 15px !important;
+            margin-right: 0px !important;
+        }
+        .secondary-header-action span {
+            font-size: 9.5pt !important;
+        }
+        .yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.yt-uix-button-empty.yt-uix-button-has-icon.casual-settings-button {
+            margin-top: -6px !important;
+            position: fixed !important;
+            bottom: 16px !important;
+            right: 10px !important;
+        }
+        .channel-header-subscription-button-container.yt-uix-button-subscription-container.yt-subscription-button-disabled-mask-container.with-preferences {
+            display: none !important;
+            
+        }
+        .yt-uix-inlineedit-view-container.yt-uix-flipwidget-front {
+            background: #FFF !important;
+            padding-left: 6px !important;
+            font-size: 20px !important;
+            font-weight: 500 !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.1) !important;    
+            margin-top: -40px !important;
+        }
+    
+    
+/* CHANNEL SECTION */
+    /** BANNER **/
+        .channel-header-profile-image-container {
+            background: transparent !important;
+        }
+        .channel-header-profile-image {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            margin-top: 12px !important;
+        }
+        .spf-link.branded-page-header-title-link.yt-uix-sessionlink {
+            display: none !important;
+        }
+        .channel-header .primary-header-actions, 
+        .channel-header-subscription-button-container {
+            float: right;
+            margin-top: -11px !important;
+            margin-right: -3px !important;
+        }
+        .branded-page-v2-top-row #channel-subheader {
+            margin-top: -70px !important;
+            padding-top: 4px !important;
+        }
+        .qualified-channel-title-badge {
+            display: none !important;
+        }
+    /** CARDS **/
+        .branded-page-v2-primary-col .yt-card {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        .video-player-view-component.branded-page-box,
+        .feed-item-container.yt-section-hover-container.browse-list-item-container.branded-page-box.vve-check {
+            margin-bottom: 10px !important;
+            background: #FFF !important;
+            border: none !important;
+            box-shadow: 0 1px 2px rgba(0,0,0,.1) !important;
+        }
+        #c4-primary-header-contents {
+            margin-top: -3px !important;
+        }
+        #channel-subheader {
+            background: #FFF !important;
+            box-shadow: 0 1px 2px rgba(0,0,0,.05) !important;
+        }
+        #channel-subheader .yt-uix-button {
+            box-shadow: none !important;
+        }
+        .branded-page-v2-subnav-container.branded-page-gutter-padding.clearfix {
+            display: none !important;
+        }
+        .channels-browse-content-grid {
+            margin-right: 0px !important;
+            background: #FFF !important;
+        }
+        #channels-browse-content-grid.grid-lockups-container {
+            padding-top: 15px;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+        }
+        .about-metadata-container {
+            background: #FFF !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+            padding: 10px !important;
+        }
+        .comment-renderer.channel-owner .comment-author-text {
+            background: no-repeat url("http://www.freeiconspng.com/uploads/queen-crown-icon-6.png") -2% 60% !important;
+            background-color: transparent !important;
+            background-size: 30px auto !important;
+            padding-left: 25px !important;
+        }
+    /** TITLE **/
+        .flex-width-enabled .feed-item-container .feed-item-main.feed-item-no-author .branded-page-module-title {
+            background: #F5F8F9;
+            padding: 16px 16px 20px 20px;
+            margin-left: -18px;
+            margin-top: -15px;
+            margin-bottom: 17px;
+            width: 100% !important;
+            max-width: 1226px !important;
+        }
+        .shelf-wrapper .lohp-newspaper-shelf {
+            margin-top: 60px !important;
+            padding-bottom: 4px !important;
+        }
+        .shelf-wrapper .lohp-newspaper-shelf .branded-page-module-title {
+            background: #F5F8F9 !important;
+            padding: 16px 0px 17px 0px !important;
+            position: absolute !important;
+            top: 15px !important;
+            max-width: 1056px !important;
+        }
+        .shelf-wrapper .lohp-newspaper-shelf .branded-page-module-title span {
+            margin-left: 20px !important;
+        }
+        .yt-uix-button.shelves-play.play-all-icon-btn {
+            opacity: 1 !important;
+            background: #EBEBEB !important;
+            border: none !important;
+            box-shadow: none !important;
+            font-weight: bold !important;
+            font-size: 12px !important;
+            height: 25px !important;
+            text-transform: lowercase !important;
+            position: absolute !important;
+            margin-left: 10px !important;
+        }
+    /** VIDEOS **/
+        .feed-item-container.yt-section-hover-container.browse-list-item-container.branded-page-box.vve-check .video-time,
+        .channels-browse-content-grid .video-time {
+            background-color: #232a31 !important;
+            font-family: "Roboto" !important;
+            font-weight: bold !important;
+            padding: 7px 10px 7px 10px !important;
+            opacity: 1 !important;
+            text-align: left !important;
+            width: 100% !important;
+            margin-bottom: -2px !important;
+            margin-right: -20px !important;
+            position: absolute !important;
+            left: -1px !important;
+        }
+        .expanded-shelf button.yt-uix-expander-head, 
+        .expanded-shelf .expanded-shelf-view-all {
+            background: #232a31 !important;
+            border-radius: 1px !important;
+            color: #FFF !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            padding: 0px 20px 0px 16px !important;
+            text-align: center !important;
+            text-transform: lowercase !important;
+            width: 100% !important;
+            margin-left: -18px !important;
+            margin-top: 20px !important;
+            margin-bottom: -3px !important;
+        }
+        .yt-card.yt-uix-expander .yt-uix-button-expander, 
+        .yt-card .yt-uix-expander .yt-uix-button-expander {
+            border-radius: 1px !important;
+            padding: 0px 20px 0px 16px !important;
+            margin-bottom: -15px !important;
+            width: 105% !important;
+            max-width: 1056px !important;
+            
+        }
+        .yt-card.yt-uix-expander .yt-uix-button-expander span,
+        .yt-card .yt-uix-expander .yt-uix-button-expander span,
+        .expanded-shelf .expanded-shelf-view-all .expanded-shelf-view-all-link-text {
+            color: #FFF !important;
+            font-weight: bold !important;
+            text-transform: lowercase !important;
+            font-size: 14px !important;
+        } 
+        .yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.load-more-button.yt-uix-load-more.browse-items-load-more-button {
+            background: #232a31 !important;
+            border: none !important;
+            border-radius: 1px !important;
+            color: #FFF !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            height: 40px !important;
+            padding: 6px 20px 8px 20px !important;
+            text-align: center !important;
+            text-transform: lowercase !important;
+            width: 100% !important;
+            margin-left: 0px !important;
+            margin-top: 0px !important;
+            margin-bottom: -3px !important;
+            opacity: 1 !important;
+        }
+        .branded-page-gutter-padding {
+            padding-right: 0px !important;
+        }
+    
+/* WATCH SECTION */
+        body .watch-stage-mode #movie_player {
+            background: transparent !important;
+        }
+        #movie_player {
+            background-color: #000 !important;
+        }
+        .player-api {
+            background: #000 !important;
+        }
+        body .watch-stage-mode #player {
+            margin-top: -5px !important;
+        }
+        body .watch-stage-mode #player .player-api {
+            margin-top: -5px !important;
+            padding: 0px !important;
+        }
+        body .watch-stage-mode #player .player-width {
+            left: auto;
+            margin-left: 0;
+        }
+        .watch-stage-mode #placeholder-player {
+            background: #000 !important;
+            margin-top: -570px !important;
+            height: 560px !important;
+        }
+        .watch-stage-mode .ytp-progress-bar-container {
+            width: 100% !important;
+        }
+        .watch-stage-mode .ytp-chrome-bottom {
+            width: 950px !important;
+            margin-top:-10px!important;
+            margin-left: 10px !important;
+        }
+        .watch-stage-mode .ytp-fullscreen .ytp-chrome-bottom {
+            width: calc(100% - 48px) !important;
+        }
+        .watch-stage-mode #player,
+        .watch-stage-mode #player #player-api {
+            width: 1000px !important;
+            height: 560px !important;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        .watch-stage-mode #player {
+            margin-top: 0px !important;
+            margin-bottom: 10px !important;
+        }
+        .watch-stage-mode #player video {
+            width: 1000px !important;
+            height: 560px !important;
+            left: 0px !important;
+            top: 0px !important;
+            object-fit: contain !important;
+        }
+        .watch-stage-mode .player-height {
+            height: 560px !important;
+        }
+        .watch-stage-mode #player .ytp-fullscreen video {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .watch-stage-mode .ytp-fullscreen .html5-video-container {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        #watch7-main {
+            margin-top: 11px !important;
+        }
+    /** INFORMATION **/
+        /*** TITLE ***/
+            #watch7-headline {
+                background: #f5f8f9 !important;
+                border-bottom: 1px solid #E7E7E7 !important;                  
+                padding: 13px 16px 13px 14px !important;
+                width: 100% !important;
+                margin-left: -15px !important;
+                margin-top: -15px !important;   
+                margin-bottom: 5px !important;
+            }
+            .watch-title-container {
+                width: 100% !important;
+            }
+            #eow-title::before {
+                content: "dd" !important;
+                background: no-repeat url("http://web.sheffieldlive.org/wp-content/uploads/2014/09/music-icon.png") center 65% !important;
+                color: transparent !important;
+                background-size: 19px auto !important;
+                margin-right: 4px !important;
+                margin-left: -2px !important;
+            }
+            #eow-title {
+                font-weight: 400 !important;
+            }
+        /*** UPLOADER ***/
+            .yt-uix-button-subscribe-branded::before,
+            .yt-uix-button-subscribed-branded::before {
+                display: none !important;
+            }
+            .yt-uix-button-subscribe-branded,
+            .yt-uix-button-subscribe-branded span {
+                background-color: #EB6361 !important;
+                text-transform: lowercase !important;
+                font-weight: bold !important;
+                padding: 0px 3px 0px 2px !important;
+            }
+            .yt-uix-button-subscribed-branded,
+            .yt-uix-button-subscribed-branded span {
+                background-color: #586474 !important;
+                border: none !important;
+                color: #FFF !important;
+                text-transform: lowercase !important;
+                font-weight: bold !important;
+                padding: 0px 4px 0px 3px !important;
+            }
+            .yt-subscription-button-subscriber-count-branded-horizontal {
+                line-height: 21.5px !important;
+            }   
+        /*** ACTIONS ***/
+            #watch8-secondary-actions .yt-uix-button-content {
+                display: none !important;
+            }
+            .addto-button::before {
+                background: no-repeat url("http://i.imgur.com/II9p6Kj.png") center !important;
+                background-size: 22px auto !important;
+                width: 20px;
+                height: 20px;
+                opacity: 1 !important;
+            }
+            .action-panel-trigger-share::before {
+                background: no-repeat url("http://i.imgur.com/2dPIub9.png") center;
+                background-size: 26px auto !important;
+                width: 20px;
+                height: 20px;
+                filter: brightness(0) !important;
+                margin-left: -16px !important;
+                opacity: .7 !important;
+            }
+            #action-panel-overflow-button::before {
+                margin-left: -15px !important;
+            }
+        /*** VIEWS ***/
+            .video-extras-sparkbar-likes {
+                background: #71BA51 !important;
+            }
+            .like-button-renderer-like-button::before {
+                background: no-repeat url("http://i.imgur.com/zR1ss8X.png") center !important;
+                background-size: 16px auto !important;
+                width: 20px;
+                height: 20px;
+            }
+            .like-button-renderer-dislike-button::before {
+                background: no-repeat url("http://i.imgur.com/C1WX1Lo.png") center !important;
+                background-size: 25px auto !important;
+                width: 20px;
+                height: 20px;
+            }
+            .like-button-renderer-like-button,
+            .like-button-renderer-dislike-button {
+                color: #000 !important;
+                font-weight: bold !important;
+                font-size: 9.5pt !important;
+            }
+            .like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content {
+                color: #71BA51;
+            }
+            .like-button-renderer-dislike-button.yt-uix-button-toggled .yt-uix-button-content {
+                color: #E3000E;
+            }
+    /** DESCRIPTION **/
+        #watch-description {
+            margin-left: -15px !important;
+            margin-right: -15px !important;
+            margin-top: -15px !important;
+        }
+        #action-panel-details .yt-uix-button.yt-uix-button-size-default.yt-uix-button-expander,
+        #watch-action-panels .yt-uix-button.yt-uix-button-size-default.yt-uix-button-expander {       
+            background: #232a31 !important;
+            border: none !important;
+            border-radius: 1px !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+            color: #FFF !important;
+            font-weight: bold !important;
+            padding: 5px 10px 25px 10px !important;
+            text-align: center !important;
+            text-transform: lowercase !important;
+            min-width: 640px !important;
+            width: 103.8% !important;
+            margin-left: -15px !important;
+        }
+        #watch-uploader-info {
+            background: #f5f8f9 !important;
+            border-bottom: 1px solid #E7E7E7 !important;
+            padding: 14px 16px 16px 16px !important;
+            width: 100% !important;
+        }
+        .watch-time-text::before {
+            color: transparent !important;
+            content: "dd" !important;
+            background: no-repeat url("http://vignette2.wikia.nocookie.net/gravityfalls/images/5/55/More_info_icon.png/revision/20131229000053") center 70% !important;
+            background-size: 19px auto !important;
+            margin-right: 8px !important;
+            margin-left: -4px !important;
+        }
+        .watch-time-text {
+            color: #000 !important;
+            font-size: 20px !important;
+            font-weight: 400 !important;
+        }
+        #eow-description {
+            margin-left: 16px !important;
+            margin-top: 13px !important;
+            margin-right: 16px !important;
+        }
+        #watch-description-extras {
+            display: none !important;
+        }
+    /** COMMENTS **/
+        .comment-section-header-renderer {
+            background: #F5F8F9 !important;
+            color: #000;
+            font-size: 20px !important;
+            font-weight: 400 !important;
+            padding: 14px 14px 14px 16px !important;
+            text-transform: none!important;
+            width: 100% !important;
+            margin-left: -15px !important;
+            margin-top: -15px !important;
+            border-bottom: 1px solid #E7E7E7 !important;
+            margin-bottom: 15px !important;
+        }
+        .comment-section-header-renderer b::before {
+            background: no-repeat url("http://i.imgur.com/pu4S5vj.png") center 75% !important;
+            background-size: 21px auto !important;
+            content: "dd" !important;
+            color: transparent !important;          
+            margin-right: 10px !important;
+        }
+        .comment-section-header-renderer b {
+            font-weight: 400 !important;
+        }
+        .yt-uix-menu.comment-section-sort-menu .yt-uix-button-content {
+            font-size: 13px !important;
+            text-transform: lowercase !important;
+        }
+        .yt-uix-menu.comment-section-sort-menu button {
+            border: 1px solid #E7E7E7 !important;
+        }
+        .comment-author-text {
+            color: #128ee9;
+            font-size: 11pt !important;
+        }
+        .comment-renderer-author-comment-badge.creator {
+            background: no-repeat url("http://www.freeiconspng.com/uploads/queen-crown-icon-6.png") -2% 100% !important;
+            background-color: transparent !important;
+            background-size: 30px auto !important;
+            padding-left: 25px !important;
+        }
+        .comment-renderer-author-comment-badge.creator .comment-author-text {
+            color: #000 !important;
+        }
+        .yt-uix-button-action-menu::before, 
+        .yt-uix-button-lockup-action-menu::before {
+            opacity: .8 !important;
+            background: no-repeat url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-128.png") center !important;
+            background-size: 10px auto !important;
+            width: 13px;
+            height: 13px;
+            margin-top: -10px !important;
+        }
+        .comment-renderer-header .comment-renderer-time a {
+            color: #212121;
+            font-weight: bold !important;
+            font-size: 10pt !important;
+        }
+        .comment-replies-renderer .comment-renderer {
+            border-left: 2px solid #EBEBEB !important;
+            padding: 15px !important;
+        }
+        .comment-renderer-reply {
+            color: #3E4651 !important;
+            font-size: 10.5pt !important;
+            font-weight: bold !important;
+            text-transform: lowercase !important;
+            margin-top: -2px !important;
+        }
+        .comment-renderer-reply::after {
+            content: "";
+        }
+        .comment-renderer-like-count {
+            color: #2CC990 !important;
+            font-size: 10pt;
+            font-weight: bold !important;
+        }
+        .comment-section-renderer-paginator {
+            background: #232a31 !important;
+            border: none !important;
+            border-radius: 1px !important;
+            color: #FFF !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            padding: 10px 10px 10px 10px !important;
+            text-align: center !important;
+            text-transform: lowercase !important;
+            min-width: 641px !important;
+            width: 103.8% !important;
+            margin-left: -16px !important;
+            margin-top: 20px !important;
+            margin-bottom: -16px !important     
+        }
+    /** SIDEBAR **/
+       /*** VIDEOS ***/
+           #watch7-sidebar .watch-sidebar-head {
+                color: #FFF !important;
+                width: 99% !important;
+                background-color:#43353D !important;
+                padding: 15px !important;
+                margin-left: -11px !important;
+                margin-top: -15px !important;
+                margin-bottom: 17px !important;
+                font-size: 12pt !important;
+            }
+            .autoplay-bar .checkbox-on-off {
+                font-size: 12pt !important;
+                color: transparent !important;
+                text-transform: lowercase !important;
+                margin-top: 13px !important;
+            }
+            .yt-uix-checkbox-on-off label {
+                background: #555 !important;
+            }
+            .yt-uix-checkbox-on-off input[type="checkbox"]:checked + label .checked {
+                margin-top: -1.7px !important;
+            }
+            .autoplay-bar .autoplay-info-icon {
+                display: none !important;
+            }
+            #watch7-sidebar .video-time {
+                background-color: #232a31 !important;
+                font-family: "Roboto" !important;
+                font-weight: bold !important;
+                padding: 6px 10px !important;
+                opacity: 1 !important;
+                width: 100% !important;
+                margin-bottom: -2px !important;
+                margin-right: -20px !important;
+                position: absolute !important;
+                left: -1px !important;
+            }
+            .yt-pl-thumb .sidebar {
+                display: none !important;
+            }
+            .resume-playback-background, 
+            .resume-playback-progress-bar {
+                top: 0 !important;
+            }
+            #a11y-announcements-message {
+                display: none !important;
+            }
+            #watch7-sidebar .yt-uix-button.yt-uix-button-size-default.yt-uix-button-expander {       
+                background: #232a31 !important;
+                border: none !important;
+                border-radius: 1px !important;
+                box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+                color: #FFF !important;
+                font-weight: bold !important;
+                padding: 5px 10px 25px 10px !important;
+                text-align: center !important;
+                text-transform: lowercase !important;
+                width: 106.4% !important;
+                margin-left: -10px !important;
+            }
+        /*** PLAYLIST ***/
+            .watch-stage-mode #player-playlist .watch-playlist {
+                margin-top: 138px !important;
+                margin-left: -90px !important;
+                margin-right: -90px !important;
+                height: 100px !important;
+            } 
+            #player-playlist .playlist-info {
+                margin-top: 4px !important;
+            }
+            #player-playlist .playlist-mix-icon {
+                float: left;
+                margin-right: 10px !important;
+                margin-top: 0px !important;
+            }
+            #player-playlist .author-attribution,
+            #player-playlist .playlist-details > li {
+                display: none !important;
+            }
+            #player-playlist .control-bar {
+                border-top: 1px solid #444;
+            }
+}
+
+@-moz-document regexp("https://www.youtube.com.user/.*?/discussion.*"),
+regexp("https://www.youtube.com/channels.*") {
+        #browse-items-primary,
+        .branded-page-v2-body.branded-page-v2-primary-column-content {
+            background: #FFF !important;
+            box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+        }    
+}
