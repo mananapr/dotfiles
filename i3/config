@@ -53,7 +53,7 @@ exec --no-startup-id tint2 &
 #exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
-exec --no-startup-id compton -b --backend glx --vsync opengl-swc &
+exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
 #exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
 exec --no-startup-id mpd &
 exec --no-startup-id dunst &
