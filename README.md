@@ -21,8 +21,8 @@ My setup uses [wal](https://github.com/dylanaraps/wal) to generate Colour Scheme
 - Text Editor: `vim`
 - Theme: `Arc`
 - Video Player: `mpv`
-- Web Browser: `Firefox-ESR`
+- Web Browser: `Firefox-ESR` and `Firefox Nightly`
 - Window Manager: `i3-gaps` and `openbox`
-- Lock Screen: `i3lock-fancy`
+- Lock Screen: Modified version of `i3lock-fancy`
 
-I also use a tint2 panel which has a fully transparent background and is set on auto-hide.
+I occasionally use a tint2 panel which has a fully transparent background and is set on auto-hide.
