@@ -7,7 +7,14 @@
         html {
             overflow: auto;
         }
- 
+
+        #content browser {
+        margin-right: -14px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+
+
 /* WINDOW */
 /** DESCRIPTION : change the position of main window in normal/maximized/fullscreen mode **/
         #main-window:not([chromehidden*="toolbar"])[sizemode="normal"] {

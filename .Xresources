@@ -6,13 +6,13 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-URxvt*font:     xft:Monaco:size=7
-URxvt*boldFont:     xft:Monaco:bold:size=7
+URxvt*font:     xft:Monaco:size=7, xfg:FontAwesome:size=7, xft:Droid Sans Fallback:pixelsize=8:antialias=true
+URxvt*boldFont:     xft:Monaco:bold:size=7, xfg:FontAwesome:size=7, xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
 
-!URxvt*font: -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-* 
-!URxvt*boldFont: -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-*
+!URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
+!URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
 
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 URxvt.cursorBlink: 1
 
@@ -21,6 +21,8 @@ URxvt.scrollBar: false
 
 ! Set terminal padding
 URxvt.internalBorder: 15
+
+URxvt*.depth: 24
 
 ! Enables copy/paste with Ctrl-Shift-C/V
 URxvt.iso14755: false
