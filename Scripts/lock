@@ -70,19 +70,39 @@ if [ "$COLOR" -gt "$VALUE" ]; then #white background image and black text
     ICON="$SCRIPTPATH/"
     ICON="$ICON$PICNAME"
     ICON="$ICON.png"
-    PARAM=(--textcolor=00000000 --insidecolor=0000001c --ringcolor=0000003e \
-        --linecolor=00000000 --keyhlcolor=ffffff80 --ringvercolor=ffffff00 \
-        --separatorcolor=22222260 --insidevercolor=ffffff1c \
-        --ringwrongcolor=ffffff55 --insidewrongcolor=ffffff1c)
+    PARAM=(--timepos="x-90:h-ch-20" \
+  --datepos="tx+24:ty+25" \
+  --clock --datestr "Type password to unlock..." \
+  --insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
+  --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
+  --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
+  --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+290:h-120" \
+  --radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
+  --textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
+)
+#    PARAM=(--textcolor=ffffff00 --insidecolor=ffffff1c --ringcolor=ffffff3e \
+#        --linecolor=ffffff00 --keyhlcolor=00000080 --ringvercolor=00000000 \
+#        --separatorcolor=22222260 --insidevercolor=0000001c \
+#        --ringwrongcolor=00000055 --insidewrongcolor=0000001c --indpos="x+100:h-80" --radius=40 --ring-width=2)
 else #black
     BW="white"
     ICON="$SCRIPTPATH/"
     ICON="$ICON$PICNAME"
     ICON="$ICON.png"
-    PARAM=(--textcolor=ffffff00 --insidecolor=ffffff1c --ringcolor=ffffff3e \
-        --linecolor=ffffff00 --keyhlcolor=00000080 --ringvercolor=00000000 \
-        --separatorcolor=22222260 --insidevercolor=0000001c \
-        --ringwrongcolor=00000055 --insidewrongcolor=0000001c --indpos="x+100:h-80" --radius=40 --ring-width=2)
+    PARAM=(--timepos="x-90:h-ch-20" \
+  --datepos="tx+24:ty+25" \
+  --clock --datestr "Type password to unlock..." \
+  --insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
+  --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
+  --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
+  --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+290:h-120" \
+  --radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
+  --textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
+)
+#    PARAM=(--textcolor=ffffff00 --insidecolor=ffffff1c --ringcolor=ffffff3e \
+#        --linecolor=ffffff00 --keyhlcolor=00000080 --ringvercolor=00000000 \
+#        --separatorcolor=22222260 --insidevercolor=0000001c \
+#        --ringwrongcolor=00000055 --insidewrongcolor=0000001c --indpos="x+100:h-80" --radius=40 --ring-width=2)
 fi
 
 convert "$IMAGE" "${HUE[@]}" "${EFFECT[@]}" -font "$FONT" -pointsize 26 -fill "$BW" -gravity center \
@@ -91,6 +111,18 @@ convert "$IMAGE" "${HUE[@]}" "${EFFECT[@]}" -font "$FONT" -pointsize 26 -fill "$
 # If invoked with -d/--desktop, we'll attempt to minimize all windows (ie. show
 # the desktop) before locking.
 ${DESKTOP} ${DESKTOP:+-k on}
+
+rectangles=" "
+
+SR=$(xrandr --query | grep ' connected' | grep -o '[0-9][0-9]*x[0-9][0-9]*[^ ]*')
+for RES in $SR; do
+  SRA=(${RES//[x+]/ })
+  CX=$((${SRA[2]} + 25))
+  CY=$((${SRA[1]} - 80))
+  rectangles+="rectangle $CX,$CY $((CX+300)),$((CY-80)) "
+done
+
+convert "$IMAGE" -draw "fill black fill-opacity 0.4 $rectangles" "$IMAGE"
 
 # try to use a forked version of i3lock with prepared parameters
 if ! i3lock -n "${PARAM[@]}" -i "$IMAGE" > /dev/null 2>&1; then
