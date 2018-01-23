@@ -1,131 +1,94 @@
 #!/usr/bin/env bash
-#
-# Dylan's bar script
-#
-# Created by Dylan Araps.
-#
-# Depends on: xorg-xrandr, wmctrl, mpc, lemonbar, ip
 
 
-get_mon_width() {
-    # Get the monitor width.
-    local resolution
-    local xrandr_cmd
+# fetch the colors
+source "/home/manan/Scripts/colors.sh"
 
-    xrandr_cmd=("xrandr" "--nograb" "--current")
 
-    type -p "${xrandr_cmd[@]}" >/dev/null 2>&1 && \
-        resolution="$("${xrandr_cmd[@]}" | awk -F 'x|\t' '/\*/ {print $1; exit}')"
+# vars
+p="  "
+barh="35"
+barw="155"
+margin="40"
 
-    printf "%s\n" "${resolution:-1920}"
+
+# functions
+song() {
+	playing="$(mpc status | grep -o 'playing' )"
+
+	if [ "$playing" == "playing" ]; then
+		echo "$p$p"
+	else
+		echo "$p$p"
+	fi
 }
 
-ws() {
-    # Format workspace "blocks".
-    local ws_bg
-    local ws_fg
-
-    # If focused.
-    if [[ "$2" ]]; then
-        ws_bg="#F0F0F0"
-        ws_fg="${color0:-#000000}"
-    fi
-
-    printf "%s%s%s%s\n" "%{A:wmctrl -s ${1}:}" \
-                      "%{B${ws_bg:-${color3:-#000000}}}" \
-                      "%{F${ws_fg:-#FFFFFF}}" \
-                      "   ${1}   %{F-}%{B-}%{A}"
+clock() {
+	datetime="$(date "+%a %R")"
+	echo "$datetime"
 }
 
-get_workspaces() {
-    # Get the current workspace.
-    local current_workspace
-    local workspaces
-    current_workspace="$(wmctrl -d | awk '/\*/ {print $NF}')"
-
-    case "$current_workspace" in
-        1) workspaces="$(ws 1 1)$(ws 2)$(ws 3)$(ws 4)$(ws 5)$(ws 6)" ;;
-        2) workspaces="$(ws 1)$(ws 2 1)$(ws 3)$(ws 4)$(ws 5)$(ws 6)" ;;
-        3) workspaces="$(ws 1)$(ws 2)$(ws 3 1)$(ws 4)$(ws 5)$(ws 6)" ;;
-        4) workspaces="$(ws 1)$(ws 2)$(ws 3)$(ws 4 1)$(ws 5)$(ws 6)" ;;
-        5) workspaces="$(ws 1)$(ws 2)$(ws 3)$(ws 4)$(ws 5 1)$(ws 6)" ;;
-        6) workspaces="$(ws 1)$(ws 2)$(ws 3)$(ws 4)$(ws 5)$(ws 6 1)" ;;
-    esac
-
-    printf "%s\n" "$workspaces"
-}
-
-get_date() {
-    # Get the date using printf's '%(T)' format.
-    printf "%(%a %d %b - %l:%M %p)T\n" # shellcheck disable=SC2183
-}
-
-#get_song() {
-#    # Get the current song from spotify.
-#    local song
-#    song="$(\
-#        dbus-send --print-reply \
-#                  --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 \
-#                  org.freedesktop.DBus.Properties.Get \
-#                  string:'org.mpris.MediaPlayer2.Player' \
-#                  string:'Metadata' |\
-#        awk -F 'string "' '/string|array/ {printf "%s",$2; next}{print ""}' |\
-#        awk -F '"' '/artist/ {a=$2} /title/ {t=$2} END{print a " - " t}'
-#    )"
-#
-#    # Print song if something is playing.
-#    (("${#song}" > 4)) &&
-#        printf "%s%s\n" "%{B${color1:-#000000}}%{F${color0:-#FFFFFF}}" \
-#                        "   > ${song:0:60}   %{B-}%{F-}"
-#}
-
-get_local_ip() {
-    # Get the local IP address.
-    local local_ip
-    local_ip="$(ip route get 1 | awk -F'src' '{print $2; exit}')"
-    printf "%s\n" "Local IP: ${local_ip/uid*}"
-}
-
-main() {
-    # Main script function.
-    local font
-    local height
-    local width
-    local workspaces
-    local date
-#    local song
-    local local_ip
-
-    # Import colors from 'wal'.
-    # https://github.com/dylanaraps/pywal
-    source "${HOME}/.cache/wal/colors.sh"
-
-    # Info that doesn't need to grabbed more than once.
-#    font="-benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9"
-    font="Monaco:size=7"
-    height="30"
-    width="$(get_mon_width)"
-    local_ip="$(get_local_ip)"
-
-    # Loop and print the info.
-    while :; do
-        workspaces="$(get_workspaces)"
-        battery="$(cat /sys/class/power_supply/BAT0/capacity)"
-#        song="$(get_song)"
-        date="$(get_date)"
-
-        printf "%s%s%s%b\n" \
-               "%{l}${workspaces}" \
-               "%{c}${date}" \
-               "%{r}BAT: ${battery}%   "
-        sleep .1s
-    done |\
-
-    # Launch lemonbar.
-    lemonbar -g "1366x30" -f "$font" \
-             -B "${color0:-#f0f0f0}" -F "${color15:-#000000}"\
-             -n "bar" | bash
+battery() {
+    percent="$(cat /sys/class/power_supply/BAT0/capacity)"
+    power="$(cat /sys/class/power_supply/BAT0/status)"
+	
+	if [[ $power == "Charging" || $power == "Unknown" ]]; then
+		echo -n "$percent%"
+	else
+		if [ $percent -eq 100 ]; then
+			echo -n "$percent%"
+		elif [ $percent -gt 70 ] ; then
+			echo -n "$percent%"
+		elif [ $percent -gt 30 ]; then
+			echo -n "$percent%"
+		else 
+			echo -n "$percent%"
+		fi
+	fi
 }
 
 
-main "$@"
+# loops
+loop-desktop() {
+	while :; do
+		echo "%{l}\
+		$bg$txt%{A:/usr/scripts/popup/cover.sh d &:}$(song)%{A}\
+		$a1$bgf%{A1:urxvt -name popup -e ncmpcpp &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
+		%{B#00000000}"
+		sleep ".2s"
+	done |\
+	
+	lemonbar \
+	    -f '-x-vanilla-*' \
+	    -f '-wuncon-siji-*' \
+	    -g "100x"$barh"+"$margin"+"$margin"" \
+	    -d \
+	    | bash
+}
+
+loop-laptop() {
+	while :; do
+		echo "%{l}\
+		$bg$txt%{A:/home/manan/Scripts/popup/cover.sh d &:}$(song)%{A}\
+		$a1$bgf%{A1:urxvt -name popup -e ncmpcpp &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
+		-\
+		%{A:/home/manan/Scripts/batstat.sh:}$p$(battery)$p%{A}\
+		%{B#00000000}"
+		sleep ".2s"
+	done |\
+	
+	lemonbar \
+	    -f 'Monaco:size=7' \
+	    -f 'FontAwesome:size=8' \
+	    -g "170x"$barh"+"$margin"+"$margin"" \
+	    -d \
+	    | bash
+}
+
+
+# exec
+if [ -f "/sys/class/power_supply/BAT0/status" ] ; then
+	loop-laptop
+else
+	loop-desktop
+fi
