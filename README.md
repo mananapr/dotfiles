@@ -1,5 +1,10 @@
-# Manan's Dotfiles
-Dotfiles for my Arch Linux setup.
+<pre align="center">
+███╗   ███╗ █████╗ ███╗   ██╗ █████╗ ███╗   ██╗███████╗    ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
+████╗ ████║██╔══██╗████╗  ██║██╔══██╗████╗  ██║██╔════╝    ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
+██╔████╔██║███████║██╔██╗ ██║███████║██╔██╗ ██║███████╗    ██║  ██║██║   ██║   ██║   █████╗  ██║██║     █████╗  ███████╗
+██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║╚██╗██║╚════██║    ██║  ██║██║   ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║██║ ╚████║███████║    ██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝    ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝</pre>
 
 ### i3-gaps
 [Full Screenshot Album](https://imgur.com/a/ZnjWW)
@@ -10,19 +15,17 @@ Dotfiles for my Arch Linux setup.
 ![Openbox2](openbox2.png "Openbox2")
 
 ## Setup
-My setup uses [wal](https://github.com/dylanaraps/wal) to generate Colour Schemes.
+My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Schemes.
 
 - Application Launcher: `rofi`
 - Compositor: `compton`
-- Icons: `Flattr` and `HALO with Pastel Icons`
+- Icons: `HALO with Pastel Icons`
 - Notifications: `dunst`
 - Shell: `bash`
 - Terminal Emulator: `urxvt`
 - Text Editor: `vim`
-- Theme: `Arc`
+- Theme: `Lumiere`
 - Video Player: `mpv`
-- Web Browser: `Firefox-ESR` and `Firefox Nightly`
+- Web Browser: `Firefox`
 - Window Manager: `i3-gaps` and `openbox`
 - Lock Screen: Modified version of `i3lock-fancy`
-
-I occasionally use a tint2 panel which has a fully transparent background and is set on auto-hide.
