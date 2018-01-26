@@ -70,7 +70,7 @@ loop-laptop() {
 	while :; do
 		echo "%{l}\
 		$bg$txt%{A:/home/manan/Scripts/popup/cover.sh d &:}$(song)%{A}\
-		$a1$bgf%{A1:urxvt -name popup -e ncmpcpp &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
+		$a1$bgf%{A1:/home/manan/Scripts/popup/calendar.sh &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
 		-\
 		%{A:/home/manan/Scripts/batstat.sh:}$p$(battery)$p%{A}\
 		%{B#00000000}"

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source "${HOME}/.cache/wal/colors.sh"
 
 reload_dunst() {
@@ -16,7 +18,8 @@ reload_dunst() {
 
 set_bar() {
     pkill bar
-    sh ~/Scripts/bar 2>/dev/null &
+    bar 2>/dev/null &
+    set-bar
 }
 
 set_sublime() {
@@ -27,7 +30,7 @@ main() {
     reload_dunst &
     set_sublime &
     # pgrep i3 && i3-msg reload &
-#    set_bar &
+    set_bar &
     # set_scss &
 }
 

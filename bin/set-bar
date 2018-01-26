@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xdo above -t $(xwininfo -root -children | egrep -o "0x[[:xdigit:]]+" | tail -1) $(xdo id -a bar)
