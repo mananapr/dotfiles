@@ -14,7 +14,9 @@ visualizer_look                       = "●┃"
 # PLAYLIST
 playlist_disable_highlight_delay = 1
 song_columns_list_format = "(40)[blue]{a} (25)[blue]{t|f}"
-song_list_format = "$3{%a}$R$2{%t}"
+#song_list_format = "$3{%a}$R$2{%t}"     ## Artist - Title
+song_list_format = "$3{%t}"            ## Title
+#song_list_format = "$3{%t}$R$2{%l}"    ## Title - Time
 playlist_display_mode = "classic"
 centered_cursor = "yes"
 follow_now_playing_lyrics = "yes"
@@ -24,6 +26,7 @@ now_playing_prefix = "$5> "
 progressbar_color = "black"
 progressbar_elapsed_color = "blue"
 progressbar_look = "__"
+#progressbar_look = "───"
 
 # UI
 header_visibility = "no"
