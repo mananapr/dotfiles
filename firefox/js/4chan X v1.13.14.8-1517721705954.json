@@ -1,16 +1,16 @@
 {
-  "version": "1.13.14.13",
-  "date": 1513836472797,
+  "version": "1.13.14.8",
+  "date": 1517721705954,
   "Conf": {
     "Redirect to HTTPS": true,
     "JSON Index": true,
     "Use 4chan X Catalog": true,
     "Index Refresh Notifications": false,
     "Open Threads in New Tab": false,
-    "External Catalog": true,
+    "External Catalog": false,
     "Catalog Links": false,
     "Announcement Hiding": true,
-    "Desktop Notifications": false,
+    "Desktop Notifications": true,
     "404 Redirect": true,
     "Archive Report": true,
     "Exempt Archives from Encryption": false,
@@ -49,7 +49,7 @@
     "Stubs": true,
     "Image Expansion": true,
     "Image Hover": true,
-    "Image Hover in Catalog": false,
+    "Image Hover in Catalog": true,
     "Gallery": true,
     "Fullscreen Gallery": false,
     "PDF in Gallery": false,
@@ -141,7 +141,7 @@
     "Fit height": true,
     "Scroll into view": true,
     "Expand spoilers": true,
-    "Expand videos": false,
+    "Expand videos": true,
     "Expand from here": false,
     "Advance on contract": false,
     "Hide Thumbnails": false,
@@ -150,7 +150,7 @@
     "Stretch to Fit": false,
     "Scroll to Post": true,
     "Slide Delay": 6,
-    "Default Volume": 1,
+    "Default Volume": 0.53,
     "Current Board": false,
     "Auto Update Thread Watcher": true,
     "Auto Watch": false,
@@ -176,15 +176,15 @@
     "werk": false,
     "Custom CSS": true,
     "Index Mode": "catalog",
-    "Previous Index Mode": "paged",
-    "Index Size": "large",
+    "Previous Index Mode": "all pages",
+    "Index Size": "small",
     "Show Replies": true,
     "Catalog Hover Expand": false,
     "Catalog Hover Toggle": false,
     "Pin Watched Threads": false,
     "Anchor Hidden Threads": true,
     "Refreshed Navigation": false,
-    "Fixed Header": true,
+    "Fixed Header": false,
     "Header auto-hide": false,
     "Header auto-hide on scroll": false,
     "Bottom Header": false,
@@ -194,9 +194,9 @@
     "Shortcut Icons": true,
     "Custom Board Navigation": true,
     "archiveLists": "https://mayhemydg.github.io/archives.json/archives.json",
-    "lastarchivecheck": 1513831718433,
+    "lastarchivecheck": 1517721325317,
     "archiveAutoUpdate": true,
-    "boardnav": "[ a-text:\"animation\" c-text:\"moe\" jp-text:\"otaku\"]  [ g-text:\"computer\" wg-text:\"rice\" w-text:\"walls\"] [ b-text:\"random\" r9k-text:\"r9k\" pol-text:\"politics\"] [ tv-text:\"television\" mu-text:\"music\" x-text:\"paranormal\"]",
+    "boardnav": "[toggle-all] a g c b wg r9k bant mu wsg gif jp w x",
     "QR.personas": "#options:\"sage\";boards:jp;always",
     "sjisPreview": false,
     "jsWhitelist": "http://s.4cdn.org\nhttps://s.4cdn.org\nhttp://www.google.com\nhttps://www.google.com\nhttps://www.gstatic.com\nhttp://cdn.mathjax.org\nhttps://cdn.mathjax.org\n'self'\n'unsafe-inline'\n'unsafe-eval'\n\n# Banner ads\n#http://s.zkcdn.net/ados.js\n#https://s.zkcdn.net/ados.js\n#http://engine.4chan-ads.org\n#https://engine.4chan-ads.org\n\nhttps://cdnjs.cloudflare.com",
@@ -237,7 +237,7 @@
     "Slideshow": "Ctrl+Right",
     "fappeTyme": "f",
     "werkTyme": "Shift+w",
-    "Front page": 1,
+    "Front page": "1",
     "Open front page": "Shift+1",
     "Next page": "Ctrl+Right",
     "Previous page": "Ctrl+Left",
@@ -256,7 +256,7 @@
     "Previous reply": "k",
     "Deselect reply": "Shift+d",
     "Hide": "x",
-    "Quick Filter MD5": 5,
+    "Quick Filter MD5": "5",
     "Previous Post Quoting You": "Alt+Up",
     "Next Post Quoting You": "Alt+Down",
     "Beep": false,
@@ -271,15 +271,15 @@
     "customCooldownEnabled": true,
     "Thread Quotes": false,
     "Max Replies": 1000,
-    "Autohiding Scrollbar": true,
+    "Autohiding Scrollbar": false,
     "embedding.position": "top: 50px; right: 0px;",
     "thread-stats.position": "bottom: 0px; right: 0px;",
     "updater.position": "bottom: 0px; left: 0px;",
-    "thread-watcher.position": "top: 15.8685%; left: 76.1744%;",
+    "thread-watcher.position": "top: 5.16067%; left: 78.6174%;",
     "qr.position": "right: 0px; bottom: 26.4167px;",
     "hiddenThreads": {
       "boards": {},
-      "lastChecked": 1482415002259
+      "lastChecked": 1511194953971
     },
     "hiddenPosts": {
       "boards": {},
@@ -287,179 +287,61 @@
     },
     "lastReadPosts": {
       "boards": {
-        "w": {
-          "2007435": 2028013,
-          "2028366": 2032577,
-          "2043692": 2050231,
-          "2047832": 2054794,
-          "2050034": 2053381,
-          "2050811": 2054836,
-          "2052009": 2054666,
-          "2053717": 2053922
-        },
-        "r9k": {
-          "41566778": 41567601,
-          "41584235": 41584356,
-          "41586727": 41592825,
-          "41592594": 41592672,
-          "41593108": 41596166,
-          "41594389": 41595023,
-          "41595131": 41595476,
-          "41595483": 41595820,
-          "41596110": 41596193,
-          "41695960": 41697722,
-          "41707671": 41719135,
-          "41711570": 41713686,
-          "41712002": 41714818,
-          "41713287": 41713732,
-          "41715001": 41715001,
-          "41717604": 41718342,
-          "41726302": 41729724,
-          "41727842": 41734596,
-          "41734056": 41734653,
-          "41734591": 41734591,
-          "41734638": 41734638,
-          "41856065": 41856640,
-          "41866246": 41866246,
-          "41866256": 41866344,
-          "41866410": 41866622,
-          "41866621": 41866650,
-          "41866816": 41866865,
-          "41866881": 41866881,
-          "41901990": 41908209,
-          "41905393": 41906958,
-          "41905495": 41907147,
-          "41905746": 41907839,
-          "41906468": 41907197,
-          "41906535": 41907621,
-          "41906551": 41908153,
-          "41906557": 41907948,
-          "41906615": 41907827,
-          "41906829": 41907932,
-          "41907393": 41908218,
-          "41907663": 41908102
-        },
         "wg": {
-          "7049615": 7055494,
-          "7063010": 7063785,
-          "7063343": 7086847,
-          "7064544": 7064558,
-          "7064768": 7065904,
-          "7068185": 7074221,
-          "7070143": 7091335,
-          "7078445": 7084663,
-          "7078784": 7084806,
-          "7079299": 7080236,
-          "7080621": 7080622,
-          "7083219": 7086218,
-          "7084694": 7086660,
-          "7086060": 7086956,
-          "7086437": 7088815,
-          "7086710": 7087043,
-          "7087450": 7089336,
-          "7088752": 7089337
+          "7098307": 7101190
         },
-        "c": {
-          "3019615": 3019620
+        "w": {
+          "2023788": 2055622,
+          "2038957": 2049551,
+          "2042629": 2057384,
+          "2047026": 2055232,
+          "2048644": 2051825,
+          "2051368": 2055672,
+          "2058921": 2059216
         },
-        "qa": {
-          "1654916": 1654916
+        "h": {
+          "4789433": 4791471,
+          "4815061": 4815064
         },
-        "x": {
-          "19856342": 19904358,
-          "19998068": 19998803,
-          "20010305": 20012997,
-          "20014862": 20015619,
-          "20016210": 20019406,
-          "20016499": 20019445,
-          "20018884": 20018884,
-          "20019714": 20019714,
-          "20020760": 20020929
-        },
-        "s": {
-          "17841028": 17850349
-        },
-        "hr": {
-          "2974447": 2991912,
-          "2984334": 2992225,
-          "2997179": 3003362,
-          "3003005": 3003119,
-          "3030638": 3031492,
-          "3032035": 3033382,
-          "3036291": 3036610
-        },
-        "wsg": {
-          "1955193": 1957533
-        },
-        "y": {
-          "2438608": 2438608
-        },
-        "gif": {
-          "11684834": 11701783,
-          "11714898": 11723580,
-          "11732041": 11740164,
-          "11747984": 11748229,
-          "11754544": 11754763,
-          "11761208": 11763630,
-          "11762268": 11763793,
-          "11764324": 11765244,
-          "11766210": 11766815,
-          "11767800": 11774991,
-          "11768345": 11775390,
-          "11768718": 11775325,
-          "11774360": 11775707,
-          "11775785": 11775793,
-          "11778343": 11782766,
-          "11785615": 11827352,
-          "11815017": 11815083,
-          "11819886": 11822187
-        },
-        "pol": {
-          "152838547": 152858100,
-          "152857702": 152859297,
-          "152858167": 152859166
-        },
-        "g": {
-          "63868194": 63873255,
-          "63875288": 63875534,
-          "63887331": 63890016,
-          "63887920": 63887930,
-          "63888989": 63891247,
-          "63890645": 63891079,
-          "63890666": 63891450,
-          "63890975": 63891014
+        "mu": {
+          "77857271": 77857334
         }
       },
-      "lastChecked": 1513831716514
+      "lastChecked": 1517721324885
     },
     "yourPosts": {
       "boards": {
         "wg": {
-          "7070143": {
-            "7091312": true,
-            "7091317": true
-          },
-          "7086437": {
-            "7087436": true,
-            "7087438": true,
-            "7087440": true,
-            "7087441": true,
-            "7087442": true,
-            "7087444": true,
-            "7087445": true,
-            "7088335": true
-          },
-          "7087450": {
-            "7088351": true,
-            "7089336": true
+          "7098307": {
+            "7098307": true,
+            "7100604": true
           }
         }
       },
-      "lastChecked": 1513831716496
+      "lastChecked": 1517721324869
     },
     "watchedThreads": {
-      "boards": {},
-      "lastChecked": 1513836222068
+      "boards": {
+        "wg": {
+          "7096140": {
+            "excerpt": "/wg/ - new desktop thread get in there lads",
+            "isDead": true
+          },
+          "7098307": {
+            "excerpt": "/wg/ - /html-css/ HTML-CSS General #13",
+            "isDead": false,
+            "unread": 228,
+            "quotingYou": true
+          }
+        },
+        "w": {
+          "2056105": {
+            "excerpt": "/w/ - Desktop thread V",
+            "isDead": true
+          }
+        }
+      },
+      "lastChecked": 1517721625241
     },
     "customTitles": {
       "boards": {
@@ -471,7 +353,7 @@
         },
         "a": {
           "boardTitle": {
-            "title": "「 アニメ FUNANIMation 」",
+            "title": "「 アニメ KAWAI DESU NE 」",
             "orig": "/a/ - Anime & Manga"
           }
         },
@@ -479,12 +361,6 @@
           "boardTitle": {
             "title": "「 壁紙 &普通  RICE and walls 」",
             "orig": "/wg/ - Wallpapers/General"
-          }
-        },
-        "v": {
-          "boardTitle": {
-            "title": "「 ビデオゲーム vidyagaems 」",
-            "orig": "/v/ - Video Games"
           }
         },
         "vg": {
@@ -495,20 +371,8 @@
         },
         "e": {
           "boardTitle": {
-            "title": "「エッチ」",
+            "title": "「エッチ ECCHI 」",
             "orig": "/e/ - Ecchi"
-          }
-        },
-        "h": {
-          "boardTitle": {
-            "title": "「 変態 comicket」",
-            "orig": "/h/ - Hentai"
-          }
-        },
-        "vp": {
-          "boardTitle": {
-            "title": "「ポケモン」",
-            "orig": "/vp/ - Pokémon"
           }
         },
         "c": {
@@ -519,7 +383,7 @@
         },
         "jp": {
           "boardTitle": {
-            "title": "「おた 文明 」",
+            "title": "「おた 文明 JAP CULTURE 」",
             "orig": "/jp/ - Otaku Culture"
           }
         },
@@ -531,14 +395,38 @@
         },
         "ck": {
           "boardTitle": {
-            "title": "「 料理 Cooking 」",
+            "title": "「 料理 JUNK FOOD 」",
             "orig": "/ck/ - Food & Cooking"
           }
         },
-        "x": {
+        "ic": {
           "boardTitle": {
-            "title": "/x/ - ParanormaL",
-            "orig": "/x/ - Paranormal"
+            "title": "「 芸術作品 Art & CRIT 」",
+            "orig": "/ic/ - Artwork/Critique"
+          }
+        },
+        "g": {
+          "boardTitle": {
+            "title": "「 技術 Technology 」",
+            "orig": "/g/ - Technology"
+          }
+        },
+        "wsg": {
+          "boardTitle": {
+            "title": "「 大丈夫 SFW 」",
+            "orig": "/wsg/ - Worksafe GIF"
+          }
+        },
+        "v": {
+          "boardTitle": {
+            "title": "「 テレビゲーム GAMES 」",
+            "orig": "/v/ - Video Games"
+          }
+        },
+        "h": {
+          "boardTitle": {
+            "title": "「 変態 CHINESE P**N 」",
+            "orig": "/h/ - Hentai"
           }
         }
       }
@@ -1036,40 +924,45 @@
           "k",
           "qa",
           "s4s"
-        ],
-        "files": []
+        ]
       }
     ],
     "selectedArchives": {},
     "cooldowns": {
-      "mu": {
-        "1495344484029": {
-          "threadID": 72900763,
-          "postID": 72902311
+      "vg": {
+        "1512920272293": {
+          "threadID": 198195081,
+          "postID": 198242534
+        }
+      },
+      "h": {
+        "1513469137196": {
+          "threadID": 4824616,
+          "postID": 4828505
         }
       },
       "w": {
-        "1503483564656": {
-          "threadID": 2010263,
-          "postID": 2032041
+        "1514550287022": {
+          "threadID": 2056105,
+          "postID": 2058624
         }
       },
-      "a": {
-        "1505497540426": {
-          "threadID": 162283874,
-          "postID": 162283874
-        }
-      },
-      "r9k": {
-        "1512464768716": {
-          "threadID": 41570369,
-          "postID": 41574436
+      "v": {
+        "1514667861767": {
+          "threadID": 401661560,
+          "postID": 401687089
         }
       },
       "wg": {
-        "1513833920315": {
-          "threadID": 7070143,
-          "postID": 7091317
+        "1514917694636": {
+          "threadID": 7098307,
+          "postID": 7100604
+        }
+      },
+      "a": {
+        "1514945823795": {
+          "threadID": 166559151,
+          "postID": 166560382
         }
       }
     },
