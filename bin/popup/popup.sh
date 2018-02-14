@@ -5,15 +5,21 @@
 # fetch the colors
 source "/home/manan/Scripts/colors.sh"
 
+
 # vars
-background="/home/manan/Scripts/popup/img/bg.png"
+background="/home/manan/Scripts/popup/img/bg2.png"
 pointer="/home/manan/Scripts/popup/img/pointer.png"
 y="80"
+
+convert -size 200x200 xc:"$color0" "$background"
+convert -border 5x5 -bordercolor "#F2F2F2" "$background" "$background"
 
 # exec
 n30f -x "$2" -y "$(expr $y + 6)" -c "killall n30f" "$background" &
 sleep ".05s"
 n30f -x "$(expr "$2" + 5)" -y "$(expr $y + 11)" -c "killall n30f" "$1" &
+
+rm "$background"
 
 # pointer
 if [ "$3" == "-p" ] ; then
