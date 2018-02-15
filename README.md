@@ -27,6 +27,5 @@ My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Sche
 
 ## Installation
 
-- Clone the repo
-    git clone https://github.com/mananapr/dotfiles --depth 1
+- Clone the repo: `git clone https://github.com/mananapr/dotfiles --depth 1`
 - Copy the files to their appropriate directories
