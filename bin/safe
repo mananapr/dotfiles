@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+curl -s -o op -H "token: your-token" -F "files[]=@$1" https://safe.moe/api/upload
+url=$(cat op | jq -r ".files" | jq -r ".[].url")
+echo "$url"
+notify-send -r 112 "$url"
+rm op
