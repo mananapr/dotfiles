@@ -6,8 +6,8 @@ Dotfiles for my Arch Linux setup.
 ![Neofetch](i3.png "Neofetch")
 
 ### openbox
-![Openbox1](openbox1.png "Openbox1")
-![Openbox2](openbox2.png "Openbox2")
+[Full Screenshot Album](https://imgur.com/a/GGf0X)
+![Openbox](openbox.png "Openbox")
 
 ## Setup
 My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Schemes.
