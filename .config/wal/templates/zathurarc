@@ -1,0 +1,7 @@
+set recolor-darkcolor  "{foreground}"
+set recolor-lightcolor "{background}"
+set default-bg "{background}"
+set statusbar-fg "{foreground}"
+set statusbar-bg "{background}"
+set inputbar-fg "{foreground}"
+set inputbar-bg "{background}"
