@@ -8,7 +8,7 @@
     <focusNew>yes</focusNew>
     <followMouse>yes</followMouse>
     <focusLast>no</focusLast>
-    <underMouse>no</underMouse>
+    <underMouse>yes</underMouse>
     <focusDelay>0</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
@@ -19,9 +19,9 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Arrondie-Violet</name>
+    <name>thicc</name>
     <titleLayout>LMC</titleLayout>
-    <cornerRadius>4</cornerRadius>
+    <cornerRadius>2</cornerRadius>
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -169,7 +169,7 @@
     <keybind key="W-a">
       <action name="ToggleAlwaysOnTop"/>
     </keybind>
-    <keybind key="W-f">
+    <keybind key="A-f">
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="A-S-q">
@@ -249,10 +249,16 @@
         <command>openbox --restart</command>
       </action>
     </keybind>
+    <keybind key="A-s">
+      <action name="Execute">
+        <name>screenshot</name>
+        <command>scr</command>
+      </action>
+    </keybind>
     <keybind key="A-d">
       <action name="Execute">
         <name>rofi</name>
-        <command>rofi -show drun -padding 20 -font "Monaco 12"</command>
+        <command>rofi -show run -padding 20 -font "Monaco 11" -location 1 -yoffset 40 -xoffset 40 -lines 5 -width 25 -theme .config/rofi/colors-rofi-dark</command>
       </action>
     </keybind>
     <keybind key="A-c">
@@ -261,37 +267,43 @@
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <name>Vol Up</name>
-        <command>pactl set-sink-volume 0 +5%</command>
+        <command>vol up</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <name>Vol Down</name>
-        <command>pactl set-sink-volume 0 -5%</command>
+        <command>vol down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <name>Vol Mute</name>
-        <command>pactl set-sink-mute 0 toggle</command>
+        <command>vol mute</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
         <name>Brightness Up</name>
-        <command>xbacklight -inc 5</command>
+        <command>bri inc</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
         <name>Brightness Down</name>
-        <command>xbacklight -dec 5</command>
+        <command>bri dec</command>
       </action>
     </keybind>
     <keybind key="A-w">
       <action name="Execute">
         <name>Change to random wallpaper</name>
-        <command>wal -i ~/Pictures/Washed-2</command>
+        <command>wal -i ~/Pictures/Washed-2 -o wal-set</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-w">
+      <action name="Execute">
+        <name>Change to random wallpaper</name>
+        <command>wal -l -i ~/Pictures/Washed-2 -o wal-set-light</command>
       </action>
     </keybind>
     <keybind key="W-Left">        # HalfLeftScreen

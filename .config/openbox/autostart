@@ -1,9 +1,6 @@
-compton -b --backend glx --vsync opengl-swc &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-wal -i "$(< "${HOME}/.cache/wal/wal")" &
-dunst &
-wal-set &
 xfce4-power-manager &
+wal -l -i "$(< "${HOME}/.cache/wal/wal")" && wal-set-light
+compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
 mpd &
-pasystray --always-notify &
-tint2 -c ~/.config/tint2/tint2rc-openbox &
+dunst &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
