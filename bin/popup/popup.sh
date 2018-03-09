@@ -14,9 +14,9 @@ y="80"
 
 # make bg.png from pywal color0
 convert -size 200x200 xc:"$color0" "$background"
-convert -border 5x5 -bordercolor "$color7" "$background" "$background"
+convert -border 5x5 -bordercolor "$color3" "$background" "$background"
 # replace the color in pointer.png to pywal color7
-convert "$pointer_main" -fuzz 50% -fill "$color7" -opaque "#f2f2f2" "$pointer"
+convert "$pointer_main" -fuzz 50% -fill "$color3" -opaque "#f2f2f2" "$pointer"
 
 # exec
 n30f -x "$2" -y "$(expr $y + 6)" -c "killall n30f" "$background" &

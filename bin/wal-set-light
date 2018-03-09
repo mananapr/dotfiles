@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+source "${HOME}/.cache/wal/colors.sh"
+
+set_rofi() {
+    cp ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi
+}
+
+set_zathura() {
+    cp ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
+}
+
+set_openbox() {
+    cp ~/.cache/wal/thicc-themerc ~/.themes/thicc/openbox-3/themerc
+    openbox --restart
+}
+
+main() {
+    wal -R
+    wal-set
+    wal -R -l
+    set_rofi &
+    set_zathura &
+    set_openbox &
+    sleep 1
+    set-bar
+}
+
+main >/dev/null 2>&1

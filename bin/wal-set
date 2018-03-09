@@ -19,7 +19,20 @@ reload_dunst() {
 set_bar() {
     pkill bar
     bar 2>/dev/null &
-    set-bar
+    sleep 1
+}
+
+set_rofi() {
+    cp ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi
+}
+
+set_zathura() {
+    cp ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
+}
+
+set_openbox() {
+    cp ~/.cache/wal/thicc-themerc ~/.themes/thicc/openbox-3/themerc
+    openbox --restart
 }
 
 set_sublime() {
@@ -29,9 +42,12 @@ set_sublime() {
 main() {
     reload_dunst &
     set_sublime &
-    # pgrep i3 && i3-msg reload &
-    set_bar &
-    # set_scss &
+    set_rofi &
+    set_bar 
+    set_zathura &
+    set_openbox &
+    sleep 1
+    set-bar
 }
 
 main >/dev/null 2>&1
