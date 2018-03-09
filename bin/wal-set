@@ -19,6 +19,8 @@ reload_dunst() {
 set_bar() {
     pkill bar
     bar 2>/dev/null &
+    cp ~/.cache/wal/popup-d.sh ~/Scripts/popup/popup.sh
+    cp ~/.cache/wal/calendar-d.sh ~/Scripts/popup/calendar.sh
     sleep 1
 }
 

@@ -15,11 +15,17 @@ set_openbox() {
     openbox --restart
 }
 
+set_popups() {
+    cp ~/.cache/wal/popup-l.sh ~/Scripts/popup/popup.sh
+    cp ~/.cache/wal/calendar-l.sh ~/Scripts/popup/calendar.sh
+}
+
 main() {
     wal -R
     wal-set
     wal -R -l
     set_rofi &
+    set_popups &
     set_zathura &
     set_openbox &
     sleep 1
