@@ -2,6 +2,26 @@
 
 source "${HOME}/.cache/wal/colors.sh"
 
+reload_dunst() {
+    pkill dunst && \
+        dunst \
+            -padding 16 \
+            -alignment center\
+            -lb "$color0" \
+            -nb "$color0" \
+            -cb "$color0" \
+            -lf "$color15" \
+            -bf "$color15" \
+            -cf "$color15" \
+            -nf "$color15" \
+            -fn "${DUNST_FONT:-Monaco 8}" \
+            -geometry "${DUNST_SIZES:-250x30-20+30}" &
+}
+
+set_sublime() {
+    ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme.sh > ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme
+}
+
 set_rofi() {
     cp ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi
 }
@@ -15,19 +35,21 @@ set_openbox() {
     openbox --restart
 }
 
-set_popups() {
+set_bar() {
+    pkill bar
     cp ~/.cache/wal/popup-l.sh ~/Scripts/popup/popup.sh
     cp ~/.cache/wal/calendar-l.sh ~/Scripts/popup/calendar.sh
+    cp ~/.cache/wal/bar_colors_light.sh ~/Scripts/colors.sh
+    bar 2>/dev/null &
 }
 
 main() {
-    wal -R
-    wal-set
-    wal -R -l
+    reload_dunst &
     set_rofi &
-    set_popups &
+    set_bar &
     set_zathura &
     set_openbox &
+    set_sublime &
     sleep 1
     set-bar
 }

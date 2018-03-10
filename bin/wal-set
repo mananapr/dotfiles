@@ -5,6 +5,8 @@ source "${HOME}/.cache/wal/colors.sh"
 reload_dunst() {
     pkill dunst && \
         dunst \
+            -padding 16 \
+            -alignment center\
             -lb "$color0" \
             -nb "$color0" \
             -cb "$color0" \
@@ -13,14 +15,15 @@ reload_dunst() {
             -cf "$color15" \
             -nf "$color15" \
             -fn "${DUNST_FONT:-Monaco 8}" \
-            -geometry "${DUNST_SIZES:-300x30-20+30}" &
+            -geometry "${DUNST_SIZES:-250x30-20+30}" &
 }
 
 set_bar() {
     pkill bar
-    bar 2>/dev/null &
     cp ~/.cache/wal/popup-d.sh ~/Scripts/popup/popup.sh
     cp ~/.cache/wal/calendar-d.sh ~/Scripts/popup/calendar.sh
+    cp ~/.cache/wal/bar_colors_dark.sh ~/Scripts/colors.sh
+    bar 2>/dev/null &
     sleep 1
 }
 

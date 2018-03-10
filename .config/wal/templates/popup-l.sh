@@ -13,7 +13,7 @@ pointer="/home/manan/Scripts/popup/img/pointer_mod.png"
 y="80"
 
 # make bg.png from pywal color0
-convert -size 200x200 xc:"{color3}" "$background"
+convert -size 200x200 xc:"{color2}" "$background"
 convert -border 5x5 -bordercolor "{color0}" "$background" "$background"
 # replace the color in pointer.png to pywal color7
 convert "$pointer_main" -fuzz 50% -fill "{color0}" -opaque "#f2f2f2" "$pointer"
