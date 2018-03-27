@@ -36,9 +36,9 @@ chatnets = {
   freenode = { type = "IRC"; };
   rizon = {
     type = "IRC";
-    sasl_mechanism = "plain";
-    sasl_username = "starship_trooper";
-    sasl_password = "<password>";
+    #    sasl_mechanism = "plain";
+    #    sasl_username = "starship_trooper";
+    #    sasl_password = "<password>";
   };
   nixers = { type = "IRC"; };
   lainchan = { type = "IRC"; };
@@ -77,6 +77,7 @@ settings = {
     nickcolor_prefix_text = "        %K—%n ";
     nickcolor_truncate_value = "-7";
     nickcolor_colors = "4 5 6 7 12 13 14";
+    hilightwin_show_network = "yes";
   };
 };
 
@@ -103,7 +104,6 @@ statusbar = {
   };
 };
 
-
 ignores = ( { level = "JOINS PARTS QUITS MODES"; } );
 
 aliases = {
@@ -120,3 +120,10 @@ keyboard = (
   { key = "^O"; id = "command"; data = "son "; },
   { key = "^P"; id = "command"; data = "soff "; }
 );
+hilights = ( 
+  { text = "starship_trooper"; nick = "yes"; word = "yes"; }
+);
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = { name = "hilight"; sticky = "yes"; };
+};
