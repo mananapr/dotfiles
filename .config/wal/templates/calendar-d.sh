@@ -22,7 +22,7 @@ convert -background "rgba(0,0,0,0)" \
 # display it
 /home/manan/Scripts/popup/popup.sh "" "$(expr "$width" - "1340")" -p "70" &
 sleep ".05s"
-n30f -x "$(expr "$width" - "1310")" -y "$(expr "$ypos" + "-400")" -c "killall n30f" "$cil"
+n30f -x "$(expr "$width" - "1307")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
 
 # delete it
 sleep ".2s"
