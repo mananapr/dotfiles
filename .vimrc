@@ -9,6 +9,12 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-g> :Goyo<CR>
+map <C-z> :set invnumber<CR>
+
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+gP
+vnoremap <C-p> "+gP
 
 set nu
 set autoindent
