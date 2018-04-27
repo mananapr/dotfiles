@@ -10,11 +10,11 @@ export LANG=C
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    info title
-    info underline
+    #info title
+    #info underline
 
     info "OS" distro
-    info "Model" model
+    #info "Model" model
     info "Kernel" kernel
     info "Uptime" uptime
     info "Packages" packages
@@ -23,8 +23,8 @@ print_info() {
     info "Disk" disk
     info "DE" de
     info "WM" wm
-    info "Theme" theme
-    info "Icons" icons
+    #info "Theme" theme
+    #info "Icons" icons
     info "CPU" cpu
     info "GPU" gpu
     info "Local IP" local_ip
