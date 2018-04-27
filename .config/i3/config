@@ -12,7 +12,7 @@
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# is used in the bar block below.
 #font pango:monospace 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -38,20 +38,20 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show drun -padding 20 -font "Monaco 12"
+bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yoffset 40 -xoffset 40 -lines 5 -width 25 -theme .config/rofi/colors-rofi-dark
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+shift+d exec --no-startup-id lock &
+bindsym $mod+s exec --no-startup-id scr &
 
 #custom start
-#exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json'"
-#exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/manan/.config/i3/workspace-2.json'"
-#exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json'"
-exec --no-startup-id tint2 &
+#exec --no-startup-id tint2 &
 #exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
+exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
 #exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
@@ -59,6 +59,8 @@ exec --no-startup-id mpd &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' &
+exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' &
 
 # Pulse Audio
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
@@ -108,7 +110,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -169,9 +171,7 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Catfish"] floating enable
 
 # Cylce wallpapers
-bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 && sh ~/Scripts/wal-set"
-bindsym $mod+Shift+a exec --no-startup-id "wal -i ~/Pictures/Anime && ~/Scripts/wal-set"
-bindsym $mod+Shift+w exec --no-startup-id "wal -i ~/Pictures/BW && wal-set"
+bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -216,7 +216,7 @@ client.focused_inactive $bg           $bg          $fg          $bg   $bg
 client.urgent           $bg           $bg          $fg          $bg   $bg
 client.background $bg
 
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 6
 
 #i3-gaps
 gaps inner 10
