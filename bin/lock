@@ -5,8 +5,6 @@ set -o errexit -o noclobber -o nounset
 
 HUE=(-level 0%,100%,0.6)
 EFFECT=(-filter Gaussian -resize 20% -define filter:sigma=1.5 -resize 500.5%)
-# default system sans-serif font
-FONT="$(convert -list font | awk "{ a[NR] = \$2 } /family: $(fc-match sans -f "%{family}\n")/ { print a[NR-1]; exit }")"
 IMAGE="$(mktemp).png"
 DESKTOP=""
 
@@ -50,27 +48,11 @@ done
 SCRIPTPATH=$(realpath "$0")
 SCRIPTPATH=${SCRIPTPATH%/*}
 
-# l10n support
-TEXT=""
-case "$LANG" in
-    de_* ) TEXT="Bitte Passwort eingeben" ;; # Deutsch
-    en_* ) TEXT="" ;; # English
-    es_* ) TEXT="Ingrese su contraseña" ;; # Española
-    fr_* ) TEXT="Entrez votre mot de passe" ;; # Français
-    pl_* ) TEXT="Podaj hasło" ;; # Polish
-    it_* ) TEXT="Inserisci la password" ;; # Italian
-esac
-
-VALUE="60" #brightness value to compare to
 scrot -z "$IMAGE"
-COLOR=$(convert "$IMAGE" -gravity center -crop 100x100+0+0 +repage -colorspace hsb \
-    -resize 1x1 txt:- | awk -F '[%$]' 'NR==2{gsub(",",""); printf "%.0f\n", $(NF-1)}');
-if [ "$COLOR" -gt "$VALUE" ]; then #white background image and black text
-    BW="black"
-    ICON="$SCRIPTPATH/"
-    ICON="$ICON$PICNAME"
-    ICON="$ICON.png"
-    PARAM=(--timepos="x--110:h-120" \
+ICON="$SCRIPTPATH/"
+ICON="$ICON$PICNAME"
+ICON="$ICON.png"
+PARAM=(--timepos="x--110:h-120" \
   --datepos="tx+24:ty+25" \
   --clock --datestr "Type password to unlock..." \
   --insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
@@ -81,26 +63,7 @@ if [ "$COLOR" -gt "$VALUE" ]; then #white background image and black text
   --timecolor="ffffffff" --datecolor="ffffffff"
 )
 
-else #black
-    BW="white"
-    ICON="$SCRIPTPATH/"
-    ICON="$ICON$PICNAME"
-    ICON="$ICON.png"
-    PARAM=(--timepos="x--110:h-120" \
-  --datepos="tx+24:ty+25" \
-  --clock --datestr "Type password to unlock..." \
-  --insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
-  --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-  --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-  --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+290:h-120" \
-  --radius=20 --ring-width=3 --veriftext="" --wrongtext="" --noinputtext="" \
-  --timecolor="ffffffff" --datecolor="ffffffff"
-)
-
-fi
-
-convert "$IMAGE" "${HUE[@]}" "${EFFECT[@]}" -font "$FONT" -pointsize 26 -fill "$BW" -gravity center \
-    -annotate +0+160 "$TEXT" "$ICON" -gravity center -composite "$IMAGE"
+convert "$IMAGE" "${HUE[@]}" "${EFFECT[@]}" "$ICON" -gravity center -composite "$IMAGE"
 
 # If invoked with -d/--desktop, we'll attempt to minimize all windows (ie. show
 # the desktop) before locking.
