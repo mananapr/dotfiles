@@ -1,0 +1,6 @@
+auto-reload yes
+browser firefox
+
+color listfocus color1 color4 bold
+color listfocus_unread color1 color3 bold
+color info color1 color4 bold
