@@ -1,15 +1,18 @@
-#MPD
+# MPD
 mpd_host            = "127.0.0.1"
 mpd_port            = "6600"
 mpd_music_dir       = "~/Music"
 
-#VISULAIZER
+# VISULAIZER
 visualizer_fifo_path                  = "/tmp/mpd.fifo"
 visualizer_output_name                = "fifo"
 visualizer_sync_interval              = "30"
 visualizer_in_stereo                  = "yes"
 visualizer_type                       = "spectrum" (spectrum/wave)
 visualizer_look                       = "●┃"
+
+# NOTIFICATIONS
+execute_on_song_change = "song_change"
 
 # PLAYLIST
 playlist_disable_highlight_delay = 1

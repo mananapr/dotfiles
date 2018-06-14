@@ -48,13 +48,10 @@ bindsym $mod+shift+d exec --no-startup-id lock &
 bindsym $mod+s exec --no-startup-id scr &
 
 #custom start
-#exec --no-startup-id tint2 &
-#exec --no-startup-id pasystray -a &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
-#exec --no-startup-id xautolock -time 5 -locker lock -corners -000 &
 exec --no-startup-id mpd &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
@@ -62,23 +59,23 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' &
 exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' &
 
-# Pulse Audio
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+# Audio Controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id vol up
 bindsym XF86AudioLowerVolume exec --no-startup-id vol down
 bindsym XF86AudioMute exec --no-startup-id vol mute
 
 # Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1
-#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1
 bindsym XF86MonBrightnessUp exec --no-startup-id bri inc
 bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
+# Music Controls
+bindsym Mod4+p exec --no-startup-id mpc toggle
+bindsym Mod4+Shift+greater exec --no-startup-id mpc next
+bindsym Mod4+Shift+less exec --no-startup-id mpc prev
+
+# change focus                                            
+bindsym $mod+j focus left                                 
+bindsym $mod+k focus down                                 
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
@@ -206,26 +203,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bg i3wm.color4 #f0f0f0
 
 # window colors
-#                       border              background         text                 indicator     child-border
-client.focused          $bg           $bg          $fg          $fg   $fg
-client.unfocused        $bg           $bg          $fg          $bg   $bg
-client.focused_inactive $bg           $bg          $fg          $bg   $bg
-client.urgent           $bg           $bg          $fg          $bg   $bg
-client.background $bg
+#                       border  background  text  indicator  child-border
+client.focused          $bg     $bg         $fg   $fg        $fg
+client.unfocused        $bg     $bg         $fg   $bg        $bg
+client.focused_inactive $bg     $bg         $fg   $bg        $bg
+client.urgent           $bg     $bg         $fg   $bg        $bg
+client.background       $bg
 
 for_window [class="^.*"] border pixel 6
 
 #i3-gaps
-gaps inner 10
-gaps outer 5
-#smart_gaps on
-#smart_borders on
+gaps inner 5
+gaps outer 0
 bindsym $mod+y gaps inner current minus 6
 bindsym $mod+u gaps inner current plus 6
 bindsym $mod+Shift+y gaps outer current minus 6
 bindsym $mod+Shift+u gaps outer current plus 6
-workspace $workspace2 gaps inner 0
-workspace $workspace2 gaps outer 0
