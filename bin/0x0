@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+#Script to use https://0x0.stprintf "Usage: \n\t0x0 -f file\n\t0x0 -u url\n\t0x0 -s url_to_shorten\n"
+
+usage() {
+    printf "Usage: \n\t0x0 -f file\n\t0x0 -u url\n\t0x0 -s url_to_shorten\n"
+}
+
+get_args() {
+    while [[ "$1" ]]; do
+        case "$1" in
+            "-f") curl -F"file=@$2" https://0x0.st ;;
+            "-s") curl -F"shorten=$2" https://0x0.st ;;
+            "-u") curl -F"url=$2" https://0x0.st;;
+            *) usage
+        esac
+        exit 1
+    done
+    usage
+}
+
+get_args "$@"
