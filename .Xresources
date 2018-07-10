@@ -12,6 +12,9 @@ URxvt*boldFont:     xft:Monaco:bold:size=7, xfg:FontAwesome:size=7, xft:Droid Sa
 !URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
 !URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
 
+!URxvt*font: -*-tewii-medium-r-normal--11-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-tewii-medium-r-normal--11-*-*-*-*-*-*-*
+
 URxvt.letterSpace: 0
 
 URxvt.cursorBlink: 1
@@ -20,16 +23,18 @@ URxvt.cursorBlink: 1
 URxvt.scrollBar: false
 
 ! Set terminal padding
-URxvt.internalBorder: 15
+URxvt.internalBorder: 22
 
 URxvt*.depth: 24
 
 ! Enables copy/paste with Ctrl-Shift-C/V
 URxvt.iso14755: false
 URxvt.iso14755_52: false
-URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common: default,clipboard,font-size
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
 
 ! Colors {{{
 
