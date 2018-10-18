@@ -11,6 +11,8 @@ settings:
         <Ctrl+i>: spawn --userscript qute-keepass -p ~/Documents/Misc/keepass/Passwords.kdbx
       normal:
         <Ctrl+i>: spawn mpv {url}
+        J: tab-prev
+        K: tab-next
         xb: config-cycle statusbar.hide
         xt: config-cycle tabs.show always switching
         xx: config-cycle statusbar.hide ;; config-cycle tabs.show always switching
@@ -31,7 +33,7 @@ settings:
   scrolling.smooth:
     global: false
   statusbar.hide:
-    global: false
+    global: true
   tabs.indicator.width:
     global: 0
   tabs.show:
