@@ -1,6 +1,12 @@
+let g:livepreview_previewer = 'zathura'
+
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+let g:limelight_conceal_ctermfg = 240
+let g:limelight_conceal_guifg = 240
+let g:limelight_default_coefficient = 0.5
 
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
@@ -44,3 +50,5 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+au BufNewFile,BufRead *.ejs set filetype=html

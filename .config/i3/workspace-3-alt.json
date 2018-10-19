@@ -1,0 +1,105 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 135,
+       "width": 194,
+       "x": 585,
+       "y": 404
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_on",
+            "geometry": {
+               "height": 342,
+               "width": 510,
+               "x": 0,
+               "y": 0
+            },
+            "name": "cava",
+            "percent": 1,
+            "swallows": [
+               {
+                "class": "^URxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 298,
+       "width": 213,
+       "x": 1139,
+       "y": 456
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_on",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "sxiv - /home/manan/.config/dbs/2D/Photos/Cute/cute_2-girls_schoolgirl_skirt_victory.png",
+            "percent": 1,
+            "swallows": [
+               {
+                "class": "^Sxiv$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 174,
+       "width": 272,
+       "x": 545,
+       "y": 218
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_on",
+            "geometry": {
+               "height": 342,
+               "width": 510,
+               "x": 0,
+               "y": 0
+            },
+            "name": "２ ８ １ ４ - テレパシー",
+            "percent": 1,
+            "swallows": [
+               {
+                "class": "^URxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

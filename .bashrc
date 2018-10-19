@@ -1,16 +1,43 @@
-# ~/.bashrc
-# If not running interactively, don't do anything
+#  _               _
+# | |__   __ _ ___| |__  _ __ ___
+# | '_ \ / _` / __| '_ \| '__/ __|
+# | |_) | (_| \__ \ | | | | | (__
+# |_.__/ \__,_|___/_| |_|_|  \___|
 
+
+# Source wal colors
 source "$HOME/.cache/wal/colors.sh"
+
+# Set vim as default editor
 export EDITOR="vim"
+
+# Add Scripts folder to PATH
 PATH="$PATH:$HOME/Scripts"
 
+# Enable Vim Mode in Bash
+set -o vi
+# Control+L for clear-screen
+bind -m vi-insert "\C-l":clear-screen
+
+## Python Virtual Environment Wrapper
 #export WORKON_HOME=~/.virtualenvs
 #source /usr/bin/virtualenvwrapper.sh
+
+# Wifi Hotspot
+alias 'hotspot'="sudo create_ap wlp3s0 wlp3s0 'ssid' pwd"
+
+# Aliases
+alias 'p'='python'
+alias 'r'='ranger'
+alias 'pm'='pacman'
+alias 'pmu'='sudo pacman -Syu'
+alias 'pmi'='sudo pacman -S'
+alias 'pms'='pacman -Ss'
 
 # Shell Prompt
 export PS1='\[\e[90m\]\w \[\e[31m\]>\[\e[0m\] '
 
+# If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
@@ -42,15 +69,6 @@ function cd()
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-fi
-
-# Auto-completion
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
 fi
 
 # Color man pages
