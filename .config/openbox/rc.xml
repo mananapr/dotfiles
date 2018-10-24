@@ -4,24 +4,27 @@
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
+
   <focus>
     <focusNew>yes</focusNew>
     <followMouse>yes</followMouse>
     <focusLast>no</focusLast>
-    <underMouse>yes</underMouse>
+    <underMouse>no</underMouse>
     <focusDelay>0</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
+
   <placement>
     <policy>UnderMouse</policy>
     <center>yes</center>
     <monitor>Mouse</monitor>
     <primaryMonitor>1</primaryMonitor>
   </placement>
+
   <theme>
     <name>thicc</name>
-    <titleLayout>LMC</titleLayout>
-    <cornerRadius>2</cornerRadius>
+    <titleLayout></titleLayout>
+    <cornerRadius>4</cornerRadius>
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -49,6 +52,7 @@
       <slant>Normal</slant>
     </font>
   </theme>
+
   <desktops>
     <number>8</number>
     <firstdesk>1</firstdesk>
@@ -64,6 +68,7 @@
     </names>
     <popupTime>0</popupTime>
   </desktops>
+
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Never</popupShow>
@@ -73,12 +78,14 @@
       <y>10</y>
     </popupFixedPosition>
   </resize>
+
   <margins>
     <top>0</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
+
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Go to desktop by number -->
@@ -106,6 +113,7 @@
     <keybind key="A-8">
         <action name="GoToDesktop"><to>8</to></action>
     </keybind>
+
     <!-- Send program to desktop by number -->
     <keybind key="A-S-1">
       <action name="SendToDesktop">
@@ -163,6 +171,7 @@
         <follow>no</follow>
       </action>
     </keybind>
+
     <keybind key="W-e">
       <action name="ToggleOmnipresent"/>
     </keybind>
@@ -231,6 +240,7 @@
         <y>15</y>
       </action>
     </keybind>
+
     <!-- Keybindings for running applications -->
     <keybind key="A-Return">
       <action name="Execute">
@@ -493,19 +503,18 @@
       </mousebind>
     </context>
   </mouse>
+
   <applications>
     <application class="Firefox*">
       <desktop>2</desktop>
       <focus>yes</focus>
     </application>
-    <application title="bum" class="mpv">
+    <application class="*">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
       <decor>no</decor>
     </application>
-    <application class="*">
-  <position force="no">
-    <x>center</x>
-    <y>center</y>
-  </position>
-</application>
-  </applications>
+ </applications>
 </openbox_config>
