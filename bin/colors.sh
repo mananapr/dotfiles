@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source /home/manan/.cache/wal/colors.sh
+source $HOME/.cache/wal/colors.sh
 
 # colors
 text="$foreground"
