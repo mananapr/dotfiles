@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Creates and Displays a QR Code made from the Clipboard history
+
+CLIP_DIR='/tmp/qr.png'
+clip=$(xclip -selection c -i -o)
+qrencode $clip -s 20 -o $CLIP_DIR
+feh $CLIP_DIR
+rm $CLIP_DIR

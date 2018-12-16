@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Increases/Decreases Brightness
 
 case "$1" in
     "inc") xbacklight -inc 1 ;;

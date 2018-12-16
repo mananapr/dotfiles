@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-#Script to use https://0x0.stprintf "Usage: \n\t0x0 -f file\n\t0x0 -u url\n\t0x0 -s url_to_shorten\n"
+#Script to use https://0x0.st
 
 usage() {
     printf "Usage: \n\t0x0 -f file\n\t0x0 -u url\n\t0x0 -s url_to_shorten\n"

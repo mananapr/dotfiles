@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Gives Battery Status
 
 which notify-send &> /dev/null
 

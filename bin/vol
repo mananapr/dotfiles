@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Increase/Decrease Volume
 
 case "$1" in
     "up")   pactl set-sink-volume 0 +5% ;;
@@ -15,4 +16,5 @@ else
     current_vol="$(amixer sget Master | grep -o -E "[[:digit:]]+%")"
 fi
 
-notify-send -t 1 -r 112 "Volume: ${current_vol/$'\n'*}"
+#notify-send -t 1 -r 112 "Volume: ${current_vol/$'\n'*}"
+notify-send -r 112 "Volume: ${current_vol/$'\n'*}"

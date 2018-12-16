@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
+# Script to upload files to my self hosted lolisafe instance
 
-curl -s -o op -H "token: your-token" -F "files[]=@$1" https://safe.moe/api/upload
+curl -s -o op -H "token: 9rAFlMVmdeKNJhizVSGogZr1WORTz0JS48eQwXcFy6p0FFcvx3jPRSD3BmbhiVRB" -F "files[]=@$1" http://mananapr.dynu.net:8080/api/upload
+#curl -s -o op -F "files[]=@$1" https://safe.fiery.me/api/upload
 url=$(cat op | jq -r ".files" | jq -r ".[].url")
-echo "$url"
-notify-send -r 112 "$url"
+echo "http://mananapr.dynu.net:8080$url"
+notify-send -r 112 "Upload Complete"
 rm op

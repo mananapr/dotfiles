@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Uses lemonbar-xft to create a bar
 
 
 # fetch the colors

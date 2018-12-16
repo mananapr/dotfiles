@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# vars
+# Dictionary
+
+#vars
 www="http://www.dictionary.com/browse"
 word="$@"
 
 # funcs
 get() {
-	cmd=$(curl -s "$www/$word" | grep -oP '(?<=<meta name="description" content=").*(?=See more.)' | sed "s/.*definition,/$word:/")	
+	cmd=$(wget -qO - "$www/$word" | grep -oP '(?<=<meta name="description" content=").*(?=See more.)' | sed "s/.*definition,/$word:/")	
 	
 	if [ -z "$cmd" ] ; then
 		printf "this word wasn't found.\n"

@@ -15,6 +15,7 @@ reload_dunst() {
             -cf "$color15" \
             -nf "$color15" \
             -fn "${DUNST_FONT:-Monaco 8}" \
+            -corner_radius 4\
             -geometry "${DUNST_SIZES:-250x30-20+30}" &
 }
 
@@ -50,7 +51,7 @@ main() {
     set_rofi &
     set_bar 
     set_zathura &
-    set_openbox &
+    #set_openbox &
     sleep 1
     set-bar
 }

@@ -13,7 +13,7 @@ font pango:FontAwesome 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -27,26 +27,20 @@ bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yo
 # Custom start
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id udiskie --use-udisks2 &
-#exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
+exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
 exec --no-startup-id mpd &
-exec --no-startup-id firefox &
 exec --no-startup-id redshift-gtk &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
+exec --no-startup-id firefox &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1-alt.json' 
-exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3-alt.json' 
-#exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' &
-#exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' &
-#exec --no-startup-id urxvt &
-exec --no-startup-id feh --bg-tile ~/Pictures/Solid/keUPX.png &
-exec --no-startup-id wal --theme ~/.config/wal/colorschemes/dark/eti -o wal-set &
-exec --no-startup-id urxvt &
-exec --no-startup-id urxvt &
-exec --no-startup-id urxvt &
-exec --no-startup-id sxiv-rifle ~/.config/dbs/2D/Photos/Cute/cute_2-girls_schoolgirl_skirt_victory.png 
-exec --no-startup-id sxiv-rifle ~/.config/dbs/2D/Photos/Cute/cute_rain_loli_playing-with-hair_looking-out-of-window.jpg 
+exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' 
+exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' 
+exec --no-startup-id urxvtc &
+exec --no-startup-id urxvtc &
+exec --no-startup-id urxvtc &
+exec --no-startup-id urxvtc &
 
 #######################################
 #######################################
@@ -74,8 +68,11 @@ bindsym $mod+shift+d exec --no-startup-id lock &
 bindsym $mod+s exec --no-startup-id scr &
 # Bar
 bindsym $mod+c exec --no-startup-id pkill bar && bar
+bindsym $mod+x exec --no-startup-id set-bar
 # Cylce Wallpapers
 bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
+# Get QR Code of Clipboard
+bindsym $mod+q exec --no-startup-id qr
 
 #######################################
 #######################################
@@ -180,7 +177,7 @@ for_window [class="Mirage"] floating enable
 for_window [class="Wpg"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Catfish"] floating enable
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 5
 
 #######################################
 #######################################
@@ -222,7 +219,7 @@ bindsym $mod+r mode "resize"
 #######################################
 
 set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color3 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
 
 # window colors
 #                       border  background  text  indicator  child-border
