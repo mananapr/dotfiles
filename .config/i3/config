@@ -73,6 +73,8 @@ bindsym $mod+x exec --no-startup-id set-bar
 bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
 # Get QR Code of Clipboard
 bindsym $mod+q exec --no-startup-id qr
+# Get Keepass Entries on Rofi
+bindsym $mod+p exec --no-startup-id ~/.local/bin/keepmenu
 
 #######################################
 #######################################
@@ -219,7 +221,7 @@ bindsym $mod+r mode "resize"
 #######################################
 
 set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bg i3wm.color3 #f0f0f0
 
 # window colors
 #                       border  background  text  indicator  child-border
