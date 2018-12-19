@@ -34,6 +34,7 @@ exec --no-startup-id redshift-gtk &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
 exec --no-startup-id firefox &
+exec --no-startup-id transmission-daemon &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' 
 exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' 
@@ -179,7 +180,7 @@ for_window [class="Mirage"] floating enable
 for_window [class="Wpg"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Catfish"] floating enable
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 6
 
 #######################################
 #######################################
