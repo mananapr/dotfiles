@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+#Script to use https://catbox.moe
+
+curl --progress-bar -F "reqtype=fileupload" -F "fileToUpload=@$1" https://catbox.moe/user/api.php | tee /dev/null
