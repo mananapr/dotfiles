@@ -12,7 +12,7 @@ source "$HOME/.cache/wal/colors.sh"
 export EDITOR="vim"
 
 # Add Scripts folder to PATH
-PATH="$PATH:$HOME/Scripts"
+PATH="$PATH:$HOME/Scripts:$HOME/.local/bin"
 
 # Enable Vim Mode in Bash
 set -o vi
@@ -23,8 +23,8 @@ bind -m vi-insert "\C-l":clear-screen
 #export WORKON_HOME=~/.virtualenvs
 #source /usr/bin/virtualenvwrapper.sh
 
-# Wifi Hotspot
-alias 'hotspot'="sudo create_ap wlp3s0 wlp3s0 'ssid' pwd"
+# Start Fish
+exec fish
 
 # Aliases
 alias 'p'='python'
@@ -33,9 +33,10 @@ alias 'pm'='pacman'
 alias 'pmu'='sudo pacman -Syu'
 alias 'pmi'='sudo pacman -S'
 alias 'pms'='pacman -Ss'
+alias 'pmro'='sudo pacman -Rns $(pacman -Qtdq)'
 
 # Shell Prompt
-export PS1='\[\e[90m\]\w \[\e[31m\]>\[\e[0m\] '
+export PS1='\[\e[1m\]➜\[\e[0m\] '
 
 # If not running interactively, don't do anything
 case $- in
