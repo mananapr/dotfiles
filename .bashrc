@@ -23,12 +23,16 @@ bind -m vi-insert "\C-l":clear-screen
 #export WORKON_HOME=~/.virtualenvs
 #source /usr/bin/virtualenvwrapper.sh
 
-# Start Fish
-exec fish
+# Wifi Hotspot
+alias 'hotspot'="sudo create_ap wlp3s0 wlp3s0 'ssid' password"
 
 # Aliases
 alias 'p'='python'
 alias 'r'='ranger'
+alias 'gs'='git status'
+alias 'ga'='git add'
+alias 'gm'='git commit -m'
+alias 'gp'='git push'
 alias 'pm'='pacman'
 alias 'pmu'='sudo pacman -Syu'
 alias 'pmi'='sudo pacman -S'
