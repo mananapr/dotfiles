@@ -1,5 +1,13 @@
-#######################################
-#######################################
+###########################################
+###########################################
+## _ _____                    __ _       ##
+##(_)___ /    ___ ___  _ __  / _(_) __ _ ##
+##| | |_ \   / __/ _ \| '_ \| |_| |/ _` |##
+##| |___) | | (_| (_) | | | |  _| | (_| |##
+##|_|____/   \___\___/|_| |_|_| |_|\__, |##
+##                                 |___/ ##
+###########################################
+###########################################
 
 # 'Alt' as Mod key
 set $mod Mod1
@@ -28,16 +36,17 @@ bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yo
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
-exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
+exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" --shadow-exclude-reg 180x95+35+20 &
 exec --no-startup-id mpd &
-exec --no-startup-id redshift-gtk &
+exec --no-startup-id clipit &
+#exec --no-startup-id redshift-gtk &
 exec --no-startup-id dunst &
 exec --no-startup-id nm-applet &
 exec --no-startup-id firefox &
 exec --no-startup-id transmission-daemon &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1.json' 
-exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3.json' 
+exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1-alt.json'
+exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3-alt.json'
 exec --no-startup-id urxvtc &
 exec --no-startup-id urxvtc &
 exec --no-startup-id urxvtc &
@@ -52,8 +61,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id vol down
 bindsym XF86AudioMute exec --no-startup-id vol mute
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id bri inc
-bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
+bindsym XF86MonBrightnessUp exec --no-startup-id log-bri -inc
+bindsym XF86MonBrightnessDown exec --no-startup-id log-bri -dec
 
 # Music Controls
 bindsym Mod4+p exec --no-startup-id mpc toggle
@@ -68,8 +77,8 @@ bindsym $mod+shift+d exec --no-startup-id lock &
 # Screenshot
 bindsym $mod+s exec --no-startup-id scr &
 # Bar
-bindsym $mod+c exec --no-startup-id pkill bar && bar
-bindsym $mod+x exec --no-startup-id set-bar
+bindsym $mod+c exec --no-startup-id bar
+bindsym $mod+x exec --no-startup-id pkill bar
 # Cylce Wallpapers
 bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
 # Get QR Code of Clipboard
@@ -80,9 +89,9 @@ bindsym $mod+p exec --no-startup-id ~/.local/bin/keepmenu
 #######################################
 #######################################
 
-# change focus                                            
-bindsym $mod+j focus left                                 
-bindsym $mod+k focus down                                 
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
@@ -132,12 +141,12 @@ bindsym $mod+a focus parent
 #######################################
 #######################################
 
-set $workspace1 "1"
-set $workspace2 "2"
-set $workspace3 "3"
-set $workspace4 "4"
-set $workspace5 "5"
-set $workspace6 "6"
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -171,16 +180,9 @@ assign [class="mpv"] $workspace6
 #######################################
 
 #Windows Settings
-#for_window [class="Thunar"] resize set 610 410
-for_window [class="Pavucontrol"] floating enable
-for_window [class="feh"] floating enable
 for_window [class="System-config-printer.py"] floating enable
-for_window [class="Thunar"] floating enable
 for_window [class="Mirage"] floating enable
-for_window [class="Wpg"] floating enable
-for_window [class="Lxappearance"] floating enable
-for_window [class="Catfish"] floating enable
-for_window [class="^.*"] border pixel 6
+for_window [class="^.*"] border pixel 0
 
 #######################################
 #######################################
