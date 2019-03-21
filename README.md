@@ -14,16 +14,16 @@ My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Sche
 
 - Application Launcher: `rofi`
 - Compositor: `compton`
-- Icons: `HALO with Pastel Icons`
+- Icons: `ePapirus`
 - Notifications: `dunst`
 - Shell: `bash`
-- Terminal Emulator: `urxvt`
+- Terminal Emulator: `urxvtd`
 - Text Editor: `vim`
-- Theme: `Lumiere`
+- Theme: `Arc`
 - Video Player: `mpv`
 - Web Browser: `Firefox`
-- Window Manager: `i3-gaps` and `openbox`
-- Lock Screen: Modified version of `i3lock-fancy`
+- Window Manager: `i3-gaps`
+- Lock Screen: Custom script based on `i3lock-color`
 
 ## Installation
 
