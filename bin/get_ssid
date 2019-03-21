@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+notify-send -r 112 SSID $(nmcli | grep "connected to" | awk '{print $NF}')

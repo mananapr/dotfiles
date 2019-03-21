@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+progress-bar() {
+    # example usage:
+    # progress 30G 9G 30
+    # 30G [================>.................................] 30% (9G)
+
+    # params:
+    # $1 = total value (e.g.: source size)
+    # $2 = current value (e.g.: destination size)
+    # $3 = percent completed
+    [[ -z $1 || -z $2 || -z $3 ]] && exit  # on empty param...
+
+    percent=$3
+    completed=$(( $percent / 4 ))
+    remaining=$(( 25 - $completed ))
+
+    printf "%0.s█" `seq $completed`
+    [[ $remaining != 0 ]] && printf "%0.s░" `seq $remaining`
+}
+
+a=$(xbacklight -get)
+a=$(echo "$a/1" | bc)
+m=$(progress-bar "1" "1" "$a")
+notify-send -r 112 "Backlight" "\n$m"
