@@ -1,9 +1,9 @@
 # Manan's Dotfiles
 Dotfiles for my Arch Linux setup.
 
-### i3-gaps
-[Full Screenshot Album](https://imgur.com/a/ZnjWW)
 ![i3](i3.png "i3")
+
+[Full Screenshot Album](https://imgur.com/a/yyrZ99v)
 
 ## Setup
 My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Schemes.
