@@ -11,7 +11,7 @@ def get_backlight():
 
 def set_backlight(backlight):
     subprocess.call(["xbacklight", "-set", str(backlight)])
-    subprocess.call(["get-bri"])
+    subprocess.call(["getbri"])
 
 def backlight_to_step(backlight, backlight_min, backlight_max, steps):
     x_min = log10(backlight_min)

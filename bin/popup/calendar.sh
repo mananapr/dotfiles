@@ -7,12 +7,12 @@ cil="/tmp/calendar.png"
 bg="$HOME/Scripts/popup/img/bg.png"
 width=$(xdotool "getdisplaygeometry" | awk '{print $1;}')
 height=$(xdotool "getdisplaygeometry" | awk '{print $2;}')
-ypos=$(expr "$height" - "242")
+ypos=$(expr "$height" - "298")
 xpos=$(expr "$width")
 
 # convert the output to png
 convert -background "rgba(0,0,0,0)" \
-		-fill "#b1b2bb" \
+		-fill "#e5dbd2" \
 		-font "Monaco" \
 		-antialias \
 		-pointsize 12 \
@@ -20,9 +20,9 @@ convert -background "rgba(0,0,0,0)" \
 		"$cil"
 
 # display it
-$HOME/Scripts/popup/popup.sh "" "$(expr "$width" - "1340")" -p "70" &
+$HOME/Scripts/popup/popup.sh "" "$(expr "$width" - "1360")" -p "23" &
 sleep ".15s"
-n30f -x "$(expr "$width" - "1307")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
+n30f -x "$(expr "$width" - "1327")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
 
 # delete it
 sleep ".2s"

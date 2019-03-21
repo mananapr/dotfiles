@@ -41,6 +41,7 @@ set_bar() {
     cp ~/.cache/wal/popup-l.sh ~/Scripts/popup/popup.sh
     cp ~/.cache/wal/calendar-l.sh ~/Scripts/popup/calendar.sh
     cp ~/.cache/wal/bar_colors_light.sh ~/Scripts/colors.sh
+    polybar rome
     #bar 2>/dev/null &
 }
 

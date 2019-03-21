@@ -36,7 +36,7 @@ bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yo
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
-exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" --shadow-exclude-reg 180x95+35+20 &
+exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" --shadow-exclude "name='bar'" --shadow-exclude "name='n30f'" &
 exec --no-startup-id mpd &
 exec --no-startup-id clipit &
 #exec --no-startup-id redshift-gtk &
@@ -61,8 +61,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id vol down
 bindsym XF86AudioMute exec --no-startup-id vol mute
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id log-bri -inc
-bindsym XF86MonBrightnessDown exec --no-startup-id log-bri -dec
+bindsym XF86MonBrightnessUp exec --no-startup-id bri inc
+bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
 
 # Music Controls
 bindsym Mod4+p exec --no-startup-id mpc toggle

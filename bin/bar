@@ -81,7 +81,7 @@ loop-laptop() {
 	lemonbar \
 	    -f 'Monaco:size=7' \
 	    -f 'FontAwesome:size=8' \
-	    -g "170x"$barh"+"$margin"+"$margin"" \
+	    -g "158x"$barh"+"$margin"+"$margin"" \
 	    -d \
 	    | bash
 }

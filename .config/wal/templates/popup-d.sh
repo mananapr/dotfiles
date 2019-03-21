@@ -10,13 +10,13 @@ source "$HOME/Scripts/colors.sh"
 background="$HOME/Scripts/popup/img/bg2.png"
 pointer_main="$HOME/Scripts/popup/img/pointer.png"
 pointer="$HOME/Scripts/popup/img/pointer_mod.png"
-y="80"
+y="30"
 
 # make bg.png from pywal color0
 convert -size 199x199 xc:"{color0}" "$background"
-convert -border 6x6 -bordercolor "{color7}" "$background" "$background"
+convert -border 6x6 -bordercolor "{color0}" "$background" "$background"
 # replace the color in pointer.png to pywal color7
-convert "$pointer_main" -fuzz 50% -fill "{color7}" -opaque "#f2f2f2" "$pointer"
+convert "$pointer_main" -fuzz 50% -fill "{color0}" -opaque "#f2f2f2" "$pointer"
 
 # exec
 n30f -x "$2" -y "$(expr $y + 6)" -c "killall n30f" "$background" &
