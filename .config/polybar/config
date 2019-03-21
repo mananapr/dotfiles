@@ -67,6 +67,8 @@ font-3 = Terminus:size=18;0
 font-4 = Monospace:size=28;3
 font-5 = FontAwesome:size=11;3
 font-6 = FontAwesome:size=10;3
+font-7 = Monaco:size=9;2
+font-8 = FontAwesome:size=9;2
 
 ;----------------------------------------------------------
 ;  	    M O D U L E    L A Y O U T S
@@ -115,8 +117,8 @@ interval = 1
 format-foreground = ${colors.xcolor7}
 format-background = ${colors.xcolor0}
 
-time = "    %I:%M"
-label = %{A1:~/Scripts/popup/calendar.sh:} %time% %{A}
+time = " %I:%M"
+label = %{T8}%{A1:~/Scripts/popup/calendar.sh:} %time% %{A}%{T-}
 
 
 ;----------------------------------------------------------
@@ -136,7 +138,7 @@ format-volume = <ramp-volume>
 label-volume = %percentage%
 label-volume-foreground = ${colors.xcolor7}
 label-volume-background = ${colors.xcolor0}
-label-muted = %{T7}     %{T-}
+label-muted = %{T9}     %{T-}
 label-muted-foreground = ${colors.xcolor7}
 label-muted-background = ${colors.xcolor0}
 
@@ -188,8 +190,8 @@ format-full = %{A1:batstat.sh:} <label-full> %{A}
 format-full-foreground = ${colors.xcolor7}
 format-full-background = ${colors.xcolor0}
 
-label-charging = "       "
-label-discharging = "    "
+label-charging = "     "
+label-discharging = "  "
 label-discharging-foreground = ${colors.xcolor7}
 label-full = " "
 ramp-capacity-0 = " "
