@@ -118,7 +118,7 @@ format-foreground = ${colors.xcolor7}
 format-background = ${colors.xcolor0}
 
 time = " %I:%M"
-label = %{T8}%{A1:~/Scripts/popup/calendar.sh:} %time% %{A}%{T-}
+label = %{T8}%{A1:~/Scripts/popup/calendar.sh:}%{A3:~/Scripts/popup/cover.sh:} %time% %{A}%{A}%{T-}
 
 
 ;----------------------------------------------------------
