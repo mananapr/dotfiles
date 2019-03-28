@@ -20,9 +20,9 @@ convert -background "rgba(0,0,0,0)" \
 		"$cil"
 
 # display it
-$HOME/Scripts/popup/popup.sh "" "$(expr "$width" - "1360")" -p "23" &
+$HOME/Scripts/popup/popup.sh "" "$(expr "$width" - "1356")" -p "16" &
 sleep ".15s"
-n30f -x "$(expr "$width" - "1327")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
+n30f -x "$(expr "$width" - "1323")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
 
 # delete it
 sleep ".2s"

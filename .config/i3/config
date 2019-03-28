@@ -36,7 +36,7 @@ bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yo
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
-exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" --shadow-exclude "name='bar'" --shadow-exclude "name='n30f'" &
+exec --no-startup-id compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" --shadow-exclude "name='bar'" --shadow-exclude "name='n30f'" --shadow-exclude "name*='Firefox'" --shadow-exclude "name*='~'" --shadow-exclude "name*='zathura'" &
 exec --no-startup-id mpd &
 exec --no-startup-id clipit &
 #exec --no-startup-id redshift-gtk &
@@ -238,12 +238,12 @@ client.background       $bg
 #######################################
 
 #i3-gaps
-gaps inner 5
+gaps inner 0
 gaps outer 0
-bindsym $mod+y gaps inner current minus 6
-bindsym $mod+u gaps inner current plus 6
-bindsym $mod+Shift+y gaps outer current minus 6
-bindsym $mod+Shift+u gaps outer current plus 6
+bindsym $mod+y gaps inner current minus 5
+bindsym $mod+u gaps inner current plus 5
+bindsym $mod+Shift+y gaps outer current minus 5
+bindsym $mod+Shift+u gaps outer current plus 5
 
 #######################################
 #######################################
