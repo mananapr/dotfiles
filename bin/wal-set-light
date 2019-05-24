@@ -15,8 +15,7 @@ reload_dunst() {
             -cf "$color15" \
             -nf "$color15" \
             -fn "${DUNST_FONT:-Monaco 8}" \
-            -corner_radius 4\
-            -geometry "${DUNST_SIZES:-250x30-20+30}" &
+            -geometry "${DUNST_SIZES:-250x30-6+32}" &
 }
 
 set_sublime() {
@@ -53,7 +52,7 @@ main() {
     #set_openbox &
     set_sublime &
     sleep 1
-    set-bar
+    #set-bar
 }
 
 main >/dev/null 2>&1

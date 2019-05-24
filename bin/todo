@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+#Script to manage todo list
+
+usage() {
+    printf "Usage: \n\ttodo -e\n"
+}
+
+print_todo() {
+    cat ~/.todo
+}
+
+get_args() {
+    while [[ "$1" ]]; do
+        case "$1" in
+            "-e") vim ~/.todo ;;
+            *) usage
+        esac
+        exit 1
+    done
+    print_todo
+}
+
+get_args "$@"

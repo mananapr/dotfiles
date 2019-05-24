@@ -14,8 +14,11 @@ reload_dunst() {
             -bf "$color15" \
             -cf "$color15" \
             -nf "$color15" \
+            -lto 2 \
+            -nto 2 \
+            -cto 2 \
             -fn "${DUNST_FONT:-Monaco 8}" \
-            -geometry "${DUNST_SIZES:-250x30-6+31}" &
+            -geometry "${DUNST_SIZES:-250x30-20+20}" &
 }
 
 set_bar() {
@@ -23,9 +26,8 @@ set_bar() {
     cp ~/.cache/wal/popup-d.sh ~/Scripts/popup/popup.sh
     cp ~/.cache/wal/calendar-d.sh ~/Scripts/popup/calendar.sh
     cp ~/.cache/wal/bar_colors_dark.sh ~/Scripts/colors.sh
-    polybar rome
+    #polybar rome &
     #bar 2>/dev/null &
-    sleep 1
 }
 
 set_rofi() {
@@ -49,11 +51,11 @@ main() {
     reload_dunst &
     set_sublime &
     set_rofi &
-    set_bar 
+    set_bar
     set_zathura &
     #set_openbox &
     sleep 1
-    set-bar
+    #set-bar
 }
 
 main >/dev/null 2>&1
