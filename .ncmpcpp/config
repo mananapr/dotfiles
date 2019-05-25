@@ -8,30 +8,38 @@ visualizer_fifo_path                  = "/tmp/mpd.fifo"
 visualizer_output_name                = "fifo"
 visualizer_sync_interval              = "30"
 visualizer_in_stereo                  = "yes"
-visualizer_type                       = "spectrum" (spectrum/wave)
-visualizer_look                       = "●┃"
+visualizer_type                       = "wave"
+visualizer_look                       = "●█"
 
 # NOTIFICATIONS
 execute_on_song_change = "song_change"
 
 # PLAYLIST
-playlist_disable_highlight_delay = 1
-song_columns_list_format = "(40)[blue]{a} (25)[blue]{t|f}"
-#song_list_format = "$3{%a}$R$2{%t}"     ## Artist - Title
-song_list_format = "$3{%t}"            ## Title
-#song_list_format = "$3{%t}$R$2{%l}"    ## Title - Time
-playlist_display_mode = "classic"
-centered_cursor = "yes"
-follow_now_playing_lyrics = "yes"
-now_playing_prefix = "$5> "
+song_list_format = "%t"
+song_columns_list_format = "(0)[16]{t}"
+song_status_format = "$3%t"
+playlist_display_mode = "columns"
+now_playing_suffix = " $8x"
+browser_playlist_prefix = "$3 ♥ $3 "
 
-# BARS
-progressbar_color = "black"
-progressbar_elapsed_color = "blue"
-progressbar_look = "__"
-#progressbar_look = "───"
+# DELAYS
+playlist_disable_highlight_delay = "1"
+message_delay_time= "1"
 
 # UI
-header_visibility = "no"
+progressbar_look = "─╴─"
+progressbar_elapsed_color = "cyan"
+display_bitrate = "no"
+autocenter_mode = "yes"
+centered_cursor = "yes"
 titles_visibility = "no"
 statusbar_visibility = "no"
+mouse_support = "no"
+header_visibility = "no"
+display_remaining_time = "no"
+
+# MISC
+ask_before_clearing_playlists = "yes"
+discard_colors_if_item_is_selected = "yes"
+allow_for_physical_item_deletion = "yes"
+seek_time = 5
