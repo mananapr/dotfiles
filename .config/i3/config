@@ -21,7 +21,7 @@ font pango:FontAwesome 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvtc -b 30
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -47,10 +47,9 @@ exec --no-startup-id transmission-daemon &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id i3-msg 'workspace 1; append_layout /home/manan/.config/i3/workspace-1-alt.json'
 exec --no-startup-id i3-msg 'workspace 3; append_layout /home/manan/.config/i3/workspace-3-alt.json'
-exec --no-startup-id urxvtc &
-exec --no-startup-id urxvtc &
-exec --no-startup-id urxvtc &
-exec --no-startup-id urxvtc &
+exec --no-startup-id urxvtc -b 30 &
+exec --no-startup-id urxvtc -b 30 &
+exec --no-startup-id sxiv-rifle /home/manan/Pictures/muted-colors/e1a70028642916feccbaf6e1ccdd6d7b88372779.jpg &
 
 #######################################
 #######################################
@@ -182,7 +181,8 @@ assign [class="mpv"] $workspace6
 #Windows Settings
 for_window [class="System-config-printer.py"] floating enable
 for_window [class="Mirage"] floating enable
-for_window [class="^.*"] border pixel 0
+for_window [class="Thunar"] floating enable
+for_window [class="^.*"] border pixel 13
 
 #######################################
 #######################################
@@ -223,14 +223,14 @@ bindsym $mod+r mode "resize"
 #######################################
 #######################################
 
-set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $fg i3wm.color255 #f0f0f0
 set_from_resource $bg i3wm.color3 #f0f0f0
 
 # window colors
 #                       border  background  text  indicator  child-border
 client.focused          $bg     $bg         $fg   $fg        $fg
-client.unfocused        $bg     $bg         $fg   $bg        $bg
-client.focused_inactive $bg     $bg         $fg   $bg        $bg
+client.unfocused        $bg     $bg         $fg   $fg        $fg
+client.focused_inactive $bg     $bg         $fg   $fg        $fg
 client.urgent           $bg     $bg         $fg   $bg        $bg
 client.background       $bg
 
