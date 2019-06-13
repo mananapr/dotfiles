@@ -65,10 +65,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
 
 # Music Controls
 bindsym Mod4+p exec --no-startup-id mpc toggle
-bindsym Mod4+Shift+greater exec --no-startup-id mpc next
-bindsym Mod4+Shift+less exec --no-startup-id mpc prev
-bindsym Mod4+Right exec --no-startup-id mpc seek +5
-bindsym Mod4+Left exec --no-startup-id mpc seek -5
+bindsym Mod4+Shift+L exec --no-startup-id mpc next
+bindsym Mod4+Shift+H exec --no-startup-id mpc prev
+bindsym Mod4+l exec --no-startup-id mpc seek +5
+bindsym Mod4+h exec --no-startup-id mpc seek -5
 
 ## Misc Controls
 # Lock
