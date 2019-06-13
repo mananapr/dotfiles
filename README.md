@@ -2,6 +2,7 @@
 Dotfiles for my Arch Linux setup.
 
 ![i3](i3.png "i3")
+![i3-alt](i3-alt.png "i3-alt")
 
 [Full Screenshot Album](https://imgur.com/a/yyrZ99v)
 
