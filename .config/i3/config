@@ -34,7 +34,6 @@ bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yo
 
 # Custom start
 exec --no-startup-id xfce4-power-manager &
-exec --no-startup-id udiskie --use-udisks2 &
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" && wal-set
 exec --no-startup-id compton &
 exec --no-startup-id mpd &
@@ -72,7 +71,7 @@ bindsym Mod4+h exec --no-startup-id mpc seek -5
 
 ## Misc Controls
 # Lock
-bindsym $mod+shift+d exec --no-startup-id lock &
+bindsym $mod+Shift+d exec --no-startup-id lock &
 # Screenshot
 bindsym $mod+s exec --no-startup-id scr &
 # Bar
@@ -82,8 +81,12 @@ bindsym $mod+x exec --no-startup-id pkill bar
 bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
 # Get QR Code of Clipboard
 bindsym $mod+q exec --no-startup-id qr
-# Get Keepass Entries on Rofi
-bindsym $mod+p exec --no-startup-id ~/.local/bin/keepmenu
+# Get Menu to mount drives
+bindsym $mod+m exec --no-startup-id dmount
+# Get Menu to unmount drives
+bindsym $mod+Shift+M exec --no-startup-id dumount
+# Get Menu to select displays
+bindsym Mod4+d exec --no-startup-id displayselect
 
 #######################################
 #######################################
