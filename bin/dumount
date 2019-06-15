@@ -2,7 +2,7 @@
 # A dmenu prompt to unmount drives.
 # Provides you with mounted partitions, select one to unmount.
 # Drives mounted at /, /boot and /home will not be options to unmount.
-
+export SUDO_ASKPASS=/usr/lib/ssh/x11-ssh-askpass
 unmountusb() {
 	[ -z "$drives" ] && exit
 	chosen=$(echo "$drives" | dmen -i -p "Unmount which drive?" | awk '{print $1}')
