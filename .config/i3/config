@@ -182,6 +182,7 @@ assign [class="mpv"] $workspace6
 #######################################
 
 #Windows Settings
+for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [class="System-config-printer.py"] floating enable
 for_window [class="Mirage"] floating enable
 for_window [class="Thunar"] floating enable
