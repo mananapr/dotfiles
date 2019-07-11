@@ -1,0 +1,264 @@
+###########################################
+###########################################
+## _ _____                    __ _       ##
+##(_)___ /    ___ ___  _ __  / _(_) __ _ ##
+##| | |_ \   / __/ _ \| '_ \| |_| |/ _` |##
+##| |___) | | (_| (_) | | | |  _| | (_| |##
+##|_|____/   \___\___/|_| |_|_| |_|\__, |##
+##                                 |___/ ##
+###########################################
+###########################################
+
+include "$HOME/.cache/wal/colors-sway"
+
+# 'Alt' as Mod key
+set $mod Mod1
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+font pango:Monaco 10
+font pango:FontAwesome 10
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec urxvtc -b 30
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run -padding 20 -font "Monaco 11" -location 1 -yoffset 40 -xoffset 40 -lines 5 -width 25 -theme .config/rofi/colors-rofi-dark
+
+#######################################
+#######################################
+
+# Custom start
+exec --no-startup-id xrdb -merge ~/.Xresources &
+exec --no-startup-id urxvtd &
+exec --no-startup-id xfce4-power-manager &
+exec --no-startup-id mpd &
+exec --no-startup-id clipit &
+exec --no-startup-id dunst &
+exec --no-startup-id nm-applet &
+exec --no-startup-id firefox &
+exec --no-startup-id transmission-daemon &
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id swaybg -m tile -i ~/Pictures/Solid/purple.png &
+exec --no-startup-id wal --theme ~/.config/wal/colorschemes/dark/may -o wal-set &
+exec --no-startup-id swayidle before-sleep 'slock' &
+
+
+#######################################
+#######################################
+
+# Audio Controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id vol up
+bindsym XF86AudioLowerVolume exec --no-startup-id vol down
+bindsym XF86AudioMute exec --no-startup-id vol mute
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id bri inc
+bindsym XF86MonBrightnessDown exec --no-startup-id bri dec
+
+# Music Controls
+bindsym Mod4+p exec --no-startup-id mpc toggle
+bindsym Mod4+Shift+L exec --no-startup-id mpc next
+bindsym Mod4+Shift+H exec --no-startup-id mpc prev
+bindsym Mod4+l exec --no-startup-id mpc seek +5
+bindsym Mod4+h exec --no-startup-id mpc seek -5
+
+## Misc Controls
+# Lock
+bindsym $mod+Shift+d exec --no-startup-id slock &
+# Screenshot
+bindsym $mod+s exec --no-startup-id scr &
+# Bar
+bindsym $mod+c exec --no-startup-id bar
+bindsym $mod+x exec --no-startup-id pkill bar
+# Cylce Wallpapers
+bindsym $mod+w exec --no-startup-id "wal -i ~/Pictures/Washed-2 -o wal-set"
+# Get QR Code of Clipboard
+bindsym $mod+q exec --no-startup-id qr
+# Get Menu to mount drives
+bindsym $mod+m exec --no-startup-id dmount
+# Get Menu to unmount drives
+bindsym $mod+Shift+M exec --no-startup-id dumount
+# Get Menu to select displays
+bindsym Mod4+d exec --no-startup-id displayselect
+
+#######################################
+#######################################
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+semicolon split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+#######################################
+#######################################
+
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
+
+# switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+#Default Workspaces
+assign [class="Firefox"] $workspace2
+assign [class="mpv"] $workspace6
+
+#######################################
+#######################################
+
+#Windows Settings
+for_window [window_role="GtkFileChooserDialog"] resize set 800 600
+for_window [class="System-config-printer.py"] floating enable
+for_window [class="Mirage"] floating enable
+for_window [class="Thunar"] floating enable
+#for_window [class="^.*"] border pixel 13
+default_border pixel 13
+
+#######################################
+#######################################
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+#######################################
+#######################################
+
+set $fg #ffffff
+set $bg $color3
+
+# window colors
+#                       border  background  text  indicator  child-border
+client.focused          $bg     $bg         $fg   $fg        $fg
+client.unfocused        $bg     $bg         $fg   $fg        $fg
+client.focused_inactive $bg     $bg         $fg   $fg        $fg
+client.urgent           $bg     $bg         $fg   $bg        $bg
+client.background       $bg
+
+#######################################
+#######################################
+
+#i3-gaps
+gaps inner 0
+gaps outer 0
+bindsym $mod+y gaps inner current minus 5
+bindsym $mod+u gaps inner current plus 5
+bindsym $mod+Shift+y gaps outer current minus 5
+bindsym $mod+Shift+u gaps outer current plus 5
+
+#######################################
+#######################################
+
+#Touchpad Settings
+input 2:7:SynPS/2_Synaptics_TouchPad {
+    tap enabled
+    natural_scroll enabled
+    dwt disabled
+}
+
+#######################################
+#######################################
