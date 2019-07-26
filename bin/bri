@@ -2,8 +2,8 @@
 #Increases/Decreases Brightness
 
 case "$1" in
-    "inc") xbacklight -inc 1 ;;
-    "dec") xbacklight -dec 1 ;;
+    "inc") light -A 1 ;;
+    "dec") light -U 1 ;;
     *) printf "%s\\n" "Usage: ./bri inc, ./bri dec"; exit ;;
 esac
 
