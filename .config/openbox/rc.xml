@@ -24,7 +24,7 @@
   <theme>
     <name>thicc</name>
     <titleLayout></titleLayout>
-    <cornerRadius>4</cornerRadius>
+    <cornerRadius>0</cornerRadius>
     <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -187,7 +187,7 @@
     <keybind key="A-b">
       <action name="ToggleDecorations"/>
      </keybind>
-    <keybind key="A-Right">
+    <keybind key="A-L">
       <action name="NextWindow">
         <dialog>none</dialog>
         <finalactions>
@@ -197,7 +197,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="A-Left">
+    <keybind key="A-H">
       <action name="PreviousWindow">
         <dialog>none</dialog>
         <finalactions>
@@ -210,31 +210,31 @@
     <keybind key="A-r">
       <action name="Resize"/>
     </keybind>
-    <keybind key="A-S-Right">
+    <keybind key="A-S-l">
       <action name="MoveRelative">
         <x>15</x>
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="A-c">
+    <keybind key="W-c">
         <action name="MoveRelative">
             <x>center</x>
             <y>center</y>
         </action>
     </keybind>
-    <keybind key="A-S-Left">
+    <keybind key="A-S-H">
       <action name="MoveRelative">
         <x>-15</x>
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="A-S-Up">
+    <keybind key="A-S-k">
       <action name="MoveRelative">
         <x>0</x>
         <y>-15</y>
       </action>
     </keybind>
-    <keybind key="A-S-Down">
+    <keybind key="A-S-j">
       <action name="MoveRelative">
         <x>0</x>
         <y>15</y>
@@ -244,7 +244,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="A-Return">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>urxvt -b 30</command>
       </action>
     </keybind>
     <keybind key="A-S-d">
@@ -263,6 +263,24 @@
       <action name="Execute">
         <name>screenshot</name>
         <command>scr</command>
+      </action>
+    </keybind>
+    <keybind key="A-q">
+      <action name="Execute">
+        <name>Show qr code</name>
+        <command>qr</command>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <name>Show bar</name>
+        <command>bar</command>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <name>Kill bar</name>
+        <command>pkill bar</command>
       </action>
     </keybind>
     <keybind key="A-d">
@@ -292,17 +310,20 @@
         <command>vol mute</command>
       </action>
     </keybind>
-    <keybind key="XF86MonBrightnessUp">
+    <keybind key="A-Up">
       <action name="Execute">
         <name>Brightness Up</name>
         <command>bri inc</command>
       </action>
     </keybind>
-    <keybind key="XF86MonBrightnessDown">
+    <keybind key="A-Down">
       <action name="Execute">
         <name>Brightness Down</name>
         <command>bri dec</command>
       </action>
+    </keybind>
+    <keybind key="W-space">
+      <action name="ShowMenu"><menu>root-menu</menu></action>
     </keybind>
     <keybind key="A-w">
       <action name="Execute">
@@ -316,21 +337,89 @@
         <command>wal -l -i ~/Pictures/Washed-2 -o wal-set-light</command>
       </action>
     </keybind>
-    <keybind key="W-Left">        # HalfLeftScreen
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><x>0</x><y>0</y><height>100%</height><width>50%</width></action>
+    <keybind key="A-S-Return">
+      <action name="Execute">
+        <name>Tile All Windows</name>
+        <command>rtile --all</command>
+      </action>
     </keybind>
-    <keybind key="W-Right">       # HalfRightScreen
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><x>-0</x><y>0</y><height>100%</height><width>50%</width></action>
+    <keybind key="A-space">
+      <action name="Execute">
+        <name>Swap Windows</name>
+        <command>rtile --swap-biggest</command>
+      </action>
     </keybind>
-    <keybind key="W-Up">          # HalfUpperScreen
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><x>0</x><y>0</y><width>100%</width><height>50%</height></action>
+    <keybind key="A-S-space">
+      <action name="Execute">
+        <name>Swap Windows</name>
+        <command>rtile --swap</command>
+      </action>
     </keybind>
-    <keybind key="W-Down">        # HalfLowerScreen
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
+    <keybind key="W-h">
+      <action name="Execute">
+        <name>Snap Window Left</name>
+        <command>rtile l</command>
+      </action>
+    </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <name>Snap Window Top Left</name>
+        <command>rtile tl</command>
+      </action>
+    </keybind>
+    <keybind key="W-o">
+      <action name="Execute">
+        <name>Snap Window Top Right</name>
+        <command>rtile tr</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <name>Snap Window Right</name>
+        <command>rtile r</command>
+      </action>
+    </keybind>
+    <keybind key="W-period">
+      <action name="Execute">
+        <name>Snap Window Bottom Right</name>
+        <command>rtile br</command>
+      </action>
+    </keybind>
+    <keybind key="W-n">
+      <action name="Execute">
+        <name>Snap Window Bottom Left</name>
+        <command>rtile bl</command>
+      </action>
+    </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <name>Split last two active windows</name>
+        <command>rtile --binary</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-h">
+      <action name="Execute">
+        <name>Grow left</name>
+        <command>rtile --grow-left</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-j">
+      <action name="Execute">
+        <name>Grow down</name>
+        <command>rtile --grow-down</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-k">
+      <action name="Execute">
+        <name>Grow up</name>
+        <command>rtile --grow-up</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-l">
+      <action name="Execute">
+        <name>Grow right</name>
+        <command>rtile --grow-right</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>
@@ -505,15 +594,15 @@
   </mouse>
 
   <applications>
-    <application class="Firefox*">
-      <desktop>2</desktop>
-      <focus>yes</focus>
-    </application>
     <application class="*">
       <position force="no">
         <x>center</x>
         <y>center</y>
       </position>
+    </application>
+    <application class="Firefox*">
+      <desktop>2</desktop>
+      <focus>yes</focus>
       <decor>no</decor>
     </application>
  </applications>

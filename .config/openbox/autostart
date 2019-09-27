@@ -1,6 +1,9 @@
 xfce4-power-manager &
-wal -l -i "$(< "${HOME}/.cache/wal/wal")" && wal-set-light
-compton -b --backend glx --vsync opengl-swc --unredir-if-possible-exclude "name*='Firefox'" &
+wal --theme .config/wal/colorschemes/dark/may -o wal-set &
+feh --bg-tile Pictures/Solid/purple.png &
+clipit &
+transmission-daemon &
+compton &
 mpd &
 dunst &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
