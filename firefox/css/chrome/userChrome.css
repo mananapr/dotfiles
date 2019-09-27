@@ -27,7 +27,7 @@ toolbarbutton#alltabs-button {
 	-moz-binding: url("userChrome.xml#js");
 }
 
-#contentAreaContextMenu{ margin: 10px 0 0 10px }
+#contentAreaContextMenu{ margin: 15px 0 0 15px }
 
 /* WINDOW */
 
