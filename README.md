@@ -1,8 +1,8 @@
 # Manan's Dotfiles
 Dotfiles for my Arch Linux setup.
 
-![i3](i3.png "i3")
 ![i3-alt](i3-alt.png "i3-alt")
+![openbox](openbox.png "openbox")
 
 [Full Screenshot Album](https://imgur.com/a/yyrZ99v)
 
@@ -19,7 +19,7 @@ My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Sche
 - Theme: `Arc`
 - Video Player: `mpv`
 - Web Browser: `Firefox`
-- Window Manager: `i3-gaps`
+- Window Manager: `openbox`
 - Lock Screen: Custom script based on `i3lock-color`
 
 ## Installation
