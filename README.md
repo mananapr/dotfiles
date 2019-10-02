@@ -1,6 +1,8 @@
 # Manan's Dotfiles
 Dotfiles for my Arch Linux setup.
 
+[screenshots](https://imgur.com/gallery/bpnrA2e)
+
 ![openbox](openbox.png "openbox")
 
 ## Setup
