@@ -6,17 +6,12 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-URxvt*font:     xft:Monaco:size=7, xfg:FontAwesome:size=7, xft:Droid Sans Fallback:pixelsize=8:antialias=true
-URxvt*boldFont:     xft:Monaco:bold:size=7, xfg:FontAwesome:size=7, xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
+URxvt*font:     xft:Monaco:size=7, xft:Droid Sans Fallback:pixelsize=8:antialias=true
+URxvt*boldFont:     xft:Monaco:bold:size=7, xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
 
-!URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
-!URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-*-50-*-*
-
-!URxvt*font: -*-tewii-medium-r-normal--11-*-*-*-*-*-*-*
-!URxvt*boldFont: -*-tewii-medium-r-normal--11-*-*-*-*-*-*-*
-
+URxvt.geometry: 73x21
+URxvt.internalBorder: 22
 URxvt.letterSpace: 0
-
 URxvt.cursorBlink: 1
 
 ! Disable scrollbar
@@ -34,46 +29,5 @@ URxvt.perl-ext-common: default,clipboard,font-size
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.keysym.C-Up:     perl:font-size:increase
+        
 URxvt.keysym.C-Down:   perl:font-size:decrease
-
-! Colors {{{
-
-! special
-*.foreground:   #ffffff
-*.background:   #071d22
-*.cursorColor:  #ffffff
-
-! black
-*.color0:       #071d22
-*.color8:       #617278
-
-! red
-*.color1:       #f8a1aa
-*.color9:       #e9b3bf
-
-! green
-*.color2:       #8cc495
-*.color10:      #ade1b6
-
-! yellow
-*.color3:       #f0e0aa
-*.color11:      #fbf1cf
-
-! blue
-*.color4:       #8ab6c2
-*.color12:      #b5dbe4
-
-! magenta
-*.color5:       #94a9d9
-*.color13:      #b6cbfa
-
-! cyan
-*.color6:       #7eb5ac
-*.color14:      #a3d0c8
-
-! white
-*.color7:       #b3bec1
-*.color15:      #f7f8f8
-
-
-! }}}
