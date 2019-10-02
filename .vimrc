@@ -13,7 +13,7 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+inoremap <expr><Backspace> pumvisible() ? "\<C-y>" : "\<Backspace>"
 
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
@@ -42,6 +42,7 @@ vnoremap <C-p> "+gP
 
 "" GENERAL VIM SETTINGS
 set nu
+set relativenumber
 set autoindent
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nowrap

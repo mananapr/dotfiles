@@ -1,0 +1,24 @@
+{
+  "name": "bw",
+  "author": "",
+  "color": [
+    "#ffffff",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#000000",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e",
+    "#1e1e1e"
+  ],
+  "foreground": "#000000",
+  "background": "#ffffff"
+}

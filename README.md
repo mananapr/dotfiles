@@ -1,23 +1,16 @@
 # Manan's Dotfiles
 Dotfiles for my Arch Linux setup.
 
-![i3-alt](i3-alt.png "i3-alt")
 ![openbox](openbox.png "openbox")
 
-[Full Screenshot Album](https://imgur.com/a/yyrZ99v)
-
 ## Setup
-My setup uses [wal](https://github.com/dylanaraps/pywal) to generate Colour Schemes.
-
-- Application Launcher: `rofi`
-- Compositor: `compton`
+- Application Launcher: `dmenu`
 - Icons: `ePapirus`
-- Notifications: `dunst`
 - Shell: `bash`
-- Terminal Emulator: `urxvtd`
+- Terminal Emulator: `st`
 - Text Editor: `vim`
 - Theme: `Arc`
-- Video Player: `mpv`
+- Video Player/Music Player/Image Viewer: `mpv`
 - Web Browser: `Firefox`
 - Window Manager: `openbox`
 - Lock Screen: Custom script based on `i3lock-color`
