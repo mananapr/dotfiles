@@ -1,7 +1,7 @@
 # Manan's Dotfiles
 Dotfiles for my Alpine Linux setup.
 
-[screenshots](https://imgur.com/gallery/bpnrA2e)
+[screenshots](https://imgur.com/a/EUPtMMR)
 
 ![openbox](openbox.png "openbox")
 
