@@ -1,5 +1,5 @@
 # Manan's Dotfiles
-Dotfiles for my Arch Linux setup.
+Dotfiles for my Alpine Linux setup.
 
 [screenshots](https://imgur.com/gallery/bpnrA2e)
 
