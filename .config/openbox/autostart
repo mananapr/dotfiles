@@ -1,9 +1,1 @@
-xfce4-power-manager &
-wal --theme .config/wal/colorschemes/dark/may -o wal-set &
 feh --bg-tile Pictures/Solid/purple.png &
-clipit &
-transmission-daemon &
-compton &
-mpd &
-dunst &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

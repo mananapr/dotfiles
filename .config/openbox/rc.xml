@@ -244,7 +244,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="A-Return">
       <action name="Execute">
-        <command>urxvt -b 30</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="A-S-d">
@@ -285,8 +285,8 @@
     </keybind>
     <keybind key="A-d">
       <action name="Execute">
-        <name>rofi</name>
-        <command>rofi -show run -padding 20 -font "Monaco 11" -location 1 -yoffset 40 -xoffset 40 -lines 5 -width 25 -theme .config/rofi/colors-rofi-dark</command>
+        <name>dmenu</name>
+        <command>dmen</command>
       </action>
     </keybind>
     <keybind key="A-c">
@@ -310,13 +310,13 @@
         <command>vol mute</command>
       </action>
     </keybind>
-    <keybind key="A-Up">
+    <keybind key="A-S-Up">
       <action name="Execute">
         <name>Brightness Up</name>
         <command>bri inc</command>
       </action>
     </keybind>
-    <keybind key="A-Down">
+    <keybind key="A-S-Down">
       <action name="Execute">
         <name>Brightness Down</name>
         <command>bri dec</command>
@@ -603,7 +603,6 @@
     <application class="Firefox*">
       <desktop>2</desktop>
       <focus>yes</focus>
-      <decor>no</decor>
     </application>
  </applications>
 </openbox_config>
