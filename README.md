@@ -1,23 +1,16 @@
-# Manan's Dotfiles
-Dotfiles for my Alpine Linux setup.
+# dotfiles
 
 [screenshots](https://imgur.com/a/EUPtMMR)
 
 ![openbox](openbox.png "openbox")
 
 ## Setup
+- Operating System: `alpine linux`
 - Application Launcher: `dmenu`
-- Icons: `ePapirus`
 - Shell: `bash`
 - Terminal Emulator: `st`
 - Text Editor: `vim`
-- Theme: `Arc`
 - Video Player/Music Player/Image Viewer: `mpv`
-- Web Browser: `Firefox`
+- Web Browser: `firefox`
 - Window Manager: `openbox`
 - Lock Screen: Custom script based on `i3lock-color`
-
-## Installation
-
-- Clone the repo: `git clone https://github.com/mananapr/dotfiles.git --depth 1`
-- Copy the files to their appropriate directories
