@@ -29,18 +29,19 @@ alias 'hotspot'="sudo create_ap wlp3s0 wlp3s0 'ssid' password"
 # Aliases
 alias 'p'='python'
 alias 'r'='ranger'
+alias 'b'='xbacklight -set'
 alias 'gs'='git status'
 alias 'ga'='git add'
 alias 'gm'='git commit -m'
 alias 'gp'='git push'
-alias 'pm'='pacman'
-alias 'pmu'='sudo pacman -Syu'
-alias 'pmi'='sudo pacman -S'
-alias 'pms'='pacman -Ss'
-alias 'pmro'='sudo pacman -Rns $(pacman -Qtdq)'
+alias 'add'='sudo apk add'
+alias 'del'='sudo apk del'
+alias 'fix'='sudo apk fix'
+alias 'update'='sudo apk update'
+alias 'upgrade'='sudo apk upgrade'
 
 # Shell Prompt
-export PS1='\[\e[1m\]➜\[\e[0m\] '
+export PS1='\[\e[1m\]➜ \[\e[0m\] '
 
 # If not running interactively, don't do anything
 case $- in
