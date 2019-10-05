@@ -1,0 +1,17 @@
+#pcm.btspeaker {
+#	type plug
+#	slave.pcm {
+#		type bluealsa
+#		device "FC:58:FA:0A:C6:2C"
+#		profile "a2dp"
+#	}
+#	hint {
+#		show on
+#		description "Caravan"
+#	}
+#}
+#
+#pcm.!default {
+#    type plug
+#    slave.pcm "btspeaker"
+#}
