@@ -23,13 +23,6 @@ set -o vi
 # Control+L for clear-screen
 bind -m vi-insert "\C-l":clear-screen
 
-## Python Virtual Environment Wrapper
-#export WORKON_HOME=~/.virtualenvs
-#source /usr/bin/virtualenvwrapper.sh
-
-# Wifi Hotspot
-alias 'hotspot'="sudo create_ap wlp3s0 wlp3s0 'ssid' password"
-
 # Aliases
 alias 'p'='python'
 alias 'r'='ranger'
@@ -43,6 +36,7 @@ alias 'del'='sudo apk del'
 alias 'fix'='sudo apk fix'
 alias 'update'='sudo apk update'
 alias 'upgrade'='sudo apk upgrade'
+alias 'cleandbus'='sudo rm /var/run/dbus.pid'
 
 # Shell Prompt
 export PS1='\[\e[1m\]➜ \[\e[0m\] '
