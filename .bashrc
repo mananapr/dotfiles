@@ -10,6 +10,10 @@ source "$HOME/.cache/wal/colors.sh"
 
 # Set vim as default editor
 export EDITOR="vim"
+# Set busybox less as pager
+export PAGER="busybox less"
+# For bluealsa
+export LIBASOUND_THREAD_SAFE=0
 
 # Add Scripts folder to PATH
 PATH="$PATH:$HOME/Scripts:$HOME/.local/bin"
