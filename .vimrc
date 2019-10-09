@@ -7,20 +7,6 @@ nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 let g:livepreview_previewer = 'zathura'
 
 
-""  NEOCOMPLETE SETTINGS
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><Backspace> pumvisible() ? "\<C-y>" : "\<Backspace>"
-
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-
 "" LIMELIGHT SETTINGS
 let g:limelight_conceal_ctermfg = 241
 let g:limelight_conceal_guifg = 240
