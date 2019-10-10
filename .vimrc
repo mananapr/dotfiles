@@ -3,15 +3,12 @@ nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
 
-"" EASYMOTION SETTINGS
-nmap s <Plug>(easymotion-overwin-f)
-nmap f <Plug>(easymotion-bd-w)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map J <Plug>(easymotion-j)
-map K <Plug>(easymotion-k)
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+"" NETRW SETTINGS
+let g:netrw_banner = 0
+
+
+"" SNEAK SETTINGS
+let g:sneak#label = 1
 
 
 "" LIMELIGHT SETTINGS
@@ -21,9 +18,10 @@ let g:limelight_default_coefficient = 0.5
 
 
 "" GENERAL KEYBINDINGS
-map <C-n> :NERDTreeToggle<CR>
-map <C-g> :Goyo<CR>
-map <C-z> :set invnumber<CR>
+map <Leader>n :Lexplore<CR>
+map <Leader>w :bd<CR>
+map <Leader>g :Goyo<CR>
+map <Leader>z :set invnumber<CR>
 
 
 "" CONTROL+Y COPIES TO EXTERNAL CLIPBOARD
