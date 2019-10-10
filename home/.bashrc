@@ -37,6 +37,8 @@ alias 'fix'='sudo apk fix'
 alias 'update'='sudo apk update'
 alias 'upgrade'='sudo apk upgrade'
 alias 'cleandbus'='sudo rm /var/run/dbus.pid'
+alias 'mutespeaker'='amixer sset Speaker 0'
+alias 'umutespeaker'='amixer sset Speaker 100'
 
 # Shell Prompt
 export PS1='\[\e[1m\]➜ \[\e[0m\] '
