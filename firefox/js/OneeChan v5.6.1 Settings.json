@@ -64,12 +64,12 @@
   "Custom Decoration Width": 0,
   "Post Highlight Style": "solid",
   "Font Family": "Roboto Condensed",
-  "Font Size": 12,
+  "Font Size": 18,
   "Backlink Font Size": 9,
   "Bitmap Font": false,
   "Version Fix": 1,
-  "Selected Theme": 3,
-  "NSFW Theme": 3,
+  "Selected Theme": 2,
+  "NSFW Theme": 2,
   "Mascots": [
     {
       "img": "https://img.fireden.net/v/image/1446/30/1446301814216.png",
@@ -78,46 +78,8 @@
       "hoffset": 0,
       "name": "Ranko",
       "width": "auto",
-      "height": "auto"
-    },
-    {
-      "img": "http://i.imgur.com/BstUsVj.png",
-      "flip": false,
-      "offset": 0,
-      "hoffset": 0,
-      "name": "Patchouli",
-      "width": "250px",
-      "height": "auto"
-    },
-    {
-      "img": "http://i.imgur.com/KPAKzAV.png",
-      "flip": false,
-      "maxwidth": false,
-      "offset": 10,
-      "hoffset": 10,
-      "name": "Cute",
-      "width": "auto",
-      "height": "250px"
-    },
-    {
-      "img": "http://i.imgur.com/oX4n13E.jpg",
-      "flip": false,
-      "maxwidth": false,
-      "offset": 0,
-      "hoffset": 0,
-      "name": "Shirona",
-      "width": "auto",
-      "height": "200px"
-    },
-    {
-      "img": "http://i.imgur.com/paUVllf.png",
-      "flip": false,
-      "maxwidth": false,
-      "offset": 0,
-      "hoffset": 0,
-      "name": "Kanna Kamui",
-      "width": "auto",
-      "height": "200px"
+      "height": "200px",
+      "maxwidth": false
     },
     {
       "img": "http://i.imgur.com/paUVllf.png",
@@ -126,6 +88,16 @@
       "offset": 0,
       "hoffset": 40,
       "name": "Kanna Kamui",
+      "width": "auto",
+      "height": "200px"
+    },
+    {
+      "img": "http://i.imgur.com/0dOEVpf.png",
+      "flip": true,
+      "maxwidth": false,
+      "offset": 0,
+      "hoffset": 40,
+      "name": "Cute Narberal",
       "width": "auto",
       "height": "200px"
     }
