@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-rofi -show drun -padding 20 -font "Monaco 11" -theme .config/rofi/colors-rofi-dark

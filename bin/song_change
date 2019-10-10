@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-notify-send -r 112 "$(mpc current --format %artist%)" "$(mpc current --format %title%)"

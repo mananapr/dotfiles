@@ -7,7 +7,7 @@ word="$@"
 
 # funcs
 get() {
-	cmd=$(wget -qO - "$www/$word" | grep -oP '(?<=<meta name="description" content=").*(?=See more.)' | sed "s/.*definition,/$word:/")	
+	cmd=$(wget -qO - "$www/$word" | perl -nle 'print $& while m{(?<=<meta name="description" content=").*(?=See more.)}g' | sed "s/.*definition,/$word:/")	
 	
 	if [ -z "$cmd" ] ; then
 		printf "this word wasn't found.\n"

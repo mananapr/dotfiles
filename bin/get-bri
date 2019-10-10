@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-m=$(xbacklight -get)
-m=$(echo "$m/1" | bc)
-#(( m = (m+2)/5, m *= 5)); echo $m
-notify-send -r 112 "Brightness: $m"

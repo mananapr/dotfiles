@@ -17,4 +17,5 @@ read -r -d '' rose <<- EOM
 EOM
 
 printf "%b\\n\\n" "$rose"
-neofetch --off --config ~/.config/neofetch/minconfig
+export PF_INFO="title os kernel uptime pkgs"
+pfetch

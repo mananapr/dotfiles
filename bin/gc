@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-color="$(grabc)"
-notify-send -r 112 "Color: $color"
-echo "$color"

@@ -2,10 +2,10 @@
 # Increase/Decrease Volume
 
 case "$1" in
-    "up")   pactl set-sink-volume 0 +5% ;;
-    "down") pactl set-sink-volume 0 -5% ;;
-    "mute") pactl set-sink-mute 0 toggle ;;
-    *) printf "%s\\n" "Usage: ./vol up, ./vol down"; exit ;;
+    "up")   amixer -q sset Master 5%+ ;;
+    "down") amixer -q sset Master 5%- ;;
+    "mute") amixer -q sset Master toggle ;;
+    #*) printf "%s\\n" "Usage: ./vol up, ./vol down"; exit ;;
 esac
 
 flag="$(amixer sget Master)"
@@ -15,6 +15,6 @@ if [[ $flag =~ .*off.* ]]; then
 else
     current_vol="$(amixer sget Master | grep -o -E "[[:digit:]]+%")"
 fi
-
+echo "Volume: $current_vol"
 #notify-send -t 1 -r 112 "Volume: ${current_vol/$'\n'*}"
-notify-send -r 112 "Volume: ${current_vol/$'\n'*}"
+#notify-send -r 112 "Volume: ${current_vol/$'\n'*}"

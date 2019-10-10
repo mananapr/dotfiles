@@ -11,8 +11,8 @@ ypos=$(expr "$height" - "242")
 xpos=$(expr "$width")
 
 # convert the output to png
-convert -background "rgba(0,0,0,0)" \
-		-fill "#071d22" \
+convert -background "rgba(255,255,255,0)" \
+		-fill "#272525" \
 		-font "Monaco" \
 		-antialias \
 		-pointsize 12 \

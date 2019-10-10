@@ -4,13 +4,13 @@
 case "$1" in
     "inc") xbacklight -inc 1 ;;
     "dec") xbacklight -dec 1 ;;
-    *) printf "%s\\n" "Usage: ./bri inc, ./bri dec"; exit ;;
+    #*) printf "%s\\n" "Usage: ./bri inc, ./bri dec"; exit ;;
 esac
 
 blDir='/sys/class/backlight/intel_backlight'
 brightness=$(cat $blDir/brightness) # current brightness
 max=$(cat $blDir/max_brightness)    # maximum brightness
 current_bri=$(echo "scale=3; ($brightness/$max)*100" | bc | awk '{print int($1+0.5)}')
-
+echo "Brightness $current_bri"
 #notify-send -t 1 -r 112 "Brightness: ${current_bri/$'\n'*}"
-notify-send -r 112 "Brightness: ${current_bri/$'\n'*}"
+#notify-send -r 112 "Brightness: ${current_bri/$'\n'*}"

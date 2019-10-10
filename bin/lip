@@ -1,0 +1,4 @@
+#!/bin/sh
+
+lip="$(ip addr | grep inet | grep wlan0 | awk '{printf $2}' | rev | cut -c4- | rev)"
+echo "$lip"

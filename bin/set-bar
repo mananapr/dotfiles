@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Sets all windows above the bar
-
-xdo above -t $(xwininfo -root -children | egrep -o "0x[[:xdigit:]]+" | tail -1) $(xdo id -a bar)
