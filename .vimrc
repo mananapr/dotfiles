@@ -3,9 +3,6 @@ nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
 
-"" SET ZATHURA AS PDF VIEWER
-let g:livepreview_previewer = 'zathura'
-
 "" EASYMOTION SETTINGS
 nmap s <Plug>(easymotion-overwin-f)
 nmap f <Plug>(easymotion-bd-w)

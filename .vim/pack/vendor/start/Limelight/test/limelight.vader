@@ -133,4 +133,4 @@ Execute (Cleanup):
   delc AssertOff
   unlet! msg
   Restore
-execute 'colo '.g:colors_name
+  execute 'colo '.g:colors_name
