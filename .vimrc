@@ -6,6 +6,18 @@ nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 "" SET ZATHURA AS PDF VIEWER
 let g:livepreview_previewer = 'zathura'
 
+"" EASYMOTION SETTINGS
+nmap s <Plug>(easymotion-overwin-f)
+nmap f <Plug>(easymotion-bd-w)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+
 
 "" LIMELIGHT SETTINGS
 let g:limelight_conceal_ctermfg = 241
