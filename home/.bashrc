@@ -14,6 +14,8 @@ export EDITOR="vim"
 export PAGER="busybox less"
 # For bluealsa
 export LIBASOUND_THREAD_SAFE=0
+# For fzf
+ export 'FZF_DEFAULT_COMMAND'="find . -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # Add Scripts folder to PATH
 PATH="$PATH:$HOME/Scripts:$HOME/.local/bin"
