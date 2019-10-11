@@ -5,20 +5,16 @@ let mapleader = " "
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
-
 "" NETRW SETTINGS
 let g:netrw_banner = 0
 
-
 "" SNEAK SETTINGS
 let g:sneak#label = 1
-
 
 "" LIMELIGHT SETTINGS
 let g:limelight_conceal_ctermfg = 241
 let g:limelight_conceal_guifg = 240
 let g:limelight_default_coefficient = 0.5
-
 
 "" GENERAL KEYBINDINGS
 map <Leader>n :Lexplore<CR>
@@ -27,17 +23,14 @@ map <Leader>g :Goyo<CR>
 map <Leader>s :shell<CR>
 map <Leader>z :set invnumber<CR>
 
-
 "" CONTROL+Y COPIES TO EXTERNAL CLIPBOARD
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
 nnoremap <C-p> "+gP
 vnoremap <C-p> "+gP
 
-
 "" VIM SPLITS SETTINGS
 set splitbelow splitright
-
 
 "" GENERAL VIM SETTINGS
 set nu
@@ -49,6 +42,8 @@ set hidden
 syntax on
 colo wal
 
+"" USE HTML SYNTAX FOR EJS FILES
+au BufNewFile,BufRead *.ejs set filetype=html
 
 "" FIXES EXITING FROM GOYO
 function! s:goyo_enter()
@@ -72,7 +67,3 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-
-"" USE HTML SYNTAX FOR EJS FILES
-au BufNewFile,BufRead *.ejs set filetype=html
