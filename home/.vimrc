@@ -18,6 +18,8 @@ let g:limelight_default_coefficient = 0.5
 
 "" GENERAL KEYBINDINGS
 map <Leader>n :Lexplore<CR>
+map <Leader>b :Buffers<CR>
+map <Leader>f :Files<CR>
 map <Leader>w :bd<CR>
 map <Leader>g :Goyo<CR>
 map <Leader>s :shell<CR>
