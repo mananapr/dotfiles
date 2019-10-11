@@ -1,3 +1,6 @@
+"" SET LEADER TO <SPACE>
+let mapleader = " "
+
 "" BIND <TAB> TO CHANGE BUFFERS
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
@@ -21,6 +24,7 @@ let g:limelight_default_coefficient = 0.5
 map <Leader>n :Lexplore<CR>
 map <Leader>w :bd<CR>
 map <Leader>g :Goyo<CR>
+map <Leader>s :shell<CR>
 map <Leader>z :set invnumber<CR>
 
 
@@ -29,6 +33,10 @@ nnoremap <C-y> "+y
 vnoremap <C-y> "+y
 nnoremap <C-p> "+gP
 vnoremap <C-p> "+gP
+
+
+"" VIM SPLITS SETTINGS
+set splitbelow splitright
 
 
 "" GENERAL VIM SETTINGS

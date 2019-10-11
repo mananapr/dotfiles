@@ -24,6 +24,7 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 # Aliases
+alias 'v'='vim'
 alias 'p'='python'
 alias 'r'='ranger'
 alias 'b'='xbacklight -set'

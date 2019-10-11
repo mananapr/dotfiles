@@ -5,29 +5,3 @@ Xft.hintstyle: hintslight
 Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-
-URxvt*font:     xft:Monaco:size=7, xft:Droid Sans Fallback:pixelsize=8:antialias=true
-URxvt*boldFont:     xft:Monaco:bold:size=7, xft:Droid Sans Fallback:pixelsize=8:Bold:antialias=true
-
-URxvt.geometry: 73x21
-URxvt.internalBorder: 22
-URxvt.letterSpace: 0
-URxvt.cursorBlink: 1
-
-! Disable scrollbar
-URxvt.scrollBar: false
-
-! Set terminal padding
-URxvt.internalBorder: 22
-
-URxvt*.depth: 24
-
-! Enables copy/paste with Ctrl-Shift-C/V
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-URxvt.perl-ext-common: default,clipboard,font-size
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.keysym.C-Up:     perl:font-size:increase
-        
-URxvt.keysym.C-Down:   perl:font-size:decrease
