@@ -22,8 +22,16 @@ map <Leader>b :Buffers<CR>
 map <Leader>f :Files<CR>
 map <Leader>w :bd<CR>
 map <Leader>g :Goyo<CR>
+map <Leader>v :vsp<CR>
+map <Leader>V :sp<CR>
 map <Leader>s :shell<CR>
 map <Leader>z :set invnumber<CR>
+
+"" SHORTCUTING SPLIT NAVIGATION
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 "" CONTROL+Y COPIES TO EXTERNAL CLIPBOARD
 nnoremap <C-y> "+y
