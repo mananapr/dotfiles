@@ -2,7 +2,7 @@
 // @name         Instagram Reloaded
 // @namespace    http://despecial.de
 // @homepageURL  https://greasyfork.org/en/scripts/14755-instagram-reloaded
-// @version      2.22info
+// @version      2.23
 // @description  View or download the full-size Instagram image/video. Super simple: press alt+f or shift & click to view media - alt & click saves file. Read for more options.
 // @author       despecial
 // @match        *://*.instagram.com/*
@@ -25,13 +25,13 @@ var alt_trigger = ig;
 function despecial_ig(e,$this,a) {
   if(!e) e = window.event;
   if(e.shiftKey || e.altKey || a == "rm") {
-	 var p,v;
+	 var p,v,vf;
      e.preventDefault();
     if($('div[role="dialog"] article header + div').length && a == "rm") {
-	     v = $this.parent().find('video').attr('src');
+	     v = $this.parent().find('video').src;
 	     p = "";
    	} else {
-	     v = $this.closest('div').find('video').attr('src');
+	     v = $("meta[property='og:video']").attr("content");
 	     if(!v) p = $this.siblings().find('img').attr('src');
        }
 	var ep = $this.find('.efImage').css('background-image'),
@@ -47,7 +47,10 @@ function despecial_ig(e,$this,a) {
 	  if(fs) direct_download(fs);
 	   if(v) direct_download(v);
    } else {
-    if(v) { e.preventDefault(); window.open(v, t); }
+     if(v) {
+         $('video').each(function() { $(this).get(0).pause(); });
+         window.open(v, t);
+     }
     if(fs) window.open(fs, t);
    }
   }
@@ -60,24 +63,42 @@ function direct_download(url) {
     GM_download(arg);
 }
 
+function cleanFilename(file) {
+   return file.replace("jpg","mp4").split("?")[0].split('/').pop();
+}
+
 /* left-click and hold shift key to open desired item */
 $(document).on('click',ig,function(e,a) {
 	despecial_ig(e,$(this),a);
 });
 
+var hidden = 0;
+
 /* function to hide stuff */
 function clean() {
     var element = document.getElementsByTagName("nav"), index;
     for (index = element.length - 1; index >= 0; index--) {
-        element[index].parentNode.removeChild(element[index]);
+        //element[index].parentNode.removeChild(element[index]);
+        if( hidden == 0 )
+            element[index].style.display = 'none';
+        else
+            element[index].style.display = 'block';
     }
     element = document.getElementsByClassName("fx7hk"), index;
     for (index = element.length - 1; index >= 0; index--) {
-        element[index].parentNode.removeChild(element[index]);
+        //element[index].parentNode.removeChild(element[index]);
+        if( hidden == 0 )
+            element[index].style.display = 'none';
+        else
+            element[index].style.display = 'block';
     }
     element = document.getElementsByClassName("_4bSq7"), index;
     for (index = element.length - 1; index >= 0; index--) {
-        element[index].parentNode.removeChild(element[index]);
+        //element[index].parentNode.removeChild(element[index]);
+        if( hidden == 0 )
+            element[index].style.display = 'none';
+        else
+            element[index].style.display = 'block';
     }
 }
 
@@ -88,7 +109,14 @@ $(document).delegate(alt_trigger,'ig_press',function(e,a) {
 
 document.onkeydown = function(e){
     e = e || event;
-    if(e.ctrlKey) clean();
+    if(e.ctrlKey)
+    {
+        clean();
+        if (hidden == 0)
+            hidden = 1
+        else
+            hidden = 0
+    }
     if (e.altKey && e.keyCode==70) $(alt_trigger).trigger('ig_press',['rm']);
 };
 
