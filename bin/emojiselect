@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+# Give dmenu list of all unicode characters to copy.
+# Must have xclip installed to even show menu.
+
+# Import the colors
+. "${HOME}/.cache/wal/colors.sh"
+
+xclip -h >/dev/null || exit
+
+chosen=$(grep -v "#" ~/.config/emojis | dmenu -nb "$color0" -nf "$color15" -sb "#6a74fc" -sf "$color15" -i -l 20 -fn Monaco-8)
+
+[ "$chosen" != "" ] || exit
+
+c=$(echo "$chosen" | sed "s/ .*//")
+echo "$c" | tr -d '\n' | xclip -selection clipboard
+
+s=$(echo "$chosen" | sed "s/.*; //" | awk '{print $1}')
+echo "$s" | tr -d '\n' | xclip
