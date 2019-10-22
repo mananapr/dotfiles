@@ -12,8 +12,7 @@ source "$HOME/.cache/wal/colors.sh"
 export EDITOR="vim"
 # Set busybox less as pager
 export PAGER="busybox less"
-# For bluealsa
-export LIBASOUND_THREAD_SAFE=0
+
 # For fzf
  export 'FZF_DEFAULT_COMMAND'="find . -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
@@ -26,6 +25,7 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 # Aliases
+alias 'python'='python3'
 alias 'v'='vim'
 alias 'p'='python'
 alias 'r'='ranger'
@@ -39,9 +39,6 @@ alias 'del'='sudo apk del'
 alias 'fix'='sudo apk fix'
 alias 'update'='sudo apk update'
 alias 'upgrade'='sudo apk upgrade'
-alias 'cleandbus'='sudo rm /var/run/dbus.pid'
-alias 'mutespeaker'='amixer sset Speaker 0'
-alias 'umutespeaker'='amixer sset Speaker 100'
 
 # Shell Prompt
 export PS1='\[\e[1m\]➜ \[\e[0m\] '
