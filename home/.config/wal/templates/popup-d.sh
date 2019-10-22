@@ -10,7 +10,7 @@ source "/home/manan/Scripts/colors.sh"
 background="/home/manan/Scripts/popup/img/bg2.png"
 pointer_main="/home/manan/Scripts/popup/img/pointer.png"
 pointer="/home/manan/Scripts/popup/img/pointer_mod.png"
-y="80"
+y="42"
 
 # make bg.png from pywal color0
 convert -size 200x200 xc:"#ffffff" "$background"

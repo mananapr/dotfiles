@@ -14,7 +14,8 @@ margin="40"
 
 # functions
 song() {
-	playing="$(mpc status | grep -o 'playing' )"
+	#playing="$(mpc status | grep -o 'playing' )"
+    playing="playing"
 
 	if [ "$playing" == "playing" ]; then
 		echo "$p$p"
@@ -26,6 +27,11 @@ song() {
 clock() {
 	datetime="$(date "+%a %R")"
 	echo "$datetime"
+}
+
+wifi() {
+    ssid="$(iwgetid wlan0 --raw)"
+    echo "$ssid"
 }
 
 battery() {
@@ -52,16 +58,15 @@ battery() {
 loop-desktop() {
 	while :; do
 		echo "%{l}\
-		$bg$txt%{A:/usr/scripts/popup/cover.sh d &:}$(song)%{A}\
-		$a1$bgf%{A1:urxvt -name popup -e ncmpcpp &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
-		%{B#00000000}"
+		$bg%{A:$HOME/Scripts/popup/calendar.sh &:}$p$(clock)$p%{A}$a2%{r}\
+		$bg$p$p$(battery)\
+        $(wifi)$p$a2"
 		sleep ".2s"
 	done |\
 	
 	lemonbar \
-	    -f '-x-vanilla-*' \
-	    -f '-wuncon-siji-*' \
-	    -g "100x"$barh"+"$margin"+"$margin"" \
+	    -f 'Monaco:size=7' \
+	    -g "1366x"$(($barh+5)) \
 	    -d \
 	    | bash
 }
@@ -69,10 +74,10 @@ loop-desktop() {
 loop-laptop() {
 	while :; do
 		echo "%{l}\
-		$bg$txt%{A:$HOME/Scripts/popup/cover.sh d &:}$(song)%{A}\
-		$a1$bgf%{A1:$HOME/Scripts/popup/calendar.sh &:}%{A3:mpc toggle &:}$p$(clock)$p%{A}%{A}\
+		$bg$txt$(song)\
+		$a1$bgf%{A:$HOME/Scripts/popup/calendar.sh &:}$p$(clock)$p%{A}\
 		-\
-		%{A:$HOME/Scripts/batstat.sh &:}$p$(battery)$p%{A}\
+		$p$(battery)$p\
 		%{B#00000000}"
 		sleep ".2s"
 	done |\
@@ -87,8 +92,7 @@ loop-laptop() {
 
 
 # exec
-if [ -f "/sys/class/power_supply/BAT0/status" ] ; then
-	loop-laptop
-else
-	loop-desktop
-fi
+case "$1" in
+    "long")   loop-desktop ;;
+    "short")  loop-laptop ;;
+esac

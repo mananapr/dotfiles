@@ -271,10 +271,22 @@
         <command>qr</command>
       </action>
     </keybind>
+    <keybind key="A-e">
+      <action name="Execute">
+        <name>Show dmenu for emojies</name>
+        <command>emojiselect</command>
+      </action>
+    </keybind>
+    <keybind key="A-m">
+      <action name="Execute">
+        <name>Show dmenu for volume mounting</name>
+        <command>dmount</command>
+      </action>
+    </keybind>
     <keybind key="W-c">
       <action name="Execute">
         <name>Show bar</name>
-        <command>bar</command>
+        <command>bar short</command>
       </action>
     </keybind>
     <keybind key="W-x">
@@ -324,18 +336,6 @@
     </keybind>
     <keybind key="W-space">
       <action name="ShowMenu"><menu>root-menu</menu></action>
-    </keybind>
-    <keybind key="A-w">
-      <action name="Execute">
-        <name>Change to random wallpaper</name>
-        <command>wal -i ~/Pictures/Washed-2 -o wal-set</command>
-      </action>
-    </keybind>
-    <keybind key="A-S-w">
-      <action name="Execute">
-        <name>Change to random wallpaper</name>
-        <command>wal -l -i ~/Pictures/Washed-2 -o wal-set-light</command>
-      </action>
     </keybind>
     <keybind key="A-S-Return">
       <action name="Execute">
@@ -603,6 +603,7 @@
     <application class="Firefox*">
       <desktop>2</desktop>
       <focus>yes</focus>
+      <decor>no</decor>
     </application>
  </applications>
 </openbox_config>

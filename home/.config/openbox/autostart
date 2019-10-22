@@ -1,2 +1,3 @@
 feh --bg-tile Pictures/Solid/light.png &
+bar long &
 compton &
