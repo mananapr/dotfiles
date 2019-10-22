@@ -4,17 +4,18 @@
 set -e
 
 # vars
-csf=$(mpc -f %file% | head -1)
+#csf=$(mpc -f %file% | head -1)
+mpath=$(ps | grep flac | grep -v grep | awk -F " -- " '{print $2}')
 csil="/tmp/cover.png"
 csbil="$HOME/Scripts/popup/img/bg.png"
 height=$(xdotool "getdisplaygeometry" | awk '{print $2;}')
 ypos=$(expr "$height" - "242")
 
 # extract the album art
-ffmpeg -loglevel 0 -y -i "$HOME/Music/$csf" -vf scale=-200:200 "$csil"
+ffmpeg -loglevel 0 -y -i "$mpath" -vf scale=-200:200 "$csil"
 
 # display it
-$HOME/Scripts/popup/popup.sh /tmp/cover.png "20" -p "28"
+$HOME/Scripts/popup/popup.sh /tmp/cover.png "10" -p "28"
 
 # delete it
 sleep ".25s"

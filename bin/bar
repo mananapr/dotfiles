@@ -58,7 +58,7 @@ battery() {
 loop-desktop() {
 	while :; do
 		echo "%{l}\
-		$a3%{A:$HOME/Scripts/popup/calendar.sh &:}$p$p$(clock)$p$p%{A}$a2%{r}\
+		$a3%{A1:$HOME/Scripts/popup/calendar.sh &:}%{A3:$HOME/Scripts/popup/cover.sh &:}$p$p$(clock)$p$p%{A}%{A}$a2%{r}\
 		$a3$p$p$p$(battery)\
         $(wifi)$p$p$a2"
 		sleep ".2s"
