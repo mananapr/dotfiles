@@ -16,12 +16,14 @@ wrn="%{F$warning}"
 # accents
 acc0="#b3bec1"
 acc1="#f2f2f2"
-acc2="#2a424a"
+acc2="#273e45"
+acc3="#133239"
 
 # background accents
 a0="%{B$acc0}"
 a1="%{B$foreground}"
 a2="%{B$acc2}"
+a3="%{B$acc3}"
 
 # foreground accents
 af0="%{F$acc0}"
