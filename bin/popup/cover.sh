@@ -6,6 +6,14 @@ set -e
 # vars
 #csf=$(mpc -f %file% | head -1)
 mpath=$(ps | grep flac | grep -v grep | awk -F " -- " '{print $2}')
+if [ -z $mpath ]
+then
+    mpath=$(ps | grep m4a | grep -v grep | awk -F " -- " '{print $2}')
+fi
+if [ -z $mpath ]
+then
+    mpath=$(ps | grep mp3 | grep -v grep | awk -F " -- " '{print $2}')
+fi
 csil="/tmp/cover.png"
 csbil="$HOME/Scripts/popup/img/bg.png"
 height=$(xdotool "getdisplaygeometry" | awk '{print $2;}')
