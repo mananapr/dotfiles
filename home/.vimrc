@@ -24,6 +24,10 @@ let g:limelight_conceal_ctermfg = 241
 let g:limelight_conceal_guifg = 240
 let g:limelight_default_coefficient = 0.5
 
+"" SPELLCHECK SETTINGS
+map <F6> :set spell<CR>
+map <Leader>c z=
+
 "" GENERAL KEYBINDINGS
 map <Leader>n :Lexplore<CR>
 map <Leader>b :Buffers<CR>
