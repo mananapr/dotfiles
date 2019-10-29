@@ -420,3 +420,12 @@ menu.bookmark-item:not([query]):not([label="Bookmarks Toolbar"])[open] {
 	/* Negative right-margin to keep page from being pushed to the side. */
 	margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
 }
+
+/* Suppress Link Destination Overlay */
+#statuspanel[type="overLink"] {
+  display: none !important;
+}
+
+#tracking-protection-icon-container {
+display: none;
+}
