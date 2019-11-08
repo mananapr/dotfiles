@@ -1,0 +1,25 @@
+{
+  "name": "nerdy",
+  "author": "manan",
+  "color": [
+    "#212121",
+    "#f07178",
+    "#13ca91",
+    "#fdf200",
+    "#7898fb",
+    "#ff2079",
+    "#00feca",
+    "#eeffff",
+    "#4a4a4a",
+    "#f78c6c",
+    "#303030",
+    "#353535",
+    "#b2b2c2",
+    "#eeffff",
+    "#ff5370",
+    "#ffffff"
+  ],
+  "foreground": "#eeffff",
+  "background": "#212121"
+}
+

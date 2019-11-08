@@ -30,7 +30,7 @@ clock() {
 }
 
 wifi() {
-    ssid="$(iwgetid wlan0 --raw)"
+    ssid="$(iwgetid --raw)"
     echo "$ssid"
 }
 
@@ -90,9 +90,26 @@ loop-laptop() {
 	    | bash
 }
 
+loop-bottom() {
+	while :; do
+		echo "%{c}\
+		$p$p$bg$txt$(clock)\
+		$p$(battery)$p$p\
+		"
+		sleep ".2s"
+	done |\
+	
+	lemonbar \
+	    -f 'Monaco:size=7' \
+	    -f 'FontAwesome:size=8' \
+	    -g "110x"$((barh+10))"+"$((margin-18))"+"$((margin+661))"" \
+	    -d \
+	    | bash
+}
 
 # exec
 case "$1" in
     "long")   loop-desktop ;;
     "short")  loop-laptop ;;
+    "bottom") loop-bottom ;;
 esac
