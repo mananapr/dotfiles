@@ -93,9 +93,8 @@ loop-laptop() {
 loop-bottom() {
 	while :; do
 		echo "%{c}\
-		$p$p$bg$txt$(clock)\
-		$p$(battery)$p$p\
-		"
+		$p$p$bg$txt%{A1:$HOME/Scripts/popup/calendar_bot.sh &:}%{A3:$HOME/Scripts/popup/cover_bot.sh &:}$(clock)%{A}%{A}\
+		$p$(battery)$p$p"
 		sleep ".2s"
 	done |\
 	
