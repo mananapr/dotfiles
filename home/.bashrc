@@ -7,11 +7,17 @@
 
 # Source wal colors
 source "$HOME/.cache/wal/colors.sh"
+cat /home/manan/.cache/wal/sequences
+
+# FFF Colors
+export FFF_COL1=1
+
+# Pass Bash Completion
+source "$HOME/Programs/pass.bash-completion"
 
 # Set vim as default editor
 export EDITOR="vim"
-# Set busybox less as pager
-export PAGER="busybox less"
+export PAGER="less"
 
 # For fzf
  export 'FZF_DEFAULT_COMMAND'="find . -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
@@ -24,24 +30,27 @@ set -o vi
 # Control+L for clear-screen
 bind -m vi-insert "\C-l":clear-screen
 
+# Compile Flags 
+export CFLAGS="-O3 -pipe -march=native"
+export CXXFLAGS="-O3 -pipe -march=native"
+export MAKEFLAGS="-j4"
+
 # Aliases
-alias 'python'='python3'
 alias 'v'='vim'
 alias 'p'='python'
 alias 'r'='ranger'
-alias 'b'='xbacklight -set'
+alias 'b'='light -S'
 alias 'gs'='git status'
 alias 'ga'='git add'
 alias 'gm'='git commit -m'
 alias 'gp'='git push'
-alias 'add'='sudo apk add'
-alias 'del'='sudo apk del'
-alias 'fix'='sudo apk fix'
-alias 'update'='sudo apk update'
-alias 'upgrade'='sudo apk upgrade'
+alias 'add'='sudo pacman -S'
+alias 'del'='sudo pacman -Rcns'
+alias 'update'='sudo pacman -Syu'
+alias 'lswifi'='sudo wpa_cli -i wlp3s0 scan; sleep 5; sudo wpa_cli -i wlp3s0 scan_results'
 
 # Shell Prompt
-export PS1='\[\e[1m\]➜ \[\e[0m\] '
+export PS1='\[\e[1m\]->\[\e[0m\] '
 
 # If not running interactively, don't do anything
 case $- in
@@ -88,6 +97,11 @@ man() {
 		LESS_TERMCAP_ue=$(printf "\e[0m") \
 		LESS_TERMCAP_us=$(printf "\e[1;32m") \
 			man "$@"
+}
+
+ff() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
 extract () {
