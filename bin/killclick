@@ -2,4 +2,4 @@
 # Kill any window by clicking on it
 
 pid="$(xprop | grep PID | awk '{printf $3}')"
-kill "$pid"
+kill -9 "$pid"

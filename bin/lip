@@ -1,4 +1,6 @@
 #!/bin/sh
 
-lip="$(ip addr | grep inet | grep wlan0 | awk '{printf $2}' | rev | cut -c4- | rev)"
+lip="$(ip addr | grep inet | grep wlp3s0 | awk '{printf $2}' | rev | cut -c4- | rev)"
+#ssid="$(iwgetid --raw)"
+#echo "$ssid"
 echo "$lip"
