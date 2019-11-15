@@ -207,6 +207,9 @@
         </finalactions>
       </action>
     </keybind>
+    <keybind key="A-c">
+      <action name="MoveToCenter"/>
+    </keybind>
     <keybind key="A-r">
       <action name="Resize"/>
     </keybind>
@@ -215,12 +218,6 @@
         <x>15</x>
         <y>0</y>
       </action>
-    </keybind>
-    <keybind key="W-c">
-        <action name="MoveRelative">
-            <x>center</x>
-            <y>center</y>
-        </action>
     </keybind>
     <keybind key="A-S-H">
       <action name="MoveRelative">
@@ -250,7 +247,7 @@
     <keybind key="A-S-d">
       <action name="Execute">
         <name>lock</name>
-        <command>lock</command>
+        <command>slock</command>
       </action>
     </keybind>
     <keybind key="A-S-r">
@@ -283,26 +280,11 @@
         <command>dmount</command>
       </action>
     </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <name>Show bar</name>
-        <command>bar short</command>
-      </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Execute">
-        <name>Kill bar</name>
-        <command>pkill bar</command>
-      </action>
-    </keybind>
     <keybind key="A-d">
       <action name="Execute">
         <name>dmenu</name>
         <command>dmen</command>
       </action>
-    </keybind>
-    <keybind key="A-c">
-      <action name="MoveToCenter"/>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
@@ -333,9 +315,6 @@
         <name>Brightness Down</name>
         <command>bri dec</command>
       </action>
-    </keybind>
-    <keybind key="W-space">
-      <action name="ShowMenu"><menu>root-menu</menu></action>
     </keybind>
     <keybind key="A-S-Return">
       <action name="Execute">
@@ -599,11 +578,11 @@
         <x>center</x>
         <y>center</y>
       </position>
+      <decor>no</decor>
     </application>
-    <application class="Firefox*">
+    <application class="firefox*">
       <desktop>2</desktop>
       <focus>yes</focus>
-      <decor>no</decor>
     </application>
  </applications>
 </openbox_config>
