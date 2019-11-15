@@ -15,6 +15,9 @@ export FFF_COL1=1
 # Pass Bash Completion
 source "$HOME/Scripts/pass.bash-completion"
 
+# Disable E10s in Firefox
+export MOZ_FORCE_DISABLE_E10S=1
+
 # Set vim as default editor
 export EDITOR="vim"
 export PAGER="less"
