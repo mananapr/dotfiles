@@ -13,7 +13,7 @@ cat /home/manan/.cache/wal/sequences
 export FFF_COL1=1
 
 # Pass Bash Completion
-source "$HOME/Programs/pass.bash-completion"
+source "$HOME/Scripts/pass.bash-completion"
 
 # Set vim as default editor
 export EDITOR="vim"
