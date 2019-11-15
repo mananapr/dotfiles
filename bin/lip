@@ -1,6 +1,6 @@
 #!/bin/sh
 
 lip="$(ip addr | grep inet | grep wlp3s0 | awk '{printf $2}' | rev | cut -c4- | rev)"
-#ssid="$(iwgetid --raw)"
-#echo "$ssid"
+ssid="$(sudo wpa_cli -i wlp3s0 status | grep ssid | tail -1 | awk -F'=' '{print $2}')"
+echo "$ssid"
 echo "$lip"
