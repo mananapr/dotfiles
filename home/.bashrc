@@ -42,6 +42,7 @@ export MAKEFLAGS="-j4"
 alias 'v'='vim'
 alias 'p'='python'
 alias 'r'='ranger'
+alias 'm'='mpv -- "$(pwd)/"'
 alias 'b'='light -S'
 alias 'gs'='git status'
 alias 'ga'='git add'
