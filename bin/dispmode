@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Set display temperature
+
+case "$1" in
+    "normal")  xrandr --output eDP1 --gamma 1:1:1 --brightness 1 ;;
+    "red")     xrandr --output eDP1 --gamma 1.1:0.8:0.7 --brightness 0.9 ;;
+    "orange")  xrandr --output eDP1 --gamma 1:1:0.7 --brightness 0.9 ;;
+esac
