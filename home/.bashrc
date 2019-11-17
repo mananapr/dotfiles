@@ -14,9 +14,10 @@ export FFF_COL1=1
 export FFF_OPENER="opn"
 export FFF_FAV1=~/Downloads
 export FFF_FAV2=~/Documents
-export FFF_FAV3=~/Programs
-export FFF_FAV4=~/Videos
-export FFF_FAV5=/mnt/
+export FFF_FAV3=~/Pictures
+export FFF_FAV4=~/Programs
+export FFF_FAV5=~/Videos
+export FFF_FAV6=/mnt/
 
 # Pass Bash Completion
 source "$HOME/Scripts/pass.bash-completion"
