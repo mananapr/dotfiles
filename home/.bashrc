@@ -12,6 +12,8 @@ cat /home/manan/.cache/wal/sequences
 # FFF
 export FFF_COL1=1
 export FFF_OPENER="opn"
+export FFF_W3M_XOFFSET=30
+export FFF_W3M_YOFFSET=10
 export FFF_FAV1=~/Downloads
 export FFF_FAV2=~/Documents
 export FFF_FAV3=~/Pictures
