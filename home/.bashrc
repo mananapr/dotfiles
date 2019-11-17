@@ -9,8 +9,14 @@
 source "$HOME/.cache/wal/colors.sh"
 cat /home/manan/.cache/wal/sequences
 
-# FFF Colors
+# FFF
 export FFF_COL1=1
+export FFF_OPENER="opn"
+export FFF_FAV1=~/Downloads
+export FFF_FAV2=~/Documents
+export FFF_FAV3=~/Programs
+export FFF_FAV4=~/Videos
+export FFF_FAV5=/mnt/
 
 # Pass Bash Completion
 source "$HOME/Scripts/pass.bash-completion"
@@ -41,7 +47,6 @@ export MAKEFLAGS="-j4"
 # Aliases
 alias 'v'='vim'
 alias 'p'='python'
-alias 'r'='ranger'
 alias 'm'='mpv -- "$(pwd)/"'
 alias 'b'='light -S'
 alias 'gs'='git status'
@@ -51,6 +56,7 @@ alias 'gp'='git push'
 alias 'add'='sudo pacman -S'
 alias 'del'='sudo pacman -Rcns'
 alias 'update'='sudo pacman -Syu'
+alias 'bat'='cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status'
 alias 'lswifi'='sudo wpa_cli -i wlp3s0 scan; sleep 5; sudo wpa_cli -i wlp3s0 scan_results'
 
 # Shell Prompt
