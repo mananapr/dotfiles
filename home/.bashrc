@@ -60,7 +60,7 @@ alias 'add'='sudo pacman -S'
 alias 'del'='sudo pacman -Rcns'
 alias 'update'='sudo pacman -Syu'
 alias 'bat'='cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status'
-alias 'lswifi'='sudo wpa_cli -i wlp3s0 scan; sleep 5; sudo wpa_cli -i wlp3s0 scan_results'
+alias 'lswifi'='wpa_cli -i wlp3s0 scan; sleep 5; wpa_cli -i wlp3s0 scan_results'
 
 # Shell Prompt
 export PS1='\[\e[1m\]->\[\e[0m\] '
