@@ -8,6 +8,10 @@
 mime_type="$(file -biL "$1")"
 
 case "$mime_type" in
+    image/vnd*)
+        zathura -- "$1"
+    ;;
+
     image/*|audio/*|video/*|*HEIC*)
         mpv -- "$1"
     ;;
