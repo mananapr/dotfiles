@@ -4,5 +4,5 @@
 CLIP_DIR='/tmp/qr.png'
 clip=$(xclip -selection c -i -o)
 qrencode "$clip" -s 20 -o $CLIP_DIR
-feh $CLIP_DIR
+meh $CLIP_DIR
 rm $CLIP_DIR
