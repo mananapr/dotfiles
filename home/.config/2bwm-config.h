@@ -1,8 +1,8 @@
 #include <X11/XF86keysym.h>
 ///---User configurable stuff---///
 ///---Modifiers---///
-#define MOD             XCB_MOD_MASK_4       /* Super/Windows key  or check xmodmap(1) with -pm  defined in /usr/include/xcb/xproto.h */
-#define MOD2            XCB_MOD_MASK_1       /* Alr key
+#define MOD2            XCB_MOD_MASK_4       /* Super/Windows key  or check xmodmap(1) with -pm  defined in /usr/include/xcb/xproto.h */
+#define MOD             XCB_MOD_MASK_1       /* Alr key
 ///--Speed---///
 /* Move this many pixels when moving or resizing with keyboard unless the window has hints saying otherwise.
  *0)move step slow   1)move step fast
@@ -56,7 +56,6 @@ static const char *lock[]        = {"slock",        NULL};
 static const char *suspend[]     = {"lock",         NULL};
 static const char *dmount[]      = {"dmount",       NULL};
 static const char *qr[]          = {"qr",           NULL};
-static const char *swap[]        = {"swap",         NULL};
 static const char *tile[]        = {"tile",         NULL};
 
 ///--Custom foo---///
@@ -204,7 +203,6 @@ static key keys[] = {
     {  MOD2 ,             XK_l,          start,             {.com = lock}},
     {  MOD2 ,             XK_s,          start,             {.com = scrot}},
     {  MOD2 ,             XK_t,          start,             {.com = tile}},
-    {  MOD2 ,             XK_space,      start,             {.com = swap}},
     // Multemedia
     {  0 ,                XF86XK_AudioLowerVolume,          start,             {.com = voldown}},
     {  0 ,                XF86XK_AudioRaiseVolume,          start,             {.com = volup}},
