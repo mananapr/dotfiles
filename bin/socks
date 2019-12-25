@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Creates a SOCKS proxy
-
-ssh -D 8123 -f -C -q -N pi@mananapr.dynu.net

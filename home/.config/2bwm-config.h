@@ -56,6 +56,8 @@ static const char *lock[]        = {"slock",        NULL};
 static const char *suspend[]     = {"lock",         NULL};
 static const char *dmount[]      = {"dmount",       NULL};
 static const char *qr[]          = {"qr",           NULL};
+static const char *swap[]        = {"swap",         NULL};
+static const char *tile[]        = {"tile",         NULL};
 
 ///--Custom foo---///
 static void halfandcentered(const Arg *arg)
@@ -201,6 +203,8 @@ static key keys[] = {
     {  MOD2 ,             XK_e,          start,             {.com = emoji}},
     {  MOD2 ,             XK_l,          start,             {.com = lock}},
     {  MOD2 ,             XK_s,          start,             {.com = scrot}},
+    {  MOD2 ,             XK_t,          start,             {.com = tile}},
+    {  MOD2 ,             XK_space,      start,             {.com = swap}},
     // Multemedia
     {  0 ,                XF86XK_AudioLowerVolume,          start,             {.com = voldown}},
     {  0 ,                XF86XK_AudioRaiseVolume,          start,             {.com = volup}},
