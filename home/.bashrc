@@ -24,12 +24,26 @@ export FFF_FAV6=/mnt/
 # Pass Bash Completion
 source "$HOME/Scripts/pass.bash-completion"
 
-# Disable E10s in Firefox
+# Enable E10s in Firefox
 export MOZ_FORCE_DISABLE_E10S=1
 
-# Set vim as default editor
+# Default Programs
 export EDITOR="vim"
 export PAGER="less"
+export TERMINAL="st"
+export READER="zathura"
+
+# Cleanup
+export HISTFILE="$HOME/.local/share/bash/history"
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export GNUPGHOME="$HOME/.local/share/gnupg"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$HOME/.config/java"
+export LESSHISTFILE="-"
+export WGETRC="$HOME/.config/wget/wgetrc"
+export INPUTRC="$HOME/.config/inputrc"
+export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
+export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 # For fzf
  export 'FZF_DEFAULT_COMMAND'="find . -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
@@ -48,10 +62,11 @@ export CXXFLAGS="-O3 -pipe -march=native"
 export MAKEFLAGS="-j4"
 
 # Aliases
-alias 'v'='vim'
+alias 'vim'='vim -i NONE'
 alias 'p'='python'
 alias 'm'='mpv -- "$(pwd)/"'
 alias 'b'='light -S'
+alias 'x'='xinit $HOME/.xinitrc -- /usr/bin/X :0 vt1 -keeptty'
 alias 'gs'='git status'
 alias 'ga'='git add'
 alias 'gm'='git commit -m'
@@ -60,7 +75,20 @@ alias 'add'='sudo pacman -S'
 alias 'del'='sudo pacman -Rcns'
 alias 'update'='sudo pacman -Syu'
 alias 'bat'='cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status'
-alias 'lswifi'='wpa_cli -i wlp3s0 scan; sleep 5; wpa_cli -i wlp3s0 scan_results'
+alias 'iwc'='sudo iwc'
+alias 'reboot'='sudo reboot'
+alias 'poweroff'='sudo poweroff'
+alias 'wpa_cli'='wpa_cli -iwlp3s0'
+alias 'tmux'='tmux -f ~/.config/tmux/tmux.conf'
+alias 'svn'='svn --config-dir ~/.config/subversion'
+alias 'irssi'='irssi --config ~/.config/irssi/config --home ~/.local/share/irssi'
+alias 'lswifi'="wpa_cli scan; sleep 5; wpa_cli scan_results;"
+alias 'megals'='megals --config ~/.config/megarc'
+alias 'megadf'='megadf --config ~/.config/megarc'
+alias 'megadl'='megadl --config ~/.config/megarc'
+alias 'megaput'='megaput --config ~/.config/megarc'
+alias 'megaget'='megaget --config ~/.config/megarc'
+alias 'megacopy'='megacopy --config ~/.config/megarc'
 
 # Shell Prompt
 export PS1='\[\e[1m\]->\[\e[0m\] '
@@ -85,7 +113,7 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 
 # Auto cd
-shopt -s autocd
+#shopt -s autocd
 
 # ls after a cd
 function cd()

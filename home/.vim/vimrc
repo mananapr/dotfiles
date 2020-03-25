@@ -9,6 +9,9 @@
 "" SET LEADER TO <SPACE>
 let mapleader = " "
 
+"" DISBALE VIMINFO
+set viminfo="NONE"
+
 "" BIND <TAB> TO CHANGE BUFFERS
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
@@ -62,7 +65,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nowrap
 set hidden
 syntax on
-colo wal
+colo agila
 
 "" USE HTML SYNTAX FOR EJS FILES
 au BufNewFile,BufRead *.ejs set filetype=html
