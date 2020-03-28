@@ -4,7 +4,7 @@ source ~/.cache/wal/colors.sh
 
 # vars
 cil="/tmp/calendar.png"
-bg="$HOME/Scripts/popup/img/bg.png"
+bg="$HOME/.local/bin/personal/popup/img/bg.png"
 width=$(xdotool "getdisplaygeometry" | awk '{{print $1;}}')
 height=$(xdotool "getdisplaygeometry" | awk '{{print $2;}}')
 ypos=$(expr "$height" - "242")
@@ -20,7 +20,7 @@ convert -background "rgba(0,0,0,0)" \
 		"$cil"
 
 # display it
-$HOME/Scripts/popup/popup.sh "" "$(expr "$width" - "1340")" -p "70" &
+$HOME/.local/bin/personal/popup/popup.sh "" "$(expr "$width" - "1340")" -p "70" &
 sleep ".15s"
 n30f -x "$(expr "$width" - "1307")" -y "$(expr "$ypos" + "-398")" -c "killall n30f" "$cil"
 

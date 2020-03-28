@@ -4,15 +4,15 @@ source ~/.cache/wal/colors.sh
 
 # vars
 cil="/tmp/calendar.png"
-bg="/home/manan/Scripts/popup/img/bg.png"
-background="/home/manan/Scripts/popup/img/bg2.png"
+bg="$HOME/.local/bin/personal/popup/img/bg.png"
+background="$HOME/.local/bin/personal/popup/img/bg2.png"
 width=$(xdotool "getdisplaygeometry" | awk '{print $1;}')
 height=$(xdotool "getdisplaygeometry" | awk '{print $2;}')
 ypos=$(expr "$height" - "272")
 xpos=$(expr "$width")
 
 # convert the output to png
-convert -background "rgba(33,33,33,1)" \
+convert -background "rgba(33,33,33,0)" \
 		-fill "$foreground" \
 		-font "Monaco" \
 		-antialias \

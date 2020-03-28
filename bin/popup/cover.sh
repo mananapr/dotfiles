@@ -15,7 +15,7 @@ then
     mpath=$(ps aux | grep mp3 | grep -v grep | grep SL | awk -F " -- " '{print $2}')
 fi
 csil="/tmp/cover.png"
-csbil="$HOME/Scripts/popup/img/bg.png"
+csbil="$HOME/.local/bin/personal/popup/img/bg.png"
 height=$(xdotool "getdisplaygeometry" | awk '{print $2;}')
 ypos=$(expr "$height" - "242")
 
@@ -23,7 +23,7 @@ ypos=$(expr "$height" - "242")
 ffmpeg -loglevel 0 -y -i "$mpath" -vf scale=-200:200 "$csil"
 
 # display it
-$HOME/Scripts/popup/popup.sh /tmp/cover.png "10" -p "28"
+$HOME/.local/bin/personal/popup/popup.sh /tmp/cover.png "10" -p "28"
 
 # delete it
 sleep ".25s"

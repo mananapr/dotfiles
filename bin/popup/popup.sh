@@ -3,13 +3,13 @@
 # popup [file] [placement] -p [pointer location]
 
 # fetch the colors
-source "/home/manan/Scripts/colors.sh"
+source "$HOME/.local/bin/personal/colors.sh"
 
 
 # vars
-background="/home/manan/Scripts/popup/img/bg2.png"
-pointer_main="/home/manan/Scripts/popup/img/pointer.png"
-pointer="/home/manan/Scripts/popup/img/pointer_mod.png"
+background="$HOME/.local/bin/personal/popup/img/bg2.png"
+pointer_main="$HOME/.local/bin/personal/popup/img/pointer.png"
+pointer="$HOME/.local/bin/personal/popup/img/pointer_mod.png"
 y="42"
 
 # make bg.png from pywal color0

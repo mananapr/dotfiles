@@ -22,7 +22,7 @@ export FFF_FAV5=~/Videos
 export FFF_FAV6=/mnt/
 
 # Pass Bash Completion
-source "$HOME/Scripts/pass.bash-completion"
+source "$HOME/.local/bin/personal/pass.bash-completion"
 
 # Enable E10s in Firefox
 export MOZ_FORCE_DISABLE_E10S=1
@@ -49,7 +49,7 @@ export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
  export 'FZF_DEFAULT_COMMAND'="find . -path '*/\.*' -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # Add Scripts folder to PATH
-PATH="$PATH:$HOME/Scripts:$HOME/.local/bin"
+PATH="$PATH:$HOME/.local/bin:$HOME/.local/bin/personal"
 
 # Enable Vim Mode in Bash
 set -o vi
@@ -66,18 +66,12 @@ alias 'vim'='vim -i NONE'
 alias 'p'='python'
 alias 'm'='mpv -- "$(pwd)/"'
 alias 'b'='light -S'
-alias 'x'='xinit $HOME/.xinitrc -- /usr/bin/X :0 vt1 -keeptty'
+alias 'x'='xinit $HOME/.config/xinitrc -- /usr/bin/X :0 vt1 -keeptty'
 alias 'gs'='git status'
 alias 'ga'='git add'
 alias 'gm'='git commit -m'
 alias 'gp'='git push'
-alias 'add'='sudo pacman -S'
-alias 'del'='sudo pacman -Rcns'
-alias 'update'='sudo pacman -Syu'
 alias 'bat'='cat /sys/class/power_supply/BAT0/capacity /sys/class/power_supply/BAT0/status'
-alias 'iwc'='sudo iwc'
-alias 'reboot'='sudo reboot'
-alias 'poweroff'='sudo poweroff'
 alias 'wpa_cli'='wpa_cli -iwlp3s0'
 alias 'tmux'='tmux -f ~/.config/tmux/tmux.conf'
 alias 'svn'='svn --config-dir ~/.config/subversion'

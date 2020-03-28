@@ -15,8 +15,8 @@ then
     mpath=$(ps aux | grep mp3 | grep -v grep | awk -F " -- " '{print $2}')
 fi
 csil="/tmp/cover.png"
-csbil="$HOME/Scripts/popup/img/bg.png"
-height="768"
+csbil="$HOME/.local/bin/personal/popup/img/bg.png"
+height=$( xrandr | grep connected | head -1 | awk '{print $4}' | awk -F'x' '{print $2}' | awk -F'+' '{print $1}')
 ypos=$(expr "$height" - "242")
 
 # extract the album art
