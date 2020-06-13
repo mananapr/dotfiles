@@ -1,0 +1,63 @@
+# Icons
+set icons
+
+# Make Directory
+map a push %mkdir<space>
+
+# UI
+set nopreview
+set ratios 1:2
+set info size:time
+set drawbox
+
+# Image Preview
+map - $/home/manan/.config/lf/draw_img.sh $f
+
+# FZF Integration
+cmd fzf_jump ${{
+   res="$(fzf)"
+   if [ -f "$res" ]; then
+     cmd="select"
+   elif [ -d "$res" ]; then
+     cmd="cd"                                                       
+   fi
+lf -remote "send $id $cmd \"$res\""
+}}
+map <c-f> :fzf_jump
+
+# Rename
+map A rename                    # cursor at the end
+map I :rename; cmd-home         # cursor at the beginning
+map r :rename; cmd-delete-home  # rename with a blank prompt
+
+# Bulk Rename
+set shellopts '-eu'
+set ifs "\n"
+cmd bulk-rename ${{
+	index=$(mktemp /tmp/lf-bulk-rename-index.XXXXXXXXXX)
+	if [ -n "${fs}" ]; then
+		echo "$fs" > $index
+	else
+		echo "$(ls "$(dirname $f)" | tr ' ' "\n")" > $index
+	fi
+	index_edit=$(mktemp /tmp/lf-bulk-rename.XXXXXXXXXX)
+	cat $index > $index_edit
+	$EDITOR $index_edit
+	if [ $(cat $index | wc -l) -eq $(cat $index_edit | wc -l) ]; then
+		max=$(($(cat $index | wc -l)+1))
+		counter=1
+		while [ $counter -le $max ]; do
+			a="$(cat $index | sed "${counter}q;d")"
+			b="$(cat $index_edit | sed "${counter}q;d")"
+			counter=$(($counter+1))
+			
+			[ "$a" = "$b" ] && continue
+			[ -e "$b" ] && echo "File exists: $b" && continue
+			mv "$a" "$b"
+		done
+	else
+		echo "Number of lines must stay the same"
+	fi
+	rm $index $index_edit
+}}
+map <c-b> :bulk-rename
