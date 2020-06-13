@@ -11,7 +11,10 @@ set info size:time
 set drawbox
 
 # Image Preview
-map - $/home/manan/.config/lf/draw_img.sh $f
+map I $/home/manan/.config/lf/draw_img.sh $f
+
+# Dragon Drag and Drop
+map S $dragon-drag-and-drop $fs
 
 # FZF Integration
 cmd fzf_jump ${{
@@ -27,7 +30,6 @@ map <c-f> :fzf_jump
 
 # Rename
 map A rename                    # cursor at the end
-map I :rename; cmd-home         # cursor at the beginning
 map r :rename; cmd-delete-home  # rename with a blank prompt
 
 # Bulk Rename
