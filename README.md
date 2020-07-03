@@ -1,16 +1,14 @@
 # dotfiles
 
-[screenshots](https://imgur.com/a/cbsDmmD)
-
-![openbox](openbox.png "openbox")
+![dwm](dwm.png "dwm")
 
 ## Setup
-- Operating System: `KISS Linux`
+- Operating System: `Arch Linux`
 - Application Launcher: `dmenu`
 - Shell: `bash`
 - Terminal Emulator: `st`
 - Text Editor: `vim`
 - Video Player/Music Player/Image Viewer: `mpv`
 - Web Browser: `firefox`
-- Window Manager: `openbox`
+- Window Manager: `dwm`
 - Lock Screen: `slock`
