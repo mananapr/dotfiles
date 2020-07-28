@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+clock() {
+	datetime="$(date "+%A, %d %b %R")"
+	echo "$datetime"
+}
+
+battery() {
+    percent="$(cat /sys/class/power_supply/BAT0/capacity)"
+    power="$(cat /sys/class/power_supply/BAT0/status)"
+	
+	if [[ $power == "Charging" || $power == "Unknown" ]]; then
+		echo -n "$percent%"
+	else
+		if [ $percent -eq 100 ]; then
+			echo -n "98%"
+		elif [ $percent -gt 70 ] ; then
+			echo -n "$percent%"
+		elif [ $percent -gt 30 ]; then
+			echo -n "$percent%"
+		else 
+			echo -n "$percent%"
+		fi
+	fi
+}
+
+while true;
+    do
+        c=$(clock)
+        p=$(battery)
+        xsetroot -name "$c  BAT:$p ";
+        sleep 2;
+done

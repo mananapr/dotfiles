@@ -1,12 +1,11 @@
-xrdb -merge ~/.Xresources
+xrdb -merge ~/.config/Xresources
 hsetroot -cover ~/Pictures/Washed-2/IXIQqZ3.jpg
 
 xset -b
 xset s off -dpms
 
 xclip &
-
-mutespeaker
 picom &
+dwmbar &
 
-exec 2bwm
+exec dwm
