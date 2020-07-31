@@ -1,0 +1,69 @@
+" "
+" --- TECH --- "
+https://www.archlinux.org/feeds/news/
+https://k1ss.org/blog/blog.xml
+https://hnrss.org/frontpage
+
+" "
+" --- BLOGS --- "
+https://blog.mananapr.xyz/blog.xml
+http://lukesmith.xyz/rss.xml
+https://radishmag.wordpress.com/?feed=rss2
+https://haasn.xyz/atom.xml
+https://thuleanperspective.com/?feed=rss2
+https://feeds.feedburner.com/dcb?format=xml
+
+" "
+" --- REDDIT --- "
+https://old.reddit.com/r/archlinux/.rss
+
+" "
+" --- PODCASTS --- "
+https://notrelated.libsyn.com/rss
+https://anchor.fm/s/ee46f98/podcast/rss
+https://audioboom.com/channels/4940872.rss
+http://trailwentcold.com/feed/podcast/
+
+" "
+" --- TORRENTS --- "
+https://feed43.com/3517721736576626.xml
+https://feed43.com/7377212160350275.xml
+https://nyaa.si/?page=rss&u=Prof "~Prof Torrents | Nyaa"
+https://nyaa.si/?page=rss&u=Catar "~Catar Torrents | Nyaa"
+
+" "
+" --- PEERTUBE --- "
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2
+
+" "
+" --- BITCHUTE --- "
+https://www.bitchute.com/feeds/rss/channel/thealthype/
+
+" "
+" --- YOUTUBE --- "
+https://www.youtube.com/feeds/videos.xml?channel_id=UCtqxG9IrHFU_ID1khGvx9sA
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9PIn6-XuRKZ5HmYeu46AIw
+https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=CGPGrey&duration_min=&duration_max=&format=Atom
+https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=DigitalFoundry&duration_min=&duration_max=&format=Atom
+https://www.youtube.com/feeds/videos.xml?channel_id=UCD6VugMZKRhSyzWEWA9W2fg
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5CYeHPLer3lbEhgonvbbAA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYZtp0YIxYOipX15v_h_jnA
+https://www.youtube.com/feeds/videos.xml?channel_id=UChYyq0Rp017VYEQzrxOuSmQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRYhCg0DHloE9gn-PAiAYNg
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3V55HDHFjtWY2fdP3pneAA
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4BZtFgtCuHUt0p8J-XENiA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbWcXB0PoqOsAvAdfzWMf0w
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNTqu16j3F6RbtHZI-3untg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCcu65ocEWfvvX7W93n8fagg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs24RJ3wS1lIGOsQAsw_HYg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR1D15p_vdP3HkrH8wgjQRw
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8Q7XEy86Q7T-3kNpNjYgwA
+https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=Aylingater77&duration_min=&duration_max=&format=Atom
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRcgy6GzDeccI7dkbbBna3Q
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCpofQJ6RpHrxuUG4ghXPJBA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCpFFItkfZz1qz5PpHpqzYBw
+https://www.youtube.com/feeds/videos.xml?channel_id=UC6OiM0H7Ce-q357WlJ8zqrg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSlFKVc8tufJ6gSzxk7v4vQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UCgNqlRGqHdxNRPR6ycynWhw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg
