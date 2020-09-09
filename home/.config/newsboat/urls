@@ -6,9 +6,11 @@ https://hnrss.org/frontpage
 
 " "
 " --- BLOGS --- "
-https://blog.mananapr.xyz/blog.xml
+https://adisubru.github.io/updates.xml
+https://mananapr.github.io/blog.xml
 http://lukesmith.xyz/rss.xml
 https://radishmag.wordpress.com/?feed=rss2
+https://thealternativehypothesis.org/index.php/feed/
 https://haasn.xyz/atom.xml
 https://thuleanperspective.com/?feed=rss2
 https://feeds.feedburner.com/dcb?format=xml
@@ -34,21 +36,19 @@ https://nyaa.si/?page=rss&u=Catar "~Catar Torrents | Nyaa"
 " "
 " --- PEERTUBE --- "
 https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2
-
-" "
-" --- BITCHUTE --- "
-https://www.bitchute.com/feeds/rss/channel/thealthype/
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=982
 
 " "
 " --- YOUTUBE --- "
+https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=RootOfTheNull&duration_min=&duration_max=&format=Atom
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtqxG9IrHFU_ID1khGvx9sA
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9PIn6-XuRKZ5HmYeu46AIw
 https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=CGPGrey&duration_min=&duration_max=&format=Atom
-https://bridge.suumitsu.eu/?action=display&bridge=Youtube&context=By+username&u=DigitalFoundry&duration_min=&duration_max=&format=Atom
+https://www.youtube.com/feeds/videos.xml?channel_id=UCgmI-uiLLAg--vDe7FFdekA
 https://www.youtube.com/feeds/videos.xml?channel_id=UCD6VugMZKRhSyzWEWA9W2fg
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5CYeHPLer3lbEhgonvbbAA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs6KfncB4OV6Vug4o_bzijg
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYZtp0YIxYOipX15v_h_jnA
-https://www.youtube.com/feeds/videos.xml?channel_id=UChYyq0Rp017VYEQzrxOuSmQ
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRYhCg0DHloE9gn-PAiAYNg
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3V55HDHFjtWY2fdP3pneAA
 https://www.youtube.com/feeds/videos.xml?channel_id=UC4BZtFgtCuHUt0p8J-XENiA
