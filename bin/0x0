@@ -9,9 +9,9 @@ usage() {
 get_args() {
     while [[ "$1" ]]; do
         case "$1" in
-            "-f") curl --progress-bar -F"file=@$2" https://0x0.st | tee /dev/null ;;
-            "-s") curl -F"shorten=$2" https://0x0.st ;;
-            "-u") curl -F"url=$2" https://0x0.st;;
+            "-f") curl -sF"file=@$2" https://0x0.st | tee /dev/null ;;
+            "-s") curl -sF"shorten=$2" https://0x0.st ;;
+            "-u") curl -sF"url=$2" https://0x0.st;;
             *) usage
         esac
         exit 1

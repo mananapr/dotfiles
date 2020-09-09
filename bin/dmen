@@ -3,4 +3,4 @@
 # Import the colors
 . "${HOME}/.cache/wal/colors.sh"
 
-dmenu_run -nb "$color0" -nf "$color15" -sb "#6a74fc" -sf "$color15" "$@"
+dmenu_run -h 25 -nb "$color0" -nf "$color15" -sb "#6a74fc" -sf "$color15" "$@"

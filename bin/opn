@@ -16,7 +16,7 @@ case "$mime_type" in
         mpv -- "$1"
     ;;
 
-    application/pdf*)
+    application/pdf*|application/epub*)
         zathura "$1"
     ;;
 

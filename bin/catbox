@@ -2,4 +2,4 @@
 #
 #Script to use https://catbox.moe
 
-curl --progress-bar -F "reqtype=fileupload" -F "fileToUpload=@$1" https://catbox.moe/user/api.php | tee /dev/null
+curl -sF "reqtype=fileupload" -F "fileToUpload=@$1" https://catbox.moe/user/api.php | tee /dev/null

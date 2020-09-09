@@ -13,7 +13,7 @@ cat /home/manan/.cache/wal/sequences
 source "$HOME/.local/bin/personal/pass.bash-completion"
 
 # Enable E10s in Firefox
-export MOZ_FORCE_DISABLE_E10S=1
+export MOZ_FORCE_DISABLE_E10S=0
 
 # Default Programs
 export EDITOR="vim"
@@ -55,6 +55,7 @@ alias 'p'='python'
 alias 'm'='mpv --no-audio-display -- "$(pwd)/"'
 alias 'b'='light -S'
 alias 'x'='xinit $HOME/.config/xinitrc -- /usr/bin/X :0 vt1 -keeptty'
+alias 'pm'='pulsemixer'
 alias 'gs'='git status'
 alias 'ga'='git add'
 alias 'gm'='git commit -m'
@@ -71,6 +72,7 @@ alias 'megadl'='megadl --config ~/.config/megarc'
 alias 'megaput'='megaput --config ~/.config/megarc'
 alias 'megaget'='megaget --config ~/.config/megarc'
 alias 'megacopy'='megacopy --config ~/.config/megarc'
+alias 'megarm'='megarm --config ~/.config/megarc'
 
 # Shell Prompt
 export PS1='\[\e[1m\]->\[\e[0m\] '

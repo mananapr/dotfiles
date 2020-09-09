@@ -4,7 +4,7 @@
 case "$1" in
     "up")   amixer -M set Master 5%+ ;;
     "down") amixer -M set Master 5%- ;;
-    "mute") amixer -q sset Master toggle ;;
+    "mute") pactl set-sink-mute 0 toggle ;;
     #*) printf "%s\\n" "Usage: ./vol up, ./vol down"; exit ;;
 esac
 

@@ -7,7 +7,7 @@
 
 xclip -h >/dev/null || exit
 
-chosen=$(grep -v "#" ~/.config/emojis | dmenu -nb "$color0" -nf "$color15" -sb "#6a74fc" -sf "$color15" -i -l 20 -fn "Monaco-12")
+chosen=$(grep -v "#" ~/.config/emojis | dmenu -nb "$color0" -nf "$color15" -sb "#6a74fc" -sf "$color15" -i -l 20 -fn "Iosevka Term-12")
 
 [ "$chosen" != "" ] || exit
 

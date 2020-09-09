@@ -18,7 +18,7 @@ reload_dunst() {
             -nto 2 \
             -cto 2 \
             -fn "${DUNST_FONT:-Monaco 8}" \
-            -geometry "${DUNST_SIZES:-250x30-20+20}" &
+            -geometry "${DUNST_SIZES:-250x30-8+30}" &
 }
 
 set_bar() {
@@ -49,9 +49,9 @@ set_sublime() {
 
 main() {
     reload_dunst &
-    set_sublime &
-    set_rofi &
-    set_bar
+    #set_sublime &
+    #set_rofi &
+    #set_bar
     set_zathura &
     #set_openbox &
     sleep 1
