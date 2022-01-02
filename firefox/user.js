@@ -720,7 +720,7 @@ user_pref("_user.js.parrot", "1400 syntax error: the parrot's bereft of life!");
  * This can limit most (but not all) JS font enumeration which is a high entropy fingerprinting vector
  * [SETUP-WEB] Can break some PDFs (missing text). Limiting to default fonts can "uglify" the web
  * [SETTING] General>Language and Appearance>Fonts & Colors>Advanced>Allow pages to choose... ***/
-user_pref("browser.display.use_document_fonts", 0);
+user_pref("browser.display.use_document_fonts", 1);
 /* 1403: disable icon fonts (glyphs) and local fallback rendering
  * [1] https://bugzilla.mozilla.org/789788
  * [2] https://gitlab.torproject.org/legacy/trac/-/issues/8455 ***/
@@ -840,7 +840,7 @@ user_pref("_user.js.parrot", "2000 syntax error: the parrot's snuffed it!");
  * [SETUP-WEB] WebRTC can leak your IP address from behind your VPN, but if this is not
  * in your threat model, and you want Real-Time Communication, this is the pref for you
  * [1] https://www.privacytools.io/#webrtc ***/
-user_pref("media.peerconnection.enabled", false);
+user_pref("media.peerconnection.enabled", true);
 /* 2002: limit WebRTC IP leaks if using WebRTC
  * In FF70+ these settings match Mode 4 (Mode 3 in older versions) (see [3])
  * [TEST] https://browserleaks.com/webrtc
@@ -861,15 +861,15 @@ user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 /* 2022: disable screensharing ***/
-user_pref("media.getusermedia.screensharing.enabled", false);
-user_pref("media.getusermedia.browser.enabled", false);
-user_pref("media.getusermedia.audiocapture.enabled", false);
+user_pref("media.getusermedia.screensharing.enabled", true);
+user_pref("media.getusermedia.browser.enabled", true);
+user_pref("media.getusermedia.audiocapture.enabled", true);
 /* 2024: set a default permission for Camera/Microphone [FF58+]
  * 0=always ask (default), 1=allow, 2=block
  * [SETTING] to add site exceptions: Page Info>Permissions>Use the Camera/Microphone
  * [SETTING] to manage site exceptions: Options>Privacy & Security>Permissions>Camera/Microphone>Settings ***/
-   // user_pref("permissions.default.camera", 2);
-   // user_pref("permissions.default.microphone", 2);
+user_pref("permissions.default.camera", 0);
+user_pref("permissions.default.microphone", 0);
 /* 2030: disable autoplay of HTML5 media [FF63+]
  * 0=Allow all, 1=Block non-muted media (default in FF67+), 2=Prompt (removed in FF66), 5=Block all (FF69+)
  * [NOTE] You can set exceptions under site permissions
@@ -1029,7 +1029,7 @@ user_pref("_user.js.parrot", "2500 syntax error: the parrot's shuffled off 'is m
  * [NOTE] media.peerconnection.enabled should also be set to false (see 2001)
  * [1] https://wiki.mozilla.org/Media/getUserMedia
  * [2] https://developer.mozilla.org/docs/Web/API/MediaDevices/enumerateDevices ***/
-user_pref("media.navigator.enabled", false);
+user_pref("media.navigator.enabled", true);
 /* 2508: disable hardware acceleration to reduce graphics fingerprinting [SETUP-HARDEN]
  * [WARNING] Affects text rendering (fonts will look different), impacts video performance,
  * and parts of Quantum that utilize the GPU will also be affected as they are rolled out
@@ -1039,7 +1039,7 @@ user_pref("media.navigator.enabled", false);
    // user_pref("layers.acceleration.disabled", true);
 /* 2510: disable Web Audio API [FF51+]
  * [1] https://bugzilla.mozilla.org/1288359 ***/
-user_pref("dom.webaudio.enabled", false);
+user_pref("dom.webaudio.enabled", true);
 /* 2517: disable Media Capabilities API [FF63+]
  * [WARNING] This *may* affect media performance if disabled, no one is sure
  * [1] https://github.com/WICG/media-capabilities
@@ -1136,7 +1136,7 @@ user_pref("browser.display.use_system_colors", false); // [DEFAULT: false]
  * permissions, and fullscreen requests. Disabling delegation means any prompts
  * for these will show/use their correct 3rd party origin
  * [1] https://groups.google.com/forum/#!topic/mozilla.dev.platform/BdFOMAuCGW8/discussion */
-user_pref("permissions.delegation.enabled", false);
+user_pref("permissions.delegation.enabled", true);
 
 /** DOWNLOADS ***/
 /* 2650: discourage downloading to desktop
