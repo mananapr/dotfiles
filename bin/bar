@@ -2,7 +2,7 @@
 # Uses lemonbar-xft to create a bar
 
 # fetch the colors
-source "$HOME/Scripts/colors.sh"
+source "$HOME/.local/bin/personal/colors.sh"
 
 
 # vars
@@ -65,7 +65,7 @@ loop-desktop() {
 	done |\
 	
 	lemonbar \
-	    -f 'Monaco:size=7' \
+	    -f 'Monaco:size=8' \
 	    -g "1366x"$(($barh+5)) \
 	    -d \
 	    | bash
@@ -99,9 +99,8 @@ loop-bottom() {
 	done |\
 	
 	lemonbar \
-	    -f 'Monaco:size=7' \
-	    -f 'FontAwesome:size=8' \
-	    -g "113x"$((barh+10))"+"$((margin-18))"+"$((margin+661))"" \
+	    -f 'Monaco:size=8' \
+	    -g "133x"$((barh+10))"+"$((margin-18))"+"$((margin+661))"" \
 	    -d \
 	    | bash
 }

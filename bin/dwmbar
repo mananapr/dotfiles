@@ -13,7 +13,7 @@ battery() {
 		echo -n "$percent%"
 	else
 		if [ $percent -eq 100 ]; then
-			echo -n "98%"
+			echo -n "100%"
 		elif [ $percent -gt 70 ] ; then
 			echo -n "$percent%"
 		elif [ $percent -gt 30 ]; then

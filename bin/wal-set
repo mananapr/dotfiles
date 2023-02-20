@@ -2,60 +2,28 @@
 
 source "${HOME}/.cache/wal/colors.sh"
 
-reload_dunst() {
-    pkill dunst && \
-        dunst \
-            -padding 16 \
-            -alignment center\
-            -lb "$color0" \
-            -nb "$color0" \
-            -cb "$color0" \
-            -lf "$color15" \
-            -bf "$color15" \
-            -cf "$color15" \
-            -nf "$color15" \
-            -lto 2 \
-            -nto 2 \
-            -cto 2 \
-            -fn "${DUNST_FONT:-Monaco 8}" \
-            -geometry "${DUNST_SIZES:-250x30-8+30}" &
-}
-
-set_bar() {
-    pkill bar
-    cp ~/.cache/wal/popup-d.sh ~/Scripts/popup/popup.sh
-    cp ~/.cache/wal/calendar-d.sh ~/Scripts/popup/calendar.sh
-    cp ~/.cache/wal/bar_colors_dark.sh ~/Scripts/colors.sh
-    #polybar rome &
-    #bar 2>/dev/null &
-}
-
-set_rofi() {
-    cp ~/.cache/wal/colors-rofi-dark.rasi ~/.config/rofi
-}
-
 set_zathura() {
     cp ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
 }
 
-set_openbox() {
-    cp ~/.cache/wal/thicc-themerc ~/.themes/thicc/openbox-3/themerc
-    openbox --restart
+set_dwm() {
+    cd ~/Programs/suckless/dwm-6.2
+    make clean
+    make
+    sudo make install
 }
 
-set_sublime() {
-    ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme.sh > ${HOME}/.config/sublime-text-3/Packages/wal/base16-wal.tmTheme
+set_st() {
+    cd ~/Programs/suckless/st-0.8.3
+    make clean
+    make
+    sudo make install
 }
 
 main() {
-    reload_dunst &
-    #set_sublime &
-    #set_rofi &
-    #set_bar
-    set_zathura &
-    #set_openbox &
-    sleep 1
-    #set-bar
+    set_zathura
+    set_dwm
+    set_st
 }
 
 main >/dev/null 2>&1

@@ -1,0 +1,122 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 50, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 5, // Gaps between modules (4px)
+    // Choose the order of the modules
+    // "margin-left":25,
+    // "margin-right":25,
+    "margin-bottom":-11,
+    //"margin-top":5,
+    "modules-left": ["wlr/workspaces"],
+    "modules-right": ["pulseaudio","custom/cycle_wall","battery","clock"],
+    "modules-center": ["custom/dynamic_pill"],
+    // Modules configuration
+
+
+    // custom modules ////////////////
+    //////////////////////////////////
+    "custom/dynamic_pill": {
+        "return-type": "json",
+        "exec": "~/.local/bin/personal/start_dyn",
+        "on-click": "playerctl -p mpv play-pause",
+        "escape":true
+    },
+    "custom/cycle_wall":{
+        "format":"{}",
+        "exec": "~/.local/bin/personal/expand wall",
+        //"interval": 1,
+        "on-click": "~/.local/bin/personal/expand cycle"
+    },
+    "custom/ss":{
+        "format":"{}",
+        "exec":"~/.local/bin/personal/expand ss-icon",
+        "on-click": "~/.local/bin/personal/scr"
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-active": " {icon} ",
+        "on-click": "activate"
+        // "format-icons":{
+        //     "10":"10"
+        // }
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 60,
+        "format": "{:%I:%M}",
+        "max-length": 25
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "states": {
+            "warning": 50,
+            "critical": 30
+        },
+        "format": "{icon}",
+        "format-charging": "{icon}",
+        "format-plugged": "{icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip-format": "via {gwaddr} {ifname}",
+        "format-linked": "",
+        "format-disconnected": "wifi",
+        "format-alt": "   "
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": " {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "kitty pulsemixer"
+    }
+}
+

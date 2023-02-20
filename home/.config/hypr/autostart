@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+/usr/bin/pipewire & /usr/bin/pipewire-pulse & /usr/bin/wireplumber &
+~/.local/bin/personal/wall /home/manan/Pictures/Aurora/1.png &
+waybar_start &

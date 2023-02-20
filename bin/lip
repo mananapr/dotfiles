@@ -5,7 +5,7 @@
 #echo "$ssid"
 #echo "=> IP Address is $lip"
 
-ssid="$(wpa_cli -iwlp3s0 status | grep ssid | grep -v bssid | sed s/ssid\=/SSID\ is\ /)"
-lip="$(ip addr | grep inet | grep wlp3s0 | awk '{print $2}')"
+ssid="$(wpa_cli -iwlan0 status | grep ssid | grep -v bssid | sed s/ssid\=/SSID\ is\ /)"
+lip="$(ip addr | grep inet | grep wlan0 | awk '{print $2}')"
 echo "=> $ssid"
 echo "=> IP Address is $lip"

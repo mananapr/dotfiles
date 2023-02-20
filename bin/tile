@@ -1,0 +1,342 @@
+#!/bin/bash
+# use wmctrl and xwininfo to tile windows
+#currently supports the "LEFT_MASTER" mode  (default),
+# "RIGHT_MASTER" mode (-r) , 
+# "TOP_MASTER" mode (-t), 
+#"BOTTOM_MASTER" mode (-b) ,
+#"GRID" mode (-g), 
+#"MAX" mode (-m) ,
+# "VERTICAL_SPLIT" mode (-v)  and
+#"HORIZONTAL_SPLIT"  mode (-h)
+
+#NOTE: wmctrl sets the properties of the window itself i.e. the window manager's borders 
+#and title bars are not taken into account while setting the coordinates. So for best results 
+#set the window manager to display all windows undecorated 
+#or manually set the title bar height here
+
+#List of things to do:
+# 1.    Get the values of the TOP_MARGIN, BOTTOM_MARGIN, LEFT_MARGIN and RIGHT_MARGIN from the window manager
+# 2.    Get the MASTER_WIDTH for the default LEFT_MASTER, RIGHT_MASTER layouts as a parameter , set a default if not provided
+# 3.    Get the MASTER_HEIGHT for the default TOP_MASTER, BOTTOM_MASTER layouts as a parameter , set a default if not provided
+# 4.    Get the NUMBER_OF_ROWS for the grid mode as a parameter, set a default if not provided
+# 5.    Get the  TITLE_BAR_HEIGHT from the window manager
+# 6.     Restructure the code to use functions
+# 7.     Provide mechanisms to increase/decrease the MASTER area
+# 8.    Provide mechanisms to increase/decrease the number of windows in the MASTER area
+
+#List of bugs
+# 1.    If called from a key combination, there may not be a :ACTIVE: window and in which case the results are not as desired. 
+# 2.    The title bar plays havoc with the height of windows  
+
+#need to find a way to get these from the window manager
+TOP_MARGIN=18
+BOTTOM_MARGIN=18
+LEFT_MARGIN=22
+RIGHT_MARGIN=22
+TITLE_BAR_HEIGHT=55 #works best if all the windows are border less and this is set to zero
+
+#we are now using xwininfo to get these
+#HEIGHT=1080
+#WIDTH=1920
+
+#either set these in a file or calculate them from the screen properties
+MASTER_WIDTH=750
+MASTER_HEIGHT=300
+#set the number of rows we want for the grid mode 
+NUMBER_OF_ROWS=2
+#looks nice :)
+USELESS_GAPS=5
+
+#see what the user wants to do
+case $1 in 
+"-g")
+        MODE="GRID"
+        ;;
+"-m")
+        MODE="MAX"
+        ;;                
+"-v")
+        MODE="VERTICAL_SPLIT"
+        ;;                
+"-h")
+        MODE="HORIZONTAL_SPLIT"
+        ;;                
+"-t")
+        MODE="TOP_MASTER"
+        ;;
+"-b")
+        MODE="BOTTOM_MASTER"
+        ;;        
+"-r")
+        MODE="RIGHT_MASTER"
+        ;;                
+
+*)    
+        MODE="LEFT_MASTER"
+        ;;
+esac
+
+
+#get the desktop parameters
+HEIGHT=`xwininfo -root | grep 'Height:' | awk '{print $2}'`
+WIDTH=`xwininfo -root | grep 'Width:' | awk '{print $2}'`
+
+
+#get the window parameters
+    
+#get the current desktop
+CURR_DESK=` wmctrl -d | grep '* DG:'| awk '{print $1}'`
+
+#get the total number of windows.
+#NOTE: we are not directly using grep to get the windows from the current desktop as it may serve up some false positives
+TOTAL_WINDOWS=`wmctrl -lx | wc -l`
+#counter
+i=1
+#Assume that there are no windows in the current desktop
+WINDOWS_IN_DESK=0
+while  [ $i  -le  $TOTAL_WINDOWS ] ; do
+    CURR_LINE=`wmctrl -lx | head -n $i | tail -n 1`
+    WIN_DESK=`echo $CURR_LINE | awk '{print $2}'`
+    if  [ $WIN_DESK  -eq  $CURR_DESK ] ; then
+    #save the various window properties as supplied by wmctrl . Un comment rest if necessary. Include more if necessary
+        WIN_XID[$WINDOWS_IN_DESK]=`echo $CURR_LINE | awk '{print $1}'`
+    #    WIN_XOFF[$WINDOWS_IN_DESK]=`echo $CURR_LINE | awk '{print $2}'`
+    #    WIN_YOFF[$WINDOWS_IN_DESK]=`echo $CURR_LINE | awk '{print $3}'`
+    #    WIN_WIDTH[$WINDOWS_IN_DESK]=`echo $CURR_LINE | awk '{print $4}'`
+    #    WIN_HEIGHT[$WINDOWS_IN_DESK]=`echo $CURR_LINE | awk '{print $5}'`
+    
+    #see if the window is "IsViewable" or "IsUnMapped" i.e minimized
+        MAP_STATE=`xwininfo -id ${WIN_XID[$WINDOWS_IN_DESK]} | grep "Map State:" | awk '{print $3}'`
+    #we don't  want the minimized windows to be considered while allocating the space
+        if [ "$MAP_STATE"  ==  "IsViewable" ]; then
+            WINDOWS_IN_DESK=$((WINDOWS_IN_DESK+1))
+        fi    
+    fi
+    i=$((i+1))
+done
+
+#get the xid of the active window. 
+ACTIVE_WIN=`xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/{print $NF}'`
+
+
+#set the selected layout
+#NOTE: these would look better if they were individual functions :)
+case $MODE in 
+
+"LEFT_MASTER")
+            #define the properties of the master area
+            X=$LEFT_MARGIN
+            Y=$TOP_MARGIN
+            #set the width to the default MASTER_WIDTH 
+            W=$MASTER_WIDTH
+            H=$(( HEIGHT -TOP_MARGIN - BOTTOM_MARGIN -TITLE_BAR_HEIGHT -USELESS_GAPS))
+            #set the active window to the "master "area
+            wmctrl    -r :ACTIVE: -e "0,$X,$Y,$((W-20)),$H"
+
+             #now that the master window has been set all further windows would have to start from here
+              X=$((MASTER_WIDTH+USELESS_GAPS))
+             #get whatever width is left
+             W=$((WIDTH - MASTER_WIDTH -USELESS_GAPS))
+             #the height would be equally shared by the rest of the windows
+             H=$((H/(WINDOWS_IN_DESK - 1) - TITLE_BAR_HEIGHT -USELESS_GAPS ))
+             i=0
+              while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                #avoid setting the attributes of the active window again
+                if  [[ "${WIN_XID[$i]}" -ne "$ACTIVE_WIN" ]] ; then
+                #set the attributes 
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$((W-20)),$((H+58))"
+                    #set the Y co-ordinate for the next window.
+                    
+                    Y=$((Y+H+TITLE_BAR_HEIGHT+USELESS_GAPS))
+                fi
+                #preselect the next window
+                i=$((i+1))
+             done
+             ;;
+
+"RIGHT_MASTER")
+            #define the properties of the master area
+            X=$LEFT_MARGIN
+            Y=$TOP_MARGIN
+             #get whatever width is left
+             W=$((WIDTH - MASTER_WIDTH -USELESS_GAPS))
+             #the height would be equally shared by the non master windows
+             H=$(((HEIGHT -TOP_MARGIN -BOTTOM_MARGIN  )/(WINDOWS_IN_DESK-1) -TITLE_BAR_HEIGHT -USELESS_GAPS))
+             i=0
+              while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                #avoid setting the attributes of the active window 
+                if  [[ "${WIN_XID[$i]}" -ne "$ACTIVE_WIN" ]] ; then
+                #set the attributes 
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                    #set the Y co-ordinate for the next window.
+                    
+                    Y=$((Y+H+TITLE_BAR_HEIGHT+USELESS_GAPS))
+                fi
+                #preselect the next window
+                i=$((i+1))
+            done
+            #set the co-ordinates for the  MASTER_WINDOW
+            X=$((W+USELESS_GAPS))
+            Y=$TOP_MARGIN
+            W=$MASTER_WIDTH
+            H=$(( HEIGHT -TOP_MARGIN - BOTTOM_MARGIN -TITLE_BAR_HEIGHT -USELESS_GAPS))
+            #set the active window to the "master "area
+            wmctrl    -r :ACTIVE: -e "0,$X,$Y,$W,$H"
+
+             ;;             
+"TOP_MASTER")
+            #define the properties of the master area
+            X=$LEFT_MARGIN
+            Y=$TOP_MARGIN
+            #set the width taking into acount the margins
+            W=$((WIDTH-LEFT_MARGIN-RIGHT_MARGIN))
+            H=$MASTER_HEIGHT
+            #set the active window to the "master "area
+            wmctrl    -r :ACTIVE: -e "0,$X,$Y,$W,$H"
+
+             #set the y co-ordinate
+             Y=$((Y+H+USELESS_GAPS+TITLE_BAR_HEIGHT))
+             #Distribute the  width amon the remaining windows
+              W=$((W/(WINDOWS_IN_DESK-1)))
+              #set the  new height
+             H=$((HEIGHT-MASTER_HEIGHT-TOP_MARGIN-BOTTOM_MARGIN-TITLE_BAR_HEIGHT-USELESS_GAPS))
+             
+             i=0
+              while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                #avoid setting the attributes of the active window again
+                if  [[ "${WIN_XID[$i]}" -ne "$ACTIVE_WIN" ]] ; then
+                #set the attributes 
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                    #set the X co-ordinate for the next window.
+                    X=$((X+W+USELESS_GAPS))
+                fi
+                #preselect the next window
+                i=$((i+1))
+             done
+             ;;
+"BOTTOM_MASTER")
+            #define the properties of the master area
+            X=$LEFT_MARGIN
+            Y=$TOP_MARGIN
+
+             #Distribute the  width among the non master windows
+              W=$(((WIDTH-LEFT_MARGIN-RIGHT_MARGIN)/(WINDOWS_IN_DESK-1)))
+              #set the  new height
+             H=$((HEIGHT-MASTER_HEIGHT-TOP_MARGIN-BOTTOM_MARGIN-TITLE_BAR_HEIGHT-USELESS_GAPS))
+             
+             i=0
+              while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                #avoid setting the attributes of the active window again
+                if  [[ "${WIN_XID[$i]}" -ne "$ACTIVE_WIN" ]] ; then
+                #set the attributes 
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                    #set the X co-ordinate for the next window.
+                    X=$((X+W+USELESS_GAPS))
+                fi
+                #preselect the next window
+                i=$((i+1))
+             done
+             #set the  co-ordinates
+             X=$LEFT_MARGIN
+             Y=$((Y+H+USELESS_GAPS+TITLE_BAR_HEIGHT))
+             W=$((WIDTH-LEFT_MARGIN-RIGHT_MARGIN))
+             H=$MASTER_HEIGHT
+            #set the active window to the "master "area
+            wmctrl    -r :ACTIVE: -e "0,$X,$Y,$W,$H"
+             ;;
+                 
+                          
+"GRID")
+            #find the number of windows in the top row and in each subsequent row except for the bottom row. 
+            NORMAL_ROW_WINDOWS=$((WINDOWS_IN_DESK/NUMBER_OF_ROWS))
+            #the bottom row ould have as many windows as the top row and any left over
+            BOTTOM_ROW_WINDOWS=$((NORMAL_ROW_WINDOWS + WINDOWS_IN_DESK%NUMBER_OF_ROWS))
+            WINDOWS_NOT_IN_BOTTOM_ROW=$((WINDOWS_IN_DESK-BOTTOM_ROW_WINDOWS))
+            #set the co-ordinates for the top row
+            X=$LEFT_MARGIN
+            Y=$TOP_MARGIN
+            #the height of each window would remain the same regardless of which row it is in
+            H=$(((HEIGHT-TOP_MARGIN-BOTTOM_MARGIN)/NUMBER_OF_ROWS - TITLE_BAR_HEIGHT))
+            #Find the width of each window in the top row, this would be the same for each row except for the bottom row which may contain more windows
+            NORMAL_ROW_WIDTH=$((((WIDTH-LEFT_MARGIN-RIGHT_MARGIN)/NORMAL_ROW_WINDOWS)-USELESS_GAPS*NORMAL_ROW_WINDOWS))
+            BOTTOM_ROW_WIDTH=$((((WIDTH-LEFT_MARGIN-RIGHT_MARGIN)/BOTTOM_ROW_WINDOWS)-USELESS_GAPS*NORMAL_ROW_WINDOWS))
+            #start counting from zero
+            i=0
+            #we havent processed any windows yet
+            CURRENT_ROW_WINDOWS=0
+            #we will be processing the 1st row
+            CURRENT_ROW=1
+            while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                if  [[ "$CURRENT_ROW" -lt "$NUMBER_OF_ROWS" ]]; then
+                    if [[ "$CURRENT_ROW_WINDOWS" -eq "NORMAL_ROW_WINDOWS " ]]; then 
+                        CURRENT_ROW=$((CURRENT_ROW+1))
+                        if [[ "$CURRENT_ROW" -eq "$NUMBER_OF_ROWS" ]] ; then 
+                            X=$LEFT_MARGIN
+                            Y=$((Y+H+TITLE_BAR_HEIGHT+USELESS_GAPS))
+                            W=$BOTTOM_ROW_WIDTH
+                        else
+                            CURRENT_ROW_WINDOWS=0
+                        fi    
+                    fi
+                    if [[ "$CURRENT_ROW_WINDOWS" -eq "0" ]] ; then
+                        X=$LEFT_MARGIN
+                        W=$NORMAL_ROW_WIDTH
+                        if [[ "$CURRENT_ROW" -ne "1" ]]; then
+                            Y=$((Y+H+TITLE_BAR_HEIGHT+USELESS_GAPS))
+                        fi    
+                    fi        
+                fi
+                wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                X=$((X+W+USELESS_GAPS))
+                CURRENT_ROW_WINDOWS=$((CURRENT_ROW_WINDOWS+1))
+                i=$((i+1))
+            done
+            
+            ;;    
+"MAX")
+                X=$LEFT_MARGIN
+                Y=$TOP_MARGIN
+                H=$((HEIGHT-TOP_MARGIN-BOTTOM_MARGIN))
+                W=$((WIDTH-LEFT_MARGIN-RIGHT_MARGIN))
+                i=0
+                 while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                #avoid setting the attributes of the active window 
+                if  [[ "${WIN_XID[$i]}" -ne "$ACTIVE_WIN" ]] ; then
+                #set the attributes 
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                fi
+                #preselect the next window
+                i=$((i+1))
+             done
+             #now that all the windows have been set set the master on top
+             wmctrl    -r :ACTIVE: -e "0,$X,$Y,$W,$H"
+             ;;
+"VERTICAL_SPLIT")
+                X=$LEFT_MARGIN
+                Y=$TOP_MARGIN
+                H=$((HEIGHT-TOP_MARGIN-BOTTOM_MARGIN))
+                W=$(((WIDTH-LEFT_MARGIN-RIGHT_MARGIN)/WINDOWS_IN_DESK - USELESS_GAPS))
+                i=0
+                while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                    #preselect the next window
+                    X=$((X+W+USELESS_GAPS))
+                    i=$((i+1))
+                done
+             ;;             
+"HORIZONTAL_SPLIT")
+                X=$LEFT_MARGIN
+                Y=$TOP_MARGIN
+                H=$(((HEIGHT-TOP_MARGIN-BOTTOM_MARGIN)/WINDOWS_IN_DESK -TITLE_BAR_HEIGHT -USELESS_GAPS))
+                W=$((WIDTH-LEFT_MARGIN-RIGHT_MARGIN))
+                i=0
+                while  [ "$i"  -le  "$WINDOWS_IN_DESK" ] ;  do
+                    wmctrl  -i  -r ${WIN_XID[$i]} -e "0,$X,$Y,$W,$H"
+                    #preselect the next window
+                    Y=$((Y+H+TITLE_BAR_HEIGHT+USELESS_GAPS))
+                    i=$((i+1))
+                done
+             ;;                 
+esac
+ #say bye
+ exit 0

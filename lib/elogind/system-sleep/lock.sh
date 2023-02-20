@@ -5,11 +5,13 @@
 
 username=manan
 userhome=/home/$username
-export DISPLAY=":0.0"
+#export DISPLAY=":0.0"
+export WAYLAND_DISPLAY="wayland-1"
+export XDG_RUNTIME_DIR=/run/user/1000
 
 case "${1}" in
         pre)
-            su $username -c "/usr/bin/slock" &
-            sleep 1s;
+            su $username -c "/home/manan/.local/bin/personal/lock" &
+	    sleep 1s;
             ;;
 esac

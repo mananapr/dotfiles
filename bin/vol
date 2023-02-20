@@ -2,9 +2,9 @@
 # Increase/Decrease Volume
 
 case "$1" in
-    "up")   amixer -M set Master 5%+ ;;
-    "down") amixer -M set Master 5%- ;;
-    "mute") pactl set-sink-mute 0 toggle ;;
+    "up")   pactl set-sink-volume @DEFAULT_SINK@ +5% ;;
+    "down") pactl set-sink-volume @DEFAULT_SINK@ -5% ;;
+    "mute") pactl set-sink-mute @DEFAULT_SINK@ toggle ;;
     #*) printf "%s\\n" "Usage: ./vol up, ./vol down"; exit ;;
 esac
 

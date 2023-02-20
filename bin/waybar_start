@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+waybar -c $HOME/.config/hypr/waybar/config -s $HOME/.config/hypr/waybar/style.css

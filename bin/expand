@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+TEMP=/tmp/current_wall
+
+files=(~/Pictures/Aurora/*)
+
+hypr=~/.config/hypr
+scripts=~/.local/bin/personal
+
+cooldown=1
+
+while true
+do
+case "$1" in
+    "cycle")
+        index=$(cat $TEMP)
+        index=$((index+1))
+        if [ $index -ge ${#files[@]} ]; then
+            index=0
+        fi
+        echo $index > $TEMP
+        $scripts/wall "${files[$index]}"
+        exit 0
+        ;;
+    "ss-icon")
+        echo ""
+        ;;
+    *)
+        echo "       "
+        ;;
+    esac
+    sleep $cooldown
+done

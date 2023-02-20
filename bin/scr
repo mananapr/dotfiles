@@ -17,5 +17,6 @@ scr="${scr_dir}/${date}/${date}-${time}"
 
 #notify-send " Saved screenshot as ${scr/*\/}"
 sleep 1
-import -window root "$scr".png &
+#import -window root "$scr".png &
+grim "$scr".png &
 #import -window root "$scr".jpg &
