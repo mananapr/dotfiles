@@ -1,5 +1,10 @@
-:root{
-	scrollbar-width: thin;
-	scrollbar-color: rgb(82, 82, 82) rgb(31, 31, 31);
+@-moz-document url-prefix(about:blank) {
+    html > body:empty {
+        background-color: rgb(0,0,0) !important;
+    }
 }
-*{ scrollbar-width: none !important }
+@-moz-document url(about:blank) {
+    html > body:empty {
+        background-color: rgb(0,0,0) !important;
+    }
+}
