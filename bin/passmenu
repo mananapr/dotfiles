@@ -13,7 +13,10 @@ password_files=( "$prefix"/**/*.gpg )
 password_files=( "${password_files[@]#"$prefix"/}" )
 password_files=( "${password_files[@]%.gpg}" )
 
-password=$(printf '%s\n' "${password_files[@]}" | dmenu "$@")
+# Import the colors
+. "${HOME}/.cache/wal/colors.sh"
+
+password=$(printf '%s\n' "${password_files[@]}" | dmenu -h 28 -nb "$color0" -nf "$color15" -sb "$color2" -sf "$color15" "$@")
 
 [[ -n $password ]] || exit
 
@@ -28,3 +31,5 @@ else
 	pass $pass_cmd "$password" | { IFS= read -r pass; printf %s "$pass"; } |
 		xdotool type --clearmodifiers --file -
 fi
+
+notify-send "Password Copied!"
