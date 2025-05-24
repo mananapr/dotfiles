@@ -2,6 +2,7 @@
 	.outer-wrapper.ds-outer-wrapper-breakpoint-override.visible-logo {
 		background-image: url("./Background.png"), url("./NewtabBackground.png");
 		background-position: 0 -44px, 0 0 !important;
+		background-color: rgb(0, 0, 0) !important;
 	}
 }
 
