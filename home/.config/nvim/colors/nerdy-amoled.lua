@@ -54,3 +54,26 @@ vim.api.nvim_set_hl(0, 'Special', { fg = colors.yellow })
 vim.api.nvim_set_hl(0, 'Constant', { fg = colors.orange })
 vim.api.nvim_set_hl(0, 'String', { fg = colors.green })
 vim.api.nvim_set_hl(0, 'Number', { fg = colors.orange })
+
+-- Barbar background customization
+vim.api.nvim_set_hl(0, 'BufferTabpageFill', { bg = colors.gray })
+vim.api.nvim_set_hl(0, 'BufferTabpages', { bg = colors.gray, fg = colors.fg })
+vim.api.nvim_set_hl(0, 'BufferInactive', { bg = colors.gray, fg = colors.comment })
+vim.api.nvim_set_hl(0, 'BufferVisible', { bg = colors.gray, fg = colors.fg })
+vim.api.nvim_set_hl(0, 'BufferCurrent', { bg = colors.gray, fg = colors.fg, bold = true })
+vim.api.nvim_set_hl(0, 'BufferCurrentMod', { bg = colors.gray, fg = colors.yellow, bold = true })
+vim.api.nvim_set_hl(0, 'BufferVisibleMod', { bg = colors.gray, fg = colors.yellow })
+vim.api.nvim_set_hl(0, 'BufferInactiveMod', { bg = colors.gray, fg = colors.comment })
+
+-- MiniStatusline mode-based highlights
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeNormal', { fg = colors.bg, bg = colors.green, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeInsert', { fg = colors.bg, bg = colors.blue, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeVisual', { fg = colors.bg, bg = colors.magenta, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeReplace', { fg = colors.bg, bg = colors.red, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeCommand', { fg = colors.bg, bg = colors.yellow, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineModeOther', { fg = colors.bg, bg = colors.orange, bold = true })
+
+-- MiniStatusline default sections
+vim.api.nvim_set_hl(0, 'MiniStatuslineDevinfo', { fg = colors.fg, bg = colors.gray })
+vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', { fg = colors.blue, bg = colors.gray, bold = true })
+vim.api.nvim_set_hl(0, 'MiniStatuslineFileinfo', { fg = colors.fg, bg = colors.gray })
