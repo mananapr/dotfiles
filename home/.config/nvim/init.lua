@@ -142,7 +142,7 @@ require('lazy').setup({
       vim.g.loaded_netrw = 1
       vim.g.loaded_netrwPlugin = 1
       vim.opt.termguicolors = true
-      vim.keymap.set('n', '<leader>ff', ':NvimTreeToggle<CR>')
+      vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
       require('nvim-tree').setup()
     end,
   },
@@ -421,7 +421,8 @@ require('lazy').setup({
     'ellisonleao/gruvbox.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
-      vim.cmd.colorscheme 'gruvbox'
+      vim.opt.termguicolors = true
+      vim.cmd.colorscheme 'nerdy-amoled'
 
       -- Configure highlights
       vim.cmd.hi 'Comment gui=none'
