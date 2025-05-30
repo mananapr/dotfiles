@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+nowPlaying=$(playerctl metadata --format '🎵 {{title}} - {{artist}}' | sed "s/ - Topic//g" | sed "s/No players found//g")
+echo -n "$nowPlaying"

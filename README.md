@@ -1,14 +1,14 @@
 # dotfiles
 
-![Hyprland](hyprland.png "hyprland")
+![dwm](dwm.png "dwm")
 
 ## Setup
 - Operating System: `Artix Linux`
-- Application Launcher: `wofi`
+- Application Launcher: `dmenu`
 - Shell: `bash`
 - Terminal Emulator: `kitty`
-- Text Editor: `vim`
+- Text Editor: `nvim`
 - Video Player/Music Player/Image Viewer: `mpv`
 - Web Browser: `firefox`
-- Window Manager: `Hyprland`
-- Lock Screen: `swaylock`
+- Window Manager: `dwm`
+- Lock Screen: `betterlockscreen`
