@@ -1,0 +1,31 @@
+# ~/.config/mako/config
+
+font=FiraCode Nerd Font 10
+
+background-color=#000000
+text-color=#eeffff
+
+border-size=1
+border-radius=4
+border-color=#202020
+
+padding=10
+margin=10
+
+width=220
+height=100
+
+default-timeout=5000
+
+anchor=top-right
+layer=overlay
+
+[urgency=low]
+border-color=#202020
+
+[urgency=normal]
+border-color=#202020
+
+[urgency=high]
+border-color=#f07178
+text-color=#f07178

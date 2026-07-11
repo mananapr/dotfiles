@@ -79,12 +79,3 @@ vim.api.nvim_set_hl(0, 'MiniStatuslineDevinfo', { fg = colors.fg, bg = colors.gr
 vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', { fg = colors.fg, bg = colors.gray, bold = false })
 vim.api.nvim_set_hl(0, 'MiniStatuslineFileinfo', { fg = colors.fg, bg = colors.gray })
 vim.api.nvim_set_hl(0, 'MiniStatuslineInactive', { fg = colors.comment, bg = colors.gray })
-
--- flash.nvim
-vim.api.nvim_set_hl(0, 'FlashBackdrop', { fg = colors.comment, bg = colors.bg })
-vim.api.nvim_set_hl(0, 'FlashMatch', { fg = colors.bg, bg = colors.cyan, bold = true })
-vim.api.nvim_set_hl(0, 'FlashCurrent', { fg = colors.bg, bg = colors.pink, bold = true })
-vim.api.nvim_set_hl(0, 'FlashLabel', { fg = colors.white, bg = colors.magenta, bold = true })
-vim.api.nvim_set_hl(0, 'FlashPrompt', { fg = colors.fg, bg = colors.bg, bold = true })
-vim.api.nvim_set_hl(0, 'FlashPromptIcon', { fg = colors.yellow, bg = colors.bg, bold = true })
-vim.api.nvim_set_hl(0, 'FlashCursor', { reverse = true })

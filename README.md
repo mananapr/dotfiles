@@ -2,13 +2,44 @@
 
 ![dwm](dwm.png "dwm")
 
-## Setup
-- Operating System: `Artix Linux`
-- Application Launcher: `dmenu`
+- Operating System: `Arch Linux`
+- Application Launcher: `fuzzel`
 - Shell: `bash`
 - Terminal Emulator: `kitty`
 - Text Editor: `nvim`
 - Video Player/Music Player/Image Viewer: `mpv`
 - Web Browser: `firefox`
-- Window Manager: `dwm`
-- Lock Screen: `betterlockscreen`
+- Window Manager: `niri`
+- Lock Screen: `swaylock-effects`
+
+## Setup
+```sh
+# install nix
+sudo pacman -Syu nix
+sudo systemctl enable --now nix-daemon.service
+sudo usermod -aG nix-users "$USER"
+
+# enable flakes
+mkdir -p ~/.config/nix
+printf 'experimental-features = nix-command flakes\n' > ~/.config/nix/nix.conf
+
+# install and setup home-manager
+nix run github:nix-community/home-manager -- switch --flake .#manan -b hm-bak
+home-manager switch --flake .#manan -b hm-bak
+```
+
+### Useful Commands
+```sh
+# update the flake lock file and apply the new generation
+nix flake update
+home-manager switch --flake .#manan -b hm-bak
+
+# show the current Home Manager generations:
+home-manager generations
+
+# roll back to the previous generation:
+home-manager switch --rollback
+
+# garbage collect old Nix store paths:
+nix-collect-garbage -d
+```

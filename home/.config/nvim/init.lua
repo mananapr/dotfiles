@@ -1,4 +1,4 @@
--- Set <space> as the leader key
+-- set <space> as the leader key
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -69,6 +69,10 @@ vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Git keymaps
+vim.keymap.set('n', '<leader>dv', ':DiffviewOpen<CR>', { noremap = true, silent = true, desc = 'Git [D]iff [V]iew' })
+vim.keymap.set('n', '<leader>dvc', ':DiffviewClose<CR>', { noremap = true, silent = true, desc = 'Git [D]iff [V]iew [C]lose' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
@@ -120,6 +124,8 @@ require('lazy').setup({
 
   'mfussenegger/nvim-jdtls', -- JDTLS LSP
 
+  'sindrets/diffview.nvim', -- Diff View for Git
+
   { 'numToStr/Comment.nvim', opts = {} }, -- gc to comment
 
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
@@ -133,6 +139,11 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
     },
+  },
+
+  {
+    'folke/twilight.nvim',
+    opts = {},
   },
 
   { -- Tree based file browser
@@ -170,7 +181,7 @@ require('lazy').setup({
   { -- Fuzzy Finder
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
-    branch = '0.1.x',
+    branch = 'master',
     dependencies = {
       'nvim-lua/plenary.nvim',
       { -- INFO: If encountering errors, see telescope-fzf-native README for installation instructions
@@ -214,6 +225,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
+      vim.keymap.set('n', '<leader>st', builtin.treesitter, { desc = '[S]earch [T]reesitter' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
       vim.keymap.set('n', '<leader>fb', function()
         require('telescope').extensions.file_browser.file_browser()
@@ -441,32 +453,6 @@ require('lazy').setup({
     },
   },
 
-  { -- CodeCompanion for AI Chat
-    'olimorris/codecompanion.nvim',
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'nvim-treesitter/nvim-treesitter',
-      'hrsh7th/nvim-cmp', -- Optional: For using slash commands and variables in the chat buffer
-      'nvim-telescope/telescope.nvim', -- Optional: For using slash commands
-      { 'stevearc/dressing.nvim', opts = {} }, -- Optional: Improves `vim.ui.select`
-    },
-    config = function()
-      require('codecompanion').setup {
-        strategies = {
-          chat = {
-            adapter = 'openai',
-          },
-          inline = {
-            adapter = 'openai',
-          },
-          agent = {
-            adapter = 'openai',
-          },
-        },
-      }
-    end,
-  },
-
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -501,24 +487,53 @@ require('lazy').setup({
   },
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
+    lazy = false,
     build = ':TSUpdate',
-    opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
-      -- Autoinstall languages that are not installed
-      auto_install = true,
-      highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = { 'ruby' },
-      },
-      indent = { enable = true, disable = { 'ruby' } },
-    },
-    config = function(_, opts)
-      -- [[ Configure Treesitter ]]
+    branch = 'main',
+    config = function()
+      local parsers = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' }
+      require('nvim-treesitter').install(parsers)
 
-      -- Prefer git instead of curl in order to improve connectivity in some environments
-      require('nvim-treesitter.install').prefer_git = true
-      ---@diagnostic disable-next-line: missing-fields
-      require('nvim-treesitter.configs').setup(opts)
+      ---@param buf integer
+      ---@param language string
+      local function treesitter_try_attach(buf, language)
+        -- check if parser exists and load it
+        if not vim.treesitter.language.add(language) then
+          return
+        end
+        -- enables syntax highlighting and other treesitter features
+        vim.treesitter.start(buf, language)
+
+        local has_indent_query = vim.treesitter.query.get(language, 'indents') ~= nil
+
+        if has_indent_query then
+          vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end
+      end
+
+      local available_parsers = require('nvim-treesitter').get_available()
+      vim.api.nvim_create_autocmd('FileType', {
+        callback = function(args)
+          local buf, filetype = args.buf, args.match
+
+          local language = vim.treesitter.language.get_lang(filetype)
+          if not language then
+            return
+          end
+
+          local installed_parsers = require('nvim-treesitter').get_installed 'parsers'
+
+          if vim.tbl_contains(installed_parsers, language) then
+            treesitter_try_attach(buf, language)
+          elseif vim.tbl_contains(available_parsers, language) then
+            require('nvim-treesitter').install(language):await(function()
+              treesitter_try_attach(buf, language)
+            end)
+          else
+            treesitter_try_attach(buf, language)
+          end
+        end,
+      })
     end,
   },
 }, {
