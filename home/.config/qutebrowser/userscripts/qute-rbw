@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+action="${1:-fill}"
+
+qute_message() {
+  local level="$1"
+  local message="$2"
+
+  if [ -n "${QUTE_FIFO:-}" ]; then
+    printf 'message-%s %s\n' "$level" "$message" >> "$QUTE_FIFO"
+  fi
+}
+
+die() {
+  qute_message error "$1"
+  exit 1
+}
+
+copy_to_clipboard() {
+  if command -v wl-copy >/dev/null 2>&1; then
+    wl-copy
+  elif command -v xclip >/dev/null 2>&1; then
+    xclip -selection clipboard
+  elif command -v xsel >/dev/null 2>&1; then
+    xsel --clipboard --input
+  else
+    die "No clipboard command found"
+  fi
+}
+
+json_string() {
+  python3 -c 'import json, sys; print(json.dumps(sys.stdin.read()))'
+}
+
+pick_entry() {
+  command -v rbw >/dev/null 2>&1 || die "rbw not found"
+  command -v fuzzel >/dev/null 2>&1 || die "fuzzel not found"
+
+  rbw list | fuzzel --dmenu --prompt='rbw > '
+}
+
+entry="$(pick_entry)"
+[ -n "$entry" ] || exit 0
+
+case "$action" in
+  fill)
+    username="$(rbw get --field username "$entry")"
+    password="$(rbw get "$entry")"
+    user_json="$(printf '%s' "$username" | json_string)"
+    pass_json="$(printf '%s' "$password" | json_string)"
+
+    js="(() => {
+      const username = ${user_json};
+      const password = ${pass_json};
+      const setValue = (el, value) => {
+        if (!el) return false;
+        el.focus();
+        const proto = Object.getPrototypeOf(el);
+        const setter = Object.getOwnPropertyDescriptor(proto, 'value')?.set;
+        if (setter) setter.call(el, value);
+        else el.value = value;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        el.dispatchEvent(new Event('change', { bubbles: true }));
+        return true;
+      };
+      const pass = document.querySelector('input[type="password"], input[autocomplete="current-password"]');
+      const user = document.querySelector('input[autocomplete="username"], input[type="email"], input[name*="user" i], input[name*="email" i], input[id*="user" i], input[id*="email" i], input[type="text"]');
+      const filledUser = setValue(user, username);
+      const filledPass = setValue(pass, password);
+      return filledUser || filledPass ? 'filled login form' : 'no login fields found';
+    })()"
+    js="${js//$'\n'/ }"
+
+    printf 'jseval --quiet %s\n' "$js" >> "${QUTE_FIFO:?}"
+    qute_message info "Filled rbw entry: $entry"
+    ;;
+  username)
+    rbw get --field username "$entry" | copy_to_clipboard
+    qute_message info "Copied username: $entry"
+    ;;
+  password)
+    rbw get "$entry" | copy_to_clipboard
+    qute_message info "Copied password: $entry"
+    ;;
+  totp)
+    rbw code "$entry" | copy_to_clipboard
+    qute_message info "Copied TOTP: $entry"
+    ;;
+  *)
+    die "Unknown qute-rbw action: $action"
+    ;;
+esac

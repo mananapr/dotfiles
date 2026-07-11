@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [ -z "${QUTE_URL:-}" ]; then
+  if [ -n "${QUTE_FIFO:-}" ]; then
+    printf 'message-error No qutebrowser URL found\n' >> "$QUTE_FIFO"
+  fi
+  exit 1
+fi
+
+if ! command -v mpv >/dev/null 2>&1; then
+  if [ -n "${QUTE_FIFO:-}" ]; then
+    printf 'message-error mpv not found\n' >> "$QUTE_FIFO"
+  fi
+  exit 1
+fi
+
+nohup mpv "$QUTE_URL" >/dev/null 2>&1 &
+
+if [ -n "${QUTE_FIFO:-}" ]; then
+  printf 'message-info Opened URL in mpv\n' >> "$QUTE_FIFO"
+fi

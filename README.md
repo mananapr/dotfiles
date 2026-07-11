@@ -8,7 +8,7 @@
 - Terminal Emulator: `kitty`
 - Text Editor: `nvim`
 - Video Player/Music Player/Image Viewer: `mpv`
-- Web Browser: `firefox`
+- Web Browser: `firefox`, `qutebrowser`
 - Window Manager: `niri`
 - Lock Screen: `swaylock-effects`
 
@@ -17,7 +17,6 @@
 # install nix
 sudo pacman -Syu nix
 sudo systemctl enable --now nix-daemon.service
-sudo usermod -aG nix-users "$USER"
 
 # enable flakes
 mkdir -p ~/.config/nix

@@ -204,6 +204,9 @@ in {
     "mpv".source = "${dotfiles}/home/.config/mpv";
     "niri/config.kdl".source = "${dotfiles}/home/.config/niri/config.kdl";
     "nvim".source = "${dotfiles}/home/.config/nvim";
+    "qutebrowser/config.py".source = "${dotfiles}/home/.config/qutebrowser/config.py";
+    "qutebrowser/greasemonkey".source = "${dotfiles}/home/.config/qutebrowser/greasemonkey";
+    "qutebrowser/userscripts".source = "${dotfiles}/home/.config/qutebrowser/userscripts";
     "starship.toml".source = "${dotfiles}/home/.config/starship.toml";
     "swaylock/config".source = "${dotfiles}/home/.config/swaylock/config";
     "tmux/tmux.conf".source = "${dotfiles}/home/.config/tmux/tmux.conf";
