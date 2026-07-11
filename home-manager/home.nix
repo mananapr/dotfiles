@@ -8,11 +8,6 @@ in {
   home.homeDirectory = "/home/manan";
   home.stateVersion = "25.05";
 
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [
-      "terraform"
-    ];
-
   programs.home-manager.enable = true;
   xdg.enable = true;
 
@@ -52,27 +47,23 @@ in {
     git
     gnumake
     go
-    kitty
     mako
     mdcat
-    mpv
-    neovim
     (nnn.override { withNerdIcons = true; })
     opencode
     playerctl
     ripgrep
     starship
     tmux
+    neovim
     uv
-    waybar
     wl-clipboard
     xclip
     xdg-utils
   ] ++ available [
-    (optionalPkg [ "niri" ])
     (optionalPkg [ "pnpm" ])
-    (optionalPkg [ "swaylock-effects" ])
-    (optionalPkg [ "terraform" ])
+    (optionalPkg [ "swaybg" ])
+    (optionalPkg [ "waybar" ])
     (optionalPkg [ "urlview" ])
     (optionalPkg [ "nerd-fonts" "fira-code" ])
     (optionalPkg [ "nerd-fonts" "iosevka" ])
