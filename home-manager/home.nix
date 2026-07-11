@@ -8,12 +8,17 @@ in {
   home.homeDirectory = "/home/manan";
   home.stateVersion = "25.05";
 
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "terraform"
+    ];
+
   programs.home-manager.enable = true;
   xdg.enable = true;
 
   xdg.userDirs = {
     enable = true;
-    createDirectories = false;
+    createDirectories = true;
     desktop = "$HOME/";
     download = "$HOME/downloads";
     documents = "$HOME/";
@@ -40,15 +45,14 @@ in {
   home.packages = with pkgs; [
     alsa-utils
     bc
+    brightnessctl
     curl
-    firefox
     fuzzel
     gcc
     git
     gnumake
     go
     kitty
-    light
     mako
     mdcat
     mpv
@@ -59,7 +63,6 @@ in {
     ripgrep
     starship
     tmux
-    urlview
     uv
     waybar
     wl-clipboard
@@ -70,9 +73,71 @@ in {
     (optionalPkg [ "pnpm" ])
     (optionalPkg [ "swaylock-effects" ])
     (optionalPkg [ "terraform" ])
+    (optionalPkg [ "urlview" ])
     (optionalPkg [ "nerd-fonts" "fira-code" ])
     (optionalPkg [ "nerd-fonts" "iosevka" ])
   ];
+
+  programs.firefox = {
+    enable = true;
+    configPath = ".mozilla/firefox";
+
+    policies = {
+      DisableFirefoxStudies = true;
+      DisablePocket = true;
+      DisableTelemetry = true;
+      DontCheckDefaultBrowser = true;
+      NoDefaultBookmarks = true;
+      OfferToSaveLogins = false;
+
+      ExtensionSettings = {
+        "uBlock0@raymondhill.net" = {
+          installation_mode = "normal_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+        };
+
+        "addon@darkreader.org" = {
+          installation_mode = "normal_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
+        };
+
+        "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+          installation_mode = "normal_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
+        };
+
+        "{d7742d87-e61d-4b78-b8a1-b469842139fa}" = {
+          installation_mode = "normal_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi";
+        };
+      };
+    };
+
+    profiles.manan = {
+      id = 0;
+      isDefault = true;
+
+      settings = {
+        "browser.download.dir" = "${config.home.homeDirectory}/downloads";
+        "browser.download.folderList" = 2;
+        "browser.download.useDownloadDir" = true;
+
+        "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
+        "browser.newtabpage.activity-stream.feeds.snippets" = false;
+        "browser.newtabpage.activity-stream.showSponsored" = false;
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+        "browser.newtabpage.activity-stream.system.showSponsored" = false;
+        "browser.toolbars.bookmarks.visibility" = "never";
+
+        "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+        "layout.css.prefers-color-scheme.content-override" = 0;
+        "ui.systemUsesDarkTheme" = 1;
+
+        "sidebar.revamp" = true;
+        "sidebar.verticalTabs" = true;
+      };
+    };
+  };
 
   programs.bash = {
     enable = true;
