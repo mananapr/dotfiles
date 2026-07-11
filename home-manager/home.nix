@@ -43,9 +43,6 @@ in {
     brightnessctl
     curl
     fuzzel
-    gcc
-    git
-    gnumake
     go
     mako
     mdcat
@@ -63,6 +60,7 @@ in {
   ] ++ available [
     (optionalPkg [ "pnpm" ])
     (optionalPkg [ "swaybg" ])
+    (optionalPkg [ "swayidle" ])
     (optionalPkg [ "waybar" ])
     (optionalPkg [ "urlview" ])
     (optionalPkg [ "nerd-fonts" "fira-code" ])
