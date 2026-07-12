@@ -12,7 +12,13 @@
   outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfreePredicate = pkg:
+          builtins.elem (nixpkgs.lib.getName pkg) [
+            "widevine-cdm"
+          ];
+      };
     in {
       homeConfigurations.manan = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;

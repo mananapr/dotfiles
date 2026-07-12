@@ -72,7 +72,7 @@ in {
     (nnn.override { withNerdIcons = true; })
     opencode
     playerctl
-    qutebrowser
+    (qutebrowser.override { enableWideVine = true; })
     rbw
     ripgrep
     starship
