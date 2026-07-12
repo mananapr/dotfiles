@@ -10,11 +10,11 @@ c.content.autoplay = False
 c.scrolling.bar = 'when-searching'
 c.tabs.background = True
 c.tabs.last_close = 'startpage'
-c.url.default_page = 'https://www.google.com'
+c.url.default_page = 'file:///home/manan/.config/qutebrowser/startpage.html'
 c.url.searchengines = {
     'DEFAULT': 'https://www.google.com/search?q={}',
 }
-c.url.start_pages = ['https://www.google.com']
+c.url.start_pages = ['file:///home/manan/.config/qutebrowser/startpage.html']
 
 config.bind('<z><l>', 'spawn --userscript qute-rbw fill')
 config.bind('<z><u>', 'spawn --userscript qute-rbw username')

@@ -22,6 +22,15 @@ sudo systemctl enable --now nix-daemon.service
 mkdir -p ~/.config/nix
 printf 'experimental-features = nix-command flakes\n' > ~/.config/nix/nix.conf
 
+# install yay-bin
+git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
+cd /tmp/yay-bin
+makepkg -si
+
+# install swaylock-effects from AUR
+# swaylock-effects in nix is currently broken
+yay -S swaylock-effects
+
 # install and setup home-manager
 nix run github:nix-community/home-manager -- switch --flake .#manan -b hm-bak
 home-manager switch --flake .#manan -b hm-bak

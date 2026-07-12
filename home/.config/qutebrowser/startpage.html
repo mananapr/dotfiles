@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>start</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #eeffff;
+      --muted: #707070;
+      --panel: #080808;
+      --border: #202020;
+      --green: #13ca91;
+      --cyan: #00feca;
+      --magenta: #ff2079;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      background: radial-gradient(circle at 50% 35%, #061611 0, var(--bg) 38%);
+      color: var(--fg);
+      font: 16px/1.5 "Iosevka Nerd Font", Iosevka, monospace;
+    }
+
+    main {
+      width: min(760px, 100%);
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      color: var(--green);
+      font-size: clamp(34px, 8vw, 72px);
+      font-weight: 700;
+      letter-spacing: -0.08em;
+      line-height: 0.9;
+      text-shadow: 0 0 28px rgba(19, 202, 145, 0.22);
+    }
+
+    form {
+      margin-bottom: 28px;
+    }
+
+    input {
+      width: 100%;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      outline: none;
+      background: var(--panel);
+      box-shadow: inset 4px 0 0 var(--green), 0 0 48px rgba(0, 254, 202, 0.07);
+      color: var(--fg);
+      font: inherit;
+      font-size: clamp(18px, 3vw, 24px);
+    }
+
+    input:focus {
+      border-color: var(--green);
+      box-shadow: inset 4px 0 0 var(--green), 0 0 40px rgba(19, 202, 145, 0.18);
+    }
+
+    input::placeholder {
+      color: var(--muted);
+    }
+
+    .groups {
+      display: grid;
+      gap: 26px;
+    }
+
+    .group h2 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    a {
+      min-height: 86px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, var(--panel), #020202);
+      box-shadow: inset 4px 0 0 var(--accent);
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      border-color: var(--accent);
+      color: var(--accent);
+      outline: none;
+    }
+
+    a strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    a span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .personal {
+      --accent: var(--green);
+    }
+
+    .work {
+      --accent: var(--cyan);
+    }
+
+    .home {
+      --accent: var(--magenta);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>qutebrowser</h1>
+    <form action="https://www.google.com/search" method="get">
+      <input name="q" type="search" placeholder="search google" autocomplete="off" autofocus>
+    </form>
+
+    <div class="groups">
+      <section class="group personal" aria-label="personal links">
+        <h2>personal</h2>
+        <div class="links">
+          <a href="https://github.com/mananapr">
+            <strong>github</strong>
+            <span>code</span>
+          </a>
+          <a href="https://app.tuta.com/">
+            <strong>mail</strong>
+            <span>inbox</span>
+          </a>
+          <a href="https://youtube.com">
+            <strong>youtube</strong>
+            <span>video</span>
+          </a>
+          <a href="https://boards.4chan.org/wsg/">
+            <strong>/wsg/</strong>
+            <span>feeds</span>
+          </a>
+          <a href="https://boards.4chan.org/g/">
+            <strong>/g/</strong>
+            <span>feeds</span>
+          </a>
+          <a href="https://news.ycombinator.com">
+            <strong>hn</strong>
+            <span>news</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="group work" aria-label="digantara links">
+        <h2>digantara</h2>
+        <div class="links">
+          <a href="https://git.digantara.dev/software/katana">
+            <strong>katana</strong>
+            <span>software</span>
+          </a>
+          <a href="https://git.digantara.dev/software/mcs-ng">
+            <strong>mcs-ng</strong>
+            <span>software</span>
+          </a>
+          <a href="https://git.digantara.dev/software/ocs">
+            <strong>ocs</strong>
+            <span>software</span>
+          </a>
+          <a href="https://git.digantara.dev/software/sensor-pipeline">
+            <strong>sensor-pipeline</strong>
+            <span>software</span>
+          </a>
+          <a href="https://git.digantara.dev/sdk">
+            <strong>sdk</strong>
+            <span>git</span>
+          </a>
+          <a href="https://git.digantara.dev/platform">
+            <strong>platform</strong>
+            <span>git</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="group home" aria-label="home links">
+        <h2>home</h2>
+        <div class="links">
+          <a href="https://feed.gl1tch.art">
+            <strong>miniflux</strong>
+            <span>rss</span>
+          </a>
+          <a href="https://media.g1tch.art">
+            <strong>jellyfin</strong>
+            <span>media</span>
+          </a>
+          <a href="https://qb.gl1tch.art">
+            <strong>qbittorrent</strong>
+            <span>torrents</span>
+          </a>
+          <a href="https://nas:5001">
+            <strong>nas</strong>
+            <span>storage</span>
+          </a>
+          <a href="https://nas:2283">
+            <strong>immich</strong>
+            <span>photos</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

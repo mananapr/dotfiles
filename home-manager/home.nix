@@ -65,11 +65,15 @@ in {
     curl
     fuzzel
     go
+    kitty
     mako
     mdcat
+    mpv
     (nnn.override { withNerdIcons = true; })
     opencode
     playerctl
+    qutebrowser
+    rbw
     ripgrep
     starship
     tmux
@@ -231,6 +235,7 @@ in {
     "nvim".source = "${dotfiles}/home/.config/nvim";
     "qutebrowser/config.py".source = "${dotfiles}/home/.config/qutebrowser/config.py";
     "qutebrowser/greasemonkey".source = "${dotfiles}/home/.config/qutebrowser/greasemonkey";
+    "qutebrowser/startpage.html".source = "${dotfiles}/home/.config/qutebrowser/startpage.html";
     "qutebrowser/userscripts".source = "${dotfiles}/home/.config/qutebrowser/userscripts";
     "starship.toml".source = "${dotfiles}/home/.config/starship.toml";
     "swaylock/config".source = "${dotfiles}/home/.config/swaylock/config";
