@@ -3,10 +3,23 @@
 let
   optionalPkg = path: lib.attrByPath path null pkgs;
   available = builtins.filter (pkg: pkg != null);
+  sessionPath = [
+    "$HOME/.local/bin"
+    "$HOME/.local/share/pnpm"
+    "/usr/local/go/bin"
+  ];
+  repairHmSession = ''
+    if [[ ":$PATH:" != *":$HOME/.nix-profile/bin:"* ]] && [ -r "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
+      unset __HM_SESS_VARS_SOURCED
+      . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+    fi
+  '';
 in {
   home.username = "manan";
   home.homeDirectory = "/home/manan";
   home.stateVersion = "25.05";
+
+  targets.genericLinux.enable = true;
 
   programs.home-manager.enable = true;
   xdg.enable = true;
@@ -31,11 +44,19 @@ in {
     PNPM_HOME = "$HOME/.local/share/pnpm";
   };
 
-  home.sessionPath = [
-    "$HOME/.local/bin"
-    "$HOME/.local/share/pnpm"
-    "/usr/local/go/bin"
-  ];
+  home.sessionPath = sessionPath;
+
+  systemd.user.sessionVariables = {
+    EDITOR = "nvim";
+    NNN_FIFO = "/tmp/nnn.fifo";
+    NNN_PLUG = "p:preview-tui";
+    PATH = lib.concatStringsSep ":" (sessionPath ++ [
+      "$HOME/.nix-profile/bin"
+      "/nix/var/nix/profiles/default/bin"
+      "$PATH"
+    ]);
+    PNPM_HOME = "$HOME/.local/share/pnpm";
+  };
 
   home.packages = with pkgs; [
     alsa-utils
@@ -136,6 +157,8 @@ in {
     historySize = 1000;
     shellOptions = [ "checkwinsize" "histappend" ];
 
+    profileExtra = repairHmSession;
+
     shellAliases = {
       alert = "notify-send --urgency=low -i terminal 'command finished'";
       gc = "git commit -m";
@@ -154,6 +177,8 @@ in {
     };
 
     initExtra = ''
+      ${repairHmSession}
+
       set -o vi
       bind -m vi-insert "\C-l":clear-screen
 

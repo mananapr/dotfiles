@@ -38,7 +38,4 @@ home-manager generations
 
 # roll back to the previous generation:
 home-manager switch --rollback
-
-# garbage collect old Nix store paths:
-nix-collect-garbage -d
 ```
