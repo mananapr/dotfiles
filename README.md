@@ -1,6 +1,6 @@
 # dotfiles
 
-![dwm](dwm.png "dwm")
+![niri](niri.png "niri")
 
 - Operating System: `Arch Linux`
 - Application Launcher: `fuzzel`
