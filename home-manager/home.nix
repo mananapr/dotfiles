@@ -7,9 +7,10 @@ let
     "$HOME/.local/bin"
     "$HOME/.local/share/pnpm"
     "/usr/local/go/bin"
+    "/nix/var/nix/profiles/default/bin"
   ];
   repairHmSession = ''
-    if [[ ":$PATH:" != *":$HOME/.nix-profile/bin:"* ]] && [ -r "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
+    if { [[ ":$PATH:" != *":$HOME/.nix-profile/bin:"* ]] || [[ ":$PATH:" != *":/nix/var/nix/profiles/default/bin:"* ]]; } && [ -r "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
       unset __HM_SESS_VARS_SOURCED
       . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
     fi
@@ -52,7 +53,6 @@ in {
     NNN_PLUG = "p:preview-tui";
     PATH = lib.concatStringsSep ":" (sessionPath ++ [
       "$HOME/.nix-profile/bin"
-      "/nix/var/nix/profiles/default/bin"
       "$PATH"
     ]);
     PNPM_HOME = "$HOME/.local/share/pnpm";
