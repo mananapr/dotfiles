@@ -1,6 +1,7 @@
 screenshots
 effect-pixelate=8
 effect-vignette=0.15:0.35
+effect-greyscale
 
 clock
 timestr=%H:%M
