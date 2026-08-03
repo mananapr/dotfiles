@@ -400,7 +400,7 @@ binds {
     Ctrl+Shift+Space { spawn "makoctl" "restore"; }
 
     // Toggle Bar
-    Mod+B { spawn "killall" "-SIGUSR1" "waybar"; }
+    Mod+B { spawn "killall" "-SIGUSR1" ".waybar-wrapped"; }
 
     // Window focus
     Mod+J { focus-window-down; }
