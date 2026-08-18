@@ -23,21 +23,31 @@ button {
 #workspaces button {
 	padding: 0 5px;
 	background-color: transparent;
+	background-image: none;
 	color: #202020;
 }
 
 #workspaces button:hover {
 	background-color: #202020;
+	background-image: none;
+	color: #000000;
+}
+
+#workspaces button:hover.active {
+	background-color: #202020;
+	background-image: none;
 	color: #000000;
 }
 
 #workspaces button.active {
 	background-color: transparent;
+	background-image: none;
 	color: #eeffff;
 }
 
 #workspaces button.urgent {
 	background-color: #f07178;
+	background-image: none;
 	color: #000000;
 }
 
