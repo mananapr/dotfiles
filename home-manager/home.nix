@@ -79,6 +79,7 @@ in {
     tmux
     neovim
     uv
+    gammastep
     wl-clipboard
     xclip
     xdg-utils
@@ -241,6 +242,7 @@ in {
     "swaylock/config".source = "${dotfiles}/home/.config/swaylock/config";
     "tmux/tmux.conf".source = "${dotfiles}/home/.config/tmux/tmux.conf";
     "waybar".source = "${dotfiles}/home/.config/waybar";
+    "gammastep/config.ini".source = "${dotfiles}/home/.config/gammastep/config.ini";
   };
 
   home.file = {

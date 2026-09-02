@@ -292,6 +292,7 @@ spawn-at-startup "swaybg" "-i" "/home/manan/pix/W4.png" "-m" "fill" "-c" "#00000
 spawn-at-startup "pactl" "set-source-volume" "@DEFAULT_SOURCE@" "35%"
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
+spawn-at-startup "gammastep"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock" "before-sleep" "swaylock"
 
 
